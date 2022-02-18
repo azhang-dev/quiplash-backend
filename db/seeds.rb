@@ -10,52 +10,64 @@
 Answer.destroy_all
 
 a1 = Answer.create!(
-    answer: "BEST CODE IS THE CODE THATS NEVER WRITTEN"
+    answer: "BEST CODE IS THE CODE THATS NEVER WRITTEN",
 )
 
 a2 = Answer.create!(
-    answer: "MANY MANY TINY DEAD BODIES"
+    answer: "MANY MANY TINY DEAD BODIES",
+
 )
 
 a3 = Answer.create!(
-    answer: "NICE APPLES"
+    answer: "NICE APPLES",
+
 )
 
 a4 = Answer.create!(
-    answer: "YIFFING IN THE MORNING "
+    answer: "YIFFING IN THE MORNING",
+
 )
 
 a5 = Answer.create!(
-    answer: "I CANT TALK"
+    answer: "I CANT TALK",
+
 )
 
 a6 = Answer.create!(
-    answer: "LETS DO A QUICK CODE REVIEW"
+    answer: "LETS DO A QUICK CODE REVIEW",
+
 )
 
 a7 = Answer.create!(
-    answer: "HELLO THERE"
+    answer: "HELLO THERE",
 )
 
 Question.destroy_all
 
 
 q1 = Question.create!(
-    question: "A double rainbow doesn't have gold at the end of it. Instead, it has ____________"
+    question: "A double rainbow doesn't have gold at the end of it. Instead, it has ____________",
 )
 
 q2 = Question.create!(
-    question: "As Shakesphear once said, '___________'"
+    question: "As Shakesphear once said, '___________'",
+
 )
 
 q3 = Question.create!(
-    question: "What Adam thought when he first met Eve"
+    question: "What Adam thought when he first met Eve",
+
 )
 
 q4 = Question.create!(
-    question: "A terrible name for a morning talk show"
+    question: "A terrible name for a morning talk show",
+
 )
 
+q1.answers << a2
+q2.answers << a1 << a6
+q3.answers << a7 << a3
+q4.answers << a4 << a5
 
 
 print "Creating Users..."
