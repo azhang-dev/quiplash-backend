@@ -6,7 +6,7 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
-
+print "Creating Answers..."
 Answer.destroy_all
 
 a1 = Answer.create!(
@@ -42,6 +42,10 @@ a7 = Answer.create!(
     answer: "HELLO THERE",
 )
 
+puts "Created #{Answer.count} Answer"
+
+print "Creating questions ..."
+
 Question.destroy_all
 
 
@@ -68,6 +72,9 @@ q1.answers << a2
 q2.answers << a1 << a6
 q3.answers << a7 << a3
 q4.answers << a4 << a5
+
+puts "created #{Question.count} questions."
+puts "the answer of #{Question.first.question} is ..."
 
 
 print "Creating Users..."
