@@ -5,6 +5,8 @@ Rails.application.routes.draw do
 
 
   get '/questions' => 'questions#index' # for testing
-  get '/questions/game_data' => 'questions#game_data'
+
+  get '/answers' => 'answers#index'
+  
   
 end

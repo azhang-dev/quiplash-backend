@@ -10,14 +10,9 @@ class QuestionsController < ApplicationController
   end
 
   def game_data
-    game_data = Question.all.reverse.map {|question|
 
-    questionText= Question.first.question_id
-        
-    answer = Answer.find_by(id: question.answer_id)
-  }
-    
-    render json: game_data 
+    answer= Answer.all
+    render json: answer
   end
 
   def create
