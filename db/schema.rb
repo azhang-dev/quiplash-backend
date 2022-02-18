@@ -15,6 +15,13 @@ ActiveRecord::Schema.define(version: 2022_02_18_085945) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
+  create_table "answers", force: :cascade do |t|
+    t.text "answer"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.integer "question_id"
+  end
+
   create_table "questionbanks", force: :cascade do |t|
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
@@ -23,6 +30,8 @@ ActiveRecord::Schema.define(version: 2022_02_18_085945) do
   create_table "questions", force: :cascade do |t|
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.text "question"
+    t.integer "answer_id"
   end
 
   create_table "users", force: :cascade do |t|
