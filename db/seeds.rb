@@ -10,21 +10,61 @@
 Answer.destroy_all
 
 a1 = Answer.create!(
-    answer: "Best code is the code that's never written"
-    question_id:
+    answer: "BEST CODE IS THE CODE THATS NEVER WRITTEN"
 )
 
-a1 = Answer.create!(
-    answer: "Best code is the code that's never written"
-    question_id:
+a2 = Answer.create!(
+    answer: "MANY MANY TINY DEAD BODIES"
 )
 
-a1 = Answer.create!(
-    answer: "Best code is the code that's never written"
-    question_id:
+a3 = Answer.create!(
+    answer: "NICE APPLES"
 )
 
-a1 = Answer.create!(
-    answer: "Best code is the code that's never written"
-    question_id:
+a4 = Answer.create!(
+    answer: "YIFFING IN THE MORNING "
 )
+
+a5 = Answer.create!(
+    answer: "I CANT TALK"
+)
+
+a6 = Answer.create!(
+    answer: "LETS DO A QUICK CODE REVIEW"
+)
+
+a7 = Answer.create!(
+    answer: "HELLO THERE"
+)
+
+Question.destroy_all
+
+
+q1 = Question.create!(
+    question: "A double rainbow doesn't have gold at the end of it. Instead, it has ____________"
+)
+
+q2 = Question.create!(
+    question: "As Shakesphear once said, '___________'"
+)
+
+q3 = Question.create!(
+    question: "What Adam thought when he first met Eve"
+)
+
+q4 = Question.create!(
+    question: "A terrible name for a morning talk show"
+)
+
+
+
+print "Creating Users..."
+User.destroy_all
+
+
+u1 = User.create! name: 'alex', password: 'chicken'
+u2 = User.create! name: 'angela', password: 'chicken'
+u3 = User.create! name: 'cassie', password: 'chicken'
+u4 = User.create! name: 'ethan', password: 'chicken'
+
+puts "Created #{User.count} users."
