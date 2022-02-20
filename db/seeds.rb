@@ -68,6 +68,10 @@ q4 = Question.create!(
 
 )
 
+q5 = Question.create!(
+    question: "Why do I suck at code so much?"  
+)
+
 q1.answers << a2
 q2.answers << a1 << a6
 q3.answers << a7 << a3
