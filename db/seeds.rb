@@ -70,6 +70,10 @@ q3.answers << a7 << a3
 q4.answers << a4 << a5
 
 
+
+
+
+
 print "Creating Users..."
 User.destroy_all
 
