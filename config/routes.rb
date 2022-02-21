@@ -3,6 +3,8 @@ Rails.application.routes.draw do
 
   get '/users/current' => 'users#current'
 
+  post '/user' => 'user#create'
+
 
   get '/questions' => 'questions#index' # for testing
 
