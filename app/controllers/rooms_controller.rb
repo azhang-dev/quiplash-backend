@@ -20,6 +20,11 @@ class RoomsController < ApplicationController
         end
     end
 
+    def destroy
+        room = Room.destroy params[:id]
+
+    end
+
     private
       
       def room_params
