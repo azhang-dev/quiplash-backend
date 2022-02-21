@@ -9,11 +9,15 @@ Rails.application.routes.draw do
   resources :votes, only: [:create, :index]
   resources :games, only: [:create]
 
+
+  resources :conversations, only: [:index, :create]
+  resources :messages, only: [:create]
+  
+  # get '/questions' => 'questions#index' # for testing
+  
+  get '/answers' => 'answers#index'
   mount ActionCable.server => '/cable'
 
-  # get '/questions' => 'questions#index' # for testing
 
-  # get '/answers' => 'answers#index'
-  
   
 end
