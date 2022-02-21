@@ -29,6 +29,8 @@ ActiveRecord::Schema.define(version: 2022_02_21_051902) do
   create_table "games", force: :cascade do |t|
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.text "title"
+    t.integer "room_id"
   end
 
   create_table "messages", force: :cascade do |t|
@@ -52,6 +54,7 @@ ActiveRecord::Schema.define(version: 2022_02_21_051902) do
   create_table "rooms", force: :cascade do |t|
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.text "title"
   end
 
   create_table "users", force: :cascade do |t|
