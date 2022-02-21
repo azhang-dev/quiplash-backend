@@ -9,5 +9,10 @@ Rails.application.routes.draw do
   resources :votes, only: [:create, :show]
 
   mount ActonCable.server => '/cable'
+
+  # get '/questions' => 'questions#index' # for testing
+
+  get '/answers' => 'answers#index'
+  
   
 end
