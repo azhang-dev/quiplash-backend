@@ -5,10 +5,17 @@ Rails.application.routes.draw do
 
   post '/user' => 'user#create'
 
+  resources :rooms, only: [:create, :index]
+  resources :questions, only: [:show]
+  resources :answers, only: [:create, :show]
+  resources :votes, only: [:create, :index]
+  resources :games, only: [:create]
 
-  get '/questions' => 'questions#index' # for testing
+  mount ActionCable.server => '/cable'
 
-  get '/answers' => 'answers#index'
+  # get '/questions' => 'questions#index' # for testing
+
+  # get '/answers' => 'answers#index'
   
   
 end

@@ -81,6 +81,10 @@ puts "created #{Question.count} questions."
 puts "the answer of #{Question.first.question} is ..."
 
 
+
+
+
+
 print "Creating Users..."
 User.destroy_all
 
