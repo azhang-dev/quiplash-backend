@@ -6,7 +6,7 @@ class GamesController < ApplicationController
 
     def show
         game = Game.find params[:id]
-        GamesChannel.broadcast_to
+        GamesChannel.broadcast_to 
     end
 
 
