@@ -58,9 +58,6 @@ gem 'knock'
 
 gem 'jwt'
 
-<<<<<<< HEAD
-=======
 gem 'active_model_serializers', '~> 0.10.0'
 
->>>>>>> 2b33c0b4cd581dcdc769b9657518adac32fb92ef
 gem 'redis'
