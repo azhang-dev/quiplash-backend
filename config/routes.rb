@@ -3,16 +3,16 @@ Rails.application.routes.draw do
 
   get '/users/current' => 'users#current'
 
-  
+  resources :room, only: [:create, :show]
   resources :questions, only: [:show]
   resources :answers, only: [:create, :show]
-  resources :votes, only: [:create, :show]
+  resources :votes, only: [:create, :index]
 
   mount ActionCable.server => '/cable'
 
   # get '/questions' => 'questions#index' # for testing
 
-  get '/answers' => 'answers#index'
+  # get '/answers' => 'answers#index'
   
   
 end
