@@ -8760,7 +8760,2164 @@ Completed 200 OK in 94ms (Views: 32.2ms | ActiveRecord: 40.4ms)
 
 
 >>>>>>> ae6ae82a25978002ffede610896bc072d73b04d4
+<<<<<<< HEAD
+Started GET "/cable" for ::1 at 2022-02-21 14:45:30 +1100
+  [1m[35m (1.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/cass/.rvm/gems/ruby-2.7.0/gems/activerecord-5.2.6.2/lib/active_record/log_subscriber.rb:98
+  
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+        bin/rails db:migrate RAILS_ENV=development
+
+):
+  
+activerecord (5.2.6.2) lib/active_record/migration.rb:579:in `check_pending!'
+activerecord (5.2.6.2) lib/active_record/migration.rb:556:in `call'
+actionpack (5.2.6.2) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.6.2) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.6.2) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.6.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.6.2) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.6.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.6.2) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.6.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.6.2) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.6.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.6.2) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.6.2) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.6.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.6.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.6.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.6.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.6.2) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+rack-cors (1.1.1) lib/rack/cors.rb:100:in `call'
+railties (5.2.6.2) lib/rails/engine.rb:524:in `call'
+puma (3.12.6) lib/puma/configuration.rb:227:in `call'
+puma (3.12.6) lib/puma/server.rb:706:in `handle_request'
+puma (3.12.6) lib/puma/server.rb:476:in `process_client'
+puma (3.12.6) lib/puma/server.rb:334:in `block in run'
+puma (3.12.6) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/cable" for ::1 at 2022-02-21 14:45:32 +1100
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/cass/.rvm/gems/ruby-2.7.0/gems/activerecord-5.2.6.2/lib/active_record/log_subscriber.rb:98
+  
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+        bin/rails db:migrate RAILS_ENV=development
+
+):
+  
+activerecord (5.2.6.2) lib/active_record/migration.rb:579:in `check_pending!'
+activerecord (5.2.6.2) lib/active_record/migration.rb:556:in `call'
+actionpack (5.2.6.2) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.6.2) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.6.2) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.6.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.6.2) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.6.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.6.2) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.6.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.6.2) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.6.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.6.2) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.6.2) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.6.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.6.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.6.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.6.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.6.2) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+rack-cors (1.1.1) lib/rack/cors.rb:100:in `call'
+railties (5.2.6.2) lib/rails/engine.rb:524:in `call'
+puma (3.12.6) lib/puma/configuration.rb:227:in `call'
+puma (3.12.6) lib/puma/server.rb:706:in `handle_request'
+puma (3.12.6) lib/puma/server.rb:476:in `process_client'
+puma (3.12.6) lib/puma/server.rb:334:in `block in run'
+puma (3.12.6) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/cable" for ::1 at 2022-02-21 14:45:37 +1100
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/cass/.rvm/gems/ruby-2.7.0/gems/activerecord-5.2.6.2/lib/active_record/log_subscriber.rb:98
+  
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+        bin/rails db:migrate RAILS_ENV=development
+
+):
+  
+activerecord (5.2.6.2) lib/active_record/migration.rb:579:in `check_pending!'
+activerecord (5.2.6.2) lib/active_record/migration.rb:556:in `call'
+actionpack (5.2.6.2) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.6.2) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.6.2) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.6.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.6.2) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.6.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.6.2) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.6.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.6.2) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.6.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.6.2) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.6.2) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.6.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.6.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.6.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.6.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.6.2) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+rack-cors (1.1.1) lib/rack/cors.rb:100:in `call'
+railties (5.2.6.2) lib/rails/engine.rb:524:in `call'
+puma (3.12.6) lib/puma/configuration.rb:227:in `call'
+puma (3.12.6) lib/puma/server.rb:706:in `handle_request'
+puma (3.12.6) lib/puma/server.rb:476:in `process_client'
+puma (3.12.6) lib/puma/server.rb:334:in `block in run'
+puma (3.12.6) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/cable" for ::1 at 2022-02-21 14:45:49 +1100
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/cass/.rvm/gems/ruby-2.7.0/gems/activerecord-5.2.6.2/lib/active_record/log_subscriber.rb:98
+  
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+        bin/rails db:migrate RAILS_ENV=development
+
+):
+  
+activerecord (5.2.6.2) lib/active_record/migration.rb:579:in `check_pending!'
+activerecord (5.2.6.2) lib/active_record/migration.rb:556:in `call'
+actionpack (5.2.6.2) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.6.2) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.6.2) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.6.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.6.2) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.6.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.6.2) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.6.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.6.2) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.6.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.6.2) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.6.2) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.6.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.6.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.6.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.6.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.6.2) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+rack-cors (1.1.1) lib/rack/cors.rb:100:in `call'
+railties (5.2.6.2) lib/rails/engine.rb:524:in `call'
+puma (3.12.6) lib/puma/configuration.rb:227:in `call'
+puma (3.12.6) lib/puma/server.rb:706:in `handle_request'
+puma (3.12.6) lib/puma/server.rb:476:in `process_client'
+puma (3.12.6) lib/puma/server.rb:334:in `block in run'
+puma (3.12.6) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/" for ::1 at 2022-02-21 14:46:00 +1100
+  [1m[35m (9.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/cass/.rvm/gems/ruby-2.7.0/gems/activerecord-5.2.6.2/lib/active_record/log_subscriber.rb:98
+  
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+        bin/rails db:migrate RAILS_ENV=development
+
+):
+  
+activerecord (5.2.6.2) lib/active_record/migration.rb:579:in `check_pending!'
+activerecord (5.2.6.2) lib/active_record/migration.rb:556:in `call'
+actionpack (5.2.6.2) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.6.2) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.6.2) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.6.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.6.2) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.6.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.6.2) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.6.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.6.2) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.6.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.6.2) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.6.2) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.6.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.6.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.6.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.6.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.6.2) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+rack-cors (1.1.1) lib/rack/cors.rb:100:in `call'
+railties (5.2.6.2) lib/rails/engine.rb:524:in `call'
+puma (3.12.6) lib/puma/configuration.rb:227:in `call'
+puma (3.12.6) lib/puma/server.rb:706:in `handle_request'
+puma (3.12.6) lib/puma/server.rb:476:in `process_client'
+puma (3.12.6) lib/puma/server.rb:334:in `block in run'
+puma (3.12.6) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/cable" for ::1 at 2022-02-21 14:46:02 +1100
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/cass/.rvm/gems/ruby-2.7.0/gems/activerecord-5.2.6.2/lib/active_record/log_subscriber.rb:98
+  
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+        bin/rails db:migrate RAILS_ENV=development
+
+):
+  
+activerecord (5.2.6.2) lib/active_record/migration.rb:579:in `check_pending!'
+activerecord (5.2.6.2) lib/active_record/migration.rb:556:in `call'
+actionpack (5.2.6.2) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.6.2) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.6.2) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.6.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.6.2) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.6.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.6.2) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.6.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.6.2) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.6.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.6.2) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.6.2) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.6.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.6.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.6.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.6.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.6.2) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+rack-cors (1.1.1) lib/rack/cors.rb:100:in `call'
+railties (5.2.6.2) lib/rails/engine.rb:524:in `call'
+puma (3.12.6) lib/puma/configuration.rb:227:in `call'
+puma (3.12.6) lib/puma/server.rb:706:in `handle_request'
+puma (3.12.6) lib/puma/server.rb:476:in `process_client'
+puma (3.12.6) lib/puma/server.rb:334:in `block in run'
+puma (3.12.6) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/" for ::1 at 2022-02-21 14:46:27 +1100
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/cass/.rvm/gems/ruby-2.7.0/gems/activerecord-5.2.6.2/lib/active_record/log_subscriber.rb:98
+  
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+        bin/rails db:migrate RAILS_ENV=development
+
+):
+  
+activerecord (5.2.6.2) lib/active_record/migration.rb:579:in `check_pending!'
+activerecord (5.2.6.2) lib/active_record/migration.rb:556:in `call'
+actionpack (5.2.6.2) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.6.2) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.6.2) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.6.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.6.2) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.6.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.6.2) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.6.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.6.2) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.6.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.6.2) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.6.2) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.6.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.6.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.6.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.6.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.6.2) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+rack-cors (1.1.1) lib/rack/cors.rb:100:in `call'
+railties (5.2.6.2) lib/rails/engine.rb:524:in `call'
+puma (3.12.6) lib/puma/configuration.rb:227:in `call'
+puma (3.12.6) lib/puma/server.rb:706:in `handle_request'
+puma (3.12.6) lib/puma/server.rb:476:in `process_client'
+puma (3.12.6) lib/puma/server.rb:334:in `block in run'
+puma (3.12.6) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/cable" for ::1 at 2022-02-21 14:46:32 +1100
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/cass/.rvm/gems/ruby-2.7.0/gems/activerecord-5.2.6.2/lib/active_record/log_subscriber.rb:98
+  
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+        bin/rails db:migrate RAILS_ENV=development
+
+):
+  
+activerecord (5.2.6.2) lib/active_record/migration.rb:579:in `check_pending!'
+activerecord (5.2.6.2) lib/active_record/migration.rb:556:in `call'
+actionpack (5.2.6.2) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.6.2) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.6.2) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.6.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.6.2) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.6.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.6.2) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.6.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.6.2) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.6.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.6.2) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.6.2) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.6.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.6.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.6.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.6.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.6.2) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+rack-cors (1.1.1) lib/rack/cors.rb:100:in `call'
+railties (5.2.6.2) lib/rails/engine.rb:524:in `call'
+puma (3.12.6) lib/puma/configuration.rb:227:in `call'
+puma (3.12.6) lib/puma/server.rb:706:in `handle_request'
+puma (3.12.6) lib/puma/server.rb:476:in `process_client'
+puma (3.12.6) lib/puma/server.rb:334:in `block in run'
+puma (3.12.6) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT pg_try_advisory_lock(5882105369419256040)[0m
+  ↳ bin/rails:4
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:4
+Migrating to AddEmailToUsers (20220218085945)
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:4
+  [1m[35m (15.5ms)[0m  [1m[35mALTER TABLE "users" ADD "email" character varying[0m
+  ↳ db/migrate/20220218085945_add_email_to_users.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.5ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20220218085945"]]
+  ↳ bin/rails:4
+  [1m[35m (2.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:4
+Migrating to RemoveColumnAnswerIdFromQuestion (20220218122402)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:4
+  [1m[35m (10.7ms)[0m  [1m[35mALTER TABLE "questions" DROP COLUMN "answer_id"[0m
+  ↳ db/migrate/20220218122402_remove_column_answer_id_from_question.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (1.4ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20220218122402"]]
+  ↳ bin/rails:4
+  [1m[35m (1.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:4
+Migrating to CreateGames (20220221012748)
+  [1m[35m (3.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:4
+  [1m[35m (31.5ms)[0m  [1m[35mCREATE TABLE "games" ("id" bigserial primary key, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/migrate/20220221012748_create_games.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.4ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20220221012748"]]
+  ↳ bin/rails:4
+  [1m[35m (1.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:4
+  [1m[36mActiveRecord::InternalMetadata Load (1.0ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ bin/rails:4
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:4
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:4
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_advisory_unlock(5882105369419256040)[0m
+  ↳ bin/rails:4
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:4
+Started GET "/" for ::1 at 2022-02-21 14:46:48 +1100
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/cass/.rvm/gems/ruby-2.7.0/gems/activerecord-5.2.6.2/lib/active_record/log_subscriber.rb:98
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/cass/.rvm/gems/ruby-2.7.0/gems/railties-5.2.6.2/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/cass/.rvm/gems/ruby-2.7.0/gems/railties-5.2.6.2/lib/rails/templates/rails/welcome/index.html.erb (3.6ms)
+Completed 200 OK in 17ms (Views: 8.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/cable" for ::1 at 2022-02-21 14:47:02 +1100
+Started GET "/cable/" [WebSocket] for ::1 at 2022-02-21 14:47:02 +1100
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+Subscription class not found: "MessagesChannel"
+Subscription class not found: "MessagesChannel"
+Subscription class not found: "MessagesChannel"
+Subscription class not found: "MessagesChannel"
+Subscription class not found: "MessagesChannel"
+Subscription class not found: "MessagesChannel"
+Subscription class not found: "MessagesChannel"
+Subscription class not found: "MessagesChannel"
+Subscription class not found: "MessagesChannel"
+Subscription class not found: "MessagesChannel"
+Subscription class not found: "MessagesChannel"
+Subscription class not found: "MessagesChannel"
+Subscription class not found: "MessagesChannel"
+Subscription class not found: "MessagesChannel"
+Subscription class not found: "ConversationsChannel"
+Subscription class not found: "MessagesChannel"
+Subscription class not found: "MessagesChannel"
+Subscription class not found: "MessagesChannel"
+Subscription class not found: "MessagesChannel"
+Subscription class not found: "MessagesChannel"
+Subscription class not found: "MessagesChannel"
+Subscription class not found: "MessagesChannel"
+Subscription class not found: "MessagesChannel"
+Subscription class not found: "MessagesChannel"
+Subscription class not found: "MessagesChannel"
+Subscription class not found: "MessagesChannel"
+Subscription class not found: "MessagesChannel"
+Subscription class not found: "MessagesChannel"
+Subscription class not found: "MessagesChannel"
+Subscription class not found: "MessagesChannel"
+Subscription class not found: "MessagesChannel"
+Subscription class not found: "MessagesChannel"
+Subscription class not found: "MessagesChannel"
+Subscription class not found: "MessagesChannel"
+Subscription class not found: "MessagesChannel"
+Subscription class not found: "MessagesChannel"
+Subscription class not found: "MessagesChannel"
+Subscription class not found: "MessagesChannel"
+Subscription class not found: "MessagesChannel"
+Subscription class not found: "MessagesChannel"
+Subscription class not found: "MessagesChannel"
+Subscription class not found: "MessagesChannel"
+Subscription class not found: "MessagesChannel"
+Subscription class not found: "MessagesChannel"
+Subscription class not found: "MessagesChannel"
+Subscription class not found: "MessagesChannel"
+Subscription class not found: "MessagesChannel"
+Subscription class not found: "MessagesChannel"
+Subscription class not found: "MessagesChannel"
+Subscription class not found: "MessagesChannel"
+Subscription class not found: "MessagesChannel"
+Started GET "/cable" for ::1 at 2022-02-21 14:50:53 +1100
+Started GET "/conversations" for ::1 at 2022-02-21 14:50:53 +1100
+Started GET "/cable/" [WebSocket] for ::1 at 2022-02-21 14:50:53 +1100
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+  
+ActionController::RoutingError (No route matches [GET] "/conversations"):
+  
+actionpack (5.2.6.2) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.6.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.6.2) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.6.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.6.2) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.6.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.6.2) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.6.2) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.6.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.6.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.6.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.6.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.6.2) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+rack-cors (1.1.1) lib/rack/cors.rb:100:in `call'
+railties (5.2.6.2) lib/rails/engine.rb:524:in `call'
+puma (3.12.6) lib/puma/configuration.rb:227:in `call'
+puma (3.12.6) lib/puma/server.rb:706:in `handle_request'
+puma (3.12.6) lib/puma/server.rb:476:in `process_client'
+puma (3.12.6) lib/puma/server.rb:334:in `block in run'
+puma (3.12.6) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Subscription class not found: "ConversationsChannel"
+Started GET "/rails/info/routes" for ::1 at 2022-02-21 14:51:44 +1100
+Processing by Rails::InfoController#routes as HTML
+  Rendering /Users/cass/.rvm/gems/ruby-2.7.0/gems/railties-5.2.6.2/lib/rails/templates/rails/info/routes.html.erb within layouts/application
+  Rendered collection of /Users/cass/.rvm/gems/ruby-2.7.0/gems/actionpack-5.2.6.2/lib/action_dispatch/middleware/templates/routes/_route.html.erb [12 times] (345.5ms)
+  Rendered /Users/cass/.rvm/gems/ruby-2.7.0/gems/actionpack-5.2.6.2/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.1ms)
+  Rendered /Users/cass/.rvm/gems/ruby-2.7.0/gems/railties-5.2.6.2/lib/rails/templates/rails/info/routes.html.erb within layouts/application (933.2ms)
+Completed 200 OK in 948ms (Views: 943.4ms | ActiveRecord: 0.0ms)
+
+
+Finished "/cable/" [WebSocket] for ::1 at 2022-02-21 14:51:46 +1100
+Unsubscribing from channel: {"channel":"ConversationsChannel"}
+Could not execute command from ({"command"=>"unsubscribe", "identifier"=>"{\"channel\":\"ConversationsChannel\"}"}) [RuntimeError - Unable to find subscription with identifier: {"channel":"ConversationsChannel"}]: /Users/cass/.rvm/gems/ruby-2.7.0/gems/actioncable-5.2.6.2/lib/action_cable/connection/subscriptions.rb:78:in `find' | /Users/cass/.rvm/gems/ruby-2.7.0/gems/actioncable-5.2.6.2/lib/action_cable/connection/subscriptions.rb:46:in `remove' | /Users/cass/.rvm/gems/ruby-2.7.0/gems/actioncable-5.2.6.2/lib/action_cable/connection/subscriptions.rb:18:in `execute_command' | /Users/cass/.rvm/gems/ruby-2.7.0/gems/actioncable-5.2.6.2/lib/action_cable/connection/base.rb:87:in `dispatch_websocket_message' | /Users/cass/.rvm/gems/ruby-2.7.0/gems/actioncable-5.2.6.2/lib/action_cable/server/worker.rb:60:in `block in invoke'
+Subscription class not found: "ConversationsChannel"
+Started GET "/rooms" for ::1 at 2022-02-21 14:51:59 +1100
+  
+ActionController::RoutingError (No route matches [GET] "/rooms"):
+  
+actionpack (5.2.6.2) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.6.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.6.2) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.6.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.6.2) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.6.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.6.2) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.6.2) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.6.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.6.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.6.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.6.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.6.2) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+rack-cors (1.1.1) lib/rack/cors.rb:100:in `call'
+railties (5.2.6.2) lib/rails/engine.rb:524:in `call'
+puma (3.12.6) lib/puma/configuration.rb:227:in `call'
+puma (3.12.6) lib/puma/server.rb:706:in `handle_request'
+puma (3.12.6) lib/puma/server.rb:476:in `process_client'
+puma (3.12.6) lib/puma/server.rb:334:in `block in run'
+puma (3.12.6) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_try_advisory_lock(5882105369419256040)[0m
+  ↳ bin/rails:4
+  [1m[35m (3.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:4
+Migrating to AddTitleToRooms (20220221042318)
+  [1m[35m (0.7ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:4
+  [1m[35m (10.0ms)[0m  [1m[35mALTER TABLE "rooms" ADD "title" text[0m
+  ↳ db/migrate/20220221042318_add_title_to_rooms.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.8ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20220221042318"]]
+  ↳ bin/rails:4
+  [1m[35m (2.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:4
+Migrating to AddTextToMessages (20220221042912)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:4
+  [1m[35m (5.5ms)[0m  [1m[35mALTER TABLE "messages" ADD "text" text[0m
+  ↳ db/migrate/20220221042912_add_text_to_messages.rb:3
+  [1m[35m (0.4ms)[0m  [1m[31mROLLBACK[0m
+  ↳ bin/rails:4
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_advisory_unlock(5882105369419256040)[0m
+  ↳ bin/rails:4
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_try_advisory_lock(5882105369419256040)[0m
+  ↳ bin/rails:4
+  [1m[35m (1.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:4
+Migrating to AddTextToMessages (20220221042912)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:4
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  ↳ bin/rails:4
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_advisory_unlock(5882105369419256040)[0m
+  ↳ bin/rails:4
+  [1m[35m (1.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:4
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:4
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:4
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_try_advisory_lock(5882105369419256040)[0m
+  ↳ bin/rails:4
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:4
+Migrating to AddTitleToRooms (20220221042318)
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:4
+  [1m[35m (1.7ms)[0m  [1m[35mALTER TABLE "rooms" DROP COLUMN "title"[0m
+  ↳ bin/rails:4
+  [1m[36mActiveRecord::SchemaMigration Destroy (3.8ms)[0m  [1m[31mDELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = $1[0m  [["version", "20220221042318"]]
+  ↳ bin/rails:4
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:4
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT pg_advisory_unlock(5882105369419256040)[0m
+  ↳ bin/rails:4
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:4
+  [1m[35m (8.1ms)[0m  [1m[35mCREATE DATABASE "quiplash-backend_development" ENCODING = 'unicode'[0m
+  ↳ bin/rails:4
+  [1m[35m (1.2ms)[0m  [1m[35mCREATE DATABASE "quiplash-backend_test" ENCODING = 'unicode'[0m
+  ↳ bin/rails:4
+  [1m[35m (1.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:4
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  ↳ bin/rails:4
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:4
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  ↳ bin/rails:4
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:4
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  ↳ bin/rails:4
+  [1m[35m (100.8ms)[0m  [1m[35mDROP DATABASE IF EXISTS "quiplash-backend_development"[0m
+  ↳ bin/rails:4
+  [1m[35m (86.3ms)[0m  [1m[35mDROP DATABASE IF EXISTS "quiplash-backend_test"[0m
+  ↳ bin/rails:4
+  [1m[35m (393.5ms)[0m  [1m[35mCREATE DATABASE "quiplash-backend_development" ENCODING = 'unicode'[0m
+  ↳ bin/rails:4
+  [1m[35m (130.3ms)[0m  [1m[35mCREATE DATABASE "quiplash-backend_test" ENCODING = 'unicode'[0m
+  ↳ bin/rails:4
+  [1m[35m (17.8ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL PRIMARY KEY)[0m
+  ↳ bin/rails:4
+  [1m[35m (7.6ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying NOT NULL PRIMARY KEY, "value" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ bin/rails:4
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_try_advisory_lock(5882105369419256040)[0m
+  ↳ bin/rails:4
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:4
+Migrating to CreateUsers (20220218054217)
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:4
+  [1m[35m (7.8ms)[0m  [1m[35mCREATE TABLE "users" ("id" bigserial primary key, "name" text, "password_digest" text, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/migrate/20220218054217_create_users.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.8ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20220218054217"]]
+  ↳ bin/rails:4
+  [1m[35m (0.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:4
+Migrating to CreateQuestionbanks (20220218054222)
+  [1m[35m (1.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:4
+  [1m[35m (3.4ms)[0m  [1m[35mCREATE TABLE "questionbanks" ("id" bigserial primary key, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/migrate/20220218054222_create_questionbanks.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20220218054222"]]
+  ↳ bin/rails:4
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:4
+Migrating to CreateQuestions (20220218055040)
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:4
+  [1m[35m (4.4ms)[0m  [1m[35mCREATE TABLE "questions" ("id" bigserial primary key, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/migrate/20220218055040_create_questions.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.4ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20220218055040"]]
+  ↳ bin/rails:4
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:4
+Migrating to CreateAnswers (20220218055510)
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:4
+  [1m[35m (6.8ms)[0m  [1m[35mCREATE TABLE "answers" ("id" bigserial primary key, "answer" text, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/migrate/20220218055510_create_answers.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.5ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20220218055510"]]
+  ↳ bin/rails:4
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:4
+Migrating to AddQuestionToQuestions (20220218062218)
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:4
+  [1m[35m (4.4ms)[0m  [1m[35mALTER TABLE "questions" ADD "question" text[0m
+  ↳ db/migrate/20220218062218_add_question_to_questions.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20220218062218"]]
+  ↳ bin/rails:4
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:4
+Migrating to AddAnswerIdToQuestions (20220218073636)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:4
+  [1m[35m (0.5ms)[0m  [1m[35mALTER TABLE "questions" ADD "answer_id" integer[0m
+  ↳ db/migrate/20220218073636_add_answer_id_to_questions.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.6ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20220218073636"]]
+  ↳ bin/rails:4
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:4
+Migrating to AddQuestionIdToAnswers (20220218075051)
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:4
+  [1m[35m (0.4ms)[0m  [1m[35mALTER TABLE "answers" ADD "question_id" integer[0m
+  ↳ db/migrate/20220218075051_add_question_id_to_answers.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20220218075051"]]
+  ↳ bin/rails:4
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:4
+Migrating to AddEmailToUsers (20220218085945)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:4
+  [1m[35m (0.7ms)[0m  [1m[35mALTER TABLE "users" ADD "email" character varying[0m
+  ↳ db/migrate/20220218085945_add_email_to_users.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20220218085945"]]
+  ↳ bin/rails:4
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:4
+Migrating to RemoveColumnAnswerIdFromQuestion (20220218122402)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:4
+  [1m[35m (2.1ms)[0m  [1m[35mALTER TABLE "questions" DROP COLUMN "answer_id"[0m
+  ↳ db/migrate/20220218122402_remove_column_answer_id_from_question.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.4ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20220218122402"]]
+  ↳ bin/rails:4
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:4
+Migrating to AddNameToQuestionbanks (20220220233959)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:4
+  [1m[35m (2.6ms)[0m  [1m[35mALTER TABLE "questionbanks" ADD "name" character varying[0m
+  ↳ db/migrate/20220220233959_add_name_to_questionbanks.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20220220233959"]]
+  ↳ bin/rails:4
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:4
+Migrating to CreateRooms (20220221004456)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:4
+  [1m[35m (4.4ms)[0m  [1m[35mCREATE TABLE "rooms" ("id" bigserial primary key, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/migrate/20220221004456_create_rooms.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.4ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20220221004456"]]
+  ↳ bin/rails:4
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:4
+Migrating to CreateVotes (20220221004504)
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:4
+  [1m[35m (4.0ms)[0m  [1m[35mCREATE TABLE "votes" ("id" bigserial primary key, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/migrate/20220221004504_create_votes.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.4ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20220221004504"]]
+  ↳ bin/rails:4
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:4
+Migrating to CreateGames (20220221012748)
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:4
+  [1m[35m (3.6ms)[0m  [1m[35mCREATE TABLE "games" ("id" bigserial primary key, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/migrate/20220221012748_create_games.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20220221012748"]]
+  ↳ bin/rails:4
+  [1m[35m (2.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:4
+Migrating to AddTitleToRooms (20220221042318)
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:4
+  [1m[35m (3.0ms)[0m  [1m[35mALTER TABLE "rooms" ADD "title" text[0m
+  ↳ db/migrate/20220221042318_add_title_to_rooms.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.4ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20220221042318"]]
+  ↳ bin/rails:4
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:4
+Migrating to AddTextToMessages (20220221042912)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:4
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  ↳ bin/rails:4
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_advisory_unlock(5882105369419256040)[0m
+  ↳ bin/rails:4
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_try_advisory_lock(5882105369419256040)[0m
+  ↳ bin/rails:4
+  [1m[35m (5.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:4
+Migrating to AddTextToMessages (20220221042912)
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:4
+  [1m[35m (0.9ms)[0m  [1m[31mROLLBACK[0m
+  ↳ bin/rails:4
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT pg_advisory_unlock(5882105369419256040)[0m
+  ↳ bin/rails:4
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_try_advisory_lock(5882105369419256040)[0m
+  ↳ bin/rails:4
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:4
+Migrating to AddTextToMessages (20220221042912)
+  [1m[35m (1.9ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:4
+  [1m[35m (1.3ms)[0m  [1m[31mROLLBACK[0m
+  ↳ bin/rails:4
+  [1m[35m (17.8ms)[0m  [1m[34mSELECT pg_advisory_unlock(5882105369419256040)[0m
+  ↳ bin/rails:4
+  [1m[35m (1.6ms)[0m  [1m[34mSELECT pg_try_advisory_lock(5882105369419256040)[0m
+  ↳ bin/rails:4
+  [1m[35m (1.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:4
+Migrating to AddTextToGames (20220221043108)
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:4
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  ↳ bin/rails:4
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT pg_advisory_unlock(5882105369419256040)[0m
+  ↳ bin/rails:4
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_try_advisory_lock(5882105369419256040)[0m
+  ↳ bin/rails:4
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:4
+Migrating to AddTitleToGames (20220221043108)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:4
+  [1m[35m (14.0ms)[0m  [1m[35mALTER TABLE "games" ADD "title" text[0m
+  ↳ db/migrate/20220221043108_add_title_to_games.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (2.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20220221043108"]]
+  ↳ bin/rails:4
+  [1m[35m (3.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:4
+Migrating to AddRoomToGames (20220221043203)
+  [1m[35m (0.9ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:4
+  [1m[35m (1.5ms)[0m  [1m[35mALTER TABLE "games" ADD "room_id" integer[0m
+  ↳ db/migrate/20220221043203_add_room_to_games.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.4ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20220221043203"]]
+  ↳ bin/rails:4
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:4
+  [1m[36mActiveRecord::InternalMetadata Load (6.1ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ bin/rails:4
+  [1m[35m (1.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:4
+  [1m[36mActiveRecord::InternalMetadata Create (6.7ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "environment"], ["value", "development"], ["created_at", "2022-02-21 04:50:38.313782"], ["updated_at", "2022-02-21 04:50:38.313782"]]
+  ↳ bin/rails:4
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:4
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_advisory_unlock(5882105369419256040)[0m
+  ↳ bin/rails:4
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:4
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_try_advisory_lock(5882105369419256040)[0m
+  ↳ bin/rails:4
+  [1m[35m (6.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:4
+  [1m[36mActiveRecord::InternalMetadata Load (1.1ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ bin/rails:4
+  [1m[35m (0.9ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:4
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:4
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_advisory_unlock(5882105369419256040)[0m
+  ↳ bin/rails:4
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:4
+  [1m[35m (1.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:4
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:4
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:4
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_try_advisory_lock(5882105369419256040)[0m
+  ↳ bin/rails:4
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:4
+Migrating to AddRoomToGames (20220221043203)
+  [1m[35m (1.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:4
+  [1m[35m (2.8ms)[0m  [1m[35mALTER TABLE "games" DROP COLUMN "room_id"[0m
+  ↳ bin/rails:4
+  [1m[36mActiveRecord::SchemaMigration Destroy (4.3ms)[0m  [1m[31mDELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = $1[0m  [["version", "20220221043203"]]
+  ↳ bin/rails:4
+  [1m[35m (1.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:4
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_advisory_unlock(5882105369419256040)[0m
+  ↳ bin/rails:4
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:4
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_try_advisory_lock(5882105369419256040)[0m
+  ↳ bin/rails:4
+  [1m[35m (2.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:4
+Migrating to AddRoomToGames (20220221043203)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:4
+  [1m[35m (28.5ms)[0m  [1m[35mALTER TABLE "games" ADD "room_id" integer[0m
+  ↳ db/migrate/20220221043203_add_room_to_games.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (2.8ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20220221043203"]]
+  ↳ bin/rails:4
+  [1m[35m (4.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:4
+  [1m[36mActiveRecord::InternalMetadata Load (2.5ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ bin/rails:4
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:4
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:4
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_advisory_unlock(5882105369419256040)[0m
+  ↳ bin/rails:4
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:4
+Finished "/cable/" [WebSocket] for ::1 at 2022-02-21 16:00:21 +1100
+Started GET "/cable" for ::1 at 2022-02-21 16:00:23 +1100
+Started GET "/rooms" for ::1 at 2022-02-21 16:00:23 +1100
+  [1m[35m (4.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/cass/.rvm/gems/ruby-2.7.0/gems/activerecord-5.2.6.2/lib/active_record/log_subscriber.rb:98
+Started GET "/cable/" [WebSocket] for ::1 at 2022-02-21 16:00:23 +1100
+  [1m[35m (5.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+  ↳ /Users/cass/.rvm/gems/ruby-2.7.0/gems/activerecord-5.2.6.2/lib/active_record/log_subscriber.rb:98
+Processing by RoomsController#index as */*
+  [1m[36mRoom Load (13.7ms)[0m  [1m[34mSELECT "rooms".* FROM "rooms"[0m
+  ↳ app/controllers/rooms_controller.rb:5
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.31ms)
+Completed 200 OK in 258ms (Views: 223.5ms | ActiveRecord: 22.6ms)
+
+
+Subscription class not found: "ConversationsChannel"
+Unsubscribing from channel: {"channel":"ConversationsChannel"}
+Could not execute command from ({"command"=>"unsubscribe", "identifier"=>"{\"channel\":\"ConversationsChannel\"}"}) [RuntimeError - Unable to find subscription with identifier: {"channel":"ConversationsChannel"}]: /Users/cass/.rvm/gems/ruby-2.7.0/gems/actioncable-5.2.6.2/lib/action_cable/connection/subscriptions.rb:78:in `find' | /Users/cass/.rvm/gems/ruby-2.7.0/gems/actioncable-5.2.6.2/lib/action_cable/connection/subscriptions.rb:46:in `remove' | /Users/cass/.rvm/gems/ruby-2.7.0/gems/actioncable-5.2.6.2/lib/action_cable/connection/subscriptions.rb:18:in `execute_command' | /Users/cass/.rvm/gems/ruby-2.7.0/gems/actioncable-5.2.6.2/lib/action_cable/connection/base.rb:87:in `dispatch_websocket_message' | /Users/cass/.rvm/gems/ruby-2.7.0/gems/actioncable-5.2.6.2/lib/action_cable/server/worker.rb:60:in `block in invoke'
+Subscription class not found: "ConversationsChannel"
+Unsubscribing from channel: {"channel":"ConversationsChannel"}
+Could not execute command from ({"command"=>"unsubscribe", "identifier"=>"{\"channel\":\"ConversationsChannel\"}"}) [RuntimeError - Unable to find subscription with identifier: {"channel":"ConversationsChannel"}]: /Users/cass/.rvm/gems/ruby-2.7.0/gems/actioncable-5.2.6.2/lib/action_cable/connection/subscriptions.rb:78:in `find' | /Users/cass/.rvm/gems/ruby-2.7.0/gems/actioncable-5.2.6.2/lib/action_cable/connection/subscriptions.rb:46:in `remove' | /Users/cass/.rvm/gems/ruby-2.7.0/gems/actioncable-5.2.6.2/lib/action_cable/connection/subscriptions.rb:18:in `execute_command' | /Users/cass/.rvm/gems/ruby-2.7.0/gems/actioncable-5.2.6.2/lib/action_cable/connection/base.rb:87:in `dispatch_websocket_message' | /Users/cass/.rvm/gems/ruby-2.7.0/gems/actioncable-5.2.6.2/lib/action_cable/server/worker.rb:60:in `block in invoke'
+Subscription class not found: "ConversationsChannel"
+Started GET "/rooms" for ::1 at 2022-02-21 16:01:02 +1100
+Processing by RoomsController#index as */*
+  [1m[36mRoom Load (0.5ms)[0m  [1m[34mSELECT "rooms".* FROM "rooms"[0m
+  ↳ app/controllers/rooms_controller.rb:5
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.15ms)
+Completed 200 OK in 2ms (Views: 1.5ms | ActiveRecord: 0.5ms)
+
+
+Unsubscribing from channel: {"channel":"ConversationsChannel"}
+Could not execute command from ({"command"=>"unsubscribe", "identifier"=>"{\"channel\":\"ConversationsChannel\"}"}) [RuntimeError - Unable to find subscription with identifier: {"channel":"ConversationsChannel"}]: /Users/cass/.rvm/gems/ruby-2.7.0/gems/actioncable-5.2.6.2/lib/action_cable/connection/subscriptions.rb:78:in `find' | /Users/cass/.rvm/gems/ruby-2.7.0/gems/actioncable-5.2.6.2/lib/action_cable/connection/subscriptions.rb:46:in `remove' | /Users/cass/.rvm/gems/ruby-2.7.0/gems/actioncable-5.2.6.2/lib/action_cable/connection/subscriptions.rb:18:in `execute_command' | /Users/cass/.rvm/gems/ruby-2.7.0/gems/actioncable-5.2.6.2/lib/action_cable/connection/base.rb:87:in `dispatch_websocket_message' | /Users/cass/.rvm/gems/ruby-2.7.0/gems/actioncable-5.2.6.2/lib/action_cable/server/worker.rb:60:in `block in invoke'
+Subscription class not found: "ConversationsChannel"
+Unsubscribing from channel: {"channel":"ConversationsChannel"}
+Could not execute command from ({"command"=>"unsubscribe", "identifier"=>"{\"channel\":\"ConversationsChannel\"}"}) [RuntimeError - Unable to find subscription with identifier: {"channel":"ConversationsChannel"}]: /Users/cass/.rvm/gems/ruby-2.7.0/gems/actioncable-5.2.6.2/lib/action_cable/connection/subscriptions.rb:78:in `find' | /Users/cass/.rvm/gems/ruby-2.7.0/gems/actioncable-5.2.6.2/lib/action_cable/connection/subscriptions.rb:46:in `remove' | /Users/cass/.rvm/gems/ruby-2.7.0/gems/actioncable-5.2.6.2/lib/action_cable/connection/subscriptions.rb:18:in `execute_command' | /Users/cass/.rvm/gems/ruby-2.7.0/gems/actioncable-5.2.6.2/lib/action_cable/connection/base.rb:87:in `dispatch_websocket_message' | /Users/cass/.rvm/gems/ruby-2.7.0/gems/actioncable-5.2.6.2/lib/action_cable/server/worker.rb:60:in `block in invoke'
+Subscription class not found: "ConversationsChannel"
+Started GET "/rooms" for ::1 at 2022-02-21 16:01:29 +1100
+Processing by RoomsController#index as */*
+  [1m[36mRoom Load (1.5ms)[0m  [1m[34mSELECT "rooms".* FROM "rooms"[0m
+  ↳ app/controllers/rooms_controller.rb:5
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.16ms)
+Completed 200 OK in 3ms (Views: 1.2ms | ActiveRecord: 1.5ms)
+
+
+Unsubscribing from channel: {"channel":"ConversationsChannel"}
+Could not execute command from ({"command"=>"unsubscribe", "identifier"=>"{\"channel\":\"ConversationsChannel\"}"}) [RuntimeError - Unable to find subscription with identifier: {"channel":"ConversationsChannel"}]: /Users/cass/.rvm/gems/ruby-2.7.0/gems/actioncable-5.2.6.2/lib/action_cable/connection/subscriptions.rb:78:in `find' | /Users/cass/.rvm/gems/ruby-2.7.0/gems/actioncable-5.2.6.2/lib/action_cable/connection/subscriptions.rb:46:in `remove' | /Users/cass/.rvm/gems/ruby-2.7.0/gems/actioncable-5.2.6.2/lib/action_cable/connection/subscriptions.rb:18:in `execute_command' | /Users/cass/.rvm/gems/ruby-2.7.0/gems/actioncable-5.2.6.2/lib/action_cable/connection/base.rb:87:in `dispatch_websocket_message' | /Users/cass/.rvm/gems/ruby-2.7.0/gems/actioncable-5.2.6.2/lib/action_cable/server/worker.rb:60:in `block in invoke'
+Subscription class not found: "ConversationsChannel"
+Finished "/cable/" [WebSocket] for ::1 at 2022-02-21 16:01:36 +1100
+Started GET "/cable" for ::1 at 2022-02-21 16:19:15 +1100
+Started GET "/rooms" for ::1 at 2022-02-21 16:19:15 +1100
+Started GET "/cable/" [WebSocket] for ::1 at 2022-02-21 16:19:15 +1100
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+Processing by RoomsController#index as */*
+  [1m[36mRoom Load (1.6ms)[0m  [1m[34mSELECT "rooms".* FROM "rooms"[0m
+  ↳ app/controllers/rooms_controller.rb:5
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (3.05ms)
+Completed 200 OK in 56ms (Views: 10.5ms | ActiveRecord: 17.0ms)
+
+
+Started GET "/cable" for ::1 at 2022-02-21 16:19:22 +1100
+Started GET "/rooms" for ::1 at 2022-02-21 16:19:22 +1100
+Started GET "/cable/" [WebSocket] for ::1 at 2022-02-21 16:19:22 +1100
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+Processing by RoomsController#index as */*
+  [1m[36mRoom Load (1.4ms)[0m  [1m[34mSELECT "rooms".* FROM "rooms"[0m
+  ↳ app/controllers/rooms_controller.rb:5
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.06ms)
+Completed 200 OK in 4ms (Views: 1.9ms | ActiveRecord: 1.4ms)
+
+
+RoomsChannel is transmitting the subscription confirmation
+RoomsChannel is streaming from rooms_channel
+Unsubscribing from channel: {"channel":"RoomsChannel"}
+RoomsChannel stopped streaming from rooms_channel
+RoomsChannel is transmitting the subscription confirmation
+RoomsChannel is streaming from rooms_channel
+Started POST "/rooms" for ::1 at 2022-02-21 16:19:27 +1100
+Processing by RoomsController#create as JSON
+  Parameters: {"title"=>"dd", "room"=>{"title"=>"dd"}}
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/rooms_controller.rb:13
+  [1m[36mRoom Create (13.3ms)[0m  [1m[32mINSERT INTO "rooms" ("created_at", "updated_at", "title") VALUES ($1, $2, $3) RETURNING "id"[0m  [["created_at", "2022-02-21 05:19:27.045236"], ["updated_at", "2022-02-21 05:19:27.045236"], ["title", "dd"]]
+  ↳ app/controllers/rooms_controller.rb:13
+  [1m[35m (1.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/rooms_controller.rb:13
+Completed 500 Internal Server Error in 169ms (ActiveRecord: 26.6ms)
+
+
+  
+NoMethodError (undefined method `serialized_data' for #<RoomsController:0x00007f92048cf9b8>
+Did you mean?  serialization_scope):
+  
+app/controllers/rooms_controller.rb:14:in `create'
+Finished "/cable/" [WebSocket] for ::1 at 2022-02-21 16:28:10 +1100
+RoomsChannel stopped streaming from rooms_channel
+Started GET "/cable" for ::1 at 2022-02-21 16:28:11 +1100
+Started GET "/rooms" for ::1 at 2022-02-21 16:28:11 +1100
+Started GET "/cable/" [WebSocket] for ::1 at 2022-02-21 16:28:11 +1100
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+Processing by RoomsController#index as */*
+  [1m[36mRoom Load (1.6ms)[0m  [1m[34mSELECT "rooms".* FROM "rooms"[0m
+  ↳ app/controllers/rooms_controller.rb:5
+[active_model_serializers]   [1m[36mGame Load (2.7ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."room_id" = $1[0m  [["room_id", 1]]
+[active_model_serializers]   ↳ app/controllers/rooms_controller.rb:5
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (221.87ms)
+Completed 200 OK in 315ms (Views: 273.0ms | ActiveRecord: 33.0ms)
+
+
+RoomsChannel is transmitting the subscription confirmation
+RoomsChannel is streaming from rooms_channel
+Finished "/cable/" [WebSocket] for ::1 at 2022-02-21 16:28:12 +1100
+RoomsChannel stopped streaming from rooms_channel
+Started GET "/rooms" for ::1 at 2022-02-21 16:31:34 +1100
+Started GET "/cable" for ::1 at 2022-02-21 16:31:34 +1100
+  [1m[35m (2.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/cass/.rvm/gems/ruby-2.7.0/gems/activerecord-5.2.6.2/lib/active_record/log_subscriber.rb:98
+Processing by RoomsController#index as */*
+  [1m[35m (31.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/cass/.rvm/gems/ruby-2.7.0/gems/activerecord-5.2.6.2/lib/active_record/log_subscriber.rb:98
+Started GET "/cable/" [WebSocket] for ::1 at 2022-02-21 16:31:35 +1100
+  [1m[36mRoom Load (17.2ms)[0m  [1m[34mSELECT "rooms".* FROM "rooms"[0m
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+  ↳ app/controllers/rooms_controller.rb:5
+RoomsChannel is transmitting the subscription confirmation
+RoomsChannel is streaming from rooms_channel
+[active_model_serializers]   [1m[36mGame Load (2.0ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."room_id" = $1[0m  [["room_id", 1]]
+[active_model_serializers]   ↳ app/controllers/rooms_controller.rb:5
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (152.84ms)
+Completed 200 OK in 358ms (Views: 232.3ms | ActiveRecord: 82.8ms)
+
+
+  [1m[36mRoom Load (0.5ms)[0m  [1m[34mSELECT  "rooms".* FROM "rooms" WHERE "rooms"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/channels/games_channel.rb:3
+Unsubscribing from channel: {"channel":"RoomsChannel"}
+GamesChannel is transmitting the subscription confirmation
+GamesChannel is streaming from games:Z2lkOi8vcXVpcGxhc2gtYmFja2VuZC9Sb29tLzE
+RoomsChannel stopped streaming from rooms_channel
+Finished "/cable/" [WebSocket] for ::1 at 2022-02-21 16:31:38 +1100
+GamesChannel stopped streaming from games:Z2lkOi8vcXVpcGxhc2gtYmFja2VuZC9Sb29tLzE
+Started GET "/rooms" for ::1 at 2022-02-21 16:31:40 +1100
+Processing by RoomsController#index as */*
+  [1m[36mRoom Load (0.8ms)[0m  [1m[34mSELECT "rooms".* FROM "rooms"[0m
+  ↳ app/controllers/rooms_controller.rb:5
+[active_model_serializers]   [1m[36mGame Load (2.9ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."room_id" = $1[0m  [["room_id", 1]]
+[active_model_serializers]   ↳ app/controllers/rooms_controller.rb:5
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (7.72ms)
+Completed 200 OK in 11ms (Views: 6.8ms | ActiveRecord: 3.7ms)
+
+
+Started GET "/cable" for ::1 at 2022-02-21 16:31:40 +1100
+Started GET "/cable/" [WebSocket] for ::1 at 2022-02-21 16:31:40 +1100
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+RoomsChannel is transmitting the subscription confirmation
+RoomsChannel is streaming from rooms_channel
+Unsubscribing from channel: {"channel":"RoomsChannel"}
+RoomsChannel stopped streaming from rooms_channel
+RoomsChannel is transmitting the subscription confirmation
+RoomsChannel is streaming from rooms_channel
+  [1m[36mRoom Load (3.5ms)[0m  [1m[34mSELECT  "rooms".* FROM "rooms" WHERE "rooms"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/channels/games_channel.rb:3
+GamesChannel is transmitting the subscription confirmation
+GamesChannel is streaming from games:Z2lkOi8vcXVpcGxhc2gtYmFja2VuZC9Sb29tLzE
+Started POST "/rooms" for ::1 at 2022-02-21 16:31:43 +1100
+Processing by RoomsController#create as JSON
+  Parameters: {"title"=>"dd", "room"=>{"title"=>"dd"}}
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/rooms_controller.rb:13
+  [1m[36mRoom Create (1.6ms)[0m  [1m[32mINSERT INTO "rooms" ("created_at", "updated_at", "title") VALUES ($1, $2, $3) RETURNING "id"[0m  [["created_at", "2022-02-21 05:31:43.172250"], ["updated_at", "2022-02-21 05:31:43.172250"], ["title", "dd"]]
+  ↳ app/controllers/rooms_controller.rb:13
+  [1m[35m (2.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/rooms_controller.rb:13
+  [1m[36mGame Load (0.4ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."room_id" = $1[0m  [["room_id", 2]]
+  ↳ app/controllers/rooms_controller.rb:14
+Completed 500 Internal Server Error in 168ms (ActiveRecord: 4.5ms)
+
+
+  
+NoMethodError (undefined method `serialized_data' for #<RoomsController:0x00007f95bae11318>
+Did you mean?  serialization_scope):
+  
+app/controllers/rooms_controller.rb:14:in `create'
+Finished "/cable/" [WebSocket] for ::1 at 2022-02-21 16:32:02 +1100
+RoomsChannel stopped streaming from rooms_channel
+GamesChannel stopped streaming from games:Z2lkOi8vcXVpcGxhc2gtYmFja2VuZC9Sb29tLzE
+Started GET "/cable" for ::1 at 2022-02-21 16:32:03 +1100
+Started GET "/cable/" [WebSocket] for ::1 at 2022-02-21 16:32:03 +1100
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+Started GET "/rooms" for ::1 at 2022-02-21 16:32:03 +1100
+Processing by RoomsController#index as */*
+  [1m[36mRoom Load (0.9ms)[0m  [1m[34mSELECT "rooms".* FROM "rooms"[0m
+  ↳ app/controllers/rooms_controller.rb:5
+[active_model_serializers]   [1m[36mGame Load (0.4ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."room_id" = $1[0m  [["room_id", 1]]
+[active_model_serializers]   ↳ app/controllers/rooms_controller.rb:5
+[active_model_serializers]   [1m[36mGame Load (0.4ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."room_id" = $1[0m  [["room_id", 2]]
+[active_model_serializers]   ↳ app/controllers/rooms_controller.rb:5
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (5.06ms)
+Completed 200 OK in 9ms (Views: 7.2ms | ActiveRecord: 1.7ms)
+
+
+RoomsChannel is transmitting the subscription confirmation
+RoomsChannel is streaming from rooms_channel
+Unsubscribing from channel: {"channel":"RoomsChannel"}
+RoomsChannel stopped streaming from rooms_channel
+RoomsChannel is transmitting the subscription confirmation
+RoomsChannel is streaming from rooms_channel
+  [1m[36mRoom Load (1.2ms)[0m  [1m[34mSELECT  "rooms".* FROM "rooms" WHERE "rooms"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/channels/games_channel.rb:3
+GamesChannel is transmitting the subscription confirmation
+GamesChannel is streaming from games:Z2lkOi8vcXVpcGxhc2gtYmFja2VuZC9Sb29tLzI
+  [1m[36mRoom Load (0.9ms)[0m  [1m[34mSELECT  "rooms".* FROM "rooms" WHERE "rooms"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/channels/games_channel.rb:3
+GamesChannel is transmitting the subscription confirmation
+GamesChannel is streaming from games:Z2lkOi8vcXVpcGxhc2gtYmFja2VuZC9Sb29tLzE
+Started POST "/rooms" for ::1 at 2022-02-21 16:32:14 +1100
+Processing by RoomsController#create as JSON
+  Parameters: {"title"=>"fffff", "room"=>{"title"=>"fffff"}}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/rooms_controller.rb:13
+  [1m[36mRoom Create (5.3ms)[0m  [1m[32mINSERT INTO "rooms" ("created_at", "updated_at", "title") VALUES ($1, $2, $3) RETURNING "id"[0m  [["created_at", "2022-02-21 05:32:14.385035"], ["updated_at", "2022-02-21 05:32:14.385035"], ["title", "fffff"]]
+  ↳ app/controllers/rooms_controller.rb:13
+  [1m[35m (2.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/rooms_controller.rb:13
+  [1m[36mGame Load (0.4ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."room_id" = $1[0m  [["room_id", 3]]
+  ↳ app/controllers/rooms_controller.rb:14
+Completed 500 Internal Server Error in 77ms (ActiveRecord: 8.0ms)
+
+
+  
+NoMethodError (undefined method `serialized_data' for #<RoomsController:0x00007f95bf279460>
+Did you mean?  serialization_scope):
+  
+app/controllers/rooms_controller.rb:14:in `create'
+Finished "/cable/" [WebSocket] for ::1 at 2022-02-21 16:33:54 +1100
+RoomsChannel stopped streaming from rooms_channel
+GamesChannel stopped streaming from games:Z2lkOi8vcXVpcGxhc2gtYmFja2VuZC9Sb29tLzE
+GamesChannel stopped streaming from games:Z2lkOi8vcXVpcGxhc2gtYmFja2VuZC9Sb29tLzI
+Started GET "/cable" for ::1 at 2022-02-21 16:33:55 +1100
+Started GET "/rooms" for ::1 at 2022-02-21 16:33:55 +1100
+Started GET "/cable/" [WebSocket] for ::1 at 2022-02-21 16:33:55 +1100
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+Processing by RoomsController#index as */*
+  [1m[36mRoom Load (0.7ms)[0m  [1m[34mSELECT "rooms".* FROM "rooms"[0m
+  ↳ app/controllers/rooms_controller.rb:8
+[active_model_serializers]   [1m[36mGame Load (0.4ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."room_id" = $1[0m  [["room_id", 1]]
+[active_model_serializers]   ↳ app/controllers/rooms_controller.rb:8
+[active_model_serializers]   [1m[36mGame Load (0.3ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."room_id" = $1[0m  [["room_id", 2]]
+[active_model_serializers]   ↳ app/controllers/rooms_controller.rb:8
+[active_model_serializers]   [1m[36mGame Load (0.4ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."room_id" = $1[0m  [["room_id", 3]]
+[active_model_serializers]   ↳ app/controllers/rooms_controller.rb:8
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (19.66ms)
+Completed 200 OK in 63ms (Views: 33.0ms | ActiveRecord: 20.6ms)
+
+
+Started POST "/rooms" for ::1 at 2022-02-21 16:33:58 +1100
+Processing by RoomsController#create as JSON
+  Parameters: {"title"=>"fff", "room"=>{"title"=>"fff"}}
+  [1m[35m (1.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/rooms_controller.rb:16
+  [1m[36mRoom Create (0.5ms)[0m  [1m[32mINSERT INTO "rooms" ("created_at", "updated_at", "title") VALUES ($1, $2, $3) RETURNING "id"[0m  [["created_at", "2022-02-21 05:33:58.158602"], ["updated_at", "2022-02-21 05:33:58.158602"], ["title", "fff"]]
+  ↳ app/controllers/rooms_controller.rb:16
+  [1m[35m (5.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/rooms_controller.rb:16
+  [1m[36mGame Load (12.5ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."room_id" = $1[0m  [["room_id", 4]]
+  ↳ app/controllers/rooms_controller.rb:17
+[ActionCable] Broadcasting to rooms_channel: {:room=>{:id=>4, :title=>"fff", :games=>[]}}
+Completed 200 OK in 33ms (ActiveRecord: 19.7ms)
+
+
+Started GET "/cable" for ::1 at 2022-02-21 16:34:02 +1100
+Started GET "/cable/" [WebSocket] for ::1 at 2022-02-21 16:34:02 +1100
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+  [1m[36mRoom Load (8.3ms)[0m  [1m[34mSELECT  "rooms".* FROM "rooms" WHERE "rooms"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/channels/games_channel.rb:3
+GamesChannel is transmitting the subscription confirmation
+  [1m[36mRoom Load (8.9ms)[0m  [1m[34mSELECT  "rooms".* FROM "rooms" WHERE "rooms"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/channels/games_channel.rb:3
+GamesChannel is streaming from games:Z2lkOi8vcXVpcGxhc2gtYmFja2VuZC9Sb29tLzI
+RoomsChannel is transmitting the subscription confirmation
+RoomsChannel is streaming from rooms_channel
+GamesChannel is transmitting the subscription confirmation
+GamesChannel is streaming from games:Z2lkOi8vcXVpcGxhc2gtYmFja2VuZC9Sb29tLzE
+  [1m[36mRoom Load (1.8ms)[0m  [1m[34mSELECT  "rooms".* FROM "rooms" WHERE "rooms"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/channels/games_channel.rb:3
+GamesChannel is transmitting the subscription confirmation
+GamesChannel is streaming from games:Z2lkOi8vcXVpcGxhc2gtYmFja2VuZC9Sb29tLzM
+Started POST "/rooms" for ::1 at 2022-02-21 16:34:03 +1100
+Processing by RoomsController#create as JSON
+  Parameters: {"title"=>"fff", "room"=>{"title"=>"fff"}}
+  [1m[35m (2.9ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/rooms_controller.rb:16
+  [1m[36mRoom Create (1.5ms)[0m  [1m[32mINSERT INTO "rooms" ("created_at", "updated_at", "title") VALUES ($1, $2, $3) RETURNING "id"[0m  [["created_at", "2022-02-21 05:34:03.604336"], ["updated_at", "2022-02-21 05:34:03.604336"], ["title", "fff"]]
+  ↳ app/controllers/rooms_controller.rb:16
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/rooms_controller.rb:16
+  [1m[36mGame Load (0.6ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."room_id" = $1[0m  [["room_id", 5]]
+  ↳ app/controllers/rooms_controller.rb:17
+[ActionCable] Broadcasting to rooms_channel: {:room=>{:id=>5, :title=>"fff", :games=>[]}}
+Completed 200 OK in 12ms (ActiveRecord: 5.6ms)
+
+
+RoomsChannel transmitting {"room"=>{"id"=>5, "title"=>"fff", "games"=>[]}} (via streamed from rooms_channel)
+Unsubscribing from channel: {"channel":"RoomsChannel"}
+RoomsChannel stopped streaming from rooms_channel
+Unsubscribing from channel: {"channel":"GamesChannel","room":1}
+GamesChannel stopped streaming from games:Z2lkOi8vcXVpcGxhc2gtYmFja2VuZC9Sb29tLzE
+RoomsChannel is transmitting the subscription confirmation
+RoomsChannel is streaming from rooms_channel
+Unsubscribing from channel: {"channel":"GamesChannel","room":3}
+GamesChannel stopped streaming from games:Z2lkOi8vcXVpcGxhc2gtYmFja2VuZC9Sb29tLzM
+Unsubscribing from channel: {"channel":"GamesChannel","room":2}
+GamesChannel stopped streaming from games:Z2lkOi8vcXVpcGxhc2gtYmFja2VuZC9Sb29tLzI
+  [1m[36mRoom Load (1.2ms)[0m  [1m[34mSELECT  "rooms".* FROM "rooms" WHERE "rooms"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/channels/games_channel.rb:3
+GamesChannel is transmitting the subscription confirmation
+GamesChannel is streaming from games:Z2lkOi8vcXVpcGxhc2gtYmFja2VuZC9Sb29tLzU
+Started POST "/rooms" for ::1 at 2022-02-21 16:34:05 +1100
+Processing by RoomsController#create as JSON
+  Parameters: {"title"=>"ffff", "room"=>{"title"=>"ffff"}}
+  [1m[35m (1.6ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/rooms_controller.rb:16
+  [1m[36mRoom Create (0.5ms)[0m  [1m[32mINSERT INTO "rooms" ("created_at", "updated_at", "title") VALUES ($1, $2, $3) RETURNING "id"[0m  [["created_at", "2022-02-21 05:34:05.681916"], ["updated_at", "2022-02-21 05:34:05.681916"], ["title", "ffff"]]
+  ↳ app/controllers/rooms_controller.rb:16
+  [1m[35m (1.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/rooms_controller.rb:16
+  [1m[36mGame Load (0.4ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."room_id" = $1[0m  [["room_id", 6]]
+  ↳ app/controllers/rooms_controller.rb:17
+[ActionCable] Broadcasting to rooms_channel: {:room=>{:id=>6, :title=>"ffff", :games=>[]}}
+Completed 200 OK in 11ms (ActiveRecord: 4.3ms)
+
+
+RoomsChannel transmitting {"room"=>{"id"=>6, "title"=>"ffff", "games"=>[]}} (via streamed from rooms_channel)
+Unsubscribing from channel: {"channel":"RoomsChannel"}
+RoomsChannel stopped streaming from rooms_channel
+Unsubscribing from channel: {"channel":"GamesChannel","room":2}
+Unsubscribing from channel: {"channel":"GamesChannel","room":1}
+Could not execute command from ({"command"=>"unsubscribe", "identifier"=>"{\"channel\":\"GamesChannel\",\"room\":1}"}) [RuntimeError - Unable to find subscription with identifier: {"channel":"GamesChannel","room":1}]: /Users/cass/.rvm/gems/ruby-2.7.0/gems/actioncable-5.2.6.2/lib/action_cable/connection/subscriptions.rb:78:in `find' | /Users/cass/.rvm/gems/ruby-2.7.0/gems/actioncable-5.2.6.2/lib/action_cable/connection/subscriptions.rb:46:in `remove' | /Users/cass/.rvm/gems/ruby-2.7.0/gems/actioncable-5.2.6.2/lib/action_cable/connection/subscriptions.rb:18:in `execute_command' | /Users/cass/.rvm/gems/ruby-2.7.0/gems/actioncable-5.2.6.2/lib/action_cable/connection/base.rb:87:in `dispatch_websocket_message' | /Users/cass/.rvm/gems/ruby-2.7.0/gems/actioncable-5.2.6.2/lib/action_cable/server/worker.rb:60:in `block in invoke'
+RoomsChannel is transmitting the subscription confirmation
+RoomsChannel is streaming from rooms_channel
+Unsubscribing from channel: {"channel":"GamesChannel","room":3}
+Could not execute command from ({"command"=>"unsubscribe", "identifier"=>"{\"channel\":\"GamesChannel\",\"room\":3}"}) [RuntimeError - Unable to find subscription with identifier: {"channel":"GamesChannel","room":3}]: /Users/cass/.rvm/gems/ruby-2.7.0/gems/actioncable-5.2.6.2/lib/action_cable/connection/subscriptions.rb:78:in `find' | /Users/cass/.rvm/gems/ruby-2.7.0/gems/actioncable-5.2.6.2/lib/action_cable/connection/subscriptions.rb:46:in `remove' | /Users/cass/.rvm/gems/ruby-2.7.0/gems/actioncable-5.2.6.2/lib/action_cable/connection/subscriptions.rb:18:in `execute_command' | /Users/cass/.rvm/gems/ruby-2.7.0/gems/actioncable-5.2.6.2/lib/action_cable/connection/base.rb:87:in `dispatch_websocket_message' | /Users/cass/.rvm/gems/ruby-2.7.0/gems/actioncable-5.2.6.2/lib/action_cable/server/worker.rb:60:in `block in invoke'
+Unsubscribing from channel: {"channel":"GamesChannel","room":5}
+GamesChannel stopped streaming from games:Z2lkOi8vcXVpcGxhc2gtYmFja2VuZC9Sb29tLzU
+Could not execute command from ({"command"=>"unsubscribe", "identifier"=>"{\"channel\":\"GamesChannel\",\"room\":2}"}) [RuntimeError - Unable to find subscription with identifier: {"channel":"GamesChannel","room":2}]: /Users/cass/.rvm/gems/ruby-2.7.0/gems/actioncable-5.2.6.2/lib/action_cable/connection/subscriptions.rb:78:in `find' | /Users/cass/.rvm/gems/ruby-2.7.0/gems/actioncable-5.2.6.2/lib/action_cable/connection/subscriptions.rb:46:in `remove' | /Users/cass/.rvm/gems/ruby-2.7.0/gems/actioncable-5.2.6.2/lib/action_cable/connection/subscriptions.rb:18:in `execute_command' | /Users/cass/.rvm/gems/ruby-2.7.0/gems/actioncable-5.2.6.2/lib/action_cable/connection/base.rb:87:in `dispatch_websocket_message' | /Users/cass/.rvm/gems/ruby-2.7.0/gems/actioncable-5.2.6.2/lib/action_cable/server/worker.rb:60:in `block in invoke'
+  [1m[36mRoom Load (0.6ms)[0m  [1m[34mSELECT  "rooms".* FROM "rooms" WHERE "rooms"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mRoom Load (2.0ms)[0m  [1m[34mSELECT  "rooms".* FROM "rooms" WHERE "rooms"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/channels/games_channel.rb:3
+  ↳ app/channels/games_channel.rb:3
+  [1m[36mRoom Load (0.9ms)[0m  [1m[34mSELECT  "rooms".* FROM "rooms" WHERE "rooms"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+GamesChannel is transmitting the subscription confirmation
+  ↳ app/channels/games_channel.rb:3
+  [1m[36mRoom Load (1.7ms)[0m  [1m[34mSELECT  "rooms".* FROM "rooms" WHERE "rooms"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+GamesChannel is streaming from games:Z2lkOi8vcXVpcGxhc2gtYmFja2VuZC9Sb29tLzI
+  ↳ app/channels/games_channel.rb:3
+GamesChannel is transmitting the subscription confirmation
+GamesChannel is streaming from games:Z2lkOi8vcXVpcGxhc2gtYmFja2VuZC9Sb29tLzM
+GamesChannel is transmitting the subscription confirmation
+GamesChannel is streaming from games:Z2lkOi8vcXVpcGxhc2gtYmFja2VuZC9Sb29tLzE
+GamesChannel is transmitting the subscription confirmation
+GamesChannel is streaming from games:Z2lkOi8vcXVpcGxhc2gtYmFja2VuZC9Sb29tLzY
+  [1m[36mRoom Load (0.9ms)[0m  [1m[34mSELECT  "rooms".* FROM "rooms" WHERE "rooms"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/channels/games_channel.rb:3
+GamesChannel is transmitting the subscription confirmation
+GamesChannel is streaming from games:Z2lkOi8vcXVpcGxhc2gtYmFja2VuZC9Sb29tLzU
+Started POST "/rooms" for ::1 at 2022-02-21 16:35:00 +1100
+Processing by RoomsController#create as JSON
+  Parameters: {"title"=>"1111", "room"=>{"title"=>"1111"}}
+  [1m[35m (3.6ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/rooms_controller.rb:16
+  [1m[36mRoom Create (7.0ms)[0m  [1m[32mINSERT INTO "rooms" ("created_at", "updated_at", "title") VALUES ($1, $2, $3) RETURNING "id"[0m  [["created_at", "2022-02-21 05:35:00.665701"], ["updated_at", "2022-02-21 05:35:00.665701"], ["title", "1111"]]
+  ↳ app/controllers/rooms_controller.rb:16
+  [1m[35m (1.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/rooms_controller.rb:16
+  [1m[36mGame Load (0.6ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."room_id" = $1[0m  [["room_id", 7]]
+  ↳ app/controllers/rooms_controller.rb:17
+[ActionCable] Broadcasting to rooms_channel: {:room=>{:id=>7, :title=>"1111", :games=>[]}}
+Completed 200 OK in 20ms (ActiveRecord: 12.8ms)
+
+
+RoomsChannel transmitting {"room"=>{"id"=>7, "title"=>"1111", "games"=>[]}} (via streamed from rooms_channel)
+Unsubscribing from channel: {"channel":"RoomsChannel"}
+RoomsChannel stopped streaming from rooms_channel
+Unsubscribing from channel: {"channel":"GamesChannel","room":5}
+GamesChannel stopped streaming from games:Z2lkOi8vcXVpcGxhc2gtYmFja2VuZC9Sb29tLzU
+Unsubscribing from channel: {"channel":"GamesChannel","room":6}
+GamesChannel stopped streaming from games:Z2lkOi8vcXVpcGxhc2gtYmFja2VuZC9Sb29tLzY
+Unsubscribing from channel: {"channel":"GamesChannel","room":3}
+GamesChannel stopped streaming from games:Z2lkOi8vcXVpcGxhc2gtYmFja2VuZC9Sb29tLzM
+Unsubscribing from channel: {"channel":"GamesChannel","room":1}
+GamesChannel stopped streaming from games:Z2lkOi8vcXVpcGxhc2gtYmFja2VuZC9Sb29tLzE
+Unsubscribing from channel: {"channel":"GamesChannel","room":2}
+RoomsChannel is transmitting the subscription confirmation
+RoomsChannel is streaming from rooms_channel
+  [1m[36mRoom Load (2.2ms)[0m  [1m[34mSELECT  "rooms".* FROM "rooms" WHERE "rooms"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/channels/games_channel.rb:3
+  [1m[36mRoom Load (0.5ms)[0m  [1m[34mSELECT  "rooms".* FROM "rooms" WHERE "rooms"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/channels/games_channel.rb:3
+  [1m[36mRoom Load (2.8ms)[0m  [1m[34mSELECT  "rooms".* FROM "rooms" WHERE "rooms"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+GamesChannel stopped streaming from games:Z2lkOi8vcXVpcGxhc2gtYmFja2VuZC9Sb29tLzI
+GamesChannel is transmitting the subscription confirmation
+  ↳ app/channels/games_channel.rb:3
+GamesChannel is streaming from games:Z2lkOi8vcXVpcGxhc2gtYmFja2VuZC9Sb29tLzY
+GamesChannel is transmitting the subscription confirmation
+GamesChannel is streaming from games:Z2lkOi8vcXVpcGxhc2gtYmFja2VuZC9Sb29tLzU
+GamesChannel is transmitting the subscription confirmation
+GamesChannel is streaming from games:Z2lkOi8vcXVpcGxhc2gtYmFja2VuZC9Sb29tLzc
+Started POST "/rooms" for ::1 at 2022-02-21 16:35:02 +1100
+Processing by RoomsController#create as JSON
+  Parameters: {"title"=>"rrrr", "room"=>{"title"=>"rrrr"}}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/rooms_controller.rb:16
+  [1m[36mRoom Create (0.4ms)[0m  [1m[32mINSERT INTO "rooms" ("created_at", "updated_at", "title") VALUES ($1, $2, $3) RETURNING "id"[0m  [["created_at", "2022-02-21 05:35:02.641013"], ["updated_at", "2022-02-21 05:35:02.641013"], ["title", "rrrr"]]
+  ↳ app/controllers/rooms_controller.rb:16
+  [1m[35m (7.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/rooms_controller.rb:16
+  [1m[36mGame Load (0.9ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."room_id" = $1[0m  [["room_id", 8]]
+  ↳ app/controllers/rooms_controller.rb:17
+[ActionCable] Broadcasting to rooms_channel: {:room=>{:id=>8, :title=>"rrrr", :games=>[]}}
+Completed 200 OK in 14ms (ActiveRecord: 8.6ms)
+
+
+RoomsChannel transmitting {"room"=>{"id"=>8, "title"=>"rrrr", "games"=>[]}} (via streamed from rooms_channel)
+Unsubscribing from channel: {"channel":"RoomsChannel"}
+RoomsChannel stopped streaming from rooms_channel
+Unsubscribing from channel: {"channel":"GamesChannel","room":5}
+GamesChannel stopped streaming from games:Z2lkOi8vcXVpcGxhc2gtYmFja2VuZC9Sb29tLzU
+Unsubscribing from channel: {"channel":"GamesChannel","room":1}
+Could not execute command from ({"command"=>"unsubscribe", "identifier"=>"{\"channel\":\"GamesChannel\",\"room\":1}"}) [RuntimeError - Unable to find subscription with identifier: {"channel":"GamesChannel","room":1}]: /Users/cass/.rvm/gems/ruby-2.7.0/gems/actioncable-5.2.6.2/lib/action_cable/connection/subscriptions.rb:78:in `find' | /Users/cass/.rvm/gems/ruby-2.7.0/gems/actioncable-5.2.6.2/lib/action_cable/connection/subscriptions.rb:46:in `remove' | /Users/cass/.rvm/gems/ruby-2.7.0/gems/actioncable-5.2.6.2/lib/action_cable/connection/subscriptions.rb:18:in `execute_command' | /Users/cass/.rvm/gems/ruby-2.7.0/gems/actioncable-5.2.6.2/lib/action_cable/connection/base.rb:87:in `dispatch_websocket_message' | /Users/cass/.rvm/gems/ruby-2.7.0/gems/actioncable-5.2.6.2/lib/action_cable/server/worker.rb:60:in `block in invoke'
+Unsubscribing from channel: {"channel":"GamesChannel","room":7}
+GamesChannel stopped streaming from games:Z2lkOi8vcXVpcGxhc2gtYmFja2VuZC9Sb29tLzc
+Unsubscribing from channel: {"channel":"GamesChannel","room":2}
+Unsubscribing from channel: {"channel":"GamesChannel","room":6}
+GamesChannel stopped streaming from games:Z2lkOi8vcXVpcGxhc2gtYmFja2VuZC9Sb29tLzY
+RoomsChannel is transmitting the subscription confirmation
+RoomsChannel is streaming from rooms_channel
+Could not execute command from ({"command"=>"unsubscribe", "identifier"=>"{\"channel\":\"GamesChannel\",\"room\":2}"}) [RuntimeError - Unable to find subscription with identifier: {"channel":"GamesChannel","room":2}]: /Users/cass/.rvm/gems/ruby-2.7.0/gems/actioncable-5.2.6.2/lib/action_cable/connection/subscriptions.rb:78:in `find' | /Users/cass/.rvm/gems/ruby-2.7.0/gems/actioncable-5.2.6.2/lib/action_cable/connection/subscriptions.rb:46:in `remove' | /Users/cass/.rvm/gems/ruby-2.7.0/gems/actioncable-5.2.6.2/lib/action_cable/connection/subscriptions.rb:18:in `execute_command' | /Users/cass/.rvm/gems/ruby-2.7.0/gems/actioncable-5.2.6.2/lib/action_cable/connection/base.rb:87:in `dispatch_websocket_message' | /Users/cass/.rvm/gems/ruby-2.7.0/gems/actioncable-5.2.6.2/lib/action_cable/server/worker.rb:60:in `block in invoke'
+Unsubscribing from channel: {"channel":"GamesChannel","room":3}
+  [1m[36mRoom Load (0.4ms)[0m  [1m[34mSELECT  "rooms".* FROM "rooms" WHERE "rooms"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/channels/games_channel.rb:3
+  [1m[36mRoom Load (1.0ms)[0m  [1m[34mSELECT  "rooms".* FROM "rooms" WHERE "rooms"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  [1m[36mRoom Load (1.9ms)[0m  [1m[34mSELECT  "rooms".* FROM "rooms" WHERE "rooms"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/channels/games_channel.rb:3
+  [1m[36mRoom Load (6.7ms)[0m  [1m[34mSELECT  "rooms".* FROM "rooms" WHERE "rooms"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+GamesChannel is transmitting the subscription confirmation
+GamesChannel is streaming from games:Z2lkOi8vcXVpcGxhc2gtYmFja2VuZC9Sb29tLzI
+  ↳ app/channels/games_channel.rb:3
+  [1m[36mRoom Load (12.6ms)[0m  [1m[34mSELECT  "rooms".* FROM "rooms" WHERE "rooms"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/channels/games_channel.rb:3
+  [1m[36mRoom Load (0.9ms)[0m  [1m[34mSELECT  "rooms".* FROM "rooms" WHERE "rooms"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/channels/games_channel.rb:3
+  ↳ app/channels/games_channel.rb:3
+GamesChannel is transmitting the subscription confirmation
+  [1m[36mRoom Load (1.5ms)[0m  [1m[34mSELECT  "rooms".* FROM "rooms" WHERE "rooms"."id" = $1 LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/channels/games_channel.rb:3
+GamesChannel is streaming from games:Z2lkOi8vcXVpcGxhc2gtYmFja2VuZC9Sb29tLzM
+GamesChannel is transmitting the subscription confirmation
+GamesChannel is streaming from games:Z2lkOi8vcXVpcGxhc2gtYmFja2VuZC9Sb29tLzg
+GamesChannel is transmitting the subscription confirmation
+GamesChannel is streaming from games:Z2lkOi8vcXVpcGxhc2gtYmFja2VuZC9Sb29tLzE
+GamesChannel is transmitting the subscription confirmation
+GamesChannel is streaming from games:Z2lkOi8vcXVpcGxhc2gtYmFja2VuZC9Sb29tLzc
+GamesChannel is transmitting the subscription confirmation
+GamesChannel is streaming from games:Z2lkOi8vcXVpcGxhc2gtYmFja2VuZC9Sb29tLzY
+GamesChannel is transmitting the subscription confirmation
+GamesChannel is streaming from games:Z2lkOi8vcXVpcGxhc2gtYmFja2VuZC9Sb29tLzU
+Started POST "/rooms" for ::1 at 2022-02-21 16:36:30 +1100
+Processing by RoomsController#create as JSON
+  Parameters: {"title"=>"ffff", "room"=>{"title"=>"ffff"}}
+  [1m[35m (6.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/rooms_controller.rb:16
+  [1m[36mRoom Create (0.7ms)[0m  [1m[32mINSERT INTO "rooms" ("created_at", "updated_at", "title") VALUES ($1, $2, $3) RETURNING "id"[0m  [["created_at", "2022-02-21 05:36:30.101062"], ["updated_at", "2022-02-21 05:36:30.101062"], ["title", "ffff"]]
+  ↳ app/controllers/rooms_controller.rb:16
+  [1m[35m (8.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/rooms_controller.rb:16
+  [1m[36mGame Load (0.7ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."room_id" = $1[0m  [["room_id", 9]]
+  ↳ app/controllers/rooms_controller.rb:17
+[ActionCable] Broadcasting to rooms_channel: {:room=>{:id=>9, :title=>"ffff", :games=>[]}}
+Completed 200 OK in 26ms (ActiveRecord: 15.9ms)
+
+
+RoomsChannel transmitting {"room"=>{"id"=>9, "title"=>"ffff", "games"=>[]}} (via streamed from rooms_channel)
+Unsubscribing from channel: {"channel":"RoomsChannel"}
+RoomsChannel stopped streaming from rooms_channel
+Unsubscribing from channel: {"channel":"GamesChannel","room":1}
+GamesChannel stopped streaming from games:Z2lkOi8vcXVpcGxhc2gtYmFja2VuZC9Sb29tLzE
+Unsubscribing from channel: {"channel":"GamesChannel","room":5}
+GamesChannel stopped streaming from games:Z2lkOi8vcXVpcGxhc2gtYmFja2VuZC9Sb29tLzU
+Unsubscribing from channel: {"channel":"GamesChannel","room":6}
+GamesChannel stopped streaming from games:Z2lkOi8vcXVpcGxhc2gtYmFja2VuZC9Sb29tLzY
+Unsubscribing from channel: {"channel":"GamesChannel","room":7}
+GamesChannel stopped streaming from games:Z2lkOi8vcXVpcGxhc2gtYmFja2VuZC9Sb29tLzc
+Unsubscribing from channel: {"channel":"GamesChannel","room":8}
+GamesChannel stopped streaming from games:Z2lkOi8vcXVpcGxhc2gtYmFja2VuZC9Sb29tLzg
+Unsubscribing from channel: {"channel":"GamesChannel","room":3}
+Could not execute command from ({"command"=>"unsubscribe", "identifier"=>"{\"channel\":\"GamesChannel\",\"room\":3}"}) [RuntimeError - Unable to find subscription with identifier: {"channel":"GamesChannel","room":3}]: /Users/cass/.rvm/gems/ruby-2.7.0/gems/actioncable-5.2.6.2/lib/action_cable/connection/subscriptions.rb:78:in `find' | /Users/cass/.rvm/gems/ruby-2.7.0/gems/actioncable-5.2.6.2/lib/action_cable/connection/subscriptions.rb:46:in `remove' | /Users/cass/.rvm/gems/ruby-2.7.0/gems/actioncable-5.2.6.2/lib/action_cable/connection/subscriptions.rb:18:in `execute_command' | /Users/cass/.rvm/gems/ruby-2.7.0/gems/actioncable-5.2.6.2/lib/action_cable/connection/base.rb:87:in `dispatch_websocket_message' | /Users/cass/.rvm/gems/ruby-2.7.0/gems/actioncable-5.2.6.2/lib/action_cable/server/worker.rb:60:in `block in invoke'
+Unsubscribing from channel: {"channel":"GamesChannel","room":2}
+GamesChannel stopped streaming from games:Z2lkOi8vcXVpcGxhc2gtYmFja2VuZC9Sb29tLzI
+RoomsChannel is transmitting the subscription confirmation
+RoomsChannel is streaming from rooms_channel
+  [1m[36mRoom Load (4.1ms)[0m  [1m[34mSELECT  "rooms".* FROM "rooms" WHERE "rooms"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/channels/games_channel.rb:3
+  [1m[36mRoom Load (2.8ms)[0m  [1m[34mSELECT  "rooms".* FROM "rooms" WHERE "rooms"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/channels/games_channel.rb:3
+GamesChannel is transmitting the subscription confirmation
+  [1m[36mRoom Load (13.0ms)[0m  [1m[34mSELECT  "rooms".* FROM "rooms" WHERE "rooms"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  [1m[36mRoom Load (0.6ms)[0m  [1m[34mSELECT  "rooms".* FROM "rooms" WHERE "rooms"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  [1m[36mRoom Load (1.8ms)[0m  [1m[34mSELECT  "rooms".* FROM "rooms" WHERE "rooms"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/channels/games_channel.rb:3
+  [1m[36mRoom Load (1.7ms)[0m  [1m[34mSELECT  "rooms".* FROM "rooms" WHERE "rooms"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/channels/games_channel.rb:3
+GamesChannel is streaming from games:Z2lkOi8vcXVpcGxhc2gtYmFja2VuZC9Sb29tLzI
+  ↳ app/channels/games_channel.rb:3
+  ↳ app/channels/games_channel.rb:3
+  [1m[36mRoom Load (0.8ms)[0m  [1m[34mSELECT  "rooms".* FROM "rooms" WHERE "rooms"."id" = $1 LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+GamesChannel is transmitting the subscription confirmation
+  ↳ app/channels/games_channel.rb:3
+  [1m[36mRoom Load (2.2ms)[0m  [1m[34mSELECT  "rooms".* FROM "rooms" WHERE "rooms"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+GamesChannel is streaming from games:Z2lkOi8vcXVpcGxhc2gtYmFja2VuZC9Sb29tLzM
+GamesChannel is transmitting the subscription confirmation
+  ↳ app/channels/games_channel.rb:3
+GamesChannel is streaming from games:Z2lkOi8vcXVpcGxhc2gtYmFja2VuZC9Sb29tLzg
+GamesChannel is transmitting the subscription confirmation
+GamesChannel is streaming from games:Z2lkOi8vcXVpcGxhc2gtYmFja2VuZC9Sb29tLzU
+GamesChannel is transmitting the subscription confirmation
+GamesChannel is streaming from games:Z2lkOi8vcXVpcGxhc2gtYmFja2VuZC9Sb29tLzc
+GamesChannel is transmitting the subscription confirmation
+GamesChannel is streaming from games:Z2lkOi8vcXVpcGxhc2gtYmFja2VuZC9Sb29tLzE
+GamesChannel is transmitting the subscription confirmation
+GamesChannel is streaming from games:Z2lkOi8vcXVpcGxhc2gtYmFja2VuZC9Sb29tLzY
+GamesChannel is transmitting the subscription confirmation
+GamesChannel is streaming from games:Z2lkOi8vcXVpcGxhc2gtYmFja2VuZC9Sb29tLzk
+Started POST "/rooms" for ::1 at 2022-02-21 16:36:31 +1100
+Processing by RoomsController#create as JSON
+  Parameters: {"title"=>"eeee", "room"=>{"title"=>"eeee"}}
+  [1m[35m (6.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/rooms_controller.rb:16
+  [1m[36mRoom Create (1.0ms)[0m  [1m[32mINSERT INTO "rooms" ("created_at", "updated_at", "title") VALUES ($1, $2, $3) RETURNING "id"[0m  [["created_at", "2022-02-21 05:36:31.917823"], ["updated_at", "2022-02-21 05:36:31.917823"], ["title", "eeee"]]
+  ↳ app/controllers/rooms_controller.rb:16
+  [1m[35m (1.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/rooms_controller.rb:16
+  [1m[36mGame Load (0.8ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."room_id" = $1[0m  [["room_id", 10]]
+  ↳ app/controllers/rooms_controller.rb:17
+[ActionCable] Broadcasting to rooms_channel: {:room=>{:id=>10, :title=>"eeee", :games=>[]}}
+Completed 200 OK in 15ms (ActiveRecord: 9.6ms)
+
+
+RoomsChannel transmitting {"room"=>{"id"=>10, "title"=>"eeee", "games"=>[]}} (via streamed from rooms_channel)
+Unsubscribing from channel: {"channel":"GamesChannel","room":2}
+GamesChannel stopped streaming from games:Z2lkOi8vcXVpcGxhc2gtYmFja2VuZC9Sb29tLzI
+Unsubscribing from channel: {"channel":"RoomsChannel"}
+RoomsChannel stopped streaming from rooms_channel
+Unsubscribing from channel: {"channel":"GamesChannel","room":6}
+GamesChannel stopped streaming from games:Z2lkOi8vcXVpcGxhc2gtYmFja2VuZC9Sb29tLzY
+Unsubscribing from channel: {"channel":"GamesChannel","room":7}
+GamesChannel stopped streaming from games:Z2lkOi8vcXVpcGxhc2gtYmFja2VuZC9Sb29tLzc
+Unsubscribing from channel: {"channel":"GamesChannel","room":8}
+GamesChannel stopped streaming from games:Z2lkOi8vcXVpcGxhc2gtYmFja2VuZC9Sb29tLzg
+Unsubscribing from channel: {"channel":"GamesChannel","room":9}
+GamesChannel stopped streaming from games:Z2lkOi8vcXVpcGxhc2gtYmFja2VuZC9Sb29tLzk
+RoomsChannel is transmitting the subscription confirmation
+RoomsChannel is streaming from rooms_channel
+Unsubscribing from channel: {"channel":"GamesChannel","room":1}
+GamesChannel stopped streaming from games:Z2lkOi8vcXVpcGxhc2gtYmFja2VuZC9Sb29tLzE
+Unsubscribing from channel: {"channel":"GamesChannel","room":3}
+GamesChannel stopped streaming from games:Z2lkOi8vcXVpcGxhc2gtYmFja2VuZC9Sb29tLzM
+Unsubscribing from channel: {"channel":"GamesChannel","room":5}
+GamesChannel stopped streaming from games:Z2lkOi8vcXVpcGxhc2gtYmFja2VuZC9Sb29tLzU
+  [1m[36mRoom Load (8.6ms)[0m  [1m[34mSELECT  "rooms".* FROM "rooms" WHERE "rooms"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/channels/games_channel.rb:3
+  [1m[36mRoom Load (12.1ms)[0m  [1m[34mSELECT  "rooms".* FROM "rooms" WHERE "rooms"."id" = $1 LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/channels/games_channel.rb:3
+  [1m[36mRoom Load (3.9ms)[0m  [1m[34mSELECT  "rooms".* FROM "rooms" WHERE "rooms"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/channels/games_channel.rb:3
+GamesChannel is transmitting the subscription confirmation
+  [1m[36mRoom Load (1.5ms)[0m  [1m[34mSELECT  "rooms".* FROM "rooms" WHERE "rooms"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/channels/games_channel.rb:3
+GamesChannel is streaming from games:Z2lkOi8vcXVpcGxhc2gtYmFja2VuZC9Sb29tLzI
+  [1m[36mRoom Load (1.3ms)[0m  [1m[34mSELECT  "rooms".* FROM "rooms" WHERE "rooms"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/channels/games_channel.rb:3
+  [1m[36mRoom Load (12.5ms)[0m  [1m[34mSELECT  "rooms".* FROM "rooms" WHERE "rooms"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+GamesChannel is transmitting the subscription confirmation
+  ↳ app/channels/games_channel.rb:3
+GamesChannel is streaming from games:Z2lkOi8vcXVpcGxhc2gtYmFja2VuZC9Sb29tLzg
+GamesChannel is transmitting the subscription confirmation
+GamesChannel is streaming from games:Z2lkOi8vcXVpcGxhc2gtYmFja2VuZC9Sb29tLzY
+GamesChannel is transmitting the subscription confirmation
+GamesChannel is streaming from games:Z2lkOi8vcXVpcGxhc2gtYmFja2VuZC9Sb29tLzEw
+GamesChannel is transmitting the subscription confirmation
+GamesChannel is streaming from games:Z2lkOi8vcXVpcGxhc2gtYmFja2VuZC9Sb29tLzk
+GamesChannel is transmitting the subscription confirmation
+GamesChannel is streaming from games:Z2lkOi8vcXVpcGxhc2gtYmFja2VuZC9Sb29tLzc
+Started POST "/rooms" for ::1 at 2022-02-21 16:36:33 +1100
+Processing by RoomsController#create as JSON
+  Parameters: {"title"=>"rrrr", "room"=>{"title"=>"rrrr"}}
+  [1m[35m (2.8ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/rooms_controller.rb:16
+  [1m[36mRoom Create (1.3ms)[0m  [1m[32mINSERT INTO "rooms" ("created_at", "updated_at", "title") VALUES ($1, $2, $3) RETURNING "id"[0m  [["created_at", "2022-02-21 05:36:33.758630"], ["updated_at", "2022-02-21 05:36:33.758630"], ["title", "rrrr"]]
+  ↳ app/controllers/rooms_controller.rb:16
+  [1m[35m (2.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/rooms_controller.rb:16
+  [1m[36mGame Load (0.5ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."room_id" = $1[0m  [["room_id", 11]]
+  ↳ app/controllers/rooms_controller.rb:17
+[ActionCable] Broadcasting to rooms_channel: {:room=>{:id=>11, :title=>"rrrr", :games=>[]}}
+Completed 200 OK in 14ms (ActiveRecord: 6.6ms)
+
+
+RoomsChannel transmitting {"room"=>{"id"=>11, "title"=>"rrrr", "games"=>[]}} (via streamed from rooms_channel)
+Unsubscribing from channel: {"channel":"RoomsChannel"}
+RoomsChannel stopped streaming from rooms_channel
+Unsubscribing from channel: {"channel":"GamesChannel","room":1}
+Could not execute command from ({"command"=>"unsubscribe", "identifier"=>"{\"channel\":\"GamesChannel\",\"room\":1}"}) [RuntimeError - Unable to find subscription with identifier: {"channel":"GamesChannel","room":1}]: /Users/cass/.rvm/gems/ruby-2.7.0/gems/actioncable-5.2.6.2/lib/action_cable/connection/subscriptions.rb:78:in `find' | /Users/cass/.rvm/gems/ruby-2.7.0/gems/actioncable-5.2.6.2/lib/action_cable/connection/subscriptions.rb:46:in `remove' | /Users/cass/.rvm/gems/ruby-2.7.0/gems/actioncable-5.2.6.2/lib/action_cable/connection/subscriptions.rb:18:in `execute_command' | /Users/cass/.rvm/gems/ruby-2.7.0/gems/actioncable-5.2.6.2/lib/action_cable/connection/base.rb:87:in `dispatch_websocket_message' | /Users/cass/.rvm/gems/ruby-2.7.0/gems/actioncable-5.2.6.2/lib/action_cable/server/worker.rb:60:in `block in invoke'
+Unsubscribing from channel: {"channel":"GamesChannel","room":2}
+GamesChannel stopped streaming from games:Z2lkOi8vcXVpcGxhc2gtYmFja2VuZC9Sb29tLzI
+Unsubscribing from channel: {"channel":"GamesChannel","room":7}
+GamesChannel stopped streaming from games:Z2lkOi8vcXVpcGxhc2gtYmFja2VuZC9Sb29tLzc
+Unsubscribing from channel: {"channel":"GamesChannel","room":8}
+GamesChannel stopped streaming from games:Z2lkOi8vcXVpcGxhc2gtYmFja2VuZC9Sb29tLzg
+Unsubscribing from channel: {"channel":"GamesChannel","room":9}
+GamesChannel stopped streaming from games:Z2lkOi8vcXVpcGxhc2gtYmFja2VuZC9Sb29tLzk
+Unsubscribing from channel: {"channel":"GamesChannel","room":10}
+GamesChannel stopped streaming from games:Z2lkOi8vcXVpcGxhc2gtYmFja2VuZC9Sb29tLzEw
+Unsubscribing from channel: {"channel":"GamesChannel","room":6}
+GamesChannel stopped streaming from games:Z2lkOi8vcXVpcGxhc2gtYmFja2VuZC9Sb29tLzY
+Unsubscribing from channel: {"channel":"GamesChannel","room":5}
+Could not execute command from ({"command"=>"unsubscribe", "identifier"=>"{\"channel\":\"GamesChannel\",\"room\":5}"}) [RuntimeError - Unable to find subscription with identifier: {"channel":"GamesChannel","room":5}]: /Users/cass/.rvm/gems/ruby-2.7.0/gems/actioncable-5.2.6.2/lib/action_cable/connection/subscriptions.rb:78:in `find' | /Users/cass/.rvm/gems/ruby-2.7.0/gems/actioncable-5.2.6.2/lib/action_cable/connection/subscriptions.rb:46:in `remove' | /Users/cass/.rvm/gems/ruby-2.7.0/gems/actioncable-5.2.6.2/lib/action_cable/connection/subscriptions.rb:18:in `execute_command' | /Users/cass/.rvm/gems/ruby-2.7.0/gems/actioncable-5.2.6.2/lib/action_cable/connection/base.rb:87:in `dispatch_websocket_message' | /Users/cass/.rvm/gems/ruby-2.7.0/gems/actioncable-5.2.6.2/lib/action_cable/server/worker.rb:60:in `block in invoke'
+Unsubscribing from channel: {"channel":"GamesChannel","room":3}
+RoomsChannel is transmitting the subscription confirmation
+RoomsChannel is streaming from rooms_channel
+  [1m[36mRoom Load (2.1ms)[0m  [1m[34mSELECT  "rooms".* FROM "rooms" WHERE "rooms"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mRoom Load (1.1ms)[0m  [1m[34mSELECT  "rooms".* FROM "rooms" WHERE "rooms"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mRoom Load (0.5ms)[0m  [1m[34mSELECT  "rooms".* FROM "rooms" WHERE "rooms"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/channels/games_channel.rb:3
+  [1m[36mRoom Load (6.4ms)[0m  [1m[34mSELECT  "rooms".* FROM "rooms" WHERE "rooms"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/channels/games_channel.rb:3
+  ↳ app/channels/games_channel.rb:3
+GamesChannel is transmitting the subscription confirmation
+GamesChannel is streaming from games:Z2lkOi8vcXVpcGxhc2gtYmFja2VuZC9Sb29tLzI
+GamesChannel is transmitting the subscription confirmation
+GamesChannel is streaming from games:Z2lkOi8vcXVpcGxhc2gtYmFja2VuZC9Sb29tLzU
+  [1m[36mRoom Load (2.7ms)[0m  [1m[34mSELECT  "rooms".* FROM "rooms" WHERE "rooms"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/channels/games_channel.rb:3
+  ↳ app/channels/games_channel.rb:3
+GamesChannel is transmitting the subscription confirmation
+GamesChannel is streaming from games:Z2lkOi8vcXVpcGxhc2gtYmFja2VuZC9Sb29tLzM
+  [1m[36mRoom Load (2.2ms)[0m  [1m[34mSELECT  "rooms".* FROM "rooms" WHERE "rooms"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/channels/games_channel.rb:3
+  [1m[36mRoom Load (3.8ms)[0m  [1m[34mSELECT  "rooms".* FROM "rooms" WHERE "rooms"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  [1m[36mRoom Load (0.6ms)[0m  [1m[34mSELECT  "rooms".* FROM "rooms" WHERE "rooms"."id" = $1 LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+GamesChannel is transmitting the subscription confirmation
+  ↳ app/channels/games_channel.rb:3
+  ↳ app/channels/games_channel.rb:3
+GamesChannel is streaming from games:Z2lkOi8vcXVpcGxhc2gtYmFja2VuZC9Sb29tLzE
+  [1m[36mRoom Load (3.2ms)[0m  [1m[34mSELECT  "rooms".* FROM "rooms" WHERE "rooms"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/channels/games_channel.rb:3
+  [1m[36mRoom Load (6.6ms)[0m  [1m[34mSELECT  "rooms".* FROM "rooms" WHERE "rooms"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+GamesChannel is transmitting the subscription confirmation
+  ↳ app/channels/games_channel.rb:3
+GamesChannel is streaming from games:Z2lkOi8vcXVpcGxhc2gtYmFja2VuZC9Sb29tLzk
+GamesChannel is transmitting the subscription confirmation
+GamesChannel is streaming from games:Z2lkOi8vcXVpcGxhc2gtYmFja2VuZC9Sb29tLzc
+GamesChannel is transmitting the subscription confirmation
+GamesChannel is streaming from games:Z2lkOi8vcXVpcGxhc2gtYmFja2VuZC9Sb29tLzEw
+GamesChannel is transmitting the subscription confirmation
+GamesChannel is streaming from games:Z2lkOi8vcXVpcGxhc2gtYmFja2VuZC9Sb29tLzY
+GamesChannel is transmitting the subscription confirmation
+GamesChannel is streaming from games:Z2lkOi8vcXVpcGxhc2gtYmFja2VuZC9Sb29tLzg
+GamesChannel is transmitting the subscription confirmation
+GamesChannel is streaming from games:Z2lkOi8vcXVpcGxhc2gtYmFja2VuZC9Sb29tLzEx
+Started POST "/rooms" for ::1 at 2022-02-21 16:36:42 +1100
+Processing by RoomsController#create as JSON
+  Parameters: {"title"=>"rrrrr", "room"=>{"title"=>"rrrrr"}}
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/rooms_controller.rb:16
+  [1m[36mRoom Create (3.5ms)[0m  [1m[32mINSERT INTO "rooms" ("created_at", "updated_at", "title") VALUES ($1, $2, $3) RETURNING "id"[0m  [["created_at", "2022-02-21 05:36:42.860576"], ["updated_at", "2022-02-21 05:36:42.860576"], ["title", "rrrrr"]]
+  ↳ app/controllers/rooms_controller.rb:16
+  [1m[35m (1.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/rooms_controller.rb:16
+  [1m[36mGame Load (2.0ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."room_id" = $1[0m  [["room_id", 12]]
+  ↳ app/controllers/rooms_controller.rb:17
+[ActionCable] Broadcasting to rooms_channel: {:room=>{:id=>12, :title=>"rrrrr", :games=>[]}}
+Completed 200 OK in 20ms (ActiveRecord: 6.9ms)
+
+
+RoomsChannel transmitting {"room"=>{"id"=>12, "title"=>"rrrrr", "games"=>[]}} (via streamed from rooms_channel)
+Unsubscribing from channel: {"channel":"RoomsChannel"}
+RoomsChannel stopped streaming from rooms_channel
+Unsubscribing from channel: {"channel":"GamesChannel","room":5}
+GamesChannel stopped streaming from games:Z2lkOi8vcXVpcGxhc2gtYmFja2VuZC9Sb29tLzU
+Unsubscribing from channel: {"channel":"GamesChannel","room":6}
+GamesChannel stopped streaming from games:Z2lkOi8vcXVpcGxhc2gtYmFja2VuZC9Sb29tLzY
+Unsubscribing from channel: {"channel":"GamesChannel","room":1}
+GamesChannel stopped streaming from games:Z2lkOi8vcXVpcGxhc2gtYmFja2VuZC9Sb29tLzE
+Unsubscribing from channel: {"channel":"GamesChannel","room":7}
+GamesChannel stopped streaming from games:Z2lkOi8vcXVpcGxhc2gtYmFja2VuZC9Sb29tLzc
+Unsubscribing from channel: {"channel":"GamesChannel","room":8}
+GamesChannel stopped streaming from games:Z2lkOi8vcXVpcGxhc2gtYmFja2VuZC9Sb29tLzg
+Unsubscribing from channel: {"channel":"GamesChannel","room":9}
+GamesChannel stopped streaming from games:Z2lkOi8vcXVpcGxhc2gtYmFja2VuZC9Sb29tLzk
+Unsubscribing from channel: {"channel":"GamesChannel","room":10}
+GamesChannel stopped streaming from games:Z2lkOi8vcXVpcGxhc2gtYmFja2VuZC9Sb29tLzEw
+Unsubscribing from channel: {"channel":"GamesChannel","room":2}
+GamesChannel stopped streaming from games:Z2lkOi8vcXVpcGxhc2gtYmFja2VuZC9Sb29tLzI
+Unsubscribing from channel: {"channel":"GamesChannel","room":3}
+Could not execute command from ({"command"=>"unsubscribe", "identifier"=>"{\"channel\":\"GamesChannel\",\"room\":3}"}) [RuntimeError - Unable to find subscription with identifier: {"channel":"GamesChannel","room":3}]: /Users/cass/.rvm/gems/ruby-2.7.0/gems/actioncable-5.2.6.2/lib/action_cable/connection/subscriptions.rb:78:in `find' | /Users/cass/.rvm/gems/ruby-2.7.0/gems/actioncable-5.2.6.2/lib/action_cable/connection/subscriptions.rb:46:in `remove' | /Users/cass/.rvm/gems/ruby-2.7.0/gems/actioncable-5.2.6.2/lib/action_cable/connection/subscriptions.rb:18:in `execute_command' | /Users/cass/.rvm/gems/ruby-2.7.0/gems/actioncable-5.2.6.2/lib/action_cable/connection/base.rb:87:in `dispatch_websocket_message' | /Users/cass/.rvm/gems/ruby-2.7.0/gems/actioncable-5.2.6.2/lib/action_cable/server/worker.rb:60:in `block in invoke'
+Unsubscribing from channel: {"channel":"GamesChannel","room":11}
+GamesChannel stopped streaming from games:Z2lkOi8vcXVpcGxhc2gtYmFja2VuZC9Sb29tLzEx
+RoomsChannel is transmitting the subscription confirmation
+RoomsChannel is streaming from rooms_channel
+  [1m[36mRoom Load (0.5ms)[0m  [1m[34mSELECT  "rooms".* FROM "rooms" WHERE "rooms"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  [1m[36mRoom Load (1.2ms)[0m  [1m[34mSELECT  "rooms".* FROM "rooms" WHERE "rooms"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mRoom Load (3.8ms)[0m  [1m[34mSELECT  "rooms".* FROM "rooms" WHERE "rooms"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/channels/games_channel.rb:3
+  ↳ app/channels/games_channel.rb:3
+  ↳ app/channels/games_channel.rb:3
+  [1m[36mRoom Load (1.1ms)[0m  [1m[34mSELECT  "rooms".* FROM "rooms" WHERE "rooms"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/channels/games_channel.rb:3
+  [1m[36mRoom Load (1.7ms)[0m  [1m[34mSELECT  "rooms".* FROM "rooms" WHERE "rooms"."id" = $1 LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+  [1m[36mRoom Load (2.1ms)[0m  [1m[34mSELECT  "rooms".* FROM "rooms" WHERE "rooms"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  [1m[36mRoom Load (0.9ms)[0m  [1m[34mSELECT  "rooms".* FROM "rooms" WHERE "rooms"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[36mRoom Load (1.6ms)[0m  [1m[34mSELECT  "rooms".* FROM "rooms" WHERE "rooms"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/channels/games_channel.rb:3
+GamesChannel is transmitting the subscription confirmation
+GamesChannel is streaming from games:Z2lkOi8vcXVpcGxhc2gtYmFja2VuZC9Sb29tLzE
+  ↳ app/channels/games_channel.rb:3
+  ↳ app/channels/games_channel.rb:3
+  [1m[36mRoom Load (0.8ms)[0m  [1m[34mSELECT  "rooms".* FROM "rooms" WHERE "rooms"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+GamesChannel is transmitting the subscription confirmation
+  ↳ app/channels/games_channel.rb:3
+  ↳ app/channels/games_channel.rb:3
+  [1m[36mRoom Load (0.9ms)[0m  [1m[34mSELECT  "rooms".* FROM "rooms" WHERE "rooms"."id" = $1 LIMIT $2[0m  [["id", 12], ["LIMIT", 1]]
+GamesChannel is streaming from games:Z2lkOi8vcXVpcGxhc2gtYmFja2VuZC9Sb29tLzI
+  [1m[36mRoom Load (1.0ms)[0m  [1m[34mSELECT  "rooms".* FROM "rooms" WHERE "rooms"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+GamesChannel is transmitting the subscription confirmation
+  ↳ app/channels/games_channel.rb:3
+GamesChannel is streaming from games:Z2lkOi8vcXVpcGxhc2gtYmFja2VuZC9Sb29tLzU
+  ↳ app/channels/games_channel.rb:3
+GamesChannel is transmitting the subscription confirmation
+GamesChannel is streaming from games:Z2lkOi8vcXVpcGxhc2gtYmFja2VuZC9Sb29tLzEx
+GamesChannel is transmitting the subscription confirmation
+GamesChannel is streaming from games:Z2lkOi8vcXVpcGxhc2gtYmFja2VuZC9Sb29tLzc
+GamesChannel is transmitting the subscription confirmation
+GamesChannel is streaming from games:Z2lkOi8vcXVpcGxhc2gtYmFja2VuZC9Sb29tLzg
+GamesChannel is transmitting the subscription confirmation
+GamesChannel is streaming from games:Z2lkOi8vcXVpcGxhc2gtYmFja2VuZC9Sb29tLzk
+GamesChannel is transmitting the subscription confirmation
+GamesChannel is streaming from games:Z2lkOi8vcXVpcGxhc2gtYmFja2VuZC9Sb29tLzEw
+GamesChannel is transmitting the subscription confirmation
+GamesChannel is streaming from games:Z2lkOi8vcXVpcGxhc2gtYmFja2VuZC9Sb29tLzY
+GamesChannel is transmitting the subscription confirmation
+GamesChannel is streaming from games:Z2lkOi8vcXVpcGxhc2gtYmFja2VuZC9Sb29tLzM
+GamesChannel is transmitting the subscription confirmation
+GamesChannel is streaming from games:Z2lkOi8vcXVpcGxhc2gtYmFja2VuZC9Sb29tLzEy
+Started POST "/rooms" for ::1 at 2022-02-21 16:36:50 +1100
+Processing by RoomsController#create as JSON
+  Parameters: {"title"=>"hello", "room"=>{"title"=>"hello"}}
+  [1m[35m (0.6ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/rooms_controller.rb:16
+  [1m[36mRoom Create (1.9ms)[0m  [1m[32mINSERT INTO "rooms" ("created_at", "updated_at", "title") VALUES ($1, $2, $3) RETURNING "id"[0m  [["created_at", "2022-02-21 05:36:50.499813"], ["updated_at", "2022-02-21 05:36:50.499813"], ["title", "hello"]]
+  ↳ app/controllers/rooms_controller.rb:16
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/rooms_controller.rb:16
+  [1m[36mGame Load (0.6ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."room_id" = $1[0m  [["room_id", 13]]
+  ↳ app/controllers/rooms_controller.rb:17
+[ActionCable] Broadcasting to rooms_channel: {:room=>{:id=>13, :title=>"hello", :games=>[]}}
+Completed 200 OK in 10ms (ActiveRecord: 3.8ms)
+
+
+RoomsChannel transmitting {"room"=>{"id"=>13, "title"=>"hello", "games"=>[]}} (via streamed from rooms_channel)
+Unsubscribing from channel: {"channel":"RoomsChannel"}
+RoomsChannel stopped streaming from rooms_channel
+Unsubscribing from channel: {"channel":"GamesChannel","room":3}
+GamesChannel stopped streaming from games:Z2lkOi8vcXVpcGxhc2gtYmFja2VuZC9Sb29tLzM
+Unsubscribing from channel: {"channel":"GamesChannel","room":6}
+GamesChannel stopped streaming from games:Z2lkOi8vcXVpcGxhc2gtYmFja2VuZC9Sb29tLzY
+Unsubscribing from channel: {"channel":"GamesChannel","room":7}
+GamesChannel stopped streaming from games:Z2lkOi8vcXVpcGxhc2gtYmFja2VuZC9Sb29tLzc
+Unsubscribing from channel: {"channel":"GamesChannel","room":8}
+GamesChannel stopped streaming from games:Z2lkOi8vcXVpcGxhc2gtYmFja2VuZC9Sb29tLzg
+Unsubscribing from channel: {"channel":"GamesChannel","room":9}
+GamesChannel stopped streaming from games:Z2lkOi8vcXVpcGxhc2gtYmFja2VuZC9Sb29tLzk
+Unsubscribing from channel: {"channel":"GamesChannel","room":10}
+GamesChannel stopped streaming from games:Z2lkOi8vcXVpcGxhc2gtYmFja2VuZC9Sb29tLzEw
+Unsubscribing from channel: {"channel":"GamesChannel","room":11}
+GamesChannel stopped streaming from games:Z2lkOi8vcXVpcGxhc2gtYmFja2VuZC9Sb29tLzEx
+Unsubscribing from channel: {"channel":"GamesChannel","room":12}
+GamesChannel stopped streaming from games:Z2lkOi8vcXVpcGxhc2gtYmFja2VuZC9Sb29tLzEy
+Unsubscribing from channel: {"channel":"GamesChannel","room":5}
+GamesChannel stopped streaming from games:Z2lkOi8vcXVpcGxhc2gtYmFja2VuZC9Sb29tLzU
+RoomsChannel is transmitting the subscription confirmation
+RoomsChannel is streaming from rooms_channel
+Unsubscribing from channel: {"channel":"GamesChannel","room":2}
+GamesChannel stopped streaming from games:Z2lkOi8vcXVpcGxhc2gtYmFja2VuZC9Sb29tLzI
+Unsubscribing from channel: {"channel":"GamesChannel","room":1}
+GamesChannel stopped streaming from games:Z2lkOi8vcXVpcGxhc2gtYmFja2VuZC9Sb29tLzE
+  [1m[36mRoom Load (1.6ms)[0m  [1m[34mSELECT  "rooms".* FROM "rooms" WHERE "rooms"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mRoom Load (2.4ms)[0m  [1m[34mSELECT  "rooms".* FROM "rooms" WHERE "rooms"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  [1m[36mRoom Load (1.6ms)[0m  [1m[34mSELECT  "rooms".* FROM "rooms" WHERE "rooms"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/channels/games_channel.rb:3
+  [1m[36mRoom Load (0.6ms)[0m  [1m[34mSELECT  "rooms".* FROM "rooms" WHERE "rooms"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/channels/games_channel.rb:3
+  ↳ app/channels/games_channel.rb:3
+  ↳ app/channels/games_channel.rb:3
+GamesChannel is transmitting the subscription confirmation
+  [1m[36mRoom Load (1.3ms)[0m  [1m[34mSELECT  "rooms".* FROM "rooms" WHERE "rooms"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  [1m[36mRoom Load (2.3ms)[0m  [1m[34mSELECT  "rooms".* FROM "rooms" WHERE "rooms"."id" = $1 LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+  [1m[36mRoom Load (1.8ms)[0m  [1m[34mSELECT  "rooms".* FROM "rooms" WHERE "rooms"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/channels/games_channel.rb:3
+GamesChannel is streaming from games:Z2lkOi8vcXVpcGxhc2gtYmFja2VuZC9Sb29tLzM
+  ↳ app/channels/games_channel.rb:3
+  [1m[36mRoom Load (2.8ms)[0m  [1m[34mSELECT  "rooms".* FROM "rooms" WHERE "rooms"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/channels/games_channel.rb:3
+  ↳ app/channels/games_channel.rb:3
+  [1m[36mRoom Load (2.1ms)[0m  [1m[34mSELECT  "rooms".* FROM "rooms" WHERE "rooms"."id" = $1 LIMIT $2[0m  [["id", 12], ["LIMIT", 1]]
+GamesChannel is transmitting the subscription confirmation
+  [1m[36mRoom Load (2.3ms)[0m  [1m[34mSELECT  "rooms".* FROM "rooms" WHERE "rooms"."id" = $1 LIMIT $2[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ app/channels/games_channel.rb:3
+GamesChannel is streaming from games:Z2lkOi8vcXVpcGxhc2gtYmFja2VuZC9Sb29tLzY
+  ↳ app/channels/games_channel.rb:3
+GamesChannel is transmitting the subscription confirmation
+GamesChannel is streaming from games:Z2lkOi8vcXVpcGxhc2gtYmFja2VuZC9Sb29tLzEy
+GamesChannel is transmitting the subscription confirmation
+GamesChannel is streaming from games:Z2lkOi8vcXVpcGxhc2gtYmFja2VuZC9Sb29tLzc
+GamesChannel is transmitting the subscription confirmation
+GamesChannel is streaming from games:Z2lkOi8vcXVpcGxhc2gtYmFja2VuZC9Sb29tLzU
+GamesChannel is transmitting the subscription confirmation
+GamesChannel is streaming from games:Z2lkOi8vcXVpcGxhc2gtYmFja2VuZC9Sb29tLzEw
+GamesChannel is transmitting the subscription confirmation
+GamesChannel is streaming from games:Z2lkOi8vcXVpcGxhc2gtYmFja2VuZC9Sb29tLzEx
+GamesChannel is transmitting the subscription confirmation
+GamesChannel is streaming from games:Z2lkOi8vcXVpcGxhc2gtYmFja2VuZC9Sb29tLzg
+GamesChannel is transmitting the subscription confirmation
+GamesChannel is streaming from games:Z2lkOi8vcXVpcGxhc2gtYmFja2VuZC9Sb29tLzEz
+GamesChannel is transmitting the subscription confirmation
+GamesChannel is streaming from games:Z2lkOi8vcXVpcGxhc2gtYmFja2VuZC9Sb29tLzk
+  [1m[36mGame Load (4.0ms)[0m  [1m[34mSELECT  "games".* FROM "games" ORDER BY "games"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mRoom Load (0.5ms)[0m  [1m[34mSELECT  "rooms".* FROM "rooms" ORDER BY "rooms"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+Started POST "/rooms" for ::1 at 2022-02-21 16:39:57 +1100
+Processing by RoomsController#create as JSON
+  Parameters: {"title"=>"goodbye", "room"=>{"title"=>"goodbye"}}
+  [1m[35m (7.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/rooms_controller.rb:16
+  [1m[36mRoom Create (1.4ms)[0m  [1m[32mINSERT INTO "rooms" ("created_at", "updated_at", "title") VALUES ($1, $2, $3) RETURNING "id"[0m  [["created_at", "2022-02-21 05:39:57.525280"], ["updated_at", "2022-02-21 05:39:57.525280"], ["title", "goodbye"]]
+  ↳ app/controllers/rooms_controller.rb:16
+  [1m[35m (1.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/rooms_controller.rb:16
+  [1m[36mGame Load (0.3ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."room_id" = $1[0m  [["room_id", 14]]
+  ↳ app/controllers/rooms_controller.rb:17
+[ActionCable] Broadcasting to rooms_channel: {:room=>{:id=>14, :title=>"goodbye", :games=>[]}}
+Completed 200 OK in 24ms (ActiveRecord: 10.5ms)
+
+
+RoomsChannel transmitting {"room"=>{"id"=>14, "title"=>"goodbye", "games"=>[]}} (via streamed from rooms_channel)
+Unsubscribing from channel: {"channel":"RoomsChannel"}
+Unsubscribing from channel: {"channel":"GamesChannel","room":1}
+Could not execute command from ({"command"=>"unsubscribe", "identifier"=>"{\"channel\":\"GamesChannel\",\"room\":1}"}) [RuntimeError - Unable to find subscription with identifier: {"channel":"GamesChannel","room":1}]: /Users/cass/.rvm/gems/ruby-2.7.0/gems/actioncable-5.2.6.2/lib/action_cable/connection/subscriptions.rb:78:in `find' | /Users/cass/.rvm/gems/ruby-2.7.0/gems/actioncable-5.2.6.2/lib/action_cable/connection/subscriptions.rb:46:in `remove' | /Users/cass/.rvm/gems/ruby-2.7.0/gems/actioncable-5.2.6.2/lib/action_cable/connection/subscriptions.rb:18:in `execute_command' | /Users/cass/.rvm/gems/ruby-2.7.0/gems/actioncable-5.2.6.2/lib/action_cable/connection/base.rb:87:in `dispatch_websocket_message' | /Users/cass/.rvm/gems/ruby-2.7.0/gems/actioncable-5.2.6.2/lib/action_cable/server/worker.rb:60:in `block in invoke'
+Unsubscribing from channel: {"channel":"GamesChannel","room":5}
+GamesChannel stopped streaming from games:Z2lkOi8vcXVpcGxhc2gtYmFja2VuZC9Sb29tLzU
+Unsubscribing from channel: {"channel":"GamesChannel","room":6}
+GamesChannel stopped streaming from games:Z2lkOi8vcXVpcGxhc2gtYmFja2VuZC9Sb29tLzY
+Unsubscribing from channel: {"channel":"GamesChannel","room":7}
+GamesChannel stopped streaming from games:Z2lkOi8vcXVpcGxhc2gtYmFja2VuZC9Sb29tLzc
+Unsubscribing from channel: {"channel":"GamesChannel","room":8}
+GamesChannel stopped streaming from games:Z2lkOi8vcXVpcGxhc2gtYmFja2VuZC9Sb29tLzg
+Unsubscribing from channel: {"channel":"GamesChannel","room":9}
+GamesChannel stopped streaming from games:Z2lkOi8vcXVpcGxhc2gtYmFja2VuZC9Sb29tLzk
+Unsubscribing from channel: {"channel":"GamesChannel","room":2}
+Could not execute command from ({"command"=>"unsubscribe", "identifier"=>"{\"channel\":\"GamesChannel\",\"room\":2}"}) [RuntimeError - Unable to find subscription with identifier: {"channel":"GamesChannel","room":2}]: /Users/cass/.rvm/gems/ruby-2.7.0/gems/actioncable-5.2.6.2/lib/action_cable/connection/subscriptions.rb:78:in `find' | /Users/cass/.rvm/gems/ruby-2.7.0/gems/actioncable-5.2.6.2/lib/action_cable/connection/subscriptions.rb:46:in `remove' | /Users/cass/.rvm/gems/ruby-2.7.0/gems/actioncable-5.2.6.2/lib/action_cable/connection/subscriptions.rb:18:in `execute_command' | /Users/cass/.rvm/gems/ruby-2.7.0/gems/actioncable-5.2.6.2/lib/action_cable/connection/base.rb:87:in `dispatch_websocket_message' | /Users/cass/.rvm/gems/ruby-2.7.0/gems/actioncable-5.2.6.2/lib/action_cable/server/worker.rb:60:in `block in invoke'
+RoomsChannel stopped streaming from rooms_channel
+Unsubscribing from channel: {"channel":"GamesChannel","room":3}
+GamesChannel stopped streaming from games:Z2lkOi8vcXVpcGxhc2gtYmFja2VuZC9Sb29tLzM
+Unsubscribing from channel: {"channel":"GamesChannel","room":10}
+GamesChannel stopped streaming from games:Z2lkOi8vcXVpcGxhc2gtYmFja2VuZC9Sb29tLzEw
+Unsubscribing from channel: {"channel":"GamesChannel","room":11}
+GamesChannel stopped streaming from games:Z2lkOi8vcXVpcGxhc2gtYmFja2VuZC9Sb29tLzEx
+Unsubscribing from channel: {"channel":"GamesChannel","room":12}
+GamesChannel stopped streaming from games:Z2lkOi8vcXVpcGxhc2gtYmFja2VuZC9Sb29tLzEy
+Unsubscribing from channel: {"channel":"GamesChannel","room":13}
+GamesChannel stopped streaming from games:Z2lkOi8vcXVpcGxhc2gtYmFja2VuZC9Sb29tLzEz
+RoomsChannel is transmitting the subscription confirmation
+RoomsChannel is streaming from rooms_channel
+  [1m[36mRoom Load (2.7ms)[0m  [1m[34mSELECT  "rooms".* FROM "rooms" WHERE "rooms"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/channels/games_channel.rb:3
+  [1m[36mRoom Load (3.6ms)[0m  [1m[34mSELECT  "rooms".* FROM "rooms" WHERE "rooms"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/channels/games_channel.rb:3
+  [1m[36mRoom Load (11.1ms)[0m  [1m[34mSELECT  "rooms".* FROM "rooms" WHERE "rooms"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/channels/games_channel.rb:3
+GamesChannel is transmitting the subscription confirmation
+GamesChannel is streaming from games:Z2lkOi8vcXVpcGxhc2gtYmFja2VuZC9Sb29tLzU
+  [1m[36mRoom Load (4.2ms)[0m  [1m[34mSELECT  "rooms".* FROM "rooms" WHERE "rooms"."id" = $1 LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/channels/games_channel.rb:3
+GamesChannel is transmitting the subscription confirmation
+GamesChannel is streaming from games:Z2lkOi8vcXVpcGxhc2gtYmFja2VuZC9Sb29tLzE
+  [1m[36mRoom Load (24.9ms)[0m  [1m[34mSELECT  "rooms".* FROM "rooms" WHERE "rooms"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mRoom Load (1.3ms)[0m  [1m[34mSELECT  "rooms".* FROM "rooms" WHERE "rooms"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  [1m[36mRoom Load (17.5ms)[0m  [1m[34mSELECT  "rooms".* FROM "rooms" WHERE "rooms"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+GamesChannel is transmitting the subscription confirmation
+GamesChannel is streaming from games:Z2lkOi8vcXVpcGxhc2gtYmFja2VuZC9Sb29tLzM
+  ↳ app/channels/games_channel.rb:3
+  ↳ app/channels/games_channel.rb:3
+  [1m[36mRoom Load (1.5ms)[0m  [1m[34mSELECT  "rooms".* FROM "rooms" WHERE "rooms"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/channels/games_channel.rb:3
+GamesChannel is transmitting the subscription confirmation
+  [1m[36mRoom Load (1.3ms)[0m  [1m[34mSELECT  "rooms".* FROM "rooms" WHERE "rooms"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/channels/games_channel.rb:3
+  [1m[36mRoom Load (1.1ms)[0m  [1m[34mSELECT  "rooms".* FROM "rooms" WHERE "rooms"."id" = $1 LIMIT $2[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ app/channels/games_channel.rb:3
+  [1m[36mRoom Load (1.6ms)[0m  [1m[34mSELECT  "rooms".* FROM "rooms" WHERE "rooms"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/channels/games_channel.rb:3
+  [1m[36mRoom Load (1.3ms)[0m  [1m[34mSELECT  "rooms".* FROM "rooms" WHERE "rooms"."id" = $1 LIMIT $2[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ app/channels/games_channel.rb:3
+  ↳ app/channels/games_channel.rb:3
+  [1m[36mRoom Load (0.8ms)[0m  [1m[34mSELECT  "rooms".* FROM "rooms" WHERE "rooms"."id" = $1 LIMIT $2[0m  [["id", 14], ["LIMIT", 1]]
+GamesChannel is streaming from games:Z2lkOi8vcXVpcGxhc2gtYmFja2VuZC9Sb29tLzg
+  ↳ app/channels/games_channel.rb:3
+GamesChannel is transmitting the subscription confirmation
+GamesChannel is streaming from games:Z2lkOi8vcXVpcGxhc2gtYmFja2VuZC9Sb29tLzI
+GamesChannel is transmitting the subscription confirmation
+GamesChannel is streaming from games:Z2lkOi8vcXVpcGxhc2gtYmFja2VuZC9Sb29tLzE0
+GamesChannel is transmitting the subscription confirmation
+GamesChannel is streaming from games:Z2lkOi8vcXVpcGxhc2gtYmFja2VuZC9Sb29tLzc
+GamesChannel is transmitting the subscription confirmation
+GamesChannel is streaming from games:Z2lkOi8vcXVpcGxhc2gtYmFja2VuZC9Sb29tLzY
+GamesChannel is transmitting the subscription confirmation
+GamesChannel is streaming from games:Z2lkOi8vcXVpcGxhc2gtYmFja2VuZC9Sb29tLzEw
+GamesChannel is transmitting the subscription confirmation
+GamesChannel is streaming from games:Z2lkOi8vcXVpcGxhc2gtYmFja2VuZC9Sb29tLzk
+GamesChannel is transmitting the subscription confirmation
+GamesChannel is streaming from games:Z2lkOi8vcXVpcGxhc2gtYmFja2VuZC9Sb29tLzEx
+GamesChannel is transmitting the subscription confirmation
+GamesChannel is streaming from games:Z2lkOi8vcXVpcGxhc2gtYmFja2VuZC9Sb29tLzEz
+GamesChannel is transmitting the subscription confirmation
+GamesChannel is streaming from games:Z2lkOi8vcXVpcGxhc2gtYmFja2VuZC9Sb29tLzEy
+  [1m[36mRoom Load (0.8ms)[0m  [1m[34mSELECT  "rooms".* FROM "rooms" ORDER BY "rooms"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+Unsubscribing from channel: {"channel":"RoomsChannel"}
+RoomsChannel stopped streaming from rooms_channel
+Unsubscribing from channel: {"channel":"GamesChannel","room":3}
+GamesChannel stopped streaming from games:Z2lkOi8vcXVpcGxhc2gtYmFja2VuZC9Sb29tLzM
+Unsubscribing from channel: {"channel":"GamesChannel","room":1}
+GamesChannel stopped streaming from games:Z2lkOi8vcXVpcGxhc2gtYmFja2VuZC9Sb29tLzE
+Unsubscribing from channel: {"channel":"GamesChannel","room":2}
+GamesChannel stopped streaming from games:Z2lkOi8vcXVpcGxhc2gtYmFja2VuZC9Sb29tLzI
+Unsubscribing from channel: {"channel":"GamesChannel","room":8}
+GamesChannel stopped streaming from games:Z2lkOi8vcXVpcGxhc2gtYmFja2VuZC9Sb29tLzg
+Unsubscribing from channel: {"channel":"GamesChannel","room":9}
+GamesChannel stopped streaming from games:Z2lkOi8vcXVpcGxhc2gtYmFja2VuZC9Sb29tLzk
+Unsubscribing from channel: {"channel":"GamesChannel","room":10}
+GamesChannel stopped streaming from games:Z2lkOi8vcXVpcGxhc2gtYmFja2VuZC9Sb29tLzEw
+Unsubscribing from channel: {"channel":"GamesChannel","room":11}
+GamesChannel stopped streaming from games:Z2lkOi8vcXVpcGxhc2gtYmFja2VuZC9Sb29tLzEx
+Unsubscribing from channel: {"channel":"GamesChannel","room":12}
+GamesChannel stopped streaming from games:Z2lkOi8vcXVpcGxhc2gtYmFja2VuZC9Sb29tLzEy
+Unsubscribing from channel: {"channel":"GamesChannel","room":13}
+GamesChannel stopped streaming from games:Z2lkOi8vcXVpcGxhc2gtYmFja2VuZC9Sb29tLzEz
+Unsubscribing from channel: {"channel":"GamesChannel","room":14}
+GamesChannel stopped streaming from games:Z2lkOi8vcXVpcGxhc2gtYmFja2VuZC9Sb29tLzE0
+Unsubscribing from channel: {"channel":"GamesChannel","room":6}
+GamesChannel stopped streaming from games:Z2lkOi8vcXVpcGxhc2gtYmFja2VuZC9Sb29tLzY
+RoomsChannel is transmitting the subscription confirmation
+Unsubscribing from channel: {"channel":"GamesChannel","room":7}
+Unsubscribing from channel: {"channel":"GamesChannel","room":5}
+RoomsChannel is streaming from rooms_channel
+GamesChannel stopped streaming from games:Z2lkOi8vcXVpcGxhc2gtYmFja2VuZC9Sb29tLzc
+  [1m[36mRoom Load (1.1ms)[0m  [1m[34mSELECT  "rooms".* FROM "rooms" WHERE "rooms"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+GamesChannel stopped streaming from games:Z2lkOi8vcXVpcGxhc2gtYmFja2VuZC9Sb29tLzU
+  ↳ app/channels/games_channel.rb:3
+GamesChannel is transmitting the subscription confirmation
+GamesChannel is streaming from games:Z2lkOi8vcXVpcGxhc2gtYmFja2VuZC9Sb29tLzI
+  [1m[36mRoom Load (0.6ms)[0m  [1m[34mSELECT  "rooms".* FROM "rooms" WHERE "rooms"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/channels/games_channel.rb:3
+  [1m[36mRoom Load (0.6ms)[0m  [1m[34mSELECT  "rooms".* FROM "rooms" WHERE "rooms"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/channels/games_channel.rb:3
+  [1m[36mRoom Load (15.4ms)[0m  [1m[34mSELECT  "rooms".* FROM "rooms" WHERE "rooms"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mRoom Load (1.0ms)[0m  [1m[34mSELECT  "rooms".* FROM "rooms" WHERE "rooms"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+GamesChannel is transmitting the subscription confirmation
+GamesChannel is streaming from games:Z2lkOi8vcXVpcGxhc2gtYmFja2VuZC9Sb29tLzY
+  ↳ app/channels/games_channel.rb:3
+  [1m[36mRoom Load (0.9ms)[0m  [1m[34mSELECT  "rooms".* FROM "rooms" WHERE "rooms"."id" = $1 LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/channels/games_channel.rb:3
+  [1m[36mRoom Load (1.9ms)[0m  [1m[34mSELECT  "rooms".* FROM "rooms" WHERE "rooms"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/channels/games_channel.rb:3
+GamesChannel is transmitting the subscription confirmation
+GamesChannel is streaming from games:Z2lkOi8vcXVpcGxhc2gtYmFja2VuZC9Sb29tLzc
+GamesChannel is transmitting the subscription confirmation
+GamesChannel is streaming from games:Z2lkOi8vcXVpcGxhc2gtYmFja2VuZC9Sb29tLzM
+  [1m[36mRoom Load (1.4ms)[0m  [1m[34mSELECT  "rooms".* FROM "rooms" WHERE "rooms"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/channels/games_channel.rb:3
+  [1m[36mRoom Load (2.5ms)[0m  [1m[34mSELECT  "rooms".* FROM "rooms" WHERE "rooms"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/channels/games_channel.rb:3
+  ↳ app/channels/games_channel.rb:3
+GamesChannel is transmitting the subscription confirmation
+GamesChannel is streaming from games:Z2lkOi8vcXVpcGxhc2gtYmFja2VuZC9Sb29tLzg
+GamesChannel is transmitting the subscription confirmation
+  [1m[36mRoom Load (2.7ms)[0m  [1m[34mSELECT  "rooms".* FROM "rooms" WHERE "rooms"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+GamesChannel is streaming from games:Z2lkOi8vcXVpcGxhc2gtYmFja2VuZC9Sb29tLzU
+  [1m[36mRoom Load (0.6ms)[0m  [1m[34mSELECT  "rooms".* FROM "rooms" WHERE "rooms"."id" = $1 LIMIT $2[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ app/channels/games_channel.rb:3
+  ↳ app/channels/games_channel.rb:3
+GamesChannel is transmitting the subscription confirmation
+  [1m[36mRoom Load (1.0ms)[0m  [1m[34mSELECT  "rooms".* FROM "rooms" WHERE "rooms"."id" = $1 LIMIT $2[0m  [["id", 14], ["LIMIT", 1]]
+  [1m[36mRoom Load (2.9ms)[0m  [1m[34mSELECT  "rooms".* FROM "rooms" WHERE "rooms"."id" = $1 LIMIT $2[0m  [["id", 12], ["LIMIT", 1]]
+GamesChannel is streaming from games:Z2lkOi8vcXVpcGxhc2gtYmFja2VuZC9Sb29tLzE
+  ↳ app/channels/games_channel.rb:3
+  ↳ app/channels/games_channel.rb:3
+GamesChannel is transmitting the subscription confirmation
+GamesChannel is streaming from games:Z2lkOi8vcXVpcGxhc2gtYmFja2VuZC9Sb29tLzk
+GamesChannel is transmitting the subscription confirmation
+GamesChannel is streaming from games:Z2lkOi8vcXVpcGxhc2gtYmFja2VuZC9Sb29tLzEx
+GamesChannel is transmitting the subscription confirmation
+GamesChannel is streaming from games:Z2lkOi8vcXVpcGxhc2gtYmFja2VuZC9Sb29tLzEz
+GamesChannel is transmitting the subscription confirmation
+GamesChannel is streaming from games:Z2lkOi8vcXVpcGxhc2gtYmFja2VuZC9Sb29tLzEw
+GamesChannel is transmitting the subscription confirmation
+GamesChannel is streaming from games:Z2lkOi8vcXVpcGxhc2gtYmFja2VuZC9Sb29tLzE0
+GamesChannel is transmitting the subscription confirmation
+GamesChannel is streaming from games:Z2lkOi8vcXVpcGxhc2gtYmFja2VuZC9Sb29tLzEy
+Unsubscribing from channel: {"channel":"RoomsChannel"}
+RoomsChannel stopped streaming from rooms_channel
+Unsubscribing from channel: {"channel":"GamesChannel","room":1}
+GamesChannel stopped streaming from games:Z2lkOi8vcXVpcGxhc2gtYmFja2VuZC9Sb29tLzE
+Unsubscribing from channel: {"channel":"GamesChannel","room":5}
+GamesChannel stopped streaming from games:Z2lkOi8vcXVpcGxhc2gtYmFja2VuZC9Sb29tLzU
+Unsubscribing from channel: {"channel":"GamesChannel","room":6}
+GamesChannel stopped streaming from games:Z2lkOi8vcXVpcGxhc2gtYmFja2VuZC9Sb29tLzY
+Unsubscribing from channel: {"channel":"GamesChannel","room":7}
+GamesChannel stopped streaming from games:Z2lkOi8vcXVpcGxhc2gtYmFja2VuZC9Sb29tLzc
+Unsubscribing from channel: {"channel":"GamesChannel","room":8}
+GamesChannel stopped streaming from games:Z2lkOi8vcXVpcGxhc2gtYmFja2VuZC9Sb29tLzg
+Unsubscribing from channel: {"channel":"GamesChannel","room":10}
+Unsubscribing from channel: {"channel":"GamesChannel","room":9}
+Unsubscribing from channel: {"channel":"GamesChannel","room":3}
+GamesChannel stopped streaming from games:Z2lkOi8vcXVpcGxhc2gtYmFja2VuZC9Sb29tLzk
+Unsubscribing from channel: {"channel":"GamesChannel","room":2}
+GamesChannel stopped streaming from games:Z2lkOi8vcXVpcGxhc2gtYmFja2VuZC9Sb29tLzM
+GamesChannel stopped streaming from games:Z2lkOi8vcXVpcGxhc2gtYmFja2VuZC9Sb29tLzI
+GamesChannel stopped streaming from games:Z2lkOi8vcXVpcGxhc2gtYmFja2VuZC9Sb29tLzEw
+Unsubscribing from channel: {"channel":"GamesChannel","room":11}
+Unsubscribing from channel: {"channel":"GamesChannel","room":14}
+Unsubscribing from channel: {"channel":"GamesChannel","room":13}
+Unsubscribing from channel: {"channel":"GamesChannel","room":12}
+GamesChannel stopped streaming from games:Z2lkOi8vcXVpcGxhc2gtYmFja2VuZC9Sb29tLzEy
+GamesChannel stopped streaming from games:Z2lkOi8vcXVpcGxhc2gtYmFja2VuZC9Sb29tLzE0
+GamesChannel stopped streaming from games:Z2lkOi8vcXVpcGxhc2gtYmFja2VuZC9Sb29tLzEz
+GamesChannel stopped streaming from games:Z2lkOi8vcXVpcGxhc2gtYmFja2VuZC9Sb29tLzEx
+RoomsChannel is transmitting the subscription confirmation
+  [1m[36mRoom Load (2.3ms)[0m  [1m[34mSELECT  "rooms".* FROM "rooms" WHERE "rooms"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mRoom Load (2.6ms)[0m  [1m[34mSELECT  "rooms".* FROM "rooms" WHERE "rooms"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/channels/games_channel.rb:3
+RoomsChannel is streaming from rooms_channel
+GamesChannel is transmitting the subscription confirmation
+  [1m[36mRoom Load (2.0ms)[0m  [1m[34mSELECT  "rooms".* FROM "rooms" WHERE "rooms"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/channels/games_channel.rb:3
+  ↳ app/channels/games_channel.rb:3
+  [1m[36mRoom Load (1.9ms)[0m  [1m[34mSELECT  "rooms".* FROM "rooms" WHERE "rooms"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/channels/games_channel.rb:3
+GamesChannel is streaming from games:Z2lkOi8vcXVpcGxhc2gtYmFja2VuZC9Sb29tLzE
+  [1m[36mRoom Load (14.2ms)[0m  [1m[34mSELECT  "rooms".* FROM "rooms" WHERE "rooms"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[36mRoom Load (0.6ms)[0m  [1m[34mSELECT  "rooms".* FROM "rooms" WHERE "rooms"."id" = $1 LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+GamesChannel is transmitting the subscription confirmation
+  ↳ app/channels/games_channel.rb:3
+  [1m[36mRoom Load (1.8ms)[0m  [1m[34mSELECT  "rooms".* FROM "rooms" WHERE "rooms"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/channels/games_channel.rb:3
+  [1m[36mRoom Load (0.8ms)[0m  [1m[34mSELECT  "rooms".* FROM "rooms" WHERE "rooms"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+GamesChannel is streaming from games:Z2lkOi8vcXVpcGxhc2gtYmFja2VuZC9Sb29tLzM
+  ↳ app/channels/games_channel.rb:3
+GamesChannel is transmitting the subscription confirmation
+GamesChannel is streaming from games:Z2lkOi8vcXVpcGxhc2gtYmFja2VuZC9Sb29tLzU
+  [1m[36mRoom Load (0.4ms)[0m  [1m[34mSELECT  "rooms".* FROM "rooms" WHERE "rooms"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/channels/games_channel.rb:3
+  ↳ app/channels/games_channel.rb:3
+GamesChannel is transmitting the subscription confirmation
+GamesChannel is streaming from games:Z2lkOi8vcXVpcGxhc2gtYmFja2VuZC9Sb29tLzI
+  [1m[36mRoom Load (8.4ms)[0m  [1m[34mSELECT  "rooms".* FROM "rooms" WHERE "rooms"."id" = $1 LIMIT $2[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ app/channels/games_channel.rb:3
+GamesChannel is transmitting the subscription confirmation
+GamesChannel is streaming from games:Z2lkOi8vcXVpcGxhc2gtYmFja2VuZC9Sb29tLzEw
+  [1m[36mRoom Load (4.2ms)[0m  [1m[34mSELECT  "rooms".* FROM "rooms" WHERE "rooms"."id" = $1 LIMIT $2[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/channels/games_channel.rb:3
+GamesChannel is transmitting the subscription confirmation
+GamesChannel is streaming from games:Z2lkOi8vcXVpcGxhc2gtYmFja2VuZC9Sb29tLzk
+GamesChannel is transmitting the subscription confirmation
+GamesChannel is streaming from games:Z2lkOi8vcXVpcGxhc2gtYmFja2VuZC9Sb29tLzY
+GamesChannel is transmitting the subscription confirmation
+GamesChannel is streaming from games:Z2lkOi8vcXVpcGxhc2gtYmFja2VuZC9Sb29tLzc
+  [1m[36mRoom Load (1.3ms)[0m  [1m[34mSELECT  "rooms".* FROM "rooms" WHERE "rooms"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/channels/games_channel.rb:3
+  [1m[36mRoom Load (1.9ms)[0m  [1m[34mSELECT  "rooms".* FROM "rooms" WHERE "rooms"."id" = $1 LIMIT $2[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ app/channels/games_channel.rb:3
+GamesChannel is transmitting the subscription confirmation
+GamesChannel is streaming from games:Z2lkOi8vcXVpcGxhc2gtYmFja2VuZC9Sb29tLzE0
+GamesChannel is transmitting the subscription confirmation
+GamesChannel is streaming from games:Z2lkOi8vcXVpcGxhc2gtYmFja2VuZC9Sb29tLzEz
+GamesChannel is transmitting the subscription confirmation
+GamesChannel is streaming from games:Z2lkOi8vcXVpcGxhc2gtYmFja2VuZC9Sb29tLzEx
+GamesChannel is transmitting the subscription confirmation
+GamesChannel is streaming from games:Z2lkOi8vcXVpcGxhc2gtYmFja2VuZC9Sb29tLzEy
+GamesChannel is transmitting the subscription confirmation
+GamesChannel is streaming from games:Z2lkOi8vcXVpcGxhc2gtYmFja2VuZC9Sb29tLzg
+Unsubscribing from channel: {"channel":"RoomsChannel"}
+RoomsChannel stopped streaming from rooms_channel
+Unsubscribing from channel: {"channel":"GamesChannel","room":1}
+GamesChannel stopped streaming from games:Z2lkOi8vcXVpcGxhc2gtYmFja2VuZC9Sb29tLzE
+Unsubscribing from channel: {"channel":"GamesChannel","room":6}
+Unsubscribing from channel: {"channel":"GamesChannel","room":2}
+GamesChannel stopped streaming from games:Z2lkOi8vcXVpcGxhc2gtYmFja2VuZC9Sb29tLzI
+Unsubscribing from channel: {"channel":"GamesChannel","room":3}
+GamesChannel stopped streaming from games:Z2lkOi8vcXVpcGxhc2gtYmFja2VuZC9Sb29tLzM
+Unsubscribing from channel: {"channel":"GamesChannel","room":7}
+GamesChannel stopped streaming from games:Z2lkOi8vcXVpcGxhc2gtYmFja2VuZC9Sb29tLzc
+Unsubscribing from channel: {"channel":"GamesChannel","room":8}
+GamesChannel stopped streaming from games:Z2lkOi8vcXVpcGxhc2gtYmFja2VuZC9Sb29tLzg
+Unsubscribing from channel: {"channel":"GamesChannel","room":9}
+GamesChannel stopped streaming from games:Z2lkOi8vcXVpcGxhc2gtYmFja2VuZC9Sb29tLzk
+Unsubscribing from channel: {"channel":"GamesChannel","room":10}
+GamesChannel stopped streaming from games:Z2lkOi8vcXVpcGxhc2gtYmFja2VuZC9Sb29tLzEw
+Unsubscribing from channel: {"channel":"GamesChannel","room":11}
+GamesChannel stopped streaming from games:Z2lkOi8vcXVpcGxhc2gtYmFja2VuZC9Sb29tLzEx
+Unsubscribing from channel: {"channel":"GamesChannel","room":12}
+GamesChannel stopped streaming from games:Z2lkOi8vcXVpcGxhc2gtYmFja2VuZC9Sb29tLzEy
+Unsubscribing from channel: {"channel":"GamesChannel","room":13}
+GamesChannel stopped streaming from games:Z2lkOi8vcXVpcGxhc2gtYmFja2VuZC9Sb29tLzEz
+Unsubscribing from channel: {"channel":"GamesChannel","room":14}
+GamesChannel stopped streaming from games:Z2lkOi8vcXVpcGxhc2gtYmFja2VuZC9Sb29tLzE0
+Unsubscribing from channel: {"channel":"GamesChannel","room":5}
+GamesChannel stopped streaming from games:Z2lkOi8vcXVpcGxhc2gtYmFja2VuZC9Sb29tLzU
+GamesChannel stopped streaming from games:Z2lkOi8vcXVpcGxhc2gtYmFja2VuZC9Sb29tLzY
+RoomsChannel is transmitting the subscription confirmation
+  [1m[36mRoom Load (1.4ms)[0m  [1m[34mSELECT  "rooms".* FROM "rooms" WHERE "rooms"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/channels/games_channel.rb:3
+  [1m[36mRoom Load (1.6ms)[0m  [1m[34mSELECT  "rooms".* FROM "rooms" WHERE "rooms"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+RoomsChannel is streaming from rooms_channel
+GamesChannel is transmitting the subscription confirmation
+  [1m[36mRoom Load (5.4ms)[0m  [1m[34mSELECT  "rooms".* FROM "rooms" WHERE "rooms"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/channels/games_channel.rb:3
+  ↳ app/channels/games_channel.rb:3
+  [1m[36mRoom Load (2.7ms)[0m  [1m[34mSELECT  "rooms".* FROM "rooms" WHERE "rooms"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/channels/games_channel.rb:3
+GamesChannel is streaming from games:Z2lkOi8vcXVpcGxhc2gtYmFja2VuZC9Sb29tLzM
+GamesChannel is transmitting the subscription confirmation
+GamesChannel is streaming from games:Z2lkOi8vcXVpcGxhc2gtYmFja2VuZC9Sb29tLzU
+  [1m[36mRoom Load (2.7ms)[0m  [1m[34mSELECT  "rooms".* FROM "rooms" WHERE "rooms"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/channels/games_channel.rb:3
+  [1m[36mRoom Load (0.5ms)[0m  [1m[34mSELECT  "rooms".* FROM "rooms" WHERE "rooms"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+GamesChannel is transmitting the subscription confirmation
+  [1m[36mRoom Load (3.0ms)[0m  [1m[34mSELECT  "rooms".* FROM "rooms" WHERE "rooms"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/channels/games_channel.rb:3
+GamesChannel is streaming from games:Z2lkOi8vcXVpcGxhc2gtYmFja2VuZC9Sb29tLzI
+  [1m[36mRoom Load (0.6ms)[0m  [1m[34mSELECT  "rooms".* FROM "rooms" WHERE "rooms"."id" = $1 LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/channels/games_channel.rb:3
+  ↳ app/channels/games_channel.rb:3
+  [1m[36mRoom Load (0.6ms)[0m  [1m[34mSELECT  "rooms".* FROM "rooms" WHERE "rooms"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  [1m[36mRoom Load (2.5ms)[0m  [1m[34mSELECT  "rooms".* FROM "rooms" WHERE "rooms"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+GamesChannel is transmitting the subscription confirmation
+  ↳ app/channels/games_channel.rb:3
+  [1m[36mRoom Load (2.3ms)[0m  [1m[34mSELECT  "rooms".* FROM "rooms" WHERE "rooms"."id" = $1 LIMIT $2[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ app/channels/games_channel.rb:3
+  [1m[36mRoom Load (1.4ms)[0m  [1m[34mSELECT  "rooms".* FROM "rooms" WHERE "rooms"."id" = $1 LIMIT $2[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ app/channels/games_channel.rb:3
+GamesChannel is streaming from games:Z2lkOi8vcXVpcGxhc2gtYmFja2VuZC9Sb29tLzk
+GamesChannel is transmitting the subscription confirmation
+GamesChannel is streaming from games:Z2lkOi8vcXVpcGxhc2gtYmFja2VuZC9Sb29tLzEz
+GamesChannel is transmitting the subscription confirmation
+GamesChannel is streaming from games:Z2lkOi8vcXVpcGxhc2gtYmFja2VuZC9Sb29tLzc
+GamesChannel is transmitting the subscription confirmation
+GamesChannel is streaming from games:Z2lkOi8vcXVpcGxhc2gtYmFja2VuZC9Sb29tLzY
+  ↳ app/channels/games_channel.rb:3
+GamesChannel is transmitting the subscription confirmation
+GamesChannel is streaming from games:Z2lkOi8vcXVpcGxhc2gtYmFja2VuZC9Sb29tLzg
+GamesChannel is transmitting the subscription confirmation
+GamesChannel is streaming from games:Z2lkOi8vcXVpcGxhc2gtYmFja2VuZC9Sb29tLzEw
+  [1m[36mRoom Load (2.7ms)[0m  [1m[34mSELECT  "rooms".* FROM "rooms" WHERE "rooms"."id" = $1 LIMIT $2[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/channels/games_channel.rb:3
+GamesChannel is transmitting the subscription confirmation
+GamesChannel is streaming from games:Z2lkOi8vcXVpcGxhc2gtYmFja2VuZC9Sb29tLzEy
+GamesChannel is transmitting the subscription confirmation
+GamesChannel is streaming from games:Z2lkOi8vcXVpcGxhc2gtYmFja2VuZC9Sb29tLzE
+GamesChannel is transmitting the subscription confirmation
+GamesChannel is streaming from games:Z2lkOi8vcXVpcGxhc2gtYmFja2VuZC9Sb29tLzEx
+GamesChannel is transmitting the subscription confirmation
+GamesChannel is streaming from games:Z2lkOi8vcXVpcGxhc2gtYmFja2VuZC9Sb29tLzE0
+Unsubscribing from channel: {"channel":"RoomsChannel"}
+RoomsChannel stopped streaming from rooms_channel
+Unsubscribing from channel: {"channel":"GamesChannel","room":5}
+GamesChannel stopped streaming from games:Z2lkOi8vcXVpcGxhc2gtYmFja2VuZC9Sb29tLzU
+Unsubscribing from channel: {"channel":"GamesChannel","room":1}
+GamesChannel stopped streaming from games:Z2lkOi8vcXVpcGxhc2gtYmFja2VuZC9Sb29tLzE
+Unsubscribing from channel: {"channel":"GamesChannel","room":7}
+GamesChannel stopped streaming from games:Z2lkOi8vcXVpcGxhc2gtYmFja2VuZC9Sb29tLzc
+Unsubscribing from channel: {"channel":"GamesChannel","room":8}
+GamesChannel stopped streaming from games:Z2lkOi8vcXVpcGxhc2gtYmFja2VuZC9Sb29tLzg
+Unsubscribing from channel: {"channel":"GamesChannel","room":9}
+GamesChannel stopped streaming from games:Z2lkOi8vcXVpcGxhc2gtYmFja2VuZC9Sb29tLzk
+Unsubscribing from channel: {"channel":"GamesChannel","room":10}
+GamesChannel stopped streaming from games:Z2lkOi8vcXVpcGxhc2gtYmFja2VuZC9Sb29tLzEw
+Unsubscribing from channel: {"channel":"GamesChannel","room":11}
+GamesChannel stopped streaming from games:Z2lkOi8vcXVpcGxhc2gtYmFja2VuZC9Sb29tLzEx
+Unsubscribing from channel: {"channel":"GamesChannel","room":12}
+GamesChannel stopped streaming from games:Z2lkOi8vcXVpcGxhc2gtYmFja2VuZC9Sb29tLzEy
+Unsubscribing from channel: {"channel":"GamesChannel","room":13}
+GamesChannel stopped streaming from games:Z2lkOi8vcXVpcGxhc2gtYmFja2VuZC9Sb29tLzEz
+Unsubscribing from channel: {"channel":"GamesChannel","room":14}
+GamesChannel stopped streaming from games:Z2lkOi8vcXVpcGxhc2gtYmFja2VuZC9Sb29tLzE0
+Unsubscribing from channel: {"channel":"GamesChannel","room":6}
+GamesChannel stopped streaming from games:Z2lkOi8vcXVpcGxhc2gtYmFja2VuZC9Sb29tLzY
+Unsubscribing from channel: {"channel":"GamesChannel","room":3}
+GamesChannel stopped streaming from games:Z2lkOi8vcXVpcGxhc2gtYmFja2VuZC9Sb29tLzM
+Unsubscribing from channel: {"channel":"GamesChannel","room":2}
+  [1m[36mRoom Load (2.5ms)[0m  [1m[34mSELECT  "rooms".* FROM "rooms" WHERE "rooms"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/channels/games_channel.rb:3
+RoomsChannel is transmitting the subscription confirmation
+  [1m[36mRoom Load (5.8ms)[0m  [1m[34mSELECT  "rooms".* FROM "rooms" WHERE "rooms"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/channels/games_channel.rb:3
+RoomsChannel is streaming from rooms_channel
+  [1m[36mRoom Load (2.3ms)[0m  [1m[34mSELECT  "rooms".* FROM "rooms" WHERE "rooms"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/channels/games_channel.rb:3
+GamesChannel is transmitting the subscription confirmation
+GamesChannel is streaming from games:Z2lkOi8vcXVpcGxhc2gtYmFja2VuZC9Sb29tLzY
+GamesChannel stopped streaming from games:Z2lkOi8vcXVpcGxhc2gtYmFja2VuZC9Sb29tLzI
+GamesChannel is transmitting the subscription confirmation
+GamesChannel is streaming from games:Z2lkOi8vcXVpcGxhc2gtYmFja2VuZC9Sb29tLzE
+GamesChannel is transmitting the subscription confirmation
+GamesChannel is streaming from games:Z2lkOi8vcXVpcGxhc2gtYmFja2VuZC9Sb29tLzU
+  [1m[36mRoom Load (6.3ms)[0m  [1m[34mSELECT  "rooms".* FROM "rooms" WHERE "rooms"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/channels/games_channel.rb:3
+  [1m[36mRoom Load (5.7ms)[0m  [1m[34mSELECT  "rooms".* FROM "rooms" WHERE "rooms"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  [1m[36mRoom Load (3.9ms)[0m  [1m[34mSELECT  "rooms".* FROM "rooms" WHERE "rooms"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+GamesChannel is transmitting the subscription confirmation
+GamesChannel is streaming from games:Z2lkOi8vcXVpcGxhc2gtYmFja2VuZC9Sb29tLzc
+  [1m[36mRoom Load (4.2ms)[0m  [1m[34mSELECT  "rooms".* FROM "rooms" WHERE "rooms"."id" = $1 LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/channels/games_channel.rb:3
+  ↳ app/channels/games_channel.rb:3
+  ↳ app/channels/games_channel.rb:3
+  [1m[36mRoom Load (0.4ms)[0m  [1m[34mSELECT  "rooms".* FROM "rooms" WHERE "rooms"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/channels/games_channel.rb:3
+GamesChannel is transmitting the subscription confirmation
+  [1m[36mRoom Load (2.5ms)[0m  [1m[34mSELECT  "rooms".* FROM "rooms" WHERE "rooms"."id" = $1 LIMIT $2[0m  [["id", 13], ["LIMIT", 1]]
+GamesChannel is streaming from games:Z2lkOi8vcXVpcGxhc2gtYmFja2VuZC9Sb29tLzg
+  [1m[36mRoom Load (1.4ms)[0m  [1m[34mSELECT  "rooms".* FROM "rooms" WHERE "rooms"."id" = $1 LIMIT $2[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/channels/games_channel.rb:3
+  [1m[36mRoom Load (1.6ms)[0m  [1m[34mSELECT  "rooms".* FROM "rooms" WHERE "rooms"."id" = $1 LIMIT $2[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ app/channels/games_channel.rb:3
+GamesChannel is transmitting the subscription confirmation
+  ↳ app/channels/games_channel.rb:3
+GamesChannel is streaming from games:Z2lkOi8vcXVpcGxhc2gtYmFja2VuZC9Sb29tLzEw
+GamesChannel is transmitting the subscription confirmation
+GamesChannel is streaming from games:Z2lkOi8vcXVpcGxhc2gtYmFja2VuZC9Sb29tLzEx
+GamesChannel is transmitting the subscription confirmation
+GamesChannel is streaming from games:Z2lkOi8vcXVpcGxhc2gtYmFja2VuZC9Sb29tLzk
+GamesChannel is transmitting the subscription confirmation
+GamesChannel is streaming from games:Z2lkOi8vcXVpcGxhc2gtYmFja2VuZC9Sb29tLzE0
+GamesChannel is transmitting the subscription confirmation
+GamesChannel is streaming from games:Z2lkOi8vcXVpcGxhc2gtYmFja2VuZC9Sb29tLzEz
+GamesChannel is transmitting the subscription confirmation
+GamesChannel is streaming from games:Z2lkOi8vcXVpcGxhc2gtYmFja2VuZC9Sb29tLzEy
+=======
 >>>>>>> 5e8cde8638b50546fa2ed9d4ddc9599fe6dfb4f4
+<<<<<<< HEAD
   [1m[36mRoom Load (2.0ms)[0m  [1m[34mSELECT "rooms".* FROM "rooms"[0m
 Started GET "/users/current" for 127.0.0.1 at 2022-02-21 14:15:07 +1100
   [1m[35m (2.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
@@ -10326,3 +12483,6 @@ puma (3.12.6) lib/puma/server.rb:706:in `handle_request'
 puma (3.12.6) lib/puma/server.rb:476:in `process_client'
 puma (3.12.6) lib/puma/server.rb:334:in `block in run'
 puma (3.12.6) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+=======
+>>>>>>> fb453a6657e4b31fb6ddadf75733685bf0428658
+>>>>>>> 63cae9a04f82bffcd6d5725f6a9978b8dc919795
