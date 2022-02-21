@@ -8,7 +8,7 @@ Rails.application.routes.draw do
   resources :answers, only: [:create, :show]
   resources :votes, only: [:create, :show]
 
-  mount ActonCable.server => '/cable'
+  mount ActionCable.server => '/cable'
 
   # get '/questions' => 'questions#index' # for testing
 
