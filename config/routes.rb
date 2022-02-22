@@ -8,10 +8,6 @@ Rails.application.routes.draw do
   resources :answers, only: [:create, :show]
   resources :votes, only: [:create, :index]
   resources :games, only: [:create]
-
-
-  resources :conversations, only: [:index, :create]
-  resources :messages, only: [:create]
   
   # get '/questions' => 'questions#index' # for testing
   
