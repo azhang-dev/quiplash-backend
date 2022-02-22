@@ -11,8 +11,7 @@ Rails.application.routes.draw do
   resources :games, only: [:create]
 
 
-  resources :conversations, only: [:index, :create]
-  resources :messages, only: [:create]
+  
   
   # get '/questions' => 'questions#index' # for testing
   
@@ -20,5 +19,7 @@ Rails.application.routes.draw do
   mount ActionCable.server => '/cable'
 
 
+  # get '/answers' => 'answers#index'
+  
   
 end
