@@ -88,4 +88,11 @@ Rails.application.configure do
 
   # Do not dump schema after migrations.
   config.active_record.dump_schema_after_migration = false
+
+  #heroku- set cable server's URL for production
+  config.web_socket_server_url = "wss://quiplash-clone-app.herokuapp.com/cable" 
+
+  config.action_cable.allowed_request_origins = ['https://quiplash-clone-app.herokuapp.com', 'http://quiplash-clone-app.herokuapp.com']
+
+
 end
