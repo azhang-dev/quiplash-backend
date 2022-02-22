@@ -9,8 +9,12 @@ module ApplicationCable
     private
 
     def find_verified_user
-      p "**********************************************", cookies.encrypted[:user_id]
-      if verified_user = User.find_by(id: cookies.encrypted[:user_id])
+      # binding.pry
+      token = request.params["token"]
+      user = JWT.decode token, Rails.application.secrets.secret_key_base, true, { :algorithm => 'HS256' }
+      user_id = user.first["sub"]
+      p "**********************************************", user_id
+      if verified_user = User.find_by(id: user_id)
         verified_user
       else  
         reject_unauthorized_connection
