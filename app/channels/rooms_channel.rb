@@ -4,6 +4,18 @@ class RoomsChannel < ApplicationCable::Channel
   end
 
   def unsubscribed
-    # Any cleanup needed when channel is unsubscribed
+    p "----------------------UNSUBSCRIBED----------------------"
   end
+
+  def receive(data)
+    p "ROOM CHANNEL MESSAGE RECEIVED", data
+  end
+
+  def hello(data)
+    p "hello", data
+  end
+
+
 end
+
+
