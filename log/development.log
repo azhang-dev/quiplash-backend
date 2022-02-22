@@ -1,18 +1,18 @@
-Started GET "/cable?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE2NDU1OTcyMzIsInN1YiI6M30.DXvzXNjZ6X7PIdAgUUQooJL8qYHYz3aUup1_cc36xOE" for ::1 at 2022-02-22 22:02:08 +1100
-Started GET "/cable/?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE2NDU1OTcyMzIsInN1YiI6M30.DXvzXNjZ6X7PIdAgUUQooJL8qYHYz3aUup1_cc36xOE" [WebSocket] for ::1 at 2022-02-22 22:02:08 +1100
+Started GET "/cable?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE2NDU1OTcyMzIsInN1YiI6M30.DXvzXNjZ6X7PIdAgUUQooJL8qYHYz3aUup1_cc36xOE" for ::1 at 2022-02-22 22:02:54 +1100
+Started GET "/cable/?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE2NDU1OTcyMzIsInN1YiI6M30.DXvzXNjZ6X7PIdAgUUQooJL8qYHYz3aUup1_cc36xOE" [WebSocket] for ::1 at 2022-02-22 22:02:54 +1100
 Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
-  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
   ↳ app/channels/application_cable/connection.rb:17
 An unauthorized connection attempt was rejected
 Failed to upgrade to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
-Finished "/cable/?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE2NDU1OTcyMzIsInN1YiI6M30.DXvzXNjZ6X7PIdAgUUQooJL8qYHYz3aUup1_cc36xOE" [WebSocket] for ::1 at 2022-02-22 22:02:08 +1100
-Finished "/cable/?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE2NDU1OTcyMzIsInN1YiI6M30.DXvzXNjZ6X7PIdAgUUQooJL8qYHYz3aUup1_cc36xOE" [WebSocket] for ::1 at 2022-02-22 22:02:08 +1100
-Started GET "/cable?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE2NDU2MTM5ODcsInN1YiI6N30.pFJSSC7lO7w_pbKxE27IQ1JjpdLP1bMFwvQEZxagRK4" for ::1 at 2022-02-22 22:02:08 +1100
-Started GET "/cable/?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE2NDU2MTM5ODcsInN1YiI6N30.pFJSSC7lO7w_pbKxE27IQ1JjpdLP1bMFwvQEZxagRK4" [WebSocket] for ::1 at 2022-02-22 22:02:08 +1100
+Finished "/cable/?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE2NDU1OTcyMzIsInN1YiI6M30.DXvzXNjZ6X7PIdAgUUQooJL8qYHYz3aUup1_cc36xOE" [WebSocket] for ::1 at 2022-02-22 22:02:54 +1100
+Finished "/cable/?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE2NDU1OTcyMzIsInN1YiI6M30.DXvzXNjZ6X7PIdAgUUQooJL8qYHYz3aUup1_cc36xOE" [WebSocket] for ::1 at 2022-02-22 22:02:54 +1100
+Started GET "/cable?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE2NDU2MTM5ODcsInN1YiI6N30.pFJSSC7lO7w_pbKxE27IQ1JjpdLP1bMFwvQEZxagRK4" for ::1 at 2022-02-22 22:02:55 +1100
+Started GET "/cable/?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE2NDU2MTM5ODcsInN1YiI6N30.pFJSSC7lO7w_pbKxE27IQ1JjpdLP1bMFwvQEZxagRK4" [WebSocket] for ::1 at 2022-02-22 22:02:55 +1100
 Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
-  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
   ↳ app/channels/application_cable/connection.rb:17
 An unauthorized connection attempt was rejected
 Failed to upgrade to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
-Finished "/cable/?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE2NDU2MTM5ODcsInN1YiI6N30.pFJSSC7lO7w_pbKxE27IQ1JjpdLP1bMFwvQEZxagRK4" [WebSocket] for ::1 at 2022-02-22 22:02:08 +1100
-Finished "/cable/?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE2NDU2MTM5ODcsInN1YiI6N30.pFJSSC7lO7w_pbKxE27IQ1JjpdLP1bMFwvQEZxagRK4" [WebSocket] for ::1 at 2022-02-22 22:02:08 +1100
+Finished "/cable/?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE2NDU2MTM5ODcsInN1YiI6N30.pFJSSC7lO7w_pbKxE27IQ1JjpdLP1bMFwvQEZxagRK4" [WebSocket] for ::1 at 2022-02-22 22:02:55 +1100
+Finished "/cable/?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE2NDU2MTM5ODcsInN1YiI6N30.pFJSSC7lO7w_pbKxE27IQ1JjpdLP1bMFwvQEZxagRK4" [WebSocket] for ::1 at 2022-02-22 22:02:55 +1100
