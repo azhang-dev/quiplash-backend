@@ -4,4 +4,12 @@ class ApplicationController < ActionController::Base
   skip_before_action :verify_authenticity_token
 
   include Knock::Authenticable
+
+  private
+  # def authenticate_user(*args)
+  #   p "======================================", args
+  #   p "USER:", current_user
+    # p "^^^^^^^", cookies.encrypted['_session']
+  # end
+
 end

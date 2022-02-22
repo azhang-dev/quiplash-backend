@@ -12,7 +12,6 @@ Rails.application.routes.draw do
 
   mount ActionCable.server => '/cable'
 
-  # get '/questions' => 'questions#index' # for testing
 
   # get '/answers' => 'answers#index'
   
