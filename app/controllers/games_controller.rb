@@ -2,7 +2,7 @@ class GamesController < ApplicationController
 
     def create 
         game = Game.new(game_params)
-        conversation = Conversation.find(game_params[:room_id])
+        room = Room.find(game_params[:room_id])
         if game.save
           serialized_data = ActiveModelSerializers::Adapter::Json.new(
             GameSerializer.new(game)
