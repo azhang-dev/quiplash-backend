@@ -1,0 +1,364 @@
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT pg_try_advisory_lock(5882105369419256040)[0m
+  ↳ bin/rails:4
+  [1m[35m (5.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:4
+  [1m[36mActiveRecord::InternalMetadata Load (3.7ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ bin/rails:4
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:4
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:4
+  [1m[35m (3.3ms)[0m  [1m[34mSELECT pg_advisory_unlock(5882105369419256040)[0m
+  ↳ bin/rails:4
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:4
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT pg_try_advisory_lock(5882105369419256040)[0m
+  ↳ bin/rails:4
+  [1m[35m (3.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:4
+  [1m[36mActiveRecord::InternalMetadata Load (5.3ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ bin/rails:4
+  [1m[35m (3.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:4
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:4
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT pg_advisory_unlock(5882105369419256040)[0m
+  ↳ bin/rails:4
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:4
+  [1m[35m (1.8ms)[0m  [1m[34mSELECT pg_try_advisory_lock(5882105369419256040)[0m
+  ↳ bin/rails:4
+  [1m[35m (2.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:4
+  [1m[36mActiveRecord::InternalMetadata Load (3.8ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ bin/rails:4
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:4
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:4
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT pg_advisory_unlock(5882105369419256040)[0m
+  ↳ bin/rails:4
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:4
+  [1m[35m (2.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:4
+  [1m[36mAnswer Load (8.7ms)[0m  [1m[34mSELECT "answers".* FROM "answers"[0m
+  ↳ db/seeds.rb:10
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:12
+  [1m[36mAnswer Create (2.0ms)[0m  [1m[32mINSERT INTO "answers" ("answer", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["answer", "BEST CODE IS THE CODE THATS NEVER WRITTEN"], ["created_at", "2022-02-22 00:18:57.035203"], ["updated_at", "2022-02-22 00:18:57.035203"]]
+  ↳ db/seeds.rb:12
+  [1m[35m (3.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:12
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:16
+  [1m[36mAnswer Create (10.2ms)[0m  [1m[32mINSERT INTO "answers" ("answer", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["answer", "MANY MANY TINY DEAD BODIES"], ["created_at", "2022-02-22 00:18:57.049982"], ["updated_at", "2022-02-22 00:18:57.049982"]]
+  ↳ db/seeds.rb:16
+  [1m[35m (0.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:16
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:21
+  [1m[36mAnswer Create (0.8ms)[0m  [1m[32mINSERT INTO "answers" ("answer", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["answer", "NICE APPLES"], ["created_at", "2022-02-22 00:18:57.064950"], ["updated_at", "2022-02-22 00:18:57.064950"]]
+  ↳ db/seeds.rb:21
+  [1m[35m (1.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:21
+  [1m[35m (0.8ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:26
+  [1m[36mAnswer Create (1.5ms)[0m  [1m[32mINSERT INTO "answers" ("answer", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["answer", "YIFFING IN THE MORNING"], ["created_at", "2022-02-22 00:18:57.076652"], ["updated_at", "2022-02-22 00:18:57.076652"]]
+  ↳ db/seeds.rb:26
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:26
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:31
+  [1m[36mAnswer Create (1.4ms)[0m  [1m[32mINSERT INTO "answers" ("answer", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["answer", "I CANT TALK"], ["created_at", "2022-02-22 00:18:57.088490"], ["updated_at", "2022-02-22 00:18:57.088490"]]
+  ↳ db/seeds.rb:31
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:31
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:36
+  [1m[36mAnswer Create (1.9ms)[0m  [1m[32mINSERT INTO "answers" ("answer", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["answer", "LETS DO A QUICK CODE REVIEW"], ["created_at", "2022-02-22 00:18:57.100051"], ["updated_at", "2022-02-22 00:18:57.100051"]]
+  ↳ db/seeds.rb:36
+  [1m[35m (1.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:36
+  [1m[35m (1.7ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:41
+  [1m[36mAnswer Create (0.8ms)[0m  [1m[32mINSERT INTO "answers" ("answer", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["answer", "HELLO THERE"], ["created_at", "2022-02-22 00:18:57.108996"], ["updated_at", "2022-02-22 00:18:57.108996"]]
+  ↳ db/seeds.rb:41
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:41
+  [1m[35m (9.5ms)[0m  [1m[34mSELECT COUNT(*) FROM "answers"[0m
+  ↳ db/seeds.rb:45
+  [1m[36mQuestion Load (7.8ms)[0m  [1m[34mSELECT "questions".* FROM "questions"[0m
+  ↳ db/seeds.rb:49
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:52
+  [1m[36mQuestion Create (2.0ms)[0m  [1m[32mINSERT INTO "questions" ("question", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["question", "A double rainbow doesn't have gold at the end of it. Instead, it has ____________"], ["created_at", "2022-02-22 00:18:57.267482"], ["updated_at", "2022-02-22 00:18:57.267482"]]
+  ↳ db/seeds.rb:52
+  [1m[35m (1.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:52
+  [1m[35m (0.6ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:56
+  [1m[36mQuestion Create (1.4ms)[0m  [1m[32mINSERT INTO "questions" ("question", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["question", "As Shakesphear once said, '___________'"], ["created_at", "2022-02-22 00:18:57.276760"], ["updated_at", "2022-02-22 00:18:57.276760"]]
+  ↳ db/seeds.rb:56
+  [1m[35m (2.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:56
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:61
+  [1m[36mQuestion Create (0.9ms)[0m  [1m[32mINSERT INTO "questions" ("question", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["question", "What Adam thought when he first met Eve"], ["created_at", "2022-02-22 00:18:57.284563"], ["updated_at", "2022-02-22 00:18:57.284563"]]
+  ↳ db/seeds.rb:61
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:61
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:66
+  [1m[36mQuestion Create (0.9ms)[0m  [1m[32mINSERT INTO "questions" ("question", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["question", "A terrible name for a morning talk show"], ["created_at", "2022-02-22 00:18:57.290062"], ["updated_at", "2022-02-22 00:18:57.290062"]]
+  ↳ db/seeds.rb:66
+  [1m[35m (2.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:66
+  [1m[35m (1.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:71
+  [1m[36mQuestion Create (1.3ms)[0m  [1m[32mINSERT INTO "questions" ("question", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["question", "Why do I suck at code so much?"], ["created_at", "2022-02-22 00:18:57.299250"], ["updated_at", "2022-02-22 00:18:57.299250"]]
+  ↳ db/seeds.rb:71
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:71
+  [1m[35m (2.8ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:75
+  [1m[36mAnswer Update (1.1ms)[0m  [1m[33mUPDATE "answers" SET "updated_at" = $1, "question_id" = $2 WHERE "answers"."id" = $3[0m  [["updated_at", "2022-02-22 00:18:57.357733"], ["question_id", 1], ["id", 2]]
+  ↳ db/seeds.rb:75
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:75
+  [1m[35m (1.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:76
+  [1m[36mAnswer Update (1.3ms)[0m  [1m[33mUPDATE "answers" SET "updated_at" = $1, "question_id" = $2 WHERE "answers"."id" = $3[0m  [["updated_at", "2022-02-22 00:18:57.372518"], ["question_id", 2], ["id", 1]]
+  ↳ db/seeds.rb:76
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:76
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:76
+  [1m[36mAnswer Update (1.1ms)[0m  [1m[33mUPDATE "answers" SET "updated_at" = $1, "question_id" = $2 WHERE "answers"."id" = $3[0m  [["updated_at", "2022-02-22 00:18:57.377422"], ["question_id", 2], ["id", 6]]
+  ↳ db/seeds.rb:76
+  [1m[35m (1.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:76
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:77
+  [1m[36mAnswer Update (0.8ms)[0m  [1m[33mUPDATE "answers" SET "updated_at" = $1, "question_id" = $2 WHERE "answers"."id" = $3[0m  [["updated_at", "2022-02-22 00:18:57.386214"], ["question_id", 3], ["id", 7]]
+  ↳ db/seeds.rb:77
+  [1m[35m (8.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:77
+  [1m[35m (1.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:77
+  [1m[36mAnswer Update (5.9ms)[0m  [1m[33mUPDATE "answers" SET "updated_at" = $1, "question_id" = $2 WHERE "answers"."id" = $3[0m  [["updated_at", "2022-02-22 00:18:57.400336"], ["question_id", 3], ["id", 3]]
+  ↳ db/seeds.rb:77
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:77
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:78
+  [1m[36mAnswer Update (1.1ms)[0m  [1m[33mUPDATE "answers" SET "updated_at" = $1, "question_id" = $2 WHERE "answers"."id" = $3[0m  [["updated_at", "2022-02-22 00:18:57.411834"], ["question_id", 4], ["id", 4]]
+  ↳ db/seeds.rb:78
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:78
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:78
+  [1m[36mAnswer Update (0.8ms)[0m  [1m[33mUPDATE "answers" SET "updated_at" = $1, "question_id" = $2 WHERE "answers"."id" = $3[0m  [["updated_at", "2022-02-22 00:18:57.416893"], ["question_id", 4], ["id", 5]]
+  ↳ db/seeds.rb:78
+  [1m[35m (1.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:78
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT COUNT(*) FROM "questions"[0m
+  ↳ db/seeds.rb:80
+  [1m[36mQuestion Load (0.9ms)[0m  [1m[34mSELECT  "questions".* FROM "questions" ORDER BY "questions"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ db/seeds.rb:81
+  [1m[36mUser Load (13.0ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:89
+  [1m[35m (4.9ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:92
+  [1m[36mUser Create (3.9ms)[0m  [1m[32mINSERT INTO "users" ("name", "password_digest", "created_at", "updated_at", "email") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "alex"], ["password_digest", "$2a$12$Pfc8bgxJY/tpKb.GchXpvuJ3NHVXgveBzYaDJC9qfgVRXotPrfWqy"], ["created_at", "2022-02-22 00:18:58.818313"], ["updated_at", "2022-02-22 00:18:58.818313"], ["email", "alex@ga.co"]]
+  ↳ db/seeds.rb:92
+  [1m[35m (2.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:92
+  [1m[35m (10.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:93
+  [1m[36mUser Create (6.1ms)[0m  [1m[32mINSERT INTO "users" ("name", "password_digest", "created_at", "updated_at", "email") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "angela"], ["password_digest", "$2a$12$0Kyd5qpm9k8.Xp4FKRnfzuj0b0mod3LN3l/riTUbLGNC1/8Tlc1Dy"], ["created_at", "2022-02-22 00:19:00.032733"], ["updated_at", "2022-02-22 00:19:00.032733"], ["email", "angela@ga.co"]]
+  ↳ db/seeds.rb:93
+  [1m[35m (1.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:93
+  [1m[35m (0.9ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:94
+  [1m[36mUser Create (1.9ms)[0m  [1m[32mINSERT INTO "users" ("name", "password_digest", "created_at", "updated_at", "email") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "cassie"], ["password_digest", "$2a$12$7LTjVoOJtC3TQhQwaBXzxeLUQ5.UdN0p6/zdtsAcJ1mUiu7LVogIO"], ["created_at", "2022-02-22 00:19:01.160899"], ["updated_at", "2022-02-22 00:19:01.160899"], ["email", "cassie@ga.co"]]
+  ↳ db/seeds.rb:94
+  [1m[35m (1.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:94
+  [1m[35m (0.8ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:95
+  [1m[36mUser Create (1.9ms)[0m  [1m[32mINSERT INTO "users" ("name", "password_digest", "created_at", "updated_at", "email") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "ethan"], ["password_digest", "$2a$12$PE5U/Y7CZyFO3gn5vDBYSO8zStYyXnLEPwXzfKAkkNpjw6OBSdY/6"], ["created_at", "2022-02-22 00:19:02.260983"], ["updated_at", "2022-02-22 00:19:02.260983"], ["email", "ethan@ga.co"]]
+  ↳ db/seeds.rb:95
+  [1m[35m (3.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:95
+  [1m[35m (4.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "users"[0m
+  ↳ db/seeds.rb:97
+  [1m[35m (2.8ms)[0m  [1m[35mCREATE DATABASE "quiplash-backend_development" ENCODING = 'unicode'[0m
+  ↳ /Users/angelazhang/.rvm/gems/ruby-2.7.0/bin/rake:23
+  [1m[35m (1.1ms)[0m  [1m[35mCREATE DATABASE "quiplash-backend_test" ENCODING = 'unicode'[0m
+  ↳ /Users/angelazhang/.rvm/gems/ruby-2.7.0/bin/rake:23
+  [1m[35m (2.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/angelazhang/.rvm/gems/ruby-2.7.0/bin/rake:23
+  [1m[35m (1.7ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  ↳ /Users/angelazhang/.rvm/gems/ruby-2.7.0/bin/rake:23
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/angelazhang/.rvm/gems/ruby-2.7.0/bin/rake:23
+  [1m[35m (2.3ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  ↳ /Users/angelazhang/.rvm/gems/ruby-2.7.0/bin/rake:23
+  [1m[35m (4.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/angelazhang/.rvm/gems/ruby-2.7.0/bin/rake:23
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  ↳ /Users/angelazhang/.rvm/gems/ruby-2.7.0/bin/rake:23
+  [1m[35mSQL (1.1ms)[0m  [1m[35mCREATE EXTENSION IF NOT EXISTS "plpgsql"[0m
+  ↳ db/schema.rb:16
+  [1m[35m (67.2ms)[0m  [1m[35mDROP TABLE IF EXISTS "answers" CASCADE[0m
+  ↳ db/schema.rb:18
+  [1m[35m (41.3ms)[0m  [1m[35mCREATE TABLE "answers" ("id" bigserial primary key, "answer" text, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL, "question_id" integer)[0m
+  ↳ db/schema.rb:18
+  [1m[35m (27.2ms)[0m  [1m[35mDROP TABLE IF EXISTS "games" CASCADE[0m
+  ↳ db/schema.rb:25
+  [1m[35m (27.0ms)[0m  [1m[35mCREATE TABLE "games" ("id" bigserial primary key, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL, "title" text, "room_id" integer)[0m
+  ↳ db/schema.rb:25
+  [1m[35m (22.1ms)[0m  [1m[35mDROP TABLE IF EXISTS "questionbanks" CASCADE[0m
+  ↳ db/schema.rb:32
+  [1m[35m (33.5ms)[0m  [1m[35mCREATE TABLE "questionbanks" ("id" bigserial primary key, "default" boolean, "name" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/schema.rb:32
+  [1m[35m (28.8ms)[0m  [1m[35mDROP TABLE IF EXISTS "questions" CASCADE[0m
+  ↳ db/schema.rb:39
+  [1m[35m (34.0ms)[0m  [1m[35mCREATE TABLE "questions" ("id" bigserial primary key, "question" text, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/schema.rb:39
+  [1m[35m (49.6ms)[0m  [1m[35mDROP TABLE IF EXISTS "rooms" CASCADE[0m
+  ↳ db/schema.rb:45
+  [1m[35m (46.7ms)[0m  [1m[35mCREATE TABLE "rooms" ("id" bigserial primary key, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL, "title" text)[0m
+  ↳ db/schema.rb:45
+  [1m[35m (30.0ms)[0m  [1m[35mDROP TABLE IF EXISTS "users" CASCADE[0m
+  ↳ db/schema.rb:51
+  [1m[35m (27.1ms)[0m  [1m[35mCREATE TABLE "users" ("id" bigserial primary key, "name" text, "password_digest" text, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL, "email" character varying)[0m
+  ↳ db/schema.rb:51
+  [1m[35m (60.0ms)[0m  [1m[35mDROP TABLE IF EXISTS "votes" CASCADE[0m
+  ↳ db/schema.rb:59
+  [1m[35m (42.4ms)[0m  [1m[35mCREATE TABLE "votes" ("id" bigserial primary key, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/schema.rb:59
+  [1m[35m (3.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ db/schema.rb:13
+  [1m[36mActiveRecord::InternalMetadata Load (2.8ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ db/schema.rb:13
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/schema.rb:13
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/schema.rb:13
+  [1m[36mActiveRecord::InternalMetadata Load (3.8ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ /Users/angelazhang/.rvm/gems/ruby-2.7.0/bin/rake:23
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ /Users/angelazhang/.rvm/gems/ruby-2.7.0/bin/rake:23
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /Users/angelazhang/.rvm/gems/ruby-2.7.0/bin/rake:23
+  [1m[35mSQL (0.8ms)[0m  [1m[35mCREATE EXTENSION IF NOT EXISTS "plpgsql"[0m
+  ↳ db/schema.rb:16
+  [1m[35m (6.1ms)[0m  [1m[35mDROP TABLE IF EXISTS "answers" CASCADE[0m
+  ↳ db/schema.rb:18
+  [1m[35m (76.1ms)[0m  [1m[35mCREATE TABLE "answers" ("id" bigserial primary key, "answer" text, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL, "question_id" integer)[0m
+  ↳ db/schema.rb:18
+  [1m[35m (0.9ms)[0m  [1m[35mDROP TABLE IF EXISTS "games" CASCADE[0m
+  ↳ db/schema.rb:25
+  [1m[35m (50.2ms)[0m  [1m[35mCREATE TABLE "games" ("id" bigserial primary key, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL, "title" text, "room_id" integer)[0m
+  ↳ db/schema.rb:25
+  [1m[35m (37.6ms)[0m  [1m[35mDROP TABLE IF EXISTS "questionbanks" CASCADE[0m
+  ↳ db/schema.rb:32
+  [1m[35m (19.8ms)[0m  [1m[35mCREATE TABLE "questionbanks" ("id" bigserial primary key, "default" boolean, "name" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/schema.rb:32
+  [1m[35m (29.1ms)[0m  [1m[35mDROP TABLE IF EXISTS "questions" CASCADE[0m
+  ↳ db/schema.rb:39
+  [1m[35m (14.6ms)[0m  [1m[35mCREATE TABLE "questions" ("id" bigserial primary key, "question" text, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/schema.rb:39
+  [1m[35m (1.2ms)[0m  [1m[35mDROP TABLE IF EXISTS "rooms" CASCADE[0m
+  ↳ db/schema.rb:45
+  [1m[35m (47.3ms)[0m  [1m[35mCREATE TABLE "rooms" ("id" bigserial primary key, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL, "title" text)[0m
+  ↳ db/schema.rb:45
+  [1m[35m (26.6ms)[0m  [1m[35mDROP TABLE IF EXISTS "users" CASCADE[0m
+  ↳ db/schema.rb:51
+  [1m[35m (145.4ms)[0m  [1m[35mCREATE TABLE "users" ("id" bigserial primary key, "name" text, "password_digest" text, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL, "email" character varying)[0m
+  ↳ db/schema.rb:51
+  [1m[35m (1.0ms)[0m  [1m[35mDROP TABLE IF EXISTS "votes" CASCADE[0m
+  ↳ db/schema.rb:59
+  [1m[35m (26.7ms)[0m  [1m[35mCREATE TABLE "votes" ("id" bigserial primary key, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/schema.rb:59
+  [1m[35m (8.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ db/schema.rb:13
+  [1m[35m (11.6ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES (20220221043203)[0m
+  ↳ db/schema.rb:13
+  [1m[35m (2.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES
+(20220218085945),
+(20220221043108),
+(20220221004504),
+(20220218122402),
+(20220218055510),
+(20220221004456),
+(20220218073636),
+(20220218075051),
+(20220218062218),
+(20220221012748),
+(20220221042318),
+(20220220233959);
+
+[0m
+  ↳ db/schema.rb:13
+  [1m[36mActiveRecord::InternalMetadata Load (1.3ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ db/schema.rb:13
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/schema.rb:13
+  [1m[36mActiveRecord::InternalMetadata Update (1.9ms)[0m  [1m[33mUPDATE "ar_internal_metadata" SET "value" = $1, "updated_at" = $2 WHERE "ar_internal_metadata"."key" = $3[0m  [["value", "development"], ["updated_at", "2022-02-22 00:23:22.736907"], ["key", "environment"]]
+  ↳ db/schema.rb:13
+  [1m[35m (6.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/schema.rb:13
+  [1m[36mActiveRecord::InternalMetadata Load (1.1ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ /Users/angelazhang/.rvm/gems/ruby-2.7.0/bin/rake:23
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ /Users/angelazhang/.rvm/gems/ruby-2.7.0/bin/rake:23
+  [1m[36mActiveRecord::InternalMetadata Update (1.0ms)[0m  [1m[33mUPDATE "ar_internal_metadata" SET "value" = $1, "updated_at" = $2 WHERE "ar_internal_metadata"."key" = $3[0m  [["value", "test"], ["updated_at", "2022-02-22 00:23:22.762415"], ["key", "environment"]]
+  ↳ /Users/angelazhang/.rvm/gems/ruby-2.7.0/bin/rake:23
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /Users/angelazhang/.rvm/gems/ruby-2.7.0/bin/rake:23
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT pg_try_advisory_lock(5882105369419256040)[0m
+  ↳ /Users/angelazhang/.rvm/gems/ruby-2.7.0/bin/rake:23
+  [1m[35m (6.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/angelazhang/.rvm/gems/ruby-2.7.0/bin/rake:23
+  [1m[36mActiveRecord::InternalMetadata Load (1.9ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ /Users/angelazhang/.rvm/gems/ruby-2.7.0/bin/rake:23
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ /Users/angelazhang/.rvm/gems/ruby-2.7.0/bin/rake:23
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /Users/angelazhang/.rvm/gems/ruby-2.7.0/bin/rake:23
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT pg_advisory_unlock(5882105369419256040)[0m
+  ↳ /Users/angelazhang/.rvm/gems/ruby-2.7.0/bin/rake:23
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/angelazhang/.rvm/gems/ruby-2.7.0/bin/rake:23
+  [1m[35m (2.2ms)[0m  [1m[34mSELECT pg_try_advisory_lock(5882105369419256040)[0m
+  ↳ bin/rails:4
+  [1m[35m (4.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:4
+  [1m[36mActiveRecord::InternalMetadata Load (1.6ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ bin/rails:4
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:4
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:4
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT pg_advisory_unlock(5882105369419256040)[0m
+  ↳ bin/rails:4
+  [1m[35m (2.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:4
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT pg_try_advisory_lock(5882105369419256040)[0m
+  ↳ bin/rails:4
+  [1m[35m (4.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:4
+  [1m[36mActiveRecord::InternalMetadata Load (1.1ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ bin/rails:4
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:4
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:4
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT pg_advisory_unlock(5882105369419256040)[0m
+  ↳ bin/rails:4
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:4
