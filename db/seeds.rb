@@ -95,3 +95,6 @@ u3 = User.create! name: 'cassie', password: 'chicken', email: 'cassie@ga.co'
 u4 = User.create! name: 'ethan', password: 'chicken', email: 'ethan@ga.co'
 
 puts "Created #{User.count} users."
+
+print "fuck off rooms..."
+Room.destroy_all
