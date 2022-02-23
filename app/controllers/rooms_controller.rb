@@ -7,6 +7,12 @@ class RoomsController < ApplicationController
         render json: rooms
     end
 
+    def show
+        room = Room.find params[:id]
+        room = room.attributes
+        render json: room
+    end
+
     def create
         headers['Access-Control-Allow-Origin'] = '*'
 
