@@ -43,4 +43,5 @@ class RoomsController < ApplicationController
 
       def room_update_params
         params.require(:room)
+      end
 end
