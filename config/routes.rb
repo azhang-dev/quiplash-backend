@@ -4,8 +4,8 @@ Rails.application.routes.draw do
   get '/users/current' => 'users#current'
   post '/user' => 'user#create'
 
-  resources :rooms, only: [:create, :index, :destroy]
-  resources :questions, only: [:show,:index]
+  resources :rooms, only: [:create, :index, :destroy, :show]
+  resources :questions, only: [:show, :index]
   resources :answers, only: [:create, :show]
   resources :votes, only: [:create, :index]
   resources :games, only: [:create, :show]
