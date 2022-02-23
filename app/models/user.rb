@@ -4,6 +4,8 @@ class User < ApplicationRecord
   has_and_belongs_to_many :games, optional: true
 
   has_and_belongs_to_many :room, optional: true
+
+  has_many :questionbanks
   
 
   # def self.from_token_request(request)
