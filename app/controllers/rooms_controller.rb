@@ -19,7 +19,7 @@ class RoomsController < ApplicationController
     def create
         headers['Access-Control-Allow-Origin'] = '*'
 
-        room = Room.new room_params
+        room = Room.new host_id: current_user.id
 
         if room.save 
             serialized_data = ActiveModelSerializers::Adapter::Json.new( RoomSerializer.new(room)).serializable_hash
