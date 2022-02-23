@@ -10,7 +10,7 @@ class RoomsController < ApplicationController
     def create
         headers['Access-Control-Allow-Origin'] = '*'
 
-        room = Room.new
+        room = Room.new room_params
 
         if room.save 
             serialized_data = ActiveModelSerializers::Adapter::Json.new( RoomSerializer.new(room)).serializable_hash
@@ -26,7 +26,7 @@ class RoomsController < ApplicationController
 
     private
       
-    #   def room_params
-    #     params.require(:room)
-    #   end
+      def room_params
+        params.require(:room).permit(:host_id)
+      end
 end
