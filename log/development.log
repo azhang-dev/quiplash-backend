@@ -1,171 +1,211 @@
-Started GET "/rooms/248" for 127.0.0.1 at 2022-02-23 22:46:54 +1100
-Started GET "/rooms/248" for 127.0.0.1 at 2022-02-23 22:46:54 +1100
-Started GET "/rooms/256" for 127.0.0.1 at 2022-02-23 22:46:54 +1100
+Finished "/cable/?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE2NDU2OTg4NjQsInN1YiI6Mjl9.gn7uutPp4na1Bssd7tcYirB1-IvYlgdGT1LDeOGFKUs" [WebSocket] for 127.0.0.1 at 2022-02-23 22:47:29 +1100
+Started OPTIONS "/rooms/248" for 127.0.0.1 at 2022-02-23 22:47:30 +1100
+Started GET "/rooms/256" for 127.0.0.1 at 2022-02-23 22:47:30 +1100
 Processing by RoomsController#show as HTML
-Processing by RoomsController#show as HTML
-  Parameters: {"id"=>"248"}
-  Parameters: {"id"=>"248"}
-  [1m[36mRoom Load (0.3ms)[0m  [1m[34mSELECT  "rooms".* FROM "rooms" WHERE "rooms"."id" = $1 LIMIT $2[0m  [["id", 248], ["LIMIT", 1]]
-Processing by RoomsController#show as HTML
-  [1m[36mRoom Load (1.2ms)[0m  [1m[34mSELECT  "rooms".* FROM "rooms" WHERE "rooms"."id" = $1 LIMIT $2[0m  [["id", 248], ["LIMIT", 1]]
-  ↳ app/controllers/rooms_controller.rb:12
   Parameters: {"id"=>"256"}
+  [1m[36mRoom Load (7.5ms)[0m  [1m[34mSELECT  "rooms".* FROM "rooms" WHERE "rooms"."id" = $1 LIMIT $2[0m  [["id", 256], ["LIMIT", 1]]
   ↳ app/controllers/rooms_controller.rb:12
-Completed 404 Not Found in 2ms (ActiveRecord: 0.3ms)
-
-
-Completed 404 Not Found in 3ms (ActiveRecord: 1.2ms)
-
-
-  
-  [1m[36mRoom Load (1.2ms)[0m  [1m[34mSELECT  "rooms".* FROM "rooms" WHERE "rooms"."id" = $1 LIMIT $2[0m  [["id", 256], ["LIMIT", 1]]
-ActiveRecord::RecordNotFound (Couldn't find Room with 'id'=248):
-  ↳ app/controllers/rooms_controller.rb:12
-  
-  
-app/controllers/rooms_controller.rb:12:in `show'
-ActiveRecord::RecordNotFound (Couldn't find Room with 'id'=248):
-  
-app/controllers/rooms_controller.rb:12:in `show'
-  [1m[36mUser Load (40.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 29], ["LIMIT", 1]]
+  [1m[36mUser Load (1.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 29], ["LIMIT", 1]]
   ↳ app/controllers/rooms_controller.rb:16
-[active_model_serializers]   [1m[36mUser Load (26.3ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "rooms_users" ON "users"."id" = "rooms_users"."user_id" WHERE "rooms_users"."room_id" = $1[0m  [["room_id", 256]]
+[active_model_serializers]   [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "rooms_users" ON "users"."id" = "rooms_users"."user_id" WHERE "rooms_users"."room_id" = $1[0m  [["room_id", 256]]
 [active_model_serializers]   ↳ app/controllers/rooms_controller.rb:16
-[active_model_serializers]   [1m[36mGame Load (0.5ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."room_id" = $1[0m  [["room_id", 256]]
+[active_model_serializers]   [1m[36mGame Load (0.2ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."room_id" = $1[0m  [["room_id", 256]]
 [active_model_serializers]   ↳ app/controllers/rooms_controller.rb:16
-[active_model_serializers] Rendered RoomSerializer with ActiveModelSerializers::Adapter::Attributes (30.96ms)
-Completed 200 OK in 190ms (Views: 120.5ms | ActiveRecord: 68.2ms)
+[active_model_serializers] Rendered RoomSerializer with ActiveModelSerializers::Adapter::Attributes (4.0ms)
+Completed 200 OK in 31ms (Views: 19.1ms | ActiveRecord: 9.6ms)
 
 
-Started OPTIONS "/rooms/248" for 127.0.0.1 at 2022-02-23 22:46:56 +1100
-Started OPTIONS "/rooms/248" for 127.0.0.1 at 2022-02-23 22:46:57 +1100
-Started OPTIONS "/rooms/248" for 127.0.0.1 at 2022-02-23 22:46:58 +1100
-Started OPTIONS "/rooms/248" for 127.0.0.1 at 2022-02-23 22:46:58 +1100
-Started GET "/rooms/248" for 127.0.0.1 at 2022-02-23 22:46:58 +1100
-Started GET "/rooms/248" for 127.0.0.1 at 2022-02-23 22:46:58 +1100
+Started GET "/rooms/248" for 127.0.0.1 at 2022-02-23 22:47:30 +1100
 Processing by RoomsController#show as HTML
   Parameters: {"id"=>"248"}
-Started GET "/rooms/257" for 127.0.0.1 at 2022-02-23 22:46:58 +1100
-Processing by RoomsController#show as HTML
-  [1m[36mRoom Load (1.4ms)[0m  [1m[34mSELECT  "rooms".* FROM "rooms" WHERE "rooms"."id" = $1 LIMIT $2[0m  [["id", 248], ["LIMIT", 1]]
-  Parameters: {"id"=>"248"}
+  [1m[36mRoom Load (0.5ms)[0m  [1m[34mSELECT  "rooms".* FROM "rooms" WHERE "rooms"."id" = $1 LIMIT $2[0m  [["id", 248], ["LIMIT", 1]]
   ↳ app/controllers/rooms_controller.rb:12
-Completed 404 Not Found in 4ms (ActiveRecord: 1.4ms)
+Completed 404 Not Found in 5ms (ActiveRecord: 0.5ms)
 
 
-  [1m[36mRoom Load (2.9ms)[0m  [1m[34mSELECT  "rooms".* FROM "rooms" WHERE "rooms"."id" = $1 LIMIT $2[0m  [["id", 248], ["LIMIT", 1]]
-  ↳ app/controllers/rooms_controller.rb:12
   
-Processing by RoomsController#show as HTML
-Completed 404 Not Found in 4ms (ActiveRecord: 2.9ms)
-
-
 ActiveRecord::RecordNotFound (Couldn't find Room with 'id'=248):
   
+app/controllers/rooms_controller.rb:12:in `show'
+Started OPTIONS "/rooms/248" for 127.0.0.1 at 2022-02-23 22:47:31 +1100
+Started OPTIONS "/rooms/248" for 127.0.0.1 at 2022-02-23 22:47:31 +1100
+Started OPTIONS "/rooms/248" for 127.0.0.1 at 2022-02-23 22:47:31 +1100
+Started GET "/rooms/248" for 127.0.0.1 at 2022-02-23 22:47:31 +1100
+Processing by RoomsController#show as HTML
+  Parameters: {"id"=>"248"}
+  [1m[36mRoom Load (11.1ms)[0m  [1m[34mSELECT  "rooms".* FROM "rooms" WHERE "rooms"."id" = $1 LIMIT $2[0m  [["id", 248], ["LIMIT", 1]]
+  ↳ app/controllers/rooms_controller.rb:12
+Completed 404 Not Found in 19ms (ActiveRecord: 11.1ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Room with 'id'=248):
+  
+app/controllers/rooms_controller.rb:12:in `show'
+Started GET "/rooms/248" for 127.0.0.1 at 2022-02-23 22:47:31 +1100
+Started GET "/rooms/248" for 127.0.0.1 at 2022-02-23 22:47:31 +1100
+Processing by RoomsController#show as HTML
+  Parameters: {"id"=>"248"}
+Processing by RoomsController#show as HTML
+  [1m[36mRoom Load (17.0ms)[0m  [1m[34mSELECT  "rooms".* FROM "rooms" WHERE "rooms"."id" = $1 LIMIT $2[0m  [["id", 248], ["LIMIT", 1]]
+  Parameters: {"id"=>"248"}
+  ↳ app/controllers/rooms_controller.rb:12
+Completed 404 Not Found in 19ms (ActiveRecord: 17.0ms)
+
+
+Started GET "/cable?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE2NDU2OTg4NjQsInN1YiI6Mjl9.gn7uutPp4na1Bssd7tcYirB1-IvYlgdGT1LDeOGFKUs" for 127.0.0.1 at 2022-02-23 22:47:31 +1100
+  [1m[36mRoom Load (1.7ms)[0m  [1m[34mSELECT  "rooms".* FROM "rooms" WHERE "rooms"."id" = $1 LIMIT $2[0m  [["id", 248], ["LIMIT", 1]]
+  
+  ↳ app/controllers/rooms_controller.rb:12
+ActiveRecord::RecordNotFound (Couldn't find Room with 'id'=248):
+Completed 404 Not Found in 3ms (ActiveRecord: 1.7ms)
+
+
+  
+  
+Started GET "/cable/?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE2NDU2OTg4NjQsInN1YiI6Mjl9.gn7uutPp4na1Bssd7tcYirB1-IvYlgdGT1LDeOGFKUs" [WebSocket] for 127.0.0.1 at 2022-02-23 22:47:31 +1100
+app/controllers/rooms_controller.rb:12:in `show'
+ActiveRecord::RecordNotFound (Couldn't find Room with 'id'=248):
+  
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: keep-alive, Upgrade, HTTP_UPGRADE: websocket)
+app/controllers/rooms_controller.rb:12:in `show'
+There was an exception - JWT::VerificationError(Signature verification raised)
+/Users/calicoalex/.rvm/gems/ruby-2.7.0/gems/jwt-1.5.6/lib/jwt.rb:156:in `verify_signature_algo'
+/Users/calicoalex/.rvm/gems/ruby-2.7.0/gems/jwt-1.5.6/lib/jwt.rb:147:in `verify_signature'
+/Users/calicoalex/.rvm/gems/ruby-2.7.0/gems/jwt-1.5.6/lib/jwt.rb:138:in `decode_verify_signature'
+/Users/calicoalex/.rvm/gems/ruby-2.7.0/gems/jwt-1.5.6/lib/jwt.rb:125:in `decode'
+/Users/calicoalex/sei/projects/quiplash-clone/quiplash-backend/app/channels/application_cable/connection.rb:14:in `find_verified_user'
+/Users/calicoalex/sei/projects/quiplash-clone/quiplash-backend/app/channels/application_cable/connection.rb:6:in `connect'
+/Users/calicoalex/.rvm/gems/ruby-2.7.0/gems/actioncable-5.2.6.2/lib/action_cable/connection/base.rb:169:in `handle_open'
+/Users/calicoalex/.rvm/gems/ruby-2.7.0/gems/actioncable-5.2.6.2/lib/action_cable/server/worker.rb:60:in `block in invoke'
+/Users/calicoalex/.rvm/gems/ruby-2.7.0/gems/actioncable-5.2.6.2/lib/action_cable/server/worker.rb:41:in `block in work'
+/Users/calicoalex/.rvm/gems/ruby-2.7.0/gems/activesupport-5.2.6.2/lib/active_support/callbacks.rb:109:in `block in run_callbacks'
+/Users/calicoalex/.rvm/gems/ruby-2.7.0/gems/actioncable-5.2.6.2/lib/action_cable/server/worker/active_record_connection_management.rb:16:in `block in with_database_connections'
+/Users/calicoalex/.rvm/gems/ruby-2.7.0/gems/actioncable-5.2.6.2/lib/action_cable/connection/tagged_logger_proxy.rb:24:in `block in tag'
+/Users/calicoalex/.rvm/gems/ruby-2.7.0/gems/activesupport-5.2.6.2/lib/active_support/tagged_logging.rb:71:in `block in tagged'
+/Users/calicoalex/.rvm/gems/ruby-2.7.0/gems/activesupport-5.2.6.2/lib/active_support/tagged_logging.rb:28:in `tagged'
+/Users/calicoalex/.rvm/gems/ruby-2.7.0/gems/activesupport-5.2.6.2/lib/active_support/tagged_logging.rb:71:in `tagged'
+/Users/calicoalex/.rvm/gems/ruby-2.7.0/gems/actioncable-5.2.6.2/lib/action_cable/connection/tagged_logger_proxy.rb:24:in `tag'
+/Users/calicoalex/.rvm/gems/ruby-2.7.0/gems/actioncable-5.2.6.2/lib/action_cable/server/worker/active_record_connection_management.rb:16:in `with_database_connections'
+/Users/calicoalex/.rvm/gems/ruby-2.7.0/gems/activesupport-5.2.6.2/lib/active_support/callbacks.rb:118:in `block in run_callbacks'
+/Users/calicoalex/.rvm/gems/ruby-2.7.0/gems/actioncable-5.2.6.2/lib/action_cable/engine.rb:62:in `block (4 levels) in <class:Engine>'
+/Users/calicoalex/.rvm/gems/ruby-2.7.0/gems/activesupport-5.2.6.2/lib/active_support/execution_wrapper.rb:90:in `wrap'
+/Users/calicoalex/.rvm/gems/ruby-2.7.0/gems/actioncable-5.2.6.2/lib/action_cable/engine.rb:57:in `block (3 levels) in <class:Engine>'
+/Users/calicoalex/.rvm/gems/ruby-2.7.0/gems/activesupport-5.2.6.2/lib/active_support/callbacks.rb:118:in `instance_exec'
+/Users/calicoalex/.rvm/gems/ruby-2.7.0/gems/activesupport-5.2.6.2/lib/active_support/callbacks.rb:118:in `block in run_callbacks'
+/Users/calicoalex/.rvm/gems/ruby-2.7.0/gems/activesupport-5.2.6.2/lib/active_support/callbacks.rb:136:in `run_callbacks'
+/Users/calicoalex/.rvm/gems/ruby-2.7.0/gems/actioncable-5.2.6.2/lib/action_cable/server/worker.rb:40:in `work'
+/Users/calicoalex/.rvm/gems/ruby-2.7.0/gems/actioncable-5.2.6.2/lib/action_cable/server/worker.rb:58:in `invoke'
+/Users/calicoalex/.rvm/gems/ruby-2.7.0/gems/actioncable-5.2.6.2/lib/action_cable/server/worker.rb:53:in `block in async_invoke'
+/Users/calicoalex/.rvm/gems/ruby-2.7.0/gems/concurrent-ruby-1.1.9/lib/concurrent-ruby/concurrent/executor/ruby_thread_pool_executor.rb:363:in `run_task'
+/Users/calicoalex/.rvm/gems/ruby-2.7.0/gems/concurrent-ruby-1.1.9/lib/concurrent-ruby/concurrent/executor/ruby_thread_pool_executor.rb:352:in `block (3 levels) in create_worker'
+/Users/calicoalex/.rvm/gems/ruby-2.7.0/gems/concurrent-ruby-1.1.9/lib/concurrent-ruby/concurrent/executor/ruby_thread_pool_executor.rb:335:in `loop'
+/Users/calicoalex/.rvm/gems/ruby-2.7.0/gems/concurrent-ruby-1.1.9/lib/concurrent-ruby/concurrent/executor/ruby_thread_pool_executor.rb:335:in `block (2 levels) in create_worker'
+/Users/calicoalex/.rvm/gems/ruby-2.7.0/gems/concurrent-ruby-1.1.9/lib/concurrent-ruby/concurrent/executor/ruby_thread_pool_executor.rb:334:in `catch'
+/Users/calicoalex/.rvm/gems/ruby-2.7.0/gems/concurrent-ruby-1.1.9/lib/concurrent-ruby/concurrent/executor/ruby_thread_pool_executor.rb:334:in `block in create_worker'
+Started GET "/rooms/256" for ::1 at 2022-02-23 22:47:33 +1100
+Processing by RoomsController#show as HTML
+  Parameters: {"id"=>"256"}
+Started GET "/rooms/my_profile" for ::1 at 2022-02-23 22:47:33 +1100
+  [1m[36mRoom Load (2.7ms)[0m  [1m[34mSELECT  "rooms".* FROM "rooms" WHERE "rooms"."id" = $1 LIMIT $2[0m  [["id", 256], ["LIMIT", 1]]
+  ↳ app/controllers/rooms_controller.rb:12
+  [1m[36mUser Load (1.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 30], ["LIMIT", 1]]
+  ↳ app/controllers/rooms_controller.rb:16
+[active_model_serializers]   [1m[36mUser Load (10.7ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "rooms_users" ON "users"."id" = "rooms_users"."user_id" WHERE "rooms_users"."room_id" = $1[0m  [["room_id", 256]]
+[active_model_serializers]   ↳ app/controllers/rooms_controller.rb:16
+Processing by RoomsController#show as HTML
+[active_model_serializers]   [1m[36mGame Load (1.8ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."room_id" = $1[0m  [["room_id", 256]]
+  Parameters: {"id"=>"my_profile"}
+[active_model_serializers]   ↳ app/controllers/rooms_controller.rb:16
+[active_model_serializers] Rendered RoomSerializer with ActiveModelSerializers::Adapter::Attributes (21.8ms)
+  [1m[36mRoom Load (1.2ms)[0m  [1m[34mSELECT  "rooms".* FROM "rooms" WHERE "rooms"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+Completed 200 OK in 40ms (Views: 17.6ms | ActiveRecord: 16.9ms)
+
+
+  ↳ app/controllers/rooms_controller.rb:12
+Completed 404 Not Found in 6ms (ActiveRecord: 1.2ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Room with 'id'=my_profile):
+  
+app/controllers/rooms_controller.rb:12:in `show'
+Started GET "/rooms/257" for ::1 at 2022-02-23 22:47:33 +1100
+Finished "/cable/?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE2NDU3MDA2MzAsInN1YiI6MzB9.qqAZjAfajJyp1KV7VHy2O0yoEwo2ZqTHVnWAeytCqK8" [WebSocket] for ::1 at 2022-02-23 22:47:33 +1100
+Started GET "/rooms/255" for ::1 at 2022-02-23 22:47:33 +1100
+Started GET "/rooms/256" for ::1 at 2022-02-23 22:47:33 +1100
+Processing by RoomsController#show as HTML
   Parameters: {"id"=>"257"}
-  
-ActiveRecord::RecordNotFound (Couldn't find Room with 'id'=248):
-app/controllers/rooms_controller.rb:12:in `show'
-  
-app/controllers/rooms_controller.rb:12:in `show'
-Started GET "/rooms/248" for 127.0.0.1 at 2022-02-23 22:46:58 +1100
-Started GET "/rooms/256" for 127.0.0.1 at 2022-02-23 22:46:58 +1100
-  [1m[36mRoom Load (122.6ms)[0m  [1m[34mSELECT  "rooms".* FROM "rooms" WHERE "rooms"."id" = $1 LIMIT $2[0m  [["id", 257], ["LIMIT", 1]]
-  ↳ app/controllers/rooms_controller.rb:12
 Processing by RoomsController#show as HTML
-  Parameters: {"id"=>"248"}
+  Parameters: {"id"=>"255"}
 Processing by RoomsController#show as HTML
-  [1m[36mRoom Load (2.1ms)[0m  [1m[34mSELECT  "rooms".* FROM "rooms" WHERE "rooms"."id" = $1 LIMIT $2[0m  [["id", 248], ["LIMIT", 1]]
-  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 29], ["LIMIT", 1]]
-  ↳ app/controllers/rooms_controller.rb:16
-  ↳ app/controllers/rooms_controller.rb:12
-Completed 404 Not Found in 11ms (ActiveRecord: 2.1ms)
-
-
   Parameters: {"id"=>"256"}
-  
-ActiveRecord::RecordNotFound (Couldn't find Room with 'id'=248):
-[active_model_serializers]   [1m[36mUser Load (8.3ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "rooms_users" ON "users"."id" = "rooms_users"."user_id" WHERE "rooms_users"."room_id" = $1[0m  [["room_id", 257]]
-  [1m[36mRoom Load (0.5ms)[0m  [1m[34mSELECT  "rooms".* FROM "rooms" WHERE "rooms"."id" = $1 LIMIT $2[0m  [["id", 256], ["LIMIT", 1]]
-  
-[active_model_serializers]   ↳ app/controllers/rooms_controller.rb:16
+  [1m[36mRoom Load (3.6ms)[0m  [1m[34mSELECT  "rooms".* FROM "rooms" WHERE "rooms"."id" = $1 LIMIT $2[0m  [["id", 257], ["LIMIT", 1]]
   ↳ app/controllers/rooms_controller.rb:12
-app/controllers/rooms_controller.rb:12:in `show'
-[active_model_serializers]   [1m[36mGame Load (51.8ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."room_id" = $1[0m  [["room_id", 257]]
-[active_model_serializers]   ↳ app/controllers/rooms_controller.rb:16
-[active_model_serializers] Rendered RoomSerializer with ActiveModelSerializers::Adapter::Attributes (75.78ms)
-Completed 200 OK in 289ms (Views: 25.3ms | ActiveRecord: 183.5ms)
-
-
-  [1m[36mUser Load (39.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 29], ["LIMIT", 1]]
+  [1m[36mRoom Load (9.9ms)[0m  [1m[34mSELECT  "rooms".* FROM "rooms" WHERE "rooms"."id" = $1 LIMIT $2[0m  [["id", 255], ["LIMIT", 1]]
+  ↳ app/controllers/rooms_controller.rb:12
+  [1m[36mUser Load (4.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 30], ["LIMIT", 1]]
   ↳ app/controllers/rooms_controller.rb:16
-[active_model_serializers]   [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "rooms_users" ON "users"."id" = "rooms_users"."user_id" WHERE "rooms_users"."room_id" = $1[0m  [["room_id", 256]]
+[active_model_serializers]   [1m[36mUser Load (2.8ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "rooms_users" ON "users"."id" = "rooms_users"."user_id" WHERE "rooms_users"."room_id" = $1[0m  [["room_id", 257]]
 [active_model_serializers]   ↳ app/controllers/rooms_controller.rb:16
-[active_model_serializers]   [1m[36mGame Load (1.4ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."room_id" = $1[0m  [["room_id", 256]]
+[active_model_serializers]   [1m[36mGame Load (3.4ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."room_id" = $1[0m  [["room_id", 257]]
 [active_model_serializers]   ↳ app/controllers/rooms_controller.rb:16
-[active_model_serializers] Rendered RoomSerializer with ActiveModelSerializers::Adapter::Attributes (7.85ms)
-Completed 200 OK in 115ms (Views: 58.6ms | ActiveRecord: 42.3ms)
+[active_model_serializers] Rendered RoomSerializer with ActiveModelSerializers::Adapter::Attributes (10.64ms)
+Completed 200 OK in 28ms (Views: 10.8ms | ActiveRecord: 14.4ms)
 
 
-Started GET "/rooms/248" for 127.0.0.1 at 2022-02-23 22:46:59 +1100
-Processing by RoomsController#show as HTML
-  Parameters: {"id"=>"248"}
-  [1m[36mRoom Load (8.2ms)[0m  [1m[34mSELECT  "rooms".* FROM "rooms" WHERE "rooms"."id" = $1 LIMIT $2[0m  [["id", 248], ["LIMIT", 1]]
+  [1m[36mRoom Load (33.6ms)[0m  [1m[34mSELECT  "rooms".* FROM "rooms" WHERE "rooms"."id" = $1 LIMIT $2[0m  [["id", 256], ["LIMIT", 1]]
   ↳ app/controllers/rooms_controller.rb:12
-Completed 404 Not Found in 10ms (ActiveRecord: 8.2ms)
+  [1m[36mUser Load (9.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 30], ["LIMIT", 1]]
+  ↳ app/controllers/rooms_controller.rb:16
+  [1m[36mUser Load (42.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 30], ["LIMIT", 1]]
+  ↳ app/controllers/rooms_controller.rb:16
+[active_model_serializers]   [1m[36mUser Load (28.2ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "rooms_users" ON "users"."id" = "rooms_users"."user_id" WHERE "rooms_users"."room_id" = $1[0m  [["room_id", 256]]
+[active_model_serializers]   ↳ app/controllers/rooms_controller.rb:16
+[active_model_serializers]   [1m[36mGame Load (5.4ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."room_id" = $1[0m  [["room_id", 256]]
+[active_model_serializers]   ↳ app/controllers/rooms_controller.rb:16
+[active_model_serializers]   [1m[36mUser Load (31.3ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "rooms_users" ON "users"."id" = "rooms_users"."user_id" WHERE "rooms_users"."room_id" = $1[0m  [["room_id", 255]]
+[active_model_serializers]   ↳ app/controllers/rooms_controller.rb:16
+[active_model_serializers] Rendered RoomSerializer with ActiveModelSerializers::Adapter::Attributes (46.93ms)
+Completed 200 OK in 109ms (Views: 30.8ms | ActiveRecord: 77.0ms)
 
 
-  
-ActiveRecord::RecordNotFound (Couldn't find Room with 'id'=248):
-  
-app/controllers/rooms_controller.rb:12:in `show'
-Started GET "/rooms/248" for 127.0.0.1 at 2022-02-23 22:46:59 +1100
-Started GET "/rooms/248" for 127.0.0.1 at 2022-02-23 22:46:59 +1100
-Started OPTIONS "/rooms/248" for 127.0.0.1 at 2022-02-23 22:46:59 +1100
+[active_model_serializers]   [1m[36mGame Load (15.2ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."room_id" = $1[0m  [["room_id", 255]]
+[active_model_serializers]   ↳ app/controllers/rooms_controller.rb:16
+[active_model_serializers] Rendered RoomSerializer with ActiveModelSerializers::Adapter::Attributes (67.36ms)
+Completed 200 OK in 137ms (Views: 37.1ms | ActiveRecord: 98.6ms)
+
+
+Started GET "/rooms/257" for 127.0.0.1 at 2022-02-23 22:47:35 +1100
+Started GET "/rooms/256" for 127.0.0.1 at 2022-02-23 22:47:35 +1100
 Processing by RoomsController#show as HTML
-  Parameters: {"id"=>"248"}
+  Parameters: {"id"=>"257"}
 Processing by RoomsController#show as HTML
-  [1m[36mRoom Load (0.8ms)[0m  [1m[34mSELECT  "rooms".* FROM "rooms" WHERE "rooms"."id" = $1 LIMIT $2[0m  [["id", 248], ["LIMIT", 1]]
-  Parameters: {"id"=>"248"}
+  Parameters: {"id"=>"256"}
+  [1m[36mRoom Load (0.3ms)[0m  [1m[34mSELECT  "rooms".* FROM "rooms" WHERE "rooms"."id" = $1 LIMIT $2[0m  [["id", 257], ["LIMIT", 1]]
   ↳ app/controllers/rooms_controller.rb:12
-Completed 404 Not Found in 2ms (ActiveRecord: 0.8ms)
-
-
-  
-  [1m[36mRoom Load (1.2ms)[0m  [1m[34mSELECT  "rooms".* FROM "rooms" WHERE "rooms"."id" = $1 LIMIT $2[0m  [["id", 248], ["LIMIT", 1]]
-ActiveRecord::RecordNotFound (Couldn't find Room with 'id'=248):
-  
-app/controllers/rooms_controller.rb:12:in `show'
+  [1m[36mRoom Load (1.4ms)[0m  [1m[34mSELECT  "rooms".* FROM "rooms" WHERE "rooms"."id" = $1 LIMIT $2[0m  [["id", 256], ["LIMIT", 1]]
   ↳ app/controllers/rooms_controller.rb:12
-Completed 404 Not Found in 2ms (ActiveRecord: 1.2ms)
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 29], ["LIMIT", 1]]
+  ↳ app/controllers/rooms_controller.rb:16
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 29], ["LIMIT", 1]]
+  ↳ app/controllers/rooms_controller.rb:16
+[active_model_serializers]   [1m[36mUser Load (2.0ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "rooms_users" ON "users"."id" = "rooms_users"."user_id" WHERE "rooms_users"."room_id" = $1[0m  [["room_id", 256]]
+[active_model_serializers]   ↳ app/controllers/rooms_controller.rb:16
+[active_model_serializers]   [1m[36mGame Load (1.2ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."room_id" = $1[0m  [["room_id", 256]]
+[active_model_serializers]   ↳ app/controllers/rooms_controller.rb:16
+[active_model_serializers] Rendered RoomSerializer with ActiveModelSerializers::Adapter::Attributes (5.39ms)
+Completed 200 OK in 16ms (Views: 8.4ms | ActiveRecord: 4.7ms)
 
 
-  
-ActiveRecord::RecordNotFound (Couldn't find Room with 'id'=248):
-  
-app/controllers/rooms_controller.rb:12:in `show'
-Started GET "/rooms/248" for 127.0.0.1 at 2022-02-23 22:47:00 +1100
-Processing by RoomsController#show as HTML
-  Parameters: {"id"=>"248"}
-  [1m[36mRoom Load (2.4ms)[0m  [1m[34mSELECT  "rooms".* FROM "rooms" WHERE "rooms"."id" = $1 LIMIT $2[0m  [["id", 248], ["LIMIT", 1]]
-  ↳ app/controllers/rooms_controller.rb:12
-Completed 404 Not Found in 9ms (ActiveRecord: 2.4ms)
+Started OPTIONS "/rooms/248" for 127.0.0.1 at 2022-02-23 22:47:35 +1100
+Started OPTIONS "/rooms/248" for 127.0.0.1 at 2022-02-23 22:47:35 +1100
+Started OPTIONS "/rooms/248" for 127.0.0.1 at 2022-02-23 22:47:35 +1100
+[active_model_serializers]   [1m[36mUser Load (28.0ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "rooms_users" ON "users"."id" = "rooms_users"."user_id" WHERE "rooms_users"."room_id" = $1[0m  [["room_id", 257]]
+[active_model_serializers]   ↳ app/controllers/rooms_controller.rb:16
+[active_model_serializers]   [1m[36mGame Load (0.3ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."room_id" = $1[0m  [["room_id", 257]]
+[active_model_serializers]   ↳ app/controllers/rooms_controller.rb:16
+[active_model_serializers] Rendered RoomSerializer with ActiveModelSerializers::Adapter::Attributes (32.71ms)
+Completed 200 OK in 40ms (Views: 8.8ms | ActiveRecord: 29.9ms)
 
 
-  
-ActiveRecord::RecordNotFound (Couldn't find Room with 'id'=248):
-  
-app/controllers/rooms_controller.rb:12:in `show'
-Started OPTIONS "/rooms/248" for 127.0.0.1 at 2022-02-23 22:47:00 +1100
-Started GET "/rooms/248" for 127.0.0.1 at 2022-02-23 22:47:00 +1100
-Processing by RoomsController#show as HTML
-  Parameters: {"id"=>"248"}
-  [1m[36mRoom Load (3.7ms)[0m  [1m[34mSELECT  "rooms".* FROM "rooms" WHERE "rooms"."id" = $1 LIMIT $2[0m  [["id", 248], ["LIMIT", 1]]
-  ↳ app/controllers/rooms_controller.rb:12
-Completed 404 Not Found in 5ms (ActiveRecord: 3.7ms)
-
-
-  
-ActiveRecord::RecordNotFound (Couldn't find Room with 'id'=248):
-  
-app/controllers/rooms_controller.rb:12:in `show'
