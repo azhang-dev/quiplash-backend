@@ -82,19 +82,18 @@ puts "the answer of #{Question.first.question} is ..."
 
 
 print "creating QuestionBank..."
-
-b1 = QuestionBank.create(
+Questionbank.destroy_all
+b1 = Questionbank.create!(
     name: "Random questions",
 )
 
-b2 = QuestionBank.create(
+b2 = Questionbank.create!(
     name: "GA related questions",
 )
 
-b1.questions << q1 << q2 << q3 << q4 
+puts "created #{Questionbank.count} questionbanks."
+b1.questions << q1<< q2 << q3 << q4
 b2.questions << q5
-
-u1.questionbanks << b1 << b2
 
 
 
@@ -108,6 +107,10 @@ u3 = User.create! name: 'cassie', password: 'chicken', email: 'cassie@ga.co'
 u4 = User.create! name: 'ethan', password: 'chicken', email: 'ethan@ga.co'
 
 puts "Created #{User.count} users."
+
+u1.questionbanks << b1 << b2
+
+puts "User #{User.first.name} has #{u1.questionbanks.count} questionbanks"
 
 print "fuck off rooms..."
 Room.destroy_all

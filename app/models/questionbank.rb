@@ -1,5 +1,5 @@
 class Questionbank < ApplicationRecord
-    has_many :questions, optional: true
+    has_many :questions
 
-    belongs_to :user
+    belongs_to :user, optional: true
 end
