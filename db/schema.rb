@@ -36,9 +36,9 @@ ActiveRecord::Schema.define(version: 2022_02_23_111511) do
 
   create_table "questionbanks", force: :cascade do |t|
     t.boolean "default"
-    t.string "name"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.string "name"
     t.integer "user_id"
   end
 

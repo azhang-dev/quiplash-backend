@@ -1938,3 +1938,738 @@ Migrating to AddGameStatusToRooms (20220223111511)
   ↳ db/seeds.rb:113
   [1m[36mRoom Load (2.0ms)[0m  [1m[34mSELECT "rooms".* FROM "rooms"[0m
   ↳ db/seeds.rb:116
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/angelazhang/.rvm/gems/ruby-2.7.0/bin/rake:23
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/angelazhang/.rvm/gems/ruby-2.7.0/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_try_advisory_lock(5882105369419256040)[0m
+  ↳ /Users/angelazhang/.rvm/gems/ruby-2.7.0/bin/rake:23
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/angelazhang/.rvm/gems/ruby-2.7.0/bin/rake:23
+Migrating to AddGameStatusToRooms (20220223111511)
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ /Users/angelazhang/.rvm/gems/ruby-2.7.0/bin/rake:23
+  [1m[35m (2.0ms)[0m  [1m[35mALTER TABLE "rooms" DROP COLUMN "game_status"[0m
+  ↳ /Users/angelazhang/.rvm/gems/ruby-2.7.0/bin/rake:23
+  [1m[36mActiveRecord::SchemaMigration Destroy (1.0ms)[0m  [1m[31mDELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = $1[0m  [["version", "20220223111511"]]
+  ↳ /Users/angelazhang/.rvm/gems/ruby-2.7.0/bin/rake:23
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /Users/angelazhang/.rvm/gems/ruby-2.7.0/bin/rake:23
+Migrating to AddUserIdToQuestionbank (20220223105306)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ /Users/angelazhang/.rvm/gems/ruby-2.7.0/bin/rake:23
+  [1m[35m (0.8ms)[0m  [1m[35mALTER TABLE "questionbanks" DROP COLUMN "user_id"[0m
+  ↳ /Users/angelazhang/.rvm/gems/ruby-2.7.0/bin/rake:23
+  [1m[36mActiveRecord::SchemaMigration Destroy (1.2ms)[0m  [1m[31mDELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = $1[0m  [["version", "20220223105306"]]
+  ↳ /Users/angelazhang/.rvm/gems/ruby-2.7.0/bin/rake:23
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /Users/angelazhang/.rvm/gems/ruby-2.7.0/bin/rake:23
+Migrating to AddQuestionbankIdToQuestion (20220223105014)
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ /Users/angelazhang/.rvm/gems/ruby-2.7.0/bin/rake:23
+  [1m[35m (0.8ms)[0m  [1m[35mALTER TABLE "questions" DROP COLUMN "questionbank_id"[0m
+  ↳ /Users/angelazhang/.rvm/gems/ruby-2.7.0/bin/rake:23
+  [1m[36mActiveRecord::SchemaMigration Destroy (0.4ms)[0m  [1m[31mDELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = $1[0m  [["version", "20220223105014"]]
+  ↳ /Users/angelazhang/.rvm/gems/ruby-2.7.0/bin/rake:23
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /Users/angelazhang/.rvm/gems/ruby-2.7.0/bin/rake:23
+Migrating to RemoveQuestionbankIdFromQuestionbank (20220223104430)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ /Users/angelazhang/.rvm/gems/ruby-2.7.0/bin/rake:23
+  [1m[35m (0.7ms)[0m  [1m[35mALTER TABLE "questionbanks" ADD "questionbank_id" integer[0m
+  ↳ /Users/angelazhang/.rvm/gems/ruby-2.7.0/bin/rake:23
+  [1m[36mActiveRecord::SchemaMigration Destroy (0.3ms)[0m  [1m[31mDELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = $1[0m  [["version", "20220223104430"]]
+  ↳ /Users/angelazhang/.rvm/gems/ruby-2.7.0/bin/rake:23
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /Users/angelazhang/.rvm/gems/ruby-2.7.0/bin/rake:23
+Migrating to AddQuestionbankIdToQuestionbank (20220223104052)
+  [1m[35m (0.7ms)[0m  [1m[35mBEGIN[0m
+  ↳ /Users/angelazhang/.rvm/gems/ruby-2.7.0/bin/rake:23
+  [1m[35m (1.2ms)[0m  [1m[35mALTER TABLE "questionbanks" DROP COLUMN "questionbank_id"[0m
+  ↳ /Users/angelazhang/.rvm/gems/ruby-2.7.0/bin/rake:23
+  [1m[36mActiveRecord::SchemaMigration Destroy (0.6ms)[0m  [1m[31mDELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = $1[0m  [["version", "20220223104052"]]
+  ↳ /Users/angelazhang/.rvm/gems/ruby-2.7.0/bin/rake:23
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /Users/angelazhang/.rvm/gems/ruby-2.7.0/bin/rake:23
+Migrating to CreateJoinTableRoomsUsers (20220223043051)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ /Users/angelazhang/.rvm/gems/ruby-2.7.0/bin/rake:23
+  [1m[35m (0.9ms)[0m  [1m[35mDROP TABLE "rooms_users"[0m
+  ↳ /Users/angelazhang/.rvm/gems/ruby-2.7.0/bin/rake:23
+  [1m[36mActiveRecord::SchemaMigration Destroy (0.4ms)[0m  [1m[31mDELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = $1[0m  [["version", "20220223043051"]]
+  ↳ /Users/angelazhang/.rvm/gems/ruby-2.7.0/bin/rake:23
+  [1m[35m (2.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /Users/angelazhang/.rvm/gems/ruby-2.7.0/bin/rake:23
+Migrating to RemoveTitleFromRooms (20220222103158)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ /Users/angelazhang/.rvm/gems/ruby-2.7.0/bin/rake:23
+  [1m[35m (0.4ms)[0m  [1m[35mALTER TABLE "rooms" ADD "title" character varying[0m
+  ↳ /Users/angelazhang/.rvm/gems/ruby-2.7.0/bin/rake:23
+  [1m[36mActiveRecord::SchemaMigration Destroy (0.4ms)[0m  [1m[31mDELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = $1[0m  [["version", "20220222103158"]]
+  ↳ /Users/angelazhang/.rvm/gems/ruby-2.7.0/bin/rake:23
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /Users/angelazhang/.rvm/gems/ruby-2.7.0/bin/rake:23
+Migrating to AddHostIdToRooms (20220222065829)
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ /Users/angelazhang/.rvm/gems/ruby-2.7.0/bin/rake:23
+  [1m[35m (0.5ms)[0m  [1m[35mALTER TABLE "rooms" DROP COLUMN "host_id"[0m
+  ↳ /Users/angelazhang/.rvm/gems/ruby-2.7.0/bin/rake:23
+  [1m[36mActiveRecord::SchemaMigration Destroy (0.3ms)[0m  [1m[31mDELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = $1[0m  [["version", "20220222065829"]]
+  ↳ /Users/angelazhang/.rvm/gems/ruby-2.7.0/bin/rake:23
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /Users/angelazhang/.rvm/gems/ruby-2.7.0/bin/rake:23
+Migrating to CreateJoinTableUsersGames (20220222063906)
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ /Users/angelazhang/.rvm/gems/ruby-2.7.0/bin/rake:23
+  [1m[35m (1.3ms)[0m  [1m[35mDROP TABLE "games_users"[0m
+  ↳ /Users/angelazhang/.rvm/gems/ruby-2.7.0/bin/rake:23
+  [1m[36mActiveRecord::SchemaMigration Destroy (0.5ms)[0m  [1m[31mDELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = $1[0m  [["version", "20220222063906"]]
+  ↳ /Users/angelazhang/.rvm/gems/ruby-2.7.0/bin/rake:23
+  [1m[35m (0.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /Users/angelazhang/.rvm/gems/ruby-2.7.0/bin/rake:23
+Migrating to AddRoomToGames (20220221043203)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ /Users/angelazhang/.rvm/gems/ruby-2.7.0/bin/rake:23
+  [1m[35m (0.6ms)[0m  [1m[35mALTER TABLE "games" DROP COLUMN "room_id"[0m
+  ↳ /Users/angelazhang/.rvm/gems/ruby-2.7.0/bin/rake:23
+  [1m[36mActiveRecord::SchemaMigration Destroy (0.3ms)[0m  [1m[31mDELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = $1[0m  [["version", "20220221043203"]]
+  ↳ /Users/angelazhang/.rvm/gems/ruby-2.7.0/bin/rake:23
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /Users/angelazhang/.rvm/gems/ruby-2.7.0/bin/rake:23
+Migrating to AddTitleToGames (20220221043108)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ /Users/angelazhang/.rvm/gems/ruby-2.7.0/bin/rake:23
+  [1m[35m (1.8ms)[0m  [1m[35mALTER TABLE "games" DROP COLUMN "title"[0m
+  ↳ /Users/angelazhang/.rvm/gems/ruby-2.7.0/bin/rake:23
+  [1m[36mActiveRecord::SchemaMigration Destroy (0.6ms)[0m  [1m[31mDELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = $1[0m  [["version", "20220221043108"]]
+  ↳ /Users/angelazhang/.rvm/gems/ruby-2.7.0/bin/rake:23
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /Users/angelazhang/.rvm/gems/ruby-2.7.0/bin/rake:23
+Migrating to AddTitleToRooms (20220221042318)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ /Users/angelazhang/.rvm/gems/ruby-2.7.0/bin/rake:23
+  [1m[35m (0.9ms)[0m  [1m[35mALTER TABLE "rooms" DROP COLUMN "title"[0m
+  ↳ /Users/angelazhang/.rvm/gems/ruby-2.7.0/bin/rake:23
+  [1m[36mActiveRecord::SchemaMigration Destroy (1.1ms)[0m  [1m[31mDELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = $1[0m  [["version", "20220221042318"]]
+  ↳ /Users/angelazhang/.rvm/gems/ruby-2.7.0/bin/rake:23
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /Users/angelazhang/.rvm/gems/ruby-2.7.0/bin/rake:23
+Migrating to CreateGames (20220221012748)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ /Users/angelazhang/.rvm/gems/ruby-2.7.0/bin/rake:23
+  [1m[35m (1.9ms)[0m  [1m[35mDROP TABLE "games"[0m
+  ↳ /Users/angelazhang/.rvm/gems/ruby-2.7.0/bin/rake:23
+  [1m[36mActiveRecord::SchemaMigration Destroy (0.3ms)[0m  [1m[31mDELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = $1[0m  [["version", "20220221012748"]]
+  ↳ /Users/angelazhang/.rvm/gems/ruby-2.7.0/bin/rake:23
+  [1m[35m (2.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /Users/angelazhang/.rvm/gems/ruby-2.7.0/bin/rake:23
+Migrating to CreateVotes (20220221004504)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ /Users/angelazhang/.rvm/gems/ruby-2.7.0/bin/rake:23
+  [1m[35m (1.2ms)[0m  [1m[35mDROP TABLE "votes"[0m
+  ↳ /Users/angelazhang/.rvm/gems/ruby-2.7.0/bin/rake:23
+  [1m[36mActiveRecord::SchemaMigration Destroy (0.4ms)[0m  [1m[31mDELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = $1[0m  [["version", "20220221004504"]]
+  ↳ /Users/angelazhang/.rvm/gems/ruby-2.7.0/bin/rake:23
+  [1m[35m (1.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /Users/angelazhang/.rvm/gems/ruby-2.7.0/bin/rake:23
+Migrating to CreateRooms (20220221004456)
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ /Users/angelazhang/.rvm/gems/ruby-2.7.0/bin/rake:23
+  [1m[35m (1.5ms)[0m  [1m[35mDROP TABLE "rooms"[0m
+  ↳ /Users/angelazhang/.rvm/gems/ruby-2.7.0/bin/rake:23
+  [1m[36mActiveRecord::SchemaMigration Destroy (0.3ms)[0m  [1m[31mDELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = $1[0m  [["version", "20220221004456"]]
+  ↳ /Users/angelazhang/.rvm/gems/ruby-2.7.0/bin/rake:23
+  [1m[35m (1.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /Users/angelazhang/.rvm/gems/ruby-2.7.0/bin/rake:23
+Migrating to AddNameToQuestionbanks (20220220233959)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ /Users/angelazhang/.rvm/gems/ruby-2.7.0/bin/rake:23
+  [1m[36mActiveRecord::SchemaMigration Destroy (0.4ms)[0m  [1m[31mDELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = $1[0m  [["version", "20220220233959"]]
+  ↳ /Users/angelazhang/.rvm/gems/ruby-2.7.0/bin/rake:23
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /Users/angelazhang/.rvm/gems/ruby-2.7.0/bin/rake:23
+Migrating to RemoveColumnAnswerIdFromQuestion (20220218122402)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ /Users/angelazhang/.rvm/gems/ruby-2.7.0/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  ↳ /Users/angelazhang/.rvm/gems/ruby-2.7.0/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_advisory_unlock(5882105369419256040)[0m
+  ↳ /Users/angelazhang/.rvm/gems/ruby-2.7.0/bin/rake:23
+  [1m[35m (2.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:4
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_try_advisory_lock(5882105369419256040)[0m
+  ↳ bin/rails:4
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:4
+Migrating to AddNameToQuestionbanks (20220220233959)
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:4
+  [1m[35m (1.7ms)[0m  [1m[35mALTER TABLE "questionbanks" ADD "name" character varying[0m
+  ↳ db/migrate/20220220233959_add_name_to_questionbanks.rb:3
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  ↳ bin/rails:4
+  [1m[35m (1.4ms)[0m  [1m[34mSELECT pg_advisory_unlock(5882105369419256040)[0m
+  ↳ bin/rails:4
+  [1m[35m (1.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/angelazhang/.rvm/gems/ruby-2.7.0/bin/rake:23
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/angelazhang/.rvm/gems/ruby-2.7.0/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_try_advisory_lock(5882105369419256040)[0m
+  ↳ /Users/angelazhang/.rvm/gems/ruby-2.7.0/bin/rake:23
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/angelazhang/.rvm/gems/ruby-2.7.0/bin/rake:23
+Migrating to RemoveColumnAnswerIdFromQuestion (20220218122402)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ /Users/angelazhang/.rvm/gems/ruby-2.7.0/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  ↳ /Users/angelazhang/.rvm/gems/ruby-2.7.0/bin/rake:23
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_advisory_unlock(5882105369419256040)[0m
+  ↳ /Users/angelazhang/.rvm/gems/ruby-2.7.0/bin/rake:23
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/angelazhang/.rvm/gems/ruby-2.7.0/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/angelazhang/.rvm/gems/ruby-2.7.0/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_try_advisory_lock(5882105369419256040)[0m
+  ↳ /Users/angelazhang/.rvm/gems/ruby-2.7.0/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/angelazhang/.rvm/gems/ruby-2.7.0/bin/rake:23
+Migrating to RemoveColumnAnswerIdFromQuestion (20220218122402)
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ /Users/angelazhang/.rvm/gems/ruby-2.7.0/bin/rake:23
+  [1m[35m (1.4ms)[0m  [1m[35mALTER TABLE "questions" ADD "answer_id" integer[0m
+  ↳ /Users/angelazhang/.rvm/gems/ruby-2.7.0/bin/rake:23
+  [1m[36mActiveRecord::SchemaMigration Destroy (0.6ms)[0m  [1m[31mDELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = $1[0m  [["version", "20220218122402"]]
+  ↳ /Users/angelazhang/.rvm/gems/ruby-2.7.0/bin/rake:23
+  [1m[35m (3.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /Users/angelazhang/.rvm/gems/ruby-2.7.0/bin/rake:23
+Migrating to AddEmailToUsers (20220218085945)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ /Users/angelazhang/.rvm/gems/ruby-2.7.0/bin/rake:23
+  [1m[35m (1.2ms)[0m  [1m[35mALTER TABLE "users" DROP COLUMN "email"[0m
+  ↳ /Users/angelazhang/.rvm/gems/ruby-2.7.0/bin/rake:23
+  [1m[36mActiveRecord::SchemaMigration Destroy (0.4ms)[0m  [1m[31mDELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = $1[0m  [["version", "20220218085945"]]
+  ↳ /Users/angelazhang/.rvm/gems/ruby-2.7.0/bin/rake:23
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /Users/angelazhang/.rvm/gems/ruby-2.7.0/bin/rake:23
+Migrating to AddQuestionIdToAnswers (20220218075051)
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ /Users/angelazhang/.rvm/gems/ruby-2.7.0/bin/rake:23
+  [1m[35m (1.1ms)[0m  [1m[35mALTER TABLE "answers" DROP COLUMN "question_id"[0m
+  ↳ /Users/angelazhang/.rvm/gems/ruby-2.7.0/bin/rake:23
+  [1m[36mActiveRecord::SchemaMigration Destroy (0.4ms)[0m  [1m[31mDELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = $1[0m  [["version", "20220218075051"]]
+  ↳ /Users/angelazhang/.rvm/gems/ruby-2.7.0/bin/rake:23
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /Users/angelazhang/.rvm/gems/ruby-2.7.0/bin/rake:23
+Migrating to AddAnswerIdToQuestions (20220218073636)
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ /Users/angelazhang/.rvm/gems/ruby-2.7.0/bin/rake:23
+  [1m[35m (4.8ms)[0m  [1m[35mALTER TABLE "questions" DROP COLUMN "answer_id"[0m
+  ↳ /Users/angelazhang/.rvm/gems/ruby-2.7.0/bin/rake:23
+  [1m[36mActiveRecord::SchemaMigration Destroy (0.5ms)[0m  [1m[31mDELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = $1[0m  [["version", "20220218073636"]]
+  ↳ /Users/angelazhang/.rvm/gems/ruby-2.7.0/bin/rake:23
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /Users/angelazhang/.rvm/gems/ruby-2.7.0/bin/rake:23
+Migrating to AddQuestionToQuestions (20220218062218)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ /Users/angelazhang/.rvm/gems/ruby-2.7.0/bin/rake:23
+  [1m[36mActiveRecord::SchemaMigration Destroy (0.3ms)[0m  [1m[31mDELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = $1[0m  [["version", "20220218062218"]]
+  ↳ /Users/angelazhang/.rvm/gems/ruby-2.7.0/bin/rake:23
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /Users/angelazhang/.rvm/gems/ruby-2.7.0/bin/rake:23
+Migrating to CreateAnswers (20220218055510)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ /Users/angelazhang/.rvm/gems/ruby-2.7.0/bin/rake:23
+  [1m[35m (1.7ms)[0m  [1m[35mDROP TABLE "answers"[0m
+  ↳ /Users/angelazhang/.rvm/gems/ruby-2.7.0/bin/rake:23
+  [1m[36mActiveRecord::SchemaMigration Destroy (0.4ms)[0m  [1m[31mDELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = $1[0m  [["version", "20220218055510"]]
+  ↳ /Users/angelazhang/.rvm/gems/ruby-2.7.0/bin/rake:23
+  [1m[35m (8.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /Users/angelazhang/.rvm/gems/ruby-2.7.0/bin/rake:23
+Migrating to CreateQuestions (20220218055040)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ /Users/angelazhang/.rvm/gems/ruby-2.7.0/bin/rake:23
+  [1m[35m (1.8ms)[0m  [1m[35mDROP TABLE "questions"[0m
+  ↳ /Users/angelazhang/.rvm/gems/ruby-2.7.0/bin/rake:23
+  [1m[36mActiveRecord::SchemaMigration Destroy (0.4ms)[0m  [1m[31mDELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = $1[0m  [["version", "20220218055040"]]
+  ↳ /Users/angelazhang/.rvm/gems/ruby-2.7.0/bin/rake:23
+  [1m[35m (5.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /Users/angelazhang/.rvm/gems/ruby-2.7.0/bin/rake:23
+Migrating to CreateQuestionbanks (20220218054222)
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ /Users/angelazhang/.rvm/gems/ruby-2.7.0/bin/rake:23
+  [1m[35m (1.8ms)[0m  [1m[35mDROP TABLE "questionbanks"[0m
+  ↳ /Users/angelazhang/.rvm/gems/ruby-2.7.0/bin/rake:23
+  [1m[36mActiveRecord::SchemaMigration Destroy (0.6ms)[0m  [1m[31mDELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = $1[0m  [["version", "20220218054222"]]
+  ↳ /Users/angelazhang/.rvm/gems/ruby-2.7.0/bin/rake:23
+  [1m[35m (3.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /Users/angelazhang/.rvm/gems/ruby-2.7.0/bin/rake:23
+Migrating to CreateUsers (20220218054217)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ /Users/angelazhang/.rvm/gems/ruby-2.7.0/bin/rake:23
+  [1m[35m (1.9ms)[0m  [1m[35mDROP TABLE "users"[0m
+  ↳ /Users/angelazhang/.rvm/gems/ruby-2.7.0/bin/rake:23
+  [1m[36mActiveRecord::SchemaMigration Destroy (0.4ms)[0m  [1m[31mDELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = $1[0m  [["version", "20220218054217"]]
+  ↳ /Users/angelazhang/.rvm/gems/ruby-2.7.0/bin/rake:23
+  [1m[35m (2.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /Users/angelazhang/.rvm/gems/ruby-2.7.0/bin/rake:23
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_advisory_unlock(5882105369419256040)[0m
+  ↳ /Users/angelazhang/.rvm/gems/ruby-2.7.0/bin/rake:23
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/angelazhang/.rvm/gems/ruby-2.7.0/bin/rake:23
+  [1m[35m (1.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:4
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_try_advisory_lock(5882105369419256040)[0m
+  ↳ bin/rails:4
+  [1m[35m (1.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:4
+Migrating to CreateUsers (20220218054217)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:4
+  [1m[35m (16.1ms)[0m  [1m[35mCREATE TABLE "users" ("id" bigserial primary key, "name" text, "password_digest" text, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/migrate/20220218054217_create_users.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.6ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20220218054217"]]
+  ↳ bin/rails:4
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:4
+Migrating to CreateQuestionbanks (20220218054222)
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:4
+  [1m[35m (4.7ms)[0m  [1m[35mCREATE TABLE "questionbanks" ("id" bigserial primary key, "default" boolean, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/migrate/20220218054222_create_questionbanks.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (1.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20220218054222"]]
+  ↳ bin/rails:4
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:4
+Migrating to CreateQuestions (20220218055040)
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:4
+  [1m[35m (7.5ms)[0m  [1m[35mCREATE TABLE "questions" ("id" bigserial primary key, "question" text, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/migrate/20220218055040_create_questions.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20220218055040"]]
+  ↳ bin/rails:4
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:4
+Migrating to CreateAnswers (20220218055510)
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:4
+  [1m[35m (9.1ms)[0m  [1m[35mCREATE TABLE "answers" ("id" bigserial primary key, "answer" text, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/migrate/20220218055510_create_answers.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.5ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20220218055510"]]
+  ↳ bin/rails:4
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:4
+Migrating to AddQuestionToQuestions (20220218062218)
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:4
+  [1m[36mActiveRecord::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20220218062218"]]
+  ↳ bin/rails:4
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:4
+Migrating to AddAnswerIdToQuestions (20220218073636)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:4
+  [1m[35m (1.2ms)[0m  [1m[35mALTER TABLE "questions" ADD "answer_id" integer[0m
+  ↳ db/migrate/20220218073636_add_answer_id_to_questions.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.4ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20220218073636"]]
+  ↳ bin/rails:4
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:4
+Migrating to AddQuestionIdToAnswers (20220218075051)
+  [1m[35m (1.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:4
+  [1m[35m (1.0ms)[0m  [1m[35mALTER TABLE "answers" ADD "question_id" integer[0m
+  ↳ db/migrate/20220218075051_add_question_id_to_answers.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.4ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20220218075051"]]
+  ↳ bin/rails:4
+  [1m[35m (1.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:4
+Migrating to AddEmailToUsers (20220218085945)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:4
+  [1m[35m (0.5ms)[0m  [1m[35mALTER TABLE "users" ADD "email" character varying[0m
+  ↳ db/migrate/20220218085945_add_email_to_users.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20220218085945"]]
+  ↳ bin/rails:4
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:4
+Migrating to RemoveColumnAnswerIdFromQuestion (20220218122402)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:4
+  [1m[35m (1.5ms)[0m  [1m[35mALTER TABLE "questions" DROP COLUMN "answer_id"[0m
+  ↳ db/migrate/20220218122402_remove_column_answer_id_from_question.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.5ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20220218122402"]]
+  ↳ bin/rails:4
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:4
+Migrating to AddNameToQuestionbanks (20220220233959)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:4
+  [1m[35m (4.4ms)[0m  [1m[35mALTER TABLE "questionbanks" ADD "name" character varying[0m
+  ↳ db/migrate/20220220233959_add_name_to_questionbanks.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.6ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20220220233959"]]
+  ↳ bin/rails:4
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:4
+Migrating to CreateRooms (20220221004456)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:4
+  [1m[35m (3.8ms)[0m  [1m[35mCREATE TABLE "rooms" ("id" bigserial primary key, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/migrate/20220221004456_create_rooms.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.4ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20220221004456"]]
+  ↳ bin/rails:4
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:4
+Migrating to CreateVotes (20220221004504)
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:4
+  [1m[35m (8.2ms)[0m  [1m[35mCREATE TABLE "votes" ("id" bigserial primary key, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/migrate/20220221004504_create_votes.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (5.6ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20220221004504"]]
+  ↳ bin/rails:4
+  [1m[35m (1.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:4
+Migrating to CreateGames (20220221012748)
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:4
+  [1m[35m (7.3ms)[0m  [1m[35mCREATE TABLE "games" ("id" bigserial primary key, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/migrate/20220221012748_create_games.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.6ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20220221012748"]]
+  ↳ bin/rails:4
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:4
+Migrating to AddTitleToRooms (20220221042318)
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:4
+  [1m[35m (2.4ms)[0m  [1m[35mALTER TABLE "rooms" ADD "title" text[0m
+  ↳ db/migrate/20220221042318_add_title_to_rooms.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (4.7ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20220221042318"]]
+  ↳ bin/rails:4
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:4
+Migrating to AddTitleToGames (20220221043108)
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:4
+  [1m[35m (3.3ms)[0m  [1m[35mALTER TABLE "games" ADD "title" text[0m
+  ↳ db/migrate/20220221043108_add_title_to_games.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.4ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20220221043108"]]
+  ↳ bin/rails:4
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:4
+Migrating to AddRoomToGames (20220221043203)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:4
+  [1m[35m (0.7ms)[0m  [1m[35mALTER TABLE "games" ADD "room_id" integer[0m
+  ↳ db/migrate/20220221043203_add_room_to_games.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.6ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20220221043203"]]
+  ↳ bin/rails:4
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:4
+Migrating to CreateJoinTableUsersGames (20220222063906)
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:4
+  [1m[35m (1.4ms)[0m  [1m[35mCREATE TABLE "games_users" ("user_id" bigint NOT NULL, "game_id" bigint NOT NULL)[0m
+  ↳ db/migrate/20220222063906_create_join_table_users_games.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20220222063906"]]
+  ↳ bin/rails:4
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:4
+Migrating to AddHostIdToRooms (20220222065829)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:4
+  [1m[35m (0.7ms)[0m  [1m[35mALTER TABLE "rooms" ADD "host_id" integer[0m
+  ↳ db/migrate/20220222065829_add_host_id_to_rooms.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.6ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20220222065829"]]
+  ↳ bin/rails:4
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:4
+Migrating to RemoveTitleFromRooms (20220222103158)
+  [1m[35m (0.7ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:4
+  [1m[35m (0.9ms)[0m  [1m[35mALTER TABLE "rooms" DROP COLUMN "title"[0m
+  ↳ db/migrate/20220222103158_remove_title_from_rooms.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.4ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20220222103158"]]
+  ↳ bin/rails:4
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:4
+Migrating to CreateJoinTableRoomsUsers (20220223043051)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:4
+  [1m[35m (2.1ms)[0m  [1m[35mCREATE TABLE "rooms_users" ("room_id" bigint NOT NULL, "user_id" bigint NOT NULL)[0m
+  ↳ db/migrate/20220223043051_create_join_table_rooms_users.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.4ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20220223043051"]]
+  ↳ bin/rails:4
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:4
+Migrating to AddQuestionbankIdToQuestionbank (20220223104052)
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:4
+  [1m[35m (0.5ms)[0m  [1m[35mALTER TABLE "questionbanks" ADD "questionbank_id" integer[0m
+  ↳ db/migrate/20220223104052_add_questionbank_id_to_questionbank.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.4ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20220223104052"]]
+  ↳ bin/rails:4
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:4
+Migrating to RemoveQuestionbankIdFromQuestionbank (20220223104430)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:4
+  [1m[35m (0.5ms)[0m  [1m[35mALTER TABLE "questionbanks" DROP COLUMN "questionbank_id"[0m
+  ↳ db/migrate/20220223104430_remove_questionbank_id_from_questionbank.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.4ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20220223104430"]]
+  ↳ bin/rails:4
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:4
+Migrating to AddQuestionbankIdToQuestion (20220223105014)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:4
+  [1m[35m (0.4ms)[0m  [1m[35mALTER TABLE "questions" ADD "questionbank_id" integer[0m
+  ↳ db/migrate/20220223105014_add_questionbank_id_to_question.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20220223105014"]]
+  ↳ bin/rails:4
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:4
+Migrating to AddUserIdToQuestionbank (20220223105306)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:4
+  [1m[35m (0.4ms)[0m  [1m[35mALTER TABLE "questionbanks" ADD "user_id" integer[0m
+  ↳ db/migrate/20220223105306_add_user_id_to_questionbank.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20220223105306"]]
+  ↳ bin/rails:4
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:4
+Migrating to AddGameStatusToRooms (20220223111511)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:4
+  [1m[35m (0.8ms)[0m  [1m[35mALTER TABLE "rooms" ADD "game_status" boolean DEFAULT FALSE[0m
+  ↳ db/migrate/20220223111511_add_game_status_to_rooms.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.6ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20220223111511"]]
+  ↳ bin/rails:4
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:4
+  [1m[36mActiveRecord::InternalMetadata Load (0.9ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ bin/rails:4
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:4
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:4
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_advisory_unlock(5882105369419256040)[0m
+  ↳ bin/rails:4
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:4
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:4
+  [1m[36mAnswer Load (2.4ms)[0m  [1m[34mSELECT "answers".* FROM "answers"[0m
+  ↳ db/seeds.rb:10
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:12
+  [1m[36mAnswer Create (0.9ms)[0m  [1m[32mINSERT INTO "answers" ("answer", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["answer", "BEST CODE IS THE CODE THATS NEVER WRITTEN"], ["created_at", "2022-02-23 23:05:06.067797"], ["updated_at", "2022-02-23 23:05:06.067797"]]
+  ↳ db/seeds.rb:12
+  [1m[35m (1.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:12
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:16
+  [1m[36mAnswer Create (0.4ms)[0m  [1m[32mINSERT INTO "answers" ("answer", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["answer", "MANY MANY TINY DEAD BODIES"], ["created_at", "2022-02-23 23:05:06.071972"], ["updated_at", "2022-02-23 23:05:06.071972"]]
+  ↳ db/seeds.rb:16
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:16
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:21
+  [1m[36mAnswer Create (0.9ms)[0m  [1m[32mINSERT INTO "answers" ("answer", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["answer", "NICE APPLES"], ["created_at", "2022-02-23 23:05:06.074495"], ["updated_at", "2022-02-23 23:05:06.074495"]]
+  ↳ db/seeds.rb:21
+  [1m[35m (0.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:21
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:26
+  [1m[36mAnswer Create (0.4ms)[0m  [1m[32mINSERT INTO "answers" ("answer", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["answer", "YIFFING IN THE MORNING"], ["created_at", "2022-02-23 23:05:06.078400"], ["updated_at", "2022-02-23 23:05:06.078400"]]
+  ↳ db/seeds.rb:26
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:26
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:31
+  [1m[36mAnswer Create (0.7ms)[0m  [1m[32mINSERT INTO "answers" ("answer", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["answer", "I CANT TALK"], ["created_at", "2022-02-23 23:05:06.080773"], ["updated_at", "2022-02-23 23:05:06.080773"]]
+  ↳ db/seeds.rb:31
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:31
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:36
+  [1m[36mAnswer Create (0.6ms)[0m  [1m[32mINSERT INTO "answers" ("answer", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["answer", "LETS DO A QUICK CODE REVIEW"], ["created_at", "2022-02-23 23:05:06.084590"], ["updated_at", "2022-02-23 23:05:06.084590"]]
+  ↳ db/seeds.rb:36
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:36
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:41
+  [1m[36mAnswer Create (0.3ms)[0m  [1m[32mINSERT INTO "answers" ("answer", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["answer", "HELLO THERE"], ["created_at", "2022-02-23 23:05:06.087106"], ["updated_at", "2022-02-23 23:05:06.087106"]]
+  ↳ db/seeds.rb:41
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:41
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT COUNT(*) FROM "answers"[0m
+  ↳ db/seeds.rb:45
+  [1m[36mQuestion Load (2.8ms)[0m  [1m[34mSELECT "questions".* FROM "questions"[0m
+  ↳ db/seeds.rb:49
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:52
+  [1m[36mQuestion Create (0.7ms)[0m  [1m[32mINSERT INTO "questions" ("question", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["question", "A double rainbow doesn't have gold at the end of it. Instead, it has ____________"], ["created_at", "2022-02-23 23:05:06.111686"], ["updated_at", "2022-02-23 23:05:06.111686"]]
+  ↳ db/seeds.rb:52
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:52
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:56
+  [1m[36mQuestion Create (0.5ms)[0m  [1m[32mINSERT INTO "questions" ("question", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["question", "As Shakesphear once said, '___________'"], ["created_at", "2022-02-23 23:05:06.114886"], ["updated_at", "2022-02-23 23:05:06.114886"]]
+  ↳ db/seeds.rb:56
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:56
+  [1m[35m (0.6ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:61
+  [1m[36mQuestion Create (0.4ms)[0m  [1m[32mINSERT INTO "questions" ("question", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["question", "What Adam thought when he first met Eve"], ["created_at", "2022-02-23 23:05:06.118982"], ["updated_at", "2022-02-23 23:05:06.118982"]]
+  ↳ db/seeds.rb:61
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:61
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:66
+  [1m[36mQuestion Create (0.4ms)[0m  [1m[32mINSERT INTO "questions" ("question", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["question", "A terrible name for a morning talk show"], ["created_at", "2022-02-23 23:05:06.121553"], ["updated_at", "2022-02-23 23:05:06.121553"]]
+  ↳ db/seeds.rb:66
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:66
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:71
+  [1m[36mQuestion Create (0.3ms)[0m  [1m[32mINSERT INTO "questions" ("question", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["question", "Why do I suck at code so much?"], ["created_at", "2022-02-23 23:05:06.123632"], ["updated_at", "2022-02-23 23:05:06.123632"]]
+  ↳ db/seeds.rb:71
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:71
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:75
+  [1m[36mAnswer Update (0.6ms)[0m  [1m[33mUPDATE "answers" SET "updated_at" = $1, "question_id" = $2 WHERE "answers"."id" = $3[0m  [["updated_at", "2022-02-23 23:05:06.139275"], ["question_id", 1], ["id", 2]]
+  ↳ db/seeds.rb:75
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:75
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:76
+  [1m[36mAnswer Update (0.4ms)[0m  [1m[33mUPDATE "answers" SET "updated_at" = $1, "question_id" = $2 WHERE "answers"."id" = $3[0m  [["updated_at", "2022-02-23 23:05:06.142802"], ["question_id", 2], ["id", 1]]
+  ↳ db/seeds.rb:76
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:76
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:76
+  [1m[36mAnswer Update (0.3ms)[0m  [1m[33mUPDATE "answers" SET "updated_at" = $1, "question_id" = $2 WHERE "answers"."id" = $3[0m  [["updated_at", "2022-02-23 23:05:06.145060"], ["question_id", 2], ["id", 6]]
+  ↳ db/seeds.rb:76
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:76
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:77
+  [1m[36mAnswer Update (0.3ms)[0m  [1m[33mUPDATE "answers" SET "updated_at" = $1, "question_id" = $2 WHERE "answers"."id" = $3[0m  [["updated_at", "2022-02-23 23:05:06.147279"], ["question_id", 3], ["id", 7]]
+  ↳ db/seeds.rb:77
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:77
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:77
+  [1m[36mAnswer Update (0.4ms)[0m  [1m[33mUPDATE "answers" SET "updated_at" = $1, "question_id" = $2 WHERE "answers"."id" = $3[0m  [["updated_at", "2022-02-23 23:05:06.149087"], ["question_id", 3], ["id", 3]]
+  ↳ db/seeds.rb:77
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:77
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:78
+  [1m[36mAnswer Update (0.3ms)[0m  [1m[33mUPDATE "answers" SET "updated_at" = $1, "question_id" = $2 WHERE "answers"."id" = $3[0m  [["updated_at", "2022-02-23 23:05:06.151103"], ["question_id", 4], ["id", 4]]
+  ↳ db/seeds.rb:78
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:78
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:78
+  [1m[36mAnswer Update (0.3ms)[0m  [1m[33mUPDATE "answers" SET "updated_at" = $1, "question_id" = $2 WHERE "answers"."id" = $3[0m  [["updated_at", "2022-02-23 23:05:06.153297"], ["question_id", 4], ["id", 5]]
+  ↳ db/seeds.rb:78
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:78
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "questions"[0m
+  ↳ db/seeds.rb:80
+  [1m[36mQuestion Load (0.3ms)[0m  [1m[34mSELECT  "questions".* FROM "questions" ORDER BY "questions"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ db/seeds.rb:81
+  [1m[36mQuestionbank Load (0.6ms)[0m  [1m[34mSELECT "questionbanks".* FROM "questionbanks"[0m
+  ↳ db/seeds.rb:85
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:86
+  [1m[36mQuestionbank Create (0.9ms)[0m  [1m[32mINSERT INTO "questionbanks" ("created_at", "updated_at", "name") VALUES ($1, $2, $3) RETURNING "id"[0m  [["created_at", "2022-02-23 23:05:06.180484"], ["updated_at", "2022-02-23 23:05:06.180484"], ["name", "Random questions"]]
+  ↳ db/seeds.rb:86
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:86
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:90
+  [1m[36mQuestionbank Create (0.4ms)[0m  [1m[32mINSERT INTO "questionbanks" ("created_at", "updated_at", "name") VALUES ($1, $2, $3) RETURNING "id"[0m  [["created_at", "2022-02-23 23:05:06.184615"], ["updated_at", "2022-02-23 23:05:06.184615"], ["name", "GA related questions"]]
+  ↳ db/seeds.rb:90
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:90
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT COUNT(*) FROM "questionbanks"[0m
+  ↳ db/seeds.rb:94
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:95
+  [1m[36mQuestion Update (0.4ms)[0m  [1m[33mUPDATE "questions" SET "updated_at" = $1, "questionbank_id" = $2 WHERE "questions"."id" = $3[0m  [["updated_at", "2022-02-23 23:05:06.190743"], ["questionbank_id", 1], ["id", 1]]
+  ↳ db/seeds.rb:95
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:95
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:95
+  [1m[36mQuestion Update (0.4ms)[0m  [1m[33mUPDATE "questions" SET "updated_at" = $1, "questionbank_id" = $2 WHERE "questions"."id" = $3[0m  [["updated_at", "2022-02-23 23:05:06.193137"], ["questionbank_id", 1], ["id", 2]]
+  ↳ db/seeds.rb:95
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:95
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:95
+  [1m[36mQuestion Update (0.6ms)[0m  [1m[33mUPDATE "questions" SET "updated_at" = $1, "questionbank_id" = $2 WHERE "questions"."id" = $3[0m  [["updated_at", "2022-02-23 23:05:06.195688"], ["questionbank_id", 1], ["id", 3]]
+  ↳ db/seeds.rb:95
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:95
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:95
+  [1m[36mQuestion Update (0.4ms)[0m  [1m[33mUPDATE "questions" SET "updated_at" = $1, "questionbank_id" = $2 WHERE "questions"."id" = $3[0m  [["updated_at", "2022-02-23 23:05:06.198627"], ["questionbank_id", 1], ["id", 4]]
+  ↳ db/seeds.rb:95
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:95
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:96
+  [1m[36mQuestion Update (0.4ms)[0m  [1m[33mUPDATE "questions" SET "updated_at" = $1, "questionbank_id" = $2 WHERE "questions"."id" = $3[0m  [["updated_at", "2022-02-23 23:05:06.202841"], ["questionbank_id", 2], ["id", 5]]
+  ↳ db/seeds.rb:96
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:96
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:101
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:104
+  [1m[36mUser Create (0.5ms)[0m  [1m[32mINSERT INTO "users" ("name", "password_digest", "created_at", "updated_at", "email") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "alex"], ["password_digest", "$2a$12$Xw3eHXmxiSvrfCrGX7Q9Muc6sqz9ooDIF77K38lWgb0XdHSqh3mD."], ["created_at", "2022-02-23 23:05:06.503889"], ["updated_at", "2022-02-23 23:05:06.503889"], ["email", "alex@ga.co"]]
+  ↳ db/seeds.rb:104
+  [1m[35m (2.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:104
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:105
+  [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO "users" ("name", "password_digest", "created_at", "updated_at", "email") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "angela"], ["password_digest", "$2a$12$KP7H2GSwAEQ61L8GM/rRvuQ3WvYwg10lwHyHcLyNMsFWt9dE4bg7u"], ["created_at", "2022-02-23 23:05:06.766787"], ["updated_at", "2022-02-23 23:05:06.766787"], ["email", "angela@ga.co"]]
+  ↳ db/seeds.rb:105
+  [1m[35m (1.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:105
+  [1m[35m (2.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:106
+  [1m[36mUser Create (0.5ms)[0m  [1m[32mINSERT INTO "users" ("name", "password_digest", "created_at", "updated_at", "email") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "cassie"], ["password_digest", "$2a$12$wG49Xw6.B8JmfJQzNoC1Ue.6jscReTkK0.ElZYGSjgyQiLWvQ9MJW"], ["created_at", "2022-02-23 23:05:07.037625"], ["updated_at", "2022-02-23 23:05:07.037625"], ["email", "cassie@ga.co"]]
+  ↳ db/seeds.rb:106
+  [1m[35m (2.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:106
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:107
+  [1m[36mUser Create (0.8ms)[0m  [1m[32mINSERT INTO "users" ("name", "password_digest", "created_at", "updated_at", "email") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "ethan"], ["password_digest", "$2a$12$bPo/mGzYm3arzfA.9KG2euYWXkt/ywtQykmerjIOQ20ZfBAg3EkC."], ["created_at", "2022-02-23 23:05:07.309708"], ["updated_at", "2022-02-23 23:05:07.309708"], ["email", "ethan@ga.co"]]
+  ↳ db/seeds.rb:107
+  [1m[35m (2.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:107
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "users"[0m
+  ↳ db/seeds.rb:109
+  [1m[35m (0.7ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:111
+  [1m[36mQuestionbank Update (0.4ms)[0m  [1m[33mUPDATE "questionbanks" SET "updated_at" = $1, "user_id" = $2 WHERE "questionbanks"."id" = $3[0m  [["updated_at", "2022-02-23 23:05:07.332701"], ["user_id", 1], ["id", 1]]
+  ↳ db/seeds.rb:111
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:111
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:111
+  [1m[36mQuestionbank Update (0.4ms)[0m  [1m[33mUPDATE "questionbanks" SET "updated_at" = $1, "user_id" = $2 WHERE "questionbanks"."id" = $3[0m  [["updated_at", "2022-02-23 23:05:07.335419"], ["user_id", 1], ["id", 2]]
+  ↳ db/seeds.rb:111
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:111
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" ORDER BY "users"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ db/seeds.rb:113
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "questionbanks" WHERE "questionbanks"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ db/seeds.rb:113
+  [1m[36mRoom Load (0.7ms)[0m  [1m[34mSELECT "rooms".* FROM "rooms"[0m
+  ↳ db/seeds.rb:116
