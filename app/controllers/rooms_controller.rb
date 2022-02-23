@@ -22,7 +22,7 @@ class RoomsController < ApplicationController
         headers['Access-Control-Allow-Origin'] = '*'
 
         room = Room.new host_id: current_user.id
-
+        p "*************************", room
         if room.save 
             serialized_data = ActiveModelSerializers::Adapter::Json.new( RoomSerializer.new(room)).serializable_hash
             ActionCable.server.broadcast 'rooms_channel', serialized_data
@@ -41,10 +41,17 @@ class RoomsController < ApplicationController
         
     end
 
+    def start
+        room = Room.find params[:id]
+        room.game_status = true 
+        room.save
+        render json: room  
+    end
+
     def destroy
         room = Room.destroy params[:id]
-
     end
+
 
     private
       
