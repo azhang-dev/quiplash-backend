@@ -1,5 +1,5 @@
 class RoomsController < ApplicationController
-    before_action :authenticate_user, except: [:index]
+    before_action :authenticate_user, except: [:index, :show, :update]
 
     skip_before_action :verify_authenticity_token, raise: false
 
