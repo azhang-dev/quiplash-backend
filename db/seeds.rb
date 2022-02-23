@@ -83,11 +83,11 @@ puts "the answer of #{Question.first.question} is ..."
 
 print "creating QuestionBank..."
 
-b1 = QuestionBank.create!(
+b1 = QuestionBank.create(
     name: "Random questions",
 )
 
-b2 = QuestionBank.create!(
+b2 = QuestionBank.create(
     name: "GA related questions",
 )
 

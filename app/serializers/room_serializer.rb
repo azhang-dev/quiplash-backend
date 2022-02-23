@@ -1,4 +1,3 @@
 class RoomSerializer < ActiveModel::Serializer
-  attributes :id
-  has_many :games
+  attributes :id, :users, :games, :host_id 
 end
