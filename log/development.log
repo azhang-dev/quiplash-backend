@@ -2673,3 +2673,345 @@ Migrating to AddGameStatusToRooms (20220223111511)
   ↳ db/seeds.rb:113
   [1m[36mRoom Load (0.7ms)[0m  [1m[34mSELECT "rooms".* FROM "rooms"[0m
   ↳ db/seeds.rb:116
+  [1m[35m (1.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:4
+  [1m[36mAnswer Load (1.3ms)[0m  [1m[34mSELECT "answers".* FROM "answers"[0m
+  ↳ db/seeds.rb:10
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:10
+  [1m[36mAnswer Destroy (0.7ms)[0m  [1m[31mDELETE FROM "answers" WHERE "answers"."id" = $1[0m  [["id", 2]]
+  ↳ db/seeds.rb:10
+  [1m[35m (2.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:10
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:10
+  [1m[36mAnswer Destroy (0.6ms)[0m  [1m[31mDELETE FROM "answers" WHERE "answers"."id" = $1[0m  [["id", 1]]
+  ↳ db/seeds.rb:10
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:10
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:10
+  [1m[36mAnswer Destroy (0.3ms)[0m  [1m[31mDELETE FROM "answers" WHERE "answers"."id" = $1[0m  [["id", 6]]
+  ↳ db/seeds.rb:10
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:10
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:10
+  [1m[36mAnswer Destroy (0.4ms)[0m  [1m[31mDELETE FROM "answers" WHERE "answers"."id" = $1[0m  [["id", 7]]
+  ↳ db/seeds.rb:10
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:10
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:10
+  [1m[36mAnswer Destroy (0.4ms)[0m  [1m[31mDELETE FROM "answers" WHERE "answers"."id" = $1[0m  [["id", 3]]
+  ↳ db/seeds.rb:10
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:10
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:10
+  [1m[36mAnswer Destroy (0.4ms)[0m  [1m[31mDELETE FROM "answers" WHERE "answers"."id" = $1[0m  [["id", 4]]
+  ↳ db/seeds.rb:10
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:10
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:10
+  [1m[36mAnswer Destroy (0.4ms)[0m  [1m[31mDELETE FROM "answers" WHERE "answers"."id" = $1[0m  [["id", 5]]
+  ↳ db/seeds.rb:10
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:10
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:12
+  [1m[36mAnswer Create (0.6ms)[0m  [1m[32mINSERT INTO "answers" ("answer", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["answer", "BEST CODE IS THE CODE THATS NEVER WRITTEN"], ["created_at", "2022-02-23 23:20:03.976889"], ["updated_at", "2022-02-23 23:20:03.976889"]]
+  ↳ db/seeds.rb:12
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:12
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:16
+  [1m[36mAnswer Create (3.5ms)[0m  [1m[32mINSERT INTO "answers" ("answer", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["answer", "MANY MANY TINY DEAD BODIES"], ["created_at", "2022-02-23 23:20:03.980118"], ["updated_at", "2022-02-23 23:20:03.980118"]]
+  ↳ db/seeds.rb:16
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:16
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:21
+  [1m[36mAnswer Create (1.2ms)[0m  [1m[32mINSERT INTO "answers" ("answer", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["answer", "NICE APPLES"], ["created_at", "2022-02-23 23:20:03.986239"], ["updated_at", "2022-02-23 23:20:03.986239"]]
+  ↳ db/seeds.rb:21
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:21
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:26
+  [1m[36mAnswer Create (0.5ms)[0m  [1m[32mINSERT INTO "answers" ("answer", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["answer", "YIFFING IN THE MORNING"], ["created_at", "2022-02-23 23:20:03.990308"], ["updated_at", "2022-02-23 23:20:03.990308"]]
+  ↳ db/seeds.rb:26
+  [1m[35m (1.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:26
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:31
+  [1m[36mAnswer Create (0.5ms)[0m  [1m[32mINSERT INTO "answers" ("answer", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["answer", "I CANT TALK"], ["created_at", "2022-02-23 23:20:03.994012"], ["updated_at", "2022-02-23 23:20:03.994012"]]
+  ↳ db/seeds.rb:31
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:31
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:36
+  [1m[36mAnswer Create (0.4ms)[0m  [1m[32mINSERT INTO "answers" ("answer", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["answer", "LETS DO A QUICK CODE REVIEW"], ["created_at", "2022-02-23 23:20:03.996428"], ["updated_at", "2022-02-23 23:20:03.996428"]]
+  ↳ db/seeds.rb:36
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:36
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:41
+  [1m[36mAnswer Create (0.4ms)[0m  [1m[32mINSERT INTO "answers" ("answer", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["answer", "HELLO THERE"], ["created_at", "2022-02-23 23:20:03.998648"], ["updated_at", "2022-02-23 23:20:03.998648"]]
+  ↳ db/seeds.rb:41
+  [1m[35m (0.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:41
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT COUNT(*) FROM "answers"[0m
+  ↳ db/seeds.rb:45
+  [1m[36mQuestion Load (1.8ms)[0m  [1m[34mSELECT "questions".* FROM "questions"[0m
+  ↳ db/seeds.rb:49
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:49
+  [1m[36mQuestion Destroy (0.4ms)[0m  [1m[31mDELETE FROM "questions" WHERE "questions"."id" = $1[0m  [["id", 1]]
+  ↳ db/seeds.rb:49
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:49
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:49
+  [1m[36mQuestion Destroy (0.5ms)[0m  [1m[31mDELETE FROM "questions" WHERE "questions"."id" = $1[0m  [["id", 2]]
+  ↳ db/seeds.rb:49
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:49
+  [1m[35m (1.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:49
+  [1m[36mQuestion Destroy (0.5ms)[0m  [1m[31mDELETE FROM "questions" WHERE "questions"."id" = $1[0m  [["id", 3]]
+  ↳ db/seeds.rb:49
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:49
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:49
+  [1m[36mQuestion Destroy (0.5ms)[0m  [1m[31mDELETE FROM "questions" WHERE "questions"."id" = $1[0m  [["id", 4]]
+  ↳ db/seeds.rb:49
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:49
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:49
+  [1m[36mQuestion Destroy (0.6ms)[0m  [1m[31mDELETE FROM "questions" WHERE "questions"."id" = $1[0m  [["id", 5]]
+  ↳ db/seeds.rb:49
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:49
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:52
+  [1m[36mQuestion Create (0.6ms)[0m  [1m[32mINSERT INTO "questions" ("question", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["question", "A double rainbow doesn't have gold at the end of it. Instead, it has ____________"], ["created_at", "2022-02-23 23:20:04.053200"], ["updated_at", "2022-02-23 23:20:04.053200"]]
+  ↳ db/seeds.rb:52
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:52
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:56
+  [1m[36mQuestion Create (0.4ms)[0m  [1m[32mINSERT INTO "questions" ("question", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["question", "As Shakesphear once said, '___________'"], ["created_at", "2022-02-23 23:20:04.056180"], ["updated_at", "2022-02-23 23:20:04.056180"]]
+  ↳ db/seeds.rb:56
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:56
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:61
+  [1m[36mQuestion Create (0.6ms)[0m  [1m[32mINSERT INTO "questions" ("question", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["question", "What Adam thought when he first met Eve"], ["created_at", "2022-02-23 23:20:04.058929"], ["updated_at", "2022-02-23 23:20:04.058929"]]
+  ↳ db/seeds.rb:61
+  [1m[35m (0.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:61
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:66
+  [1m[36mQuestion Create (0.4ms)[0m  [1m[32mINSERT INTO "questions" ("question", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["question", "A terrible name for a morning talk show"], ["created_at", "2022-02-23 23:20:04.063386"], ["updated_at", "2022-02-23 23:20:04.063386"]]
+  ↳ db/seeds.rb:66
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:66
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:71
+  [1m[36mQuestion Create (0.4ms)[0m  [1m[32mINSERT INTO "questions" ("question", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["question", "Why do I suck at code so much?"], ["created_at", "2022-02-23 23:20:04.066234"], ["updated_at", "2022-02-23 23:20:04.066234"]]
+  ↳ db/seeds.rb:71
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:71
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:75
+  [1m[36mAnswer Update (3.2ms)[0m  [1m[33mUPDATE "answers" SET "updated_at" = $1, "question_id" = $2 WHERE "answers"."id" = $3[0m  [["updated_at", "2022-02-23 23:20:04.080212"], ["question_id", 6], ["id", 9]]
+  ↳ db/seeds.rb:75
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:75
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:76
+  [1m[36mAnswer Update (0.7ms)[0m  [1m[33mUPDATE "answers" SET "updated_at" = $1, "question_id" = $2 WHERE "answers"."id" = $3[0m  [["updated_at", "2022-02-23 23:20:04.086485"], ["question_id", 7], ["id", 8]]
+  ↳ db/seeds.rb:76
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:76
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:76
+  [1m[36mAnswer Update (0.5ms)[0m  [1m[33mUPDATE "answers" SET "updated_at" = $1, "question_id" = $2 WHERE "answers"."id" = $3[0m  [["updated_at", "2022-02-23 23:20:04.090398"], ["question_id", 7], ["id", 13]]
+  ↳ db/seeds.rb:76
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:76
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:77
+  [1m[36mAnswer Update (0.5ms)[0m  [1m[33mUPDATE "answers" SET "updated_at" = $1, "question_id" = $2 WHERE "answers"."id" = $3[0m  [["updated_at", "2022-02-23 23:20:04.093610"], ["question_id", 8], ["id", 14]]
+  ↳ db/seeds.rb:77
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:77
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:77
+  [1m[36mAnswer Update (0.6ms)[0m  [1m[33mUPDATE "answers" SET "updated_at" = $1, "question_id" = $2 WHERE "answers"."id" = $3[0m  [["updated_at", "2022-02-23 23:20:04.096128"], ["question_id", 8], ["id", 10]]
+  ↳ db/seeds.rb:77
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:77
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:78
+  [1m[36mAnswer Update (0.4ms)[0m  [1m[33mUPDATE "answers" SET "updated_at" = $1, "question_id" = $2 WHERE "answers"."id" = $3[0m  [["updated_at", "2022-02-23 23:20:04.099521"], ["question_id", 9], ["id", 11]]
+  ↳ db/seeds.rb:78
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:78
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:78
+  [1m[36mAnswer Update (0.4ms)[0m  [1m[33mUPDATE "answers" SET "updated_at" = $1, "question_id" = $2 WHERE "answers"."id" = $3[0m  [["updated_at", "2022-02-23 23:20:04.101598"], ["question_id", 9], ["id", 12]]
+  ↳ db/seeds.rb:78
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:78
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "questions"[0m
+  ↳ db/seeds.rb:80
+  [1m[36mQuestion Load (0.2ms)[0m  [1m[34mSELECT  "questions".* FROM "questions" ORDER BY "questions"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ db/seeds.rb:81
+  [1m[36mQuestionbank Load (0.8ms)[0m  [1m[34mSELECT "questionbanks".* FROM "questionbanks"[0m
+  ↳ db/seeds.rb:85
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:85
+  [1m[36mQuestionbank Destroy (0.6ms)[0m  [1m[31mDELETE FROM "questionbanks" WHERE "questionbanks"."id" = $1[0m  [["id", 1]]
+  ↳ db/seeds.rb:85
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:85
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:85
+  [1m[36mQuestionbank Destroy (0.5ms)[0m  [1m[31mDELETE FROM "questionbanks" WHERE "questionbanks"."id" = $1[0m  [["id", 2]]
+  ↳ db/seeds.rb:85
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:85
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:86
+  [1m[36mQuestionbank Create (0.7ms)[0m  [1m[32mINSERT INTO "questionbanks" ("created_at", "updated_at", "name") VALUES ($1, $2, $3) RETURNING "id"[0m  [["created_at", "2022-02-23 23:20:04.132915"], ["updated_at", "2022-02-23 23:20:04.132915"], ["name", "Random questions"]]
+  ↳ db/seeds.rb:86
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:86
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:90
+  [1m[36mQuestionbank Create (0.5ms)[0m  [1m[32mINSERT INTO "questionbanks" ("created_at", "updated_at", "name") VALUES ($1, $2, $3) RETURNING "id"[0m  [["created_at", "2022-02-23 23:20:04.136532"], ["updated_at", "2022-02-23 23:20:04.136532"], ["name", "GA related questions"]]
+  ↳ db/seeds.rb:90
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:90
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT COUNT(*) FROM "questionbanks"[0m
+  ↳ db/seeds.rb:94
+  [1m[35m (1.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:95
+  [1m[36mQuestion Update (0.7ms)[0m  [1m[33mUPDATE "questions" SET "updated_at" = $1, "questionbank_id" = $2 WHERE "questions"."id" = $3[0m  [["updated_at", "2022-02-23 23:20:04.148435"], ["questionbank_id", 3], ["id", 6]]
+  ↳ db/seeds.rb:95
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:95
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:95
+  [1m[36mQuestion Update (0.6ms)[0m  [1m[33mUPDATE "questions" SET "updated_at" = $1, "questionbank_id" = $2 WHERE "questions"."id" = $3[0m  [["updated_at", "2022-02-23 23:20:04.152576"], ["questionbank_id", 3], ["id", 7]]
+  ↳ db/seeds.rb:95
+  [1m[35m (1.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:95
+  [1m[35m (2.8ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:95
+  [1m[36mQuestion Update (5.3ms)[0m  [1m[33mUPDATE "questions" SET "updated_at" = $1, "questionbank_id" = $2 WHERE "questions"."id" = $3[0m  [["updated_at", "2022-02-23 23:20:04.159880"], ["questionbank_id", 3], ["id", 8]]
+  ↳ db/seeds.rb:95
+  [1m[35m (1.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:95
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:95
+  [1m[36mQuestion Update (1.7ms)[0m  [1m[33mUPDATE "questions" SET "updated_at" = $1, "questionbank_id" = $2 WHERE "questions"."id" = $3[0m  [["updated_at", "2022-02-23 23:20:04.169791"], ["questionbank_id", 3], ["id", 9]]
+  ↳ db/seeds.rb:95
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:95
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:96
+  [1m[36mQuestion Update (3.0ms)[0m  [1m[33mUPDATE "questions" SET "updated_at" = $1, "questionbank_id" = $2 WHERE "questions"."id" = $3[0m  [["updated_at", "2022-02-23 23:20:04.174320"], ["questionbank_id", 4], ["id", 10]]
+  ↳ db/seeds.rb:96
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:96
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:101
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:101
+  [1m[36mUser::HABTM_Room Destroy (1.0ms)[0m  [1m[31mDELETE FROM "rooms_users" WHERE "rooms_users"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ db/seeds.rb:101
+  [1m[36mUser::HABTM_Games Destroy (0.6ms)[0m  [1m[31mDELETE FROM "games_users" WHERE "games_users"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ db/seeds.rb:101
+  [1m[36mUser Destroy (0.3ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 1]]
+  ↳ db/seeds.rb:101
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:101
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:101
+  [1m[36mUser::HABTM_Room Destroy (0.3ms)[0m  [1m[31mDELETE FROM "rooms_users" WHERE "rooms_users"."user_id" = $1[0m  [["user_id", 2]]
+  ↳ db/seeds.rb:101
+  [1m[36mUser::HABTM_Games Destroy (0.3ms)[0m  [1m[31mDELETE FROM "games_users" WHERE "games_users"."user_id" = $1[0m  [["user_id", 2]]
+  ↳ db/seeds.rb:101
+  [1m[36mUser Destroy (0.4ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 2]]
+  ↳ db/seeds.rb:101
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:101
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:101
+  [1m[36mUser::HABTM_Room Destroy (0.3ms)[0m  [1m[31mDELETE FROM "rooms_users" WHERE "rooms_users"."user_id" = $1[0m  [["user_id", 3]]
+  ↳ db/seeds.rb:101
+  [1m[36mUser::HABTM_Games Destroy (0.3ms)[0m  [1m[31mDELETE FROM "games_users" WHERE "games_users"."user_id" = $1[0m  [["user_id", 3]]
+  ↳ db/seeds.rb:101
+  [1m[36mUser Destroy (0.4ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 3]]
+  ↳ db/seeds.rb:101
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:101
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:101
+  [1m[36mUser::HABTM_Room Destroy (0.5ms)[0m  [1m[31mDELETE FROM "rooms_users" WHERE "rooms_users"."user_id" = $1[0m  [["user_id", 4]]
+  ↳ db/seeds.rb:101
+  [1m[36mUser::HABTM_Games Destroy (0.4ms)[0m  [1m[31mDELETE FROM "games_users" WHERE "games_users"."user_id" = $1[0m  [["user_id", 4]]
+  ↳ db/seeds.rb:101
+  [1m[36mUser Destroy (0.6ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 4]]
+  ↳ db/seeds.rb:101
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:101
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:104
+  [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO "users" ("name", "password_digest", "created_at", "updated_at", "email") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "alex"], ["password_digest", "$2a$12$zwhfi7VMz6nxEFEpoiL58OmLV1fZmNQJv/e3reyAJG8hkbE0GiDhO"], ["created_at", "2022-02-23 23:20:04.558155"], ["updated_at", "2022-02-23 23:20:04.558155"], ["email", "alex@ga.co"]]
+  ↳ db/seeds.rb:104
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:104
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:105
+  [1m[36mUser Create (0.5ms)[0m  [1m[32mINSERT INTO "users" ("name", "password_digest", "created_at", "updated_at", "email") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "angela"], ["password_digest", "$2a$12$j8V965bimVeD1ozWOJjIdun6gLEkvb58nf.oh5sf5NdXIN8NECcKm"], ["created_at", "2022-02-23 23:20:04.815278"], ["updated_at", "2022-02-23 23:20:04.815278"], ["email", "angela@ga.co"]]
+  ↳ db/seeds.rb:105
+  [1m[35m (1.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:105
+  [1m[35m (0.7ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:106
+  [1m[36mUser Create (0.9ms)[0m  [1m[32mINSERT INTO "users" ("name", "password_digest", "created_at", "updated_at", "email") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "cassie"], ["password_digest", "$2a$12$EEhDkbHMCyCAC8WiKZ698u2dwuYkaDds3vY9U980WGmN4Uio9Ll02"], ["created_at", "2022-02-23 23:20:05.095379"], ["updated_at", "2022-02-23 23:20:05.095379"], ["email", "cassie@ga.co"]]
+  ↳ db/seeds.rb:106
+  [1m[35m (1.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:106
+  [1m[35m (0.7ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:107
+  [1m[36mUser Create (0.7ms)[0m  [1m[32mINSERT INTO "users" ("name", "password_digest", "created_at", "updated_at", "email") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "ethan"], ["password_digest", "$2a$12$1E/aJapP3VqPjvzL9Lk1Q.hKPMx7PIZBDCJuNv6ylZVEFElKnEOWi"], ["created_at", "2022-02-23 23:20:05.354057"], ["updated_at", "2022-02-23 23:20:05.354057"], ["email", "ethan@ga.co"]]
+  ↳ db/seeds.rb:107
+  [1m[35m (1.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:107
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT COUNT(*) FROM "users"[0m
+  ↳ db/seeds.rb:109
+  [1m[35m (12.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:111
+  [1m[36mQuestionbank Update (0.5ms)[0m  [1m[33mUPDATE "questionbanks" SET "updated_at" = $1, "user_id" = $2 WHERE "questionbanks"."id" = $3[0m  [["updated_at", "2022-02-23 23:20:05.384814"], ["user_id", 5], ["id", 3]]
+  ↳ db/seeds.rb:111
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:111
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:111
+  [1m[36mQuestionbank Update (0.4ms)[0m  [1m[33mUPDATE "questionbanks" SET "updated_at" = $1, "user_id" = $2 WHERE "questionbanks"."id" = $3[0m  [["updated_at", "2022-02-23 23:20:05.387849"], ["user_id", 5], ["id", 4]]
+  ↳ db/seeds.rb:111
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:111
+  [1m[36mUser Load (4.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" ORDER BY "users"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ db/seeds.rb:113
+  [1m[35m (4.6ms)[0m  [1m[34mSELECT COUNT(*) FROM "questionbanks" WHERE "questionbanks"."user_id" = $1[0m  [["user_id", 5]]
+  ↳ db/seeds.rb:113
+  [1m[36mRoom Load (1.4ms)[0m  [1m[34mSELECT "rooms".* FROM "rooms"[0m
+  ↳ db/seeds.rb:116
