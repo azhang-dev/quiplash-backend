@@ -1,5 +1,13 @@
 class GamesController < ApplicationController
 
+
+  def index
+    games = Game.all
+    render json: games
+  end
+
+
+
     def create 
         game = Game.new(game_params)
         room = Room.find(game_params[:room_id])
@@ -13,11 +21,15 @@ class GamesController < ApplicationController
 
     end
 
-  end
 
   def show
     game = Game.find params[:id]
     GamesChannel.broadcast_to 
+  end
+
+
+  def edit
+    room = Room.find()
   end
 
 
