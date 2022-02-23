@@ -42,6 +42,7 @@ class RoomsController < ApplicationController
     def start
         room = Room.find params[:id]
         room.game_status = true 
+        room.save
         render json: room  
     end
 
