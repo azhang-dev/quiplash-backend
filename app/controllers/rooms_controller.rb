@@ -25,6 +25,11 @@ class RoomsController < ApplicationController
         end
     end
 
+    def update
+        room = Room.find params[:id]
+        
+    end
+
     def destroy
         room = Room.destroy params[:id]
 
@@ -35,4 +40,7 @@ class RoomsController < ApplicationController
       def room_params
         params.require(:room).permit(:host_id)
       end
+
+      def room_update_params
+        params.require(:room)
 end
