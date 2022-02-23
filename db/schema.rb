@@ -35,15 +35,18 @@ ActiveRecord::Schema.define(version: 2022_02_23_111511) do
   end
 
   create_table "questionbanks", force: :cascade do |t|
+    t.boolean "default"
+    t.string "name"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.string "name"
+    t.integer "user_id"
   end
 
   create_table "questions", force: :cascade do |t|
+    t.text "question"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.text "question"
+    t.integer "questionbank_id"
   end
 
   create_table "rooms", force: :cascade do |t|
