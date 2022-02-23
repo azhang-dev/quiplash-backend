@@ -13,17 +13,19 @@ class GamesController < ApplicationController
 
     end
 
-    def show
-        game = Game.find params[:id]
-        GamesChannel.broadcast_to 
-    end
+  end
+
+  def show
+    game = Game.find params[:id]
+    GamesChannel.broadcast_to 
+  end
 
 
-    private
-      
-      def game_params
-        params.require(:game).permit(:title, :room_id)
-      end
+  private
+    
+  def game_params
+    params.require(:game).permit(:title, :room_id)
+  end
 
 
 
