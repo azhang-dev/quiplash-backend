@@ -35,6 +35,10 @@ ActiveRecord::Schema.define(version: 2022_02_23_111511) do
   end
 
   create_table "questionbanks", force: :cascade do |t|
+<<<<<<< HEAD
+=======
+    t.boolean "default"
+>>>>>>> 4feae9c360b6de321f0f5e257dd3a28c5511fe1b
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.string "name"
