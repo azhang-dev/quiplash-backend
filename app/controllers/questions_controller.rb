@@ -6,14 +6,12 @@ class QuestionsController < ApplicationController
   end
 
   def index
-    render json: Question.all
+    questions = Question.all
+    p questions.to_json
+    render json: questions.to_json
   end
 
-  def game_data
-
-    answer= Answer.all
-    render json: answer
-  end
+  
 
   def create
 

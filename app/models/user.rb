@@ -2,6 +2,8 @@ class User < ApplicationRecord
   has_secure_password
 
   has_and_belongs_to_many :games, optional: true
+
+  has_and_belongs_to_many :room, optional: true
   
 
   # def self.from_token_request(request)
