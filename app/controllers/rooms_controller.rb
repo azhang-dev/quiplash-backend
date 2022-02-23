@@ -1,4 +1,5 @@
 class RoomsController < ApplicationController
+    before_action :authenticate_user, except: [:index, :show]
 
     skip_before_action :verify_authenticity_token, raise: false
 
@@ -9,8 +10,10 @@ class RoomsController < ApplicationController
 
     def show
         room = Room.find params[:id]
-        room = room.attributes
-        render json: room
+        room = room
+        
+        
+        render json: room, include: [:users]
     end
 
     def create
@@ -26,7 +29,13 @@ class RoomsController < ApplicationController
     end
 
     def update
+        # headers['Access-Control-Allow-Origin'] = '*'
         room = Room.find params[:id]
+        room.users << current_user
+
+        render json: room
+        
+        # room.update room_update_params
         
     end
 
@@ -41,6 +50,7 @@ class RoomsController < ApplicationController
         params.require(:room).permit(:host_id)
       end
 
-      def room_update_params
-        params.require(:room)
+    #   def room_update_params
+    #     params.require(:room).permit(:user_id)
+    #   end
 end
