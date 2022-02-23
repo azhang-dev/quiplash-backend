@@ -8,7 +8,7 @@ Rails.application.routes.draw do
   resources :questions, only: [:show]
   resources :answers, only: [:create, :show]
   resources :votes, only: [:create, :index]
-  resources :games, only: [:create]
+  resources :games, only: [:create, :show]
 
 
   
