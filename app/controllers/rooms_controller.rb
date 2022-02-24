@@ -35,7 +35,7 @@ class RoomsController < ApplicationController
     end
 
     def update
-        #headers['Access-Control-Allow-Origin'] = '*'
+        headers['Access-Control-Allow-Origin'] = '*'
         room = Room.find params[:id]
         room.users << current_user
 
