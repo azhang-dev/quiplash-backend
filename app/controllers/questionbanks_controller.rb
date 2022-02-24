@@ -39,19 +39,12 @@ class QuestionbanksController < ApplicationController
     headers['Access-Control-Allow-Origin'] = '*'
     
     questionbank = Questionbank.find params[:id]
-    question = Question.new question_params
-  
+    question = Question.create question: params[:question]
+    
     questionbank.questions << question
-<<<<<<< HEAD
-    if questionbank.save
-      serialized_data = ActiveModelSerializers::Adapter::Json.new( RoomSerializer.new(room)).serializable_hash
-      ActionCable.server.broadcast 'rooms_channel', serialized_data
-      head :ok 
-
-=======
     p "*****************************", question
-    questionbank.save 
->>>>>>> 26f8cde583c0c73b296230d5919c21e7f3ba5ea9
+
+
   end
 
   def questions_list
@@ -72,9 +65,9 @@ class QuestionbanksController < ApplicationController
     params.require(:questionbank).permit(:name)
   end
 
-  def question_params
-    params.require(:question).permit(:question)
-  end
+  # def question_params
+  #   params.require(:question).permit(:question)
+  # end
 
 
 end
