@@ -10,10 +10,12 @@ class RoomsController < ApplicationController
 
     def show
         room = Room.find params[:id]
-        room = room
+        users = room.users
+        room = room.attributes
+        room[:current_users] = users
         
         
-        render json: room, include: [:users]
+        render json: room
     end
 
     def create
@@ -29,7 +31,7 @@ class RoomsController < ApplicationController
     end
 
     def update
-        # headers['Access-Control-Allow-Origin'] = '*'
+        #headers['Access-Control-Allow-Origin'] = '*'
         room = Room.find params[:id]
         room.users << current_user
 
@@ -42,6 +44,7 @@ class RoomsController < ApplicationController
     def start
         room = Room.find params[:id]
         room.game_status = true 
+        room.save
         render json: room  
     end
 
