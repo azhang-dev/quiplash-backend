@@ -36,8 +36,12 @@ class QuestionbanksController < ApplicationController
 
   def create_question
     headers['Access-Control-Allow-Origin'] = '*'
-    question = Question.new
-    question.save
+    
+    questionbank = Questionbank.find params[:id]
+    question = Question.create question: params[:question]
+    
+    questionbank.questions << question
+
     p "*****************************", question
   end
 
@@ -59,9 +63,9 @@ class QuestionbanksController < ApplicationController
     params.require(:questionbank).permit(:name)
   end
 
-  def question_params
-    params.require(:question).permit(:question, :questionbank_id)
-  end
+  # def question_params
+  #   params.require(:question).permit(:question)
+  # end
 
 
 end
