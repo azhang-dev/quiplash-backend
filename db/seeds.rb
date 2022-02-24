@@ -42,6 +42,10 @@ a7 = Answer.create!(
     answer: "HELLO THERE",
 )
 
+a8 = Answer.create!(
+    answer: "your mum lol"
+)
+
 puts "Created #{Answer.count} Answer"
 
 print "Creating questions ..."
@@ -71,68 +75,214 @@ q4 = Question.create!(
 q5 = Question.create!(
     question: "What does N.F.T stand for?"  
 )
+a9 = Answer.create!(
+    answer: "Don't know, don't care",
+    question_id: q5.id
+)
+a10 = Answer.create!(
+  answer: "Non-functioning-transactions",
+  question_id: q5.id
+)
+
 
 q6 = Question.create!(
     question: "What really happened to Jeffrey Epstein?"
+)
+a11 = Answer.create!(
+  answer: "He killed himself obviously",
+  question_id: q6.id
+)
+a12 = Answer.create!(
+  answer: "Don't know, don't care",
+  question_id: q6.id
 )
 
 q7 = Question.create!(
     question: "How do we fix the NBN?" 
 )
+a13 = Answer.create!(
+  answer: "We all know it's too late to fix it",
+  question_id: q7.id
+)
+a14 = Answer.create!(
+  answer: "Huawei 5G :)",
+  question_id: q7.id
+)
 
 q8 = Question.create!(
     question: "The purest spring water comes from '__________'."
+)
+a15 = Answer.create!(
+  answer: "Me",
+  question_id: q8.id
+)
+a16 = Answer.create!(
+  answer: "'Somewhere over the rainbow'",
+  question_id: q8.id
 )
 
 q9 = Question.create!(
     question: "What happens when you turn 30 years old?"
 )
+a17 = Answer.create!(
+  answer: "You become a wizard...Harry",
+  question_id: q9.id
+)
+
+a18 = Answer.create!(
+  answer: "Your feet get cracked up, your liver doesn't work, etc",
+  question_id: q9.id
+)
 
 q10 = Question.create!(
     question: "When is 'cunt' an appropriate word to call your friend?"
+)
+a19 = Answer.create!(
+  answer: "When your teacher thinks your talking about them",
+  question_id: q10.id
+)
+a20 = Answer.create!(
+  answer: "Are you really friends if you can't call them a cunt?",
+  question_id: q10.id
 )
 
 q11 = Question.create!(
     question: "Explain why VSCode is better than Atom."
 )
 
+a21 = Answer.create!(
+  answer: "'(Open Source) is a cancer that attaches itself in an intellectual property sense to everything it touches'",
+  question_id: q11.id
+)
+a22 = Answer.create!(
+  answer: "notepad++ is actually the superior choice",
+  question_id: q11.id
+)
+
 q12 = Question.create!(
     question: "Why doesn't Stanley wear shirts?"
+)
+a23 = Answer.create!(
+  answer: "He can't code with a shirt on",
+  question_id: q12.id
+)
+a24 = Answer.create!(
+  answer: "He should take off his pants too.",
+  question_id: q12.id
 )
 
 q13 = Question.create!(
     question: "What the fuck are react hooks?"
 )
+a25 = Answer.create!(
+  answer: "https://reactjs.org/docs/hooks-intro.html",
+  question_id: q13.id
+)
+a26 = Answer.create!(
+  answer: "Good Question",
+  question_id: q13.id
+)
 
 q14 = Question.create!(
     question: "Did any of you get any sleep last night?"
+)
+a27 = Answer.create!(
+  answer: "No",
+  question_id: q14.id
+)
+a28 = Answer.create!(
+  answer: "Yes",
+  question_id: q14.id
 )
 
 q15 = Question.create!(
     question: "What's the best way to secure a coffee date?"
 )
+a29 = Answer.create!(
+  answer: "Just swipe right",
+  question_id: q15.id
+)
+a30 = Answer.create!(
+  answer: "Ask Shay",
+  question_id: q15.id
+)
 
 q16 = Question.create!(
-    question: "Is COVID real?"
+    question: "Should I take a COVID vaccination?"
+)
+a31 = Answer.create!(
+  answer: "If you want unlimited 5G access, yes",
+  question_id: q16.id
+)
+a32 = Answer.create!(
+  answer: "Ask Clive Palmer",
+  question_id: q16.id
 )
 
 q17 = Question.create!(
     question: "What superhero/villain would make the best therapist?"
+)
+a33 = Answer.create!(
+  answer: "Iron Man",
+  question_id: q17.id
+)
+a34 = Answer.create!(
+  answer: "Batman",
+  question_id: q17.id
 )
 
 q18 = Question.create!(
     question: "If you had a third hand, what would you use it for?"
 )
 
+a35 = Answer.create!(
+  answer: "Don't ask questions you don't want the answer to",
+  question_id: q18.id
+)
+a36 = Answer.create!(
+  answer: "Amputation",
+  question_id: q18.id
+)
 q19 = Question.create!(
     question: "What is the secret to happiness?"
 )
 
-q20 = Question.create!(
-    question: ""
+a37 = Answer.create!(
+  answer: "'Happiness does not exist' - Cassie, 2020",
+  question_id: q19.id
 )
 
-q1.answers << a2
+a38 = Answer.create!(
+  answer: "'I dunno' - Alex, 2020",
+  question_id: q19.id
+)
+
+q20 = Question.create!(
+    question: "Just type something funny idk lol im outta ideas"
+)
+a39 = Answer.create!(
+  answer: "something funny idk lol im outta ideas",
+  question_id: q20.id
+)
+a40 = Answer.create!(      
+  answer: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+  question_id: q20.id
+)
+
+q21 = Question.create!(
+  question: "How is Daniel cheating in the quizzes?"
+)
+a41 = Answer.create!(
+answer: "He's asking Jia for answers",
+question_id: q21.id
+)
+a42 = Answer.create!(      
+answer: "He has the answers saved in his crypto wallet",
+question_id: q21.id
+)
+
+
+q1.answers << a2 << a8
 q2.answers << a1 << a6
 q3.answers << a7 << a3
 q4.answers << a4 << a5
@@ -152,8 +302,8 @@ b2 = Questionbank.create!(
 )
 
 puts "created #{Questionbank.count} questionbanks."
-b1.questions << q1<< q2 << q3 << q4
-b2.questions << q5
+b1.questions << q1<< q2 << q3 << q4 << q6 << q7 << q8 << q9 << q16 << q17 << q18 << q19 << q20
+b2.questions << q5 << q10 << q11 << q12 << q13 << q14 << q15 << q21
 
 
 
