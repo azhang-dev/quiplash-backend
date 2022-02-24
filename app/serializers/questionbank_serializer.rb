@@ -1,3 +1,3 @@
 class QuestionbankSerializer < ActiveModel::Serializer
-    attributes :user_id, :name, :questions, :id
+  attributes :id, :name, :user_id
 end

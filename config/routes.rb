@@ -13,8 +13,8 @@ Rails.application.routes.draw do
   resources :votes, only: [:create, :index]
   resources :games, only: [:create, :show, :index]
   
-  post '/questionbanks/:id/createquestions' => "questionbanks#create_question"
   get '/questionbanks/:id/questions' => "questionbanks#questions_list"
+  post '/questionbanks/:id/createquestions' => "questionbanks#create_question"
   resources :questionbanks, only: [:create, :index, :show]
   
 

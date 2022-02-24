@@ -6,7 +6,7 @@ class User < ApplicationRecord
   has_and_belongs_to_many :room, optional: true
 
   has_many :questionbanks
-  
+  has_many :answers
 
   # def self.from_token_request(request)
   #   email = request.params["auth"] && request.params["auth"]["email"]
