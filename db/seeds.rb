@@ -114,12 +114,6 @@ q20 = Question.create!(
 
 
 
-
-# q1.answers << a2 << a8
-# q2.answers << a1 << a6
-# q3.answers << a7 << a3
-# q4.answers << a4 << a5
-
 puts "created #{Question.count} questions."
 puts "the answer of #{Question.first.question} is ..."
 
@@ -130,13 +124,10 @@ puts "the answer of #{Question.first.question} is ..."
 #     name: "Random questions",
 # )
 
-# b2 = Questionbank.create!(
-#     name: "GA related questions",
-# )
 
-# puts "created #{Questionbank.count} questionbanks."
-# b1.questions << q1<< q2 << q3 << q4 << q6 << q7 << q8 << q9 << q16 << q17 << q18 << q19 << q20
-# b2.questions << q5 << q10 << q11 << q12 << q13 << q14 << q15 << q21
+puts "created #{Questionbank.count} questionbanks."
+b1.questions << q1<< q2 << q3 << q4 << q5 << q6 << q7 << q8 << q9 << q10 << q11 << q12 << q13 << q14 << q15 << q16 << q17 << q18 << q19 << q20
+
 
 
 
