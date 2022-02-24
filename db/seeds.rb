@@ -42,6 +42,10 @@ a7 = Answer.create!(
     answer: "HELLO THERE",
 )
 
+a8 = Answer.create!(
+    answer: "your mum lol"
+)
+
 puts "Created #{Answer.count} Answer"
 
 print "Creating questions ..."
@@ -71,9 +75,26 @@ q4 = Question.create!(
 q5 = Question.create!(
     question: "What does N.F.T stand for?"  
 )
+a9 = Answer.create!(
+    answer: "Don't know, don't care",
+    question_id: q5
+)
+a10 = Answer.create!(
+  answer: "Non-functioning-transactions",
+  question_id: q5
+)
+
 
 q6 = Question.create!(
     question: "What really happened to Jeffrey Epstein?"
+)
+a11 = Answer.create!(
+  answer: "He killed himself obviously",
+  question_id: q6
+)
+a12 = Answer.create!(
+  answer: "Don't know, don't care",
+  question_id: q6
 )
 
 q7 = Question.create!(
@@ -129,10 +150,10 @@ q19 = Question.create!(
 )
 
 q20 = Question.create!(
-    question: ""
+    question: "Just type something funny idk lol im outta ideas"
 )
 
-q1.answers << a2
+q1.answers << a2 << a8
 q2.answers << a1 << a6
 q3.answers << a7 << a3
 q4.answers << a4 << a5
