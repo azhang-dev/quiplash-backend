@@ -1,5 +1,5 @@
 class RoomsController < ApplicationController
-    before_action :authenticate_user, except: [:index, :show]
+    before_action :authenticate_user, except: [:index, :show, :update]
 
     skip_before_action :verify_authenticity_token, raise: false
 
@@ -14,17 +14,19 @@ class RoomsController < ApplicationController
         headers['Access-Control-Allow-Origin'] = '*'
 
         room = Room.find params[:id]
-        room = room
+        users = room.users
+        room = room.attributes
+        room[:current_users] = users
         
         
-        render json: room, include: [:users]
+        render json: room
     end
 
     def create
         headers['Access-Control-Allow-Origin'] = '*'
 
         room = Room.new host_id: current_user.id
-
+        p "*************************", room
         if room.save 
             serialized_data = ActiveModelSerializers::Adapter::Json.new( RoomSerializer.new(room)).serializable_hash
             ActionCable.server.broadcast 'rooms_channel', serialized_data
@@ -33,7 +35,7 @@ class RoomsController < ApplicationController
     end
 
     def update
-        # headers['Access-Control-Allow-Origin'] = '*'
+        #headers['Access-Control-Allow-Origin'] = '*'
         room = Room.find params[:id]
         room.users << current_user
 
@@ -43,10 +45,17 @@ class RoomsController < ApplicationController
         
     end
 
+    def start
+        room = Room.find params[:id]
+        room.game_status = true 
+        room.save
+        render json: room  
+    end
+
     def destroy
         room = Room.destroy params[:id]
-
     end
+
 
     private
       
