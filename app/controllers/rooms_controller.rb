@@ -47,8 +47,11 @@ class RoomsController < ApplicationController
 
     def start
         room = Room.find params[:id]
+        random_user = room.users.sample(1)
+        room.imposter_id = random_user[0].id
         room.game_status = true 
         room.save
+        p "()()()()()()()()()()()()()()()", room
         render json: room  
     end
 
