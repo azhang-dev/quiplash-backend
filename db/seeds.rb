@@ -118,7 +118,3 @@ Room.destroy_all
 
 
 
-<<<<<<< HEAD
-
-=======
->>>>>>> 38a574cab88e2d024c3318a2a0fc075d6f6bb82d
