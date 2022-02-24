@@ -81,8 +81,6 @@ puts "created #{Question.count} questions."
 puts "the answer of #{Question.first.question} is ..."
 
 
-<<<<<<< HEAD
-=======
 print "creating QuestionBank..."
 Questionbank.destroy_all
 b1 = Questionbank.create!(
@@ -99,7 +97,6 @@ b2.questions << q5
 
 
 
->>>>>>> 38a574cab88e2d024c3318a2a0fc075d6f6bb82d
 print "Creating Users..."
 User.destroy_all
 
@@ -121,7 +118,3 @@ Room.destroy_all
 
 
 
-<<<<<<< HEAD
-
-=======
->>>>>>> 38a574cab88e2d024c3318a2a0fc075d6f6bb82d
