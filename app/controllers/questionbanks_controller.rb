@@ -8,6 +8,7 @@ class QuestionbanksController < ApplicationController
   def index
     headers['Access-Control-Allow-Origin'] = '*'
     questionbanks = Questionbank.all
+    
     p questionbanks.to_json
     render json: questionbanks.to_json
   end
@@ -41,8 +42,9 @@ class QuestionbanksController < ApplicationController
     question = Question.create question: params[:question]
     
     questionbank.questions << question
-
     p "*****************************", question
+
+
   end
 
   def questions_list
