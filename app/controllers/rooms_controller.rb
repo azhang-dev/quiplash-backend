@@ -4,16 +4,22 @@ class RoomsController < ApplicationController
     skip_before_action :verify_authenticity_token, raise: false
 
     def index
+        headers['Access-Control-Allow-Origin'] = '*'
+
         rooms = Room.all
         render json: rooms
     end
 
     def show
+        headers['Access-Control-Allow-Origin'] = '*'
+
         room = Room.find params[:id]
-        room = room
+        users = room.users
+        room = room.attributes
+        room[:users] = users
         
         
-        render json: room, include: [:users]
+        render json: room
     end
 
     def create
