@@ -44,7 +44,7 @@ class QuestionbanksController < ApplicationController
     questionbank.save 
   end
 
-  def questionslist
+  def questions_list
     headers['Access-Control-Allow-Origin'] = '*'
     questionbank = Questionbank.find params[:id]
     p questionbank

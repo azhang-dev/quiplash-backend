@@ -14,7 +14,7 @@ Rails.application.routes.draw do
   resources :games, only: [:create, :show, :index]
   
   post '/questionbanks/createquestions' => "questionbanks#create_question"
-  get '/questionbanks/:id/questions' => "questionbanks#questionslist"
+  get '/questionbanks/:id/questions' => "questionbanks#questions_list"
   resources :questionbanks, only: [:create, :index, :show]
   
 
