@@ -142,7 +142,7 @@ u4 = User.create! name: 'ethan', password: 'chicken', email: 'ethan@ga.co'
 
 puts "Created #{User.count} users."
 
-u1.questionbanks << b1 << b2
+u1.questionbanks << b1
 
 puts "User #{User.first.name} has #{u1.questionbanks.count} questionbanks"
 

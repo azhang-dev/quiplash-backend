@@ -30,3 +30,1827 @@ Migrating to AddImageToQuestions (20220224145810)
   ↳ bin/rails:4
   [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
   ↳ bin/rails:4
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT pg_try_advisory_lock(5882105369419256040)[0m
+  ↳ bin/rails:4
+  [1m[35m (3.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:4
+  [1m[36mActiveRecord::InternalMetadata Load (4.3ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ bin/rails:4
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:4
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:4
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT pg_advisory_unlock(5882105369419256040)[0m
+  ↳ bin/rails:4
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:4
+  [1m[35m (2.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:4
+  [1m[36mAnswer Load (6.8ms)[0m  [1m[34mSELECT "answers".* FROM "answers"[0m
+  ↳ db/seeds.rb:2
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:2
+  [1m[36mAnswer Destroy (3.3ms)[0m  [1m[31mDELETE FROM "answers" WHERE "answers"."id" = $1[0m  [["id", 250]]
+  ↳ db/seeds.rb:2
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:2
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:2
+  [1m[36mAnswer Destroy (0.4ms)[0m  [1m[31mDELETE FROM "answers" WHERE "answers"."id" = $1[0m  [["id", 256]]
+  ↳ db/seeds.rb:2
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:2
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:2
+  [1m[36mAnswer Destroy (0.4ms)[0m  [1m[31mDELETE FROM "answers" WHERE "answers"."id" = $1[0m  [["id", 249]]
+  ↳ db/seeds.rb:2
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:2
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:2
+  [1m[36mAnswer Destroy (0.4ms)[0m  [1m[31mDELETE FROM "answers" WHERE "answers"."id" = $1[0m  [["id", 254]]
+  ↳ db/seeds.rb:2
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:2
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:2
+  [1m[36mAnswer Destroy (0.4ms)[0m  [1m[31mDELETE FROM "answers" WHERE "answers"."id" = $1[0m  [["id", 255]]
+  ↳ db/seeds.rb:2
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:2
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:2
+  [1m[36mAnswer Destroy (1.2ms)[0m  [1m[31mDELETE FROM "answers" WHERE "answers"."id" = $1[0m  [["id", 251]]
+  ↳ db/seeds.rb:2
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:2
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:2
+  [1m[36mAnswer Destroy (1.3ms)[0m  [1m[31mDELETE FROM "answers" WHERE "answers"."id" = $1[0m  [["id", 252]]
+  ↳ db/seeds.rb:2
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:2
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:2
+  [1m[36mAnswer Destroy (0.4ms)[0m  [1m[31mDELETE FROM "answers" WHERE "answers"."id" = $1[0m  [["id", 257]]
+  ↳ db/seeds.rb:2
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:2
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:2
+  [1m[36mAnswer Destroy (0.5ms)[0m  [1m[31mDELETE FROM "answers" WHERE "answers"."id" = $1[0m  [["id", 258]]
+  ↳ db/seeds.rb:2
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:2
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:2
+  [1m[36mAnswer Destroy (0.5ms)[0m  [1m[31mDELETE FROM "answers" WHERE "answers"."id" = $1[0m  [["id", 259]]
+  ↳ db/seeds.rb:2
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:2
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:2
+  [1m[36mAnswer Destroy (0.3ms)[0m  [1m[31mDELETE FROM "answers" WHERE "answers"."id" = $1[0m  [["id", 260]]
+  ↳ db/seeds.rb:2
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:2
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:2
+  [1m[36mAnswer Destroy (0.3ms)[0m  [1m[31mDELETE FROM "answers" WHERE "answers"."id" = $1[0m  [["id", 261]]
+  ↳ db/seeds.rb:2
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:2
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:2
+  [1m[36mAnswer Destroy (0.3ms)[0m  [1m[31mDELETE FROM "answers" WHERE "answers"."id" = $1[0m  [["id", 262]]
+  ↳ db/seeds.rb:2
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:2
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:2
+  [1m[36mAnswer Destroy (0.3ms)[0m  [1m[31mDELETE FROM "answers" WHERE "answers"."id" = $1[0m  [["id", 253]]
+  ↳ db/seeds.rb:2
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:2
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:2
+  [1m[36mAnswer Destroy (0.3ms)[0m  [1m[31mDELETE FROM "answers" WHERE "answers"."id" = $1[0m  [["id", 263]]
+  ↳ db/seeds.rb:2
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:2
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:2
+  [1m[36mAnswer Destroy (0.3ms)[0m  [1m[31mDELETE FROM "answers" WHERE "answers"."id" = $1[0m  [["id", 264]]
+  ↳ db/seeds.rb:2
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:2
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:2
+  [1m[36mAnswer Destroy (0.3ms)[0m  [1m[31mDELETE FROM "answers" WHERE "answers"."id" = $1[0m  [["id", 265]]
+  ↳ db/seeds.rb:2
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:2
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:2
+  [1m[36mAnswer Destroy (0.3ms)[0m  [1m[31mDELETE FROM "answers" WHERE "answers"."id" = $1[0m  [["id", 266]]
+  ↳ db/seeds.rb:2
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:2
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:2
+  [1m[36mAnswer Destroy (0.3ms)[0m  [1m[31mDELETE FROM "answers" WHERE "answers"."id" = $1[0m  [["id", 267]]
+  ↳ db/seeds.rb:2
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:2
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:2
+  [1m[36mAnswer Destroy (0.3ms)[0m  [1m[31mDELETE FROM "answers" WHERE "answers"."id" = $1[0m  [["id", 268]]
+  ↳ db/seeds.rb:2
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:2
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:2
+  [1m[36mAnswer Destroy (0.3ms)[0m  [1m[31mDELETE FROM "answers" WHERE "answers"."id" = $1[0m  [["id", 269]]
+  ↳ db/seeds.rb:2
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:2
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:2
+  [1m[36mAnswer Destroy (0.3ms)[0m  [1m[31mDELETE FROM "answers" WHERE "answers"."id" = $1[0m  [["id", 270]]
+  ↳ db/seeds.rb:2
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:2
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:2
+  [1m[36mAnswer Destroy (0.4ms)[0m  [1m[31mDELETE FROM "answers" WHERE "answers"."id" = $1[0m  [["id", 271]]
+  ↳ db/seeds.rb:2
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:2
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:2
+  [1m[36mAnswer Destroy (0.3ms)[0m  [1m[31mDELETE FROM "answers" WHERE "answers"."id" = $1[0m  [["id", 272]]
+  ↳ db/seeds.rb:2
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:2
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:2
+  [1m[36mAnswer Destroy (0.3ms)[0m  [1m[31mDELETE FROM "answers" WHERE "answers"."id" = $1[0m  [["id", 273]]
+  ↳ db/seeds.rb:2
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:2
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:2
+  [1m[36mAnswer Destroy (0.3ms)[0m  [1m[31mDELETE FROM "answers" WHERE "answers"."id" = $1[0m  [["id", 274]]
+  ↳ db/seeds.rb:2
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:2
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:2
+  [1m[36mAnswer Destroy (0.3ms)[0m  [1m[31mDELETE FROM "answers" WHERE "answers"."id" = $1[0m  [["id", 275]]
+  ↳ db/seeds.rb:2
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:2
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:2
+  [1m[36mAnswer Destroy (0.2ms)[0m  [1m[31mDELETE FROM "answers" WHERE "answers"."id" = $1[0m  [["id", 276]]
+  ↳ db/seeds.rb:2
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:2
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:2
+  [1m[36mAnswer Destroy (0.3ms)[0m  [1m[31mDELETE FROM "answers" WHERE "answers"."id" = $1[0m  [["id", 277]]
+  ↳ db/seeds.rb:2
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:2
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:2
+  [1m[36mAnswer Destroy (0.2ms)[0m  [1m[31mDELETE FROM "answers" WHERE "answers"."id" = $1[0m  [["id", 278]]
+  ↳ db/seeds.rb:2
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:2
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:2
+  [1m[36mAnswer Destroy (0.2ms)[0m  [1m[31mDELETE FROM "answers" WHERE "answers"."id" = $1[0m  [["id", 279]]
+  ↳ db/seeds.rb:2
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:2
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:2
+  [1m[36mAnswer Destroy (0.2ms)[0m  [1m[31mDELETE FROM "answers" WHERE "answers"."id" = $1[0m  [["id", 280]]
+  ↳ db/seeds.rb:2
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:2
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:2
+  [1m[36mAnswer Destroy (0.2ms)[0m  [1m[31mDELETE FROM "answers" WHERE "answers"."id" = $1[0m  [["id", 281]]
+  ↳ db/seeds.rb:2
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:2
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:2
+  [1m[36mAnswer Destroy (0.2ms)[0m  [1m[31mDELETE FROM "answers" WHERE "answers"."id" = $1[0m  [["id", 282]]
+  ↳ db/seeds.rb:2
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:2
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:2
+  [1m[36mAnswer Destroy (0.8ms)[0m  [1m[31mDELETE FROM "answers" WHERE "answers"."id" = $1[0m  [["id", 283]]
+  ↳ db/seeds.rb:2
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:2
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:2
+  [1m[36mAnswer Destroy (0.2ms)[0m  [1m[31mDELETE FROM "answers" WHERE "answers"."id" = $1[0m  [["id", 284]]
+  ↳ db/seeds.rb:2
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:2
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:2
+  [1m[36mAnswer Destroy (0.2ms)[0m  [1m[31mDELETE FROM "answers" WHERE "answers"."id" = $1[0m  [["id", 285]]
+  ↳ db/seeds.rb:2
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:2
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:2
+  [1m[36mAnswer Destroy (0.2ms)[0m  [1m[31mDELETE FROM "answers" WHERE "answers"."id" = $1[0m  [["id", 286]]
+  ↳ db/seeds.rb:2
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:2
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:2
+  [1m[36mAnswer Destroy (0.2ms)[0m  [1m[31mDELETE FROM "answers" WHERE "answers"."id" = $1[0m  [["id", 287]]
+  ↳ db/seeds.rb:2
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:2
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:2
+  [1m[36mAnswer Destroy (0.2ms)[0m  [1m[31mDELETE FROM "answers" WHERE "answers"."id" = $1[0m  [["id", 288]]
+  ↳ db/seeds.rb:2
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:2
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:2
+  [1m[36mAnswer Destroy (0.3ms)[0m  [1m[31mDELETE FROM "answers" WHERE "answers"."id" = $1[0m  [["id", 289]]
+  ↳ db/seeds.rb:2
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:2
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:2
+  [1m[36mAnswer Destroy (0.2ms)[0m  [1m[31mDELETE FROM "answers" WHERE "answers"."id" = $1[0m  [["id", 290]]
+  ↳ db/seeds.rb:2
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:2
+  [1m[36mQuestion Load (23.4ms)[0m  [1m[34mSELECT "questions".* FROM "questions"[0m
+  ↳ db/seeds.rb:8
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:8
+  [1m[36mQuestion::HABTM_Games Destroy (1.3ms)[0m  [1m[31mDELETE FROM "games_questions" WHERE "games_questions"."question_id" = $1[0m  [["question_id", 149]]
+  ↳ db/seeds.rb:8
+  [1m[36mQuestion Destroy (0.6ms)[0m  [1m[31mDELETE FROM "questions" WHERE "questions"."id" = $1[0m  [["id", 149]]
+  ↳ db/seeds.rb:8
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:8
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:8
+  [1m[36mQuestion::HABTM_Games Destroy (0.3ms)[0m  [1m[31mDELETE FROM "games_questions" WHERE "games_questions"."question_id" = $1[0m  [["question_id", 150]]
+  ↳ db/seeds.rb:8
+  [1m[36mQuestion Destroy (0.4ms)[0m  [1m[31mDELETE FROM "questions" WHERE "questions"."id" = $1[0m  [["id", 150]]
+  ↳ db/seeds.rb:8
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:8
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:8
+  [1m[36mQuestion::HABTM_Games Destroy (0.3ms)[0m  [1m[31mDELETE FROM "games_questions" WHERE "games_questions"."question_id" = $1[0m  [["question_id", 151]]
+  ↳ db/seeds.rb:8
+  [1m[36mQuestion Destroy (0.4ms)[0m  [1m[31mDELETE FROM "questions" WHERE "questions"."id" = $1[0m  [["id", 151]]
+  ↳ db/seeds.rb:8
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:8
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:8
+  [1m[36mQuestion::HABTM_Games Destroy (0.3ms)[0m  [1m[31mDELETE FROM "games_questions" WHERE "games_questions"."question_id" = $1[0m  [["question_id", 152]]
+  ↳ db/seeds.rb:8
+  [1m[36mQuestion Destroy (0.3ms)[0m  [1m[31mDELETE FROM "questions" WHERE "questions"."id" = $1[0m  [["id", 152]]
+  ↳ db/seeds.rb:8
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:8
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:8
+  [1m[36mQuestion::HABTM_Games Destroy (0.3ms)[0m  [1m[31mDELETE FROM "games_questions" WHERE "games_questions"."question_id" = $1[0m  [["question_id", 154]]
+  ↳ db/seeds.rb:8
+  [1m[36mQuestion Destroy (0.3ms)[0m  [1m[31mDELETE FROM "questions" WHERE "questions"."id" = $1[0m  [["id", 154]]
+  ↳ db/seeds.rb:8
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:8
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:8
+  [1m[36mQuestion::HABTM_Games Destroy (0.2ms)[0m  [1m[31mDELETE FROM "games_questions" WHERE "games_questions"."question_id" = $1[0m  [["question_id", 155]]
+  ↳ db/seeds.rb:8
+  [1m[36mQuestion Destroy (1.1ms)[0m  [1m[31mDELETE FROM "questions" WHERE "questions"."id" = $1[0m  [["id", 155]]
+  ↳ db/seeds.rb:8
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:8
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:8
+  [1m[36mQuestion::HABTM_Games Destroy (0.2ms)[0m  [1m[31mDELETE FROM "games_questions" WHERE "games_questions"."question_id" = $1[0m  [["question_id", 156]]
+  ↳ db/seeds.rb:8
+  [1m[36mQuestion Destroy (0.3ms)[0m  [1m[31mDELETE FROM "questions" WHERE "questions"."id" = $1[0m  [["id", 156]]
+  ↳ db/seeds.rb:8
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:8
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:8
+  [1m[36mQuestion::HABTM_Games Destroy (0.3ms)[0m  [1m[31mDELETE FROM "games_questions" WHERE "games_questions"."question_id" = $1[0m  [["question_id", 157]]
+  ↳ db/seeds.rb:8
+  [1m[36mQuestion Destroy (0.3ms)[0m  [1m[31mDELETE FROM "questions" WHERE "questions"."id" = $1[0m  [["id", 157]]
+  ↳ db/seeds.rb:8
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:8
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:8
+  [1m[36mQuestion::HABTM_Games Destroy (0.3ms)[0m  [1m[31mDELETE FROM "games_questions" WHERE "games_questions"."question_id" = $1[0m  [["question_id", 153]]
+  ↳ db/seeds.rb:8
+  [1m[36mQuestion Destroy (0.2ms)[0m  [1m[31mDELETE FROM "questions" WHERE "questions"."id" = $1[0m  [["id", 153]]
+  ↳ db/seeds.rb:8
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:8
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:8
+  [1m[36mQuestion::HABTM_Games Destroy (0.3ms)[0m  [1m[31mDELETE FROM "games_questions" WHERE "games_questions"."question_id" = $1[0m  [["question_id", 158]]
+  ↳ db/seeds.rb:8
+  [1m[36mQuestion Destroy (0.3ms)[0m  [1m[31mDELETE FROM "questions" WHERE "questions"."id" = $1[0m  [["id", 158]]
+  ↳ db/seeds.rb:8
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:8
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:8
+  [1m[36mQuestion::HABTM_Games Destroy (0.2ms)[0m  [1m[31mDELETE FROM "games_questions" WHERE "games_questions"."question_id" = $1[0m  [["question_id", 159]]
+  ↳ db/seeds.rb:8
+  [1m[36mQuestion Destroy (0.3ms)[0m  [1m[31mDELETE FROM "questions" WHERE "questions"."id" = $1[0m  [["id", 159]]
+  ↳ db/seeds.rb:8
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:8
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:8
+  [1m[36mQuestion::HABTM_Games Destroy (0.3ms)[0m  [1m[31mDELETE FROM "games_questions" WHERE "games_questions"."question_id" = $1[0m  [["question_id", 160]]
+  ↳ db/seeds.rb:8
+  [1m[36mQuestion Destroy (0.3ms)[0m  [1m[31mDELETE FROM "questions" WHERE "questions"."id" = $1[0m  [["id", 160]]
+  ↳ db/seeds.rb:8
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:8
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:8
+  [1m[36mQuestion::HABTM_Games Destroy (0.3ms)[0m  [1m[31mDELETE FROM "games_questions" WHERE "games_questions"."question_id" = $1[0m  [["question_id", 164]]
+  ↳ db/seeds.rb:8
+  [1m[36mQuestion Destroy (0.4ms)[0m  [1m[31mDELETE FROM "questions" WHERE "questions"."id" = $1[0m  [["id", 164]]
+  ↳ db/seeds.rb:8
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:8
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:8
+  [1m[36mQuestion::HABTM_Games Destroy (0.4ms)[0m  [1m[31mDELETE FROM "games_questions" WHERE "games_questions"."question_id" = $1[0m  [["question_id", 165]]
+  ↳ db/seeds.rb:8
+  [1m[36mQuestion Destroy (0.4ms)[0m  [1m[31mDELETE FROM "questions" WHERE "questions"."id" = $1[0m  [["id", 165]]
+  ↳ db/seeds.rb:8
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:8
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:8
+  [1m[36mQuestion::HABTM_Games Destroy (0.1ms)[0m  [1m[31mDELETE FROM "games_questions" WHERE "games_questions"."question_id" = $1[0m  [["question_id", 166]]
+  ↳ db/seeds.rb:8
+  [1m[36mQuestion Destroy (0.2ms)[0m  [1m[31mDELETE FROM "questions" WHERE "questions"."id" = $1[0m  [["id", 166]]
+  ↳ db/seeds.rb:8
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:8
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:8
+  [1m[36mQuestion::HABTM_Games Destroy (0.3ms)[0m  [1m[31mDELETE FROM "games_questions" WHERE "games_questions"."question_id" = $1[0m  [["question_id", 167]]
+  ↳ db/seeds.rb:8
+  [1m[36mQuestion Destroy (0.3ms)[0m  [1m[31mDELETE FROM "questions" WHERE "questions"."id" = $1[0m  [["id", 167]]
+  ↳ db/seeds.rb:8
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:8
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:8
+  [1m[36mQuestion::HABTM_Games Destroy (0.2ms)[0m  [1m[31mDELETE FROM "games_questions" WHERE "games_questions"."question_id" = $1[0m  [["question_id", 168]]
+  ↳ db/seeds.rb:8
+  [1m[36mQuestion Destroy (0.2ms)[0m  [1m[31mDELETE FROM "questions" WHERE "questions"."id" = $1[0m  [["id", 168]]
+  ↳ db/seeds.rb:8
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:8
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:8
+  [1m[36mQuestion::HABTM_Games Destroy (0.2ms)[0m  [1m[31mDELETE FROM "games_questions" WHERE "games_questions"."question_id" = $1[0m  [["question_id", 161]]
+  ↳ db/seeds.rb:8
+  [1m[36mQuestion Destroy (0.3ms)[0m  [1m[31mDELETE FROM "questions" WHERE "questions"."id" = $1[0m  [["id", 161]]
+  ↳ db/seeds.rb:8
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:8
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:8
+  [1m[36mQuestion::HABTM_Games Destroy (0.3ms)[0m  [1m[31mDELETE FROM "games_questions" WHERE "games_questions"."question_id" = $1[0m  [["question_id", 162]]
+  ↳ db/seeds.rb:8
+  [1m[36mQuestion Destroy (0.4ms)[0m  [1m[31mDELETE FROM "questions" WHERE "questions"."id" = $1[0m  [["id", 162]]
+  ↳ db/seeds.rb:8
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:8
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:8
+  [1m[36mQuestion::HABTM_Games Destroy (0.3ms)[0m  [1m[31mDELETE FROM "games_questions" WHERE "games_questions"."question_id" = $1[0m  [["question_id", 163]]
+  ↳ db/seeds.rb:8
+  [1m[36mQuestion Destroy (0.3ms)[0m  [1m[31mDELETE FROM "questions" WHERE "questions"."id" = $1[0m  [["id", 163]]
+  ↳ db/seeds.rb:8
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:8
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:8
+  [1m[36mQuestion::HABTM_Games Destroy (0.3ms)[0m  [1m[31mDELETE FROM "games_questions" WHERE "games_questions"."question_id" = $1[0m  [["question_id", 169]]
+  ↳ db/seeds.rb:8
+  [1m[36mQuestion Destroy (0.3ms)[0m  [1m[31mDELETE FROM "questions" WHERE "questions"."id" = $1[0m  [["id", 169]]
+  ↳ db/seeds.rb:8
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:8
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:11
+  [1m[36mQuestion Create (7.5ms)[0m  [1m[32mINSERT INTO "questions" ("created_at", "updated_at", "question", "image") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", "2022-02-24 22:53:16.000624"], ["updated_at", "2022-02-24 22:53:16.000624"], ["question", "Race Track"], ["image", "https://i.imgur.com/42gSJvX.png"]]
+  ↳ db/seeds.rb:11
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:11
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:16
+  [1m[36mQuestion Create (0.5ms)[0m  [1m[32mINSERT INTO "questions" ("created_at", "updated_at", "question", "image") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", "2022-02-24 22:53:16.010664"], ["updated_at", "2022-02-24 22:53:16.010664"], ["question", "Construction Site"], ["image", "https://i.imgur.com/Dwgntlv.png"]]
+  ↳ db/seeds.rb:16
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:16
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:21
+  [1m[36mQuestion Create (0.5ms)[0m  [1m[32mINSERT INTO "questions" ("created_at", "updated_at", "question", "image") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", "2022-02-24 22:53:16.012754"], ["updated_at", "2022-02-24 22:53:16.012754"], ["question", "Wedding"], ["image", "https://i.imgur.com/DxBgVuj.png"]]
+  ↳ db/seeds.rb:21
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:21
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:26
+  [1m[36mQuestion Create (0.4ms)[0m  [1m[32mINSERT INTO "questions" ("created_at", "updated_at", "question", "image") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", "2022-02-24 22:53:16.014732"], ["updated_at", "2022-02-24 22:53:16.014732"], ["question", "Cat Show"], ["image", "https://i.imgur.com/lIgU7fP.png"]]
+  ↳ db/seeds.rb:26
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:26
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:31
+  [1m[36mQuestion Create (0.4ms)[0m  [1m[32mINSERT INTO "questions" ("created_at", "updated_at", "question", "image") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", "2022-02-24 22:53:16.016653"], ["updated_at", "2022-02-24 22:53:16.016653"], ["question", "Cemetery"], ["image", "https://i.imgur.com/KsG04Yv.png"]]
+  ↳ db/seeds.rb:31
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:31
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:38
+  [1m[36mQuestion Create (0.4ms)[0m  [1m[32mINSERT INTO "questions" ("created_at", "updated_at", "question", "image") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", "2022-02-24 22:53:16.018588"], ["updated_at", "2022-02-24 22:53:16.018588"], ["question", "Vineyard"], ["image", "https://i.imgur.com/8i3odYQ.png"]]
+  ↳ db/seeds.rb:38
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:38
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:43
+  [1m[36mQuestion Create (0.4ms)[0m  [1m[32mINSERT INTO "questions" ("created_at", "updated_at", "question", "image") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", "2022-02-24 22:53:16.020477"], ["updated_at", "2022-02-24 22:53:16.020477"], ["question", "Candy Factory"], ["image", "https://i.imgur.com/zdGv0Oy.png"]]
+  ↳ db/seeds.rb:43
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:43
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:48
+  [1m[36mQuestion Create (0.5ms)[0m  [1m[32mINSERT INTO "questions" ("created_at", "updated_at", "question", "image") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", "2022-02-24 22:53:16.022344"], ["updated_at", "2022-02-24 22:53:16.022344"], ["question", "Harbour Docks"], ["image", "https://i.imgur.com/64VD60h.png"]]
+  ↳ db/seeds.rb:48
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:48
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:53
+  [1m[36mQuestion Create (0.4ms)[0m  [1m[32mINSERT INTO "questions" ("created_at", "updated_at", "question", "image") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", "2022-02-24 22:53:16.024410"], ["updated_at", "2022-02-24 22:53:16.024410"], ["question", "Jail"], ["image", "https://i.imgur.com/jISI2gw.png"]]
+  ↳ db/seeds.rb:53
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:53
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:58
+  [1m[36mQuestion Create (0.4ms)[0m  [1m[32mINSERT INTO "questions" ("created_at", "updated_at", "question", "image") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", "2022-02-24 22:53:16.026380"], ["updated_at", "2022-02-24 22:53:16.026380"], ["question", "Jazz Club"], ["image", "https://i.imgur.com/JBnHpmx.png"]]
+  ↳ db/seeds.rb:58
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:58
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:63
+  [1m[36mQuestion Create (0.4ms)[0m  [1m[32mINSERT INTO "questions" ("created_at", "updated_at", "question", "image") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", "2022-02-24 22:53:16.028294"], ["updated_at", "2022-02-24 22:53:16.028294"], ["question", "Library"], ["image", "https://i.imgur.com/PXOsiSk.png"]]
+  ↳ db/seeds.rb:63
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:63
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:69
+  [1m[36mQuestion Create (0.4ms)[0m  [1m[32mINSERT INTO "questions" ("created_at", "updated_at", "question", "image") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", "2022-02-24 22:53:16.030203"], ["updated_at", "2022-02-24 22:53:16.030203"], ["question", "Coal Mine"], ["image", "https://i.imgur.com/xxkqeTb.png"]]
+  ↳ db/seeds.rb:69
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:69
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:74
+  [1m[36mQuestion Create (0.4ms)[0m  [1m[32mINSERT INTO "questions" ("created_at", "updated_at", "question", "image") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", "2022-02-24 22:53:16.032108"], ["updated_at", "2022-02-24 22:53:16.032108"], ["question", "Art Museum"], ["image", "https://i.imgur.com/AY72Skh.png"]]
+  ↳ db/seeds.rb:74
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:74
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:79
+  [1m[36mQuestion Create (0.4ms)[0m  [1m[32mINSERT INTO "questions" ("created_at", "updated_at", "question", "image") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", "2022-02-24 22:53:16.033994"], ["updated_at", "2022-02-24 22:53:16.033994"], ["question", "The U.N"], ["image", "https://i.imgur.com/ZQ4GFx9.png"]]
+  ↳ db/seeds.rb:79
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:79
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:84
+  [1m[36mQuestion Create (0.4ms)[0m  [1m[32mINSERT INTO "questions" ("created_at", "updated_at", "question", "image") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", "2022-02-24 22:53:16.035846"], ["updated_at", "2022-02-24 22:53:16.035846"], ["question", "Gas Station"], ["image", "https://i.imgur.com/XyPjZNC.png"]]
+  ↳ db/seeds.rb:84
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:84
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:89
+  [1m[36mQuestion Create (0.4ms)[0m  [1m[32mINSERT INTO "questions" ("created_at", "updated_at", "question", "image") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", "2022-02-24 22:53:16.037739"], ["updated_at", "2022-02-24 22:53:16.037739"], ["question", "Retirement Home"], ["image", "https://i.imgur.com/3ndFecd.png"]]
+  ↳ db/seeds.rb:89
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:89
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:94
+  [1m[36mQuestion Create (0.4ms)[0m  [1m[32mINSERT INTO "questions" ("created_at", "updated_at", "question", "image") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", "2022-02-24 22:53:16.039600"], ["updated_at", "2022-02-24 22:53:16.039600"], ["question", "Rock Concert"], ["image", "https://i.imgur.com/9WnnrwB.png"]]
+  ↳ db/seeds.rb:94
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:94
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:99
+  [1m[36mQuestion Create (0.5ms)[0m  [1m[32mINSERT INTO "questions" ("created_at", "updated_at", "question", "image") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", "2022-02-24 22:53:16.041452"], ["updated_at", "2022-02-24 22:53:16.041452"], ["question", "Statdium"], ["image", "https://i.imgur.com/AfBlBWB.png"]]
+  ↳ db/seeds.rb:99
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:99
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:104
+  [1m[36mQuestion Create (0.5ms)[0m  [1m[32mINSERT INTO "questions" ("created_at", "updated_at", "question", "image") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", "2022-02-24 22:53:16.043457"], ["updated_at", "2022-02-24 22:53:16.043457"], ["question", "Subway"], ["image", "https://i.imgur.com/tfWovhW.png"]]
+  ↳ db/seeds.rb:104
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:104
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:110
+  [1m[36mQuestion Create (0.4ms)[0m  [1m[32mINSERT INTO "questions" ("created_at", "updated_at", "question", "image") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", "2022-02-24 22:53:16.045457"], ["updated_at", "2022-02-24 22:53:16.045457"], ["question", "SigthSeeing Bus"], ["image", "https://i.imgur.com/dDBf54k.png"]]
+  ↳ db/seeds.rb:110
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:110
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT COUNT(*) FROM "questions"[0m
+  ↳ db/seeds.rb:117
+  [1m[36mQuestion Load (0.4ms)[0m  [1m[34mSELECT  "questions".* FROM "questions" ORDER BY "questions"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ db/seeds.rb:118
+  [1m[36mQuestionbank Load (1.1ms)[0m  [1m[34mSELECT "questionbanks".* FROM "questionbanks"[0m
+  ↳ db/seeds.rb:122
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:122
+  [1m[36mQuestionbank Destroy (0.4ms)[0m  [1m[31mDELETE FROM "questionbanks" WHERE "questionbanks"."id" = $1[0m  [["id", 17]]
+  ↳ db/seeds.rb:122
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:122
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:122
+  [1m[36mQuestionbank Destroy (0.2ms)[0m  [1m[31mDELETE FROM "questionbanks" WHERE "questionbanks"."id" = $1[0m  [["id", 18]]
+  ↳ db/seeds.rb:122
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:122
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:123
+  [1m[36mQuestionbank Create (0.7ms)[0m  [1m[32mINSERT INTO "questionbanks" ("created_at", "updated_at", "name") VALUES ($1, $2, $3) RETURNING "id"[0m  [["created_at", "2022-02-24 22:53:16.076136"], ["updated_at", "2022-02-24 22:53:16.076136"], ["name", "Random questions"]]
+  ↳ db/seeds.rb:123
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:123
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "questionbanks"[0m
+  ↳ db/seeds.rb:128
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:129
+  [1m[36mQuestion Update (0.7ms)[0m  [1m[33mUPDATE "questions" SET "updated_at" = $1, "questionbank_id" = $2 WHERE "questions"."id" = $3[0m  [["updated_at", "2022-02-24 22:53:16.082210"], ["questionbank_id", 19], ["id", 170]]
+  ↳ db/seeds.rb:129
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:129
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:129
+  [1m[36mQuestion Update (0.5ms)[0m  [1m[33mUPDATE "questions" SET "updated_at" = $1, "questionbank_id" = $2 WHERE "questions"."id" = $3[0m  [["updated_at", "2022-02-24 22:53:16.084557"], ["questionbank_id", 19], ["id", 171]]
+  ↳ db/seeds.rb:129
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:129
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:129
+  [1m[36mQuestion Update (0.2ms)[0m  [1m[33mUPDATE "questions" SET "updated_at" = $1, "questionbank_id" = $2 WHERE "questions"."id" = $3[0m  [["updated_at", "2022-02-24 22:53:16.086305"], ["questionbank_id", 19], ["id", 172]]
+  ↳ db/seeds.rb:129
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:129
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:129
+  [1m[36mQuestion Update (0.2ms)[0m  [1m[33mUPDATE "questions" SET "updated_at" = $1, "questionbank_id" = $2 WHERE "questions"."id" = $3[0m  [["updated_at", "2022-02-24 22:53:16.087787"], ["questionbank_id", 19], ["id", 173]]
+  ↳ db/seeds.rb:129
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:129
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:129
+  [1m[36mQuestion Update (0.5ms)[0m  [1m[33mUPDATE "questions" SET "updated_at" = $1, "questionbank_id" = $2 WHERE "questions"."id" = $3[0m  [["updated_at", "2022-02-24 22:53:16.089325"], ["questionbank_id", 19], ["id", 174]]
+  ↳ db/seeds.rb:129
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:129
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:129
+  [1m[36mQuestion Update (0.3ms)[0m  [1m[33mUPDATE "questions" SET "updated_at" = $1, "questionbank_id" = $2 WHERE "questions"."id" = $3[0m  [["updated_at", "2022-02-24 22:53:16.091301"], ["questionbank_id", 19], ["id", 175]]
+  ↳ db/seeds.rb:129
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:129
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:129
+  [1m[36mQuestion Update (0.2ms)[0m  [1m[33mUPDATE "questions" SET "updated_at" = $1, "questionbank_id" = $2 WHERE "questions"."id" = $3[0m  [["updated_at", "2022-02-24 22:53:16.092926"], ["questionbank_id", 19], ["id", 176]]
+  ↳ db/seeds.rb:129
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:129
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:129
+  [1m[36mQuestion Update (0.2ms)[0m  [1m[33mUPDATE "questions" SET "updated_at" = $1, "questionbank_id" = $2 WHERE "questions"."id" = $3[0m  [["updated_at", "2022-02-24 22:53:16.094356"], ["questionbank_id", 19], ["id", 177]]
+  ↳ db/seeds.rb:129
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:129
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:129
+  [1m[36mQuestion Update (0.2ms)[0m  [1m[33mUPDATE "questions" SET "updated_at" = $1, "questionbank_id" = $2 WHERE "questions"."id" = $3[0m  [["updated_at", "2022-02-24 22:53:16.095787"], ["questionbank_id", 19], ["id", 178]]
+  ↳ db/seeds.rb:129
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:129
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:129
+  [1m[36mQuestion Update (0.4ms)[0m  [1m[33mUPDATE "questions" SET "updated_at" = $1, "questionbank_id" = $2 WHERE "questions"."id" = $3[0m  [["updated_at", "2022-02-24 22:53:16.097297"], ["questionbank_id", 19], ["id", 179]]
+  ↳ db/seeds.rb:129
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:129
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:129
+  [1m[36mQuestion Update (0.4ms)[0m  [1m[33mUPDATE "questions" SET "updated_at" = $1, "questionbank_id" = $2 WHERE "questions"."id" = $3[0m  [["updated_at", "2022-02-24 22:53:16.099114"], ["questionbank_id", 19], ["id", 180]]
+  ↳ db/seeds.rb:129
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:129
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:129
+  [1m[36mQuestion Update (0.5ms)[0m  [1m[33mUPDATE "questions" SET "updated_at" = $1, "questionbank_id" = $2 WHERE "questions"."id" = $3[0m  [["updated_at", "2022-02-24 22:53:16.101028"], ["questionbank_id", 19], ["id", 181]]
+  ↳ db/seeds.rb:129
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:129
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:129
+  [1m[36mQuestion Update (0.3ms)[0m  [1m[33mUPDATE "questions" SET "updated_at" = $1, "questionbank_id" = $2 WHERE "questions"."id" = $3[0m  [["updated_at", "2022-02-24 22:53:16.102880"], ["questionbank_id", 19], ["id", 182]]
+  ↳ db/seeds.rb:129
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:129
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:129
+  [1m[36mQuestion Update (0.5ms)[0m  [1m[33mUPDATE "questions" SET "updated_at" = $1, "questionbank_id" = $2 WHERE "questions"."id" = $3[0m  [["updated_at", "2022-02-24 22:53:16.104504"], ["questionbank_id", 19], ["id", 183]]
+  ↳ db/seeds.rb:129
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:129
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:129
+  [1m[36mQuestion Update (0.5ms)[0m  [1m[33mUPDATE "questions" SET "updated_at" = $1, "questionbank_id" = $2 WHERE "questions"."id" = $3[0m  [["updated_at", "2022-02-24 22:53:16.106499"], ["questionbank_id", 19], ["id", 184]]
+  ↳ db/seeds.rb:129
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:129
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:129
+  [1m[36mQuestion Update (0.6ms)[0m  [1m[33mUPDATE "questions" SET "updated_at" = $1, "questionbank_id" = $2 WHERE "questions"."id" = $3[0m  [["updated_at", "2022-02-24 22:53:16.108445"], ["questionbank_id", 19], ["id", 185]]
+  ↳ db/seeds.rb:129
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:129
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:129
+  [1m[36mQuestion Update (0.4ms)[0m  [1m[33mUPDATE "questions" SET "updated_at" = $1, "questionbank_id" = $2 WHERE "questions"."id" = $3[0m  [["updated_at", "2022-02-24 22:53:16.110375"], ["questionbank_id", 19], ["id", 186]]
+  ↳ db/seeds.rb:129
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:129
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:129
+  [1m[36mQuestion Update (0.5ms)[0m  [1m[33mUPDATE "questions" SET "updated_at" = $1, "questionbank_id" = $2 WHERE "questions"."id" = $3[0m  [["updated_at", "2022-02-24 22:53:16.112320"], ["questionbank_id", 19], ["id", 187]]
+  ↳ db/seeds.rb:129
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:129
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:129
+  [1m[36mQuestion Update (0.5ms)[0m  [1m[33mUPDATE "questions" SET "updated_at" = $1, "questionbank_id" = $2 WHERE "questions"."id" = $3[0m  [["updated_at", "2022-02-24 22:53:16.114303"], ["questionbank_id", 19], ["id", 188]]
+  ↳ db/seeds.rb:129
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:129
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:129
+  [1m[36mQuestion Update (0.5ms)[0m  [1m[33mUPDATE "questions" SET "updated_at" = $1, "questionbank_id" = $2 WHERE "questions"."id" = $3[0m  [["updated_at", "2022-02-24 22:53:16.116206"], ["questionbank_id", 19], ["id", 189]]
+  ↳ db/seeds.rb:129
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:129
+  [1m[36mUser Load (2.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:135
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:135
+  [1m[36mUser::HABTM_Room Destroy (0.8ms)[0m  [1m[31mDELETE FROM "rooms_users" WHERE "rooms_users"."user_id" = $1[0m  [["user_id", 77]]
+  ↳ db/seeds.rb:135
+  [1m[36mUser::HABTM_Games Destroy (0.8ms)[0m  [1m[31mDELETE FROM "games_users" WHERE "games_users"."user_id" = $1[0m  [["user_id", 77]]
+  ↳ db/seeds.rb:135
+  [1m[36mUser Destroy (1.3ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 77]]
+  ↳ db/seeds.rb:135
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:135
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:135
+  [1m[36mUser::HABTM_Room Destroy (0.3ms)[0m  [1m[31mDELETE FROM "rooms_users" WHERE "rooms_users"."user_id" = $1[0m  [["user_id", 78]]
+  ↳ db/seeds.rb:135
+  [1m[36mUser::HABTM_Games Destroy (0.3ms)[0m  [1m[31mDELETE FROM "games_users" WHERE "games_users"."user_id" = $1[0m  [["user_id", 78]]
+  ↳ db/seeds.rb:135
+  [1m[36mUser Destroy (0.3ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 78]]
+  ↳ db/seeds.rb:135
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:135
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:135
+  [1m[36mUser::HABTM_Room Destroy (0.3ms)[0m  [1m[31mDELETE FROM "rooms_users" WHERE "rooms_users"."user_id" = $1[0m  [["user_id", 79]]
+  ↳ db/seeds.rb:135
+  [1m[36mUser::HABTM_Games Destroy (0.3ms)[0m  [1m[31mDELETE FROM "games_users" WHERE "games_users"."user_id" = $1[0m  [["user_id", 79]]
+  ↳ db/seeds.rb:135
+  [1m[36mUser Destroy (0.3ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 79]]
+  ↳ db/seeds.rb:135
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:135
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:135
+  [1m[36mUser::HABTM_Room Destroy (0.3ms)[0m  [1m[31mDELETE FROM "rooms_users" WHERE "rooms_users"."user_id" = $1[0m  [["user_id", 80]]
+  ↳ db/seeds.rb:135
+  [1m[36mUser::HABTM_Games Destroy (0.3ms)[0m  [1m[31mDELETE FROM "games_users" WHERE "games_users"."user_id" = $1[0m  [["user_id", 80]]
+  ↳ db/seeds.rb:135
+  [1m[36mUser Destroy (0.4ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 80]]
+  ↳ db/seeds.rb:135
+  [1m[35m (1.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:135
+  [1m[35m (0.6ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:138
+  [1m[36mUser Create (1.4ms)[0m  [1m[32mINSERT INTO "users" ("name", "password_digest", "created_at", "updated_at", "email") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "alex"], ["password_digest", "$2a$12$OgGk5kb3b9gzAXre20Aui.BwLtU0K/6Okhc1cqdtrePgN/qLR8bVK"], ["created_at", "2022-02-24 22:53:17.577393"], ["updated_at", "2022-02-24 22:53:17.577393"], ["email", "alex@ga.co"]]
+  ↳ db/seeds.rb:138
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:138
+  [1m[35m (1.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:139
+  [1m[36mUser Create (1.2ms)[0m  [1m[32mINSERT INTO "users" ("name", "password_digest", "created_at", "updated_at", "email") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "angela"], ["password_digest", "$2a$12$A0bDQ8lTE5DCaZujWQf.U.SSzgco6YJqORI3q2z9Xm2MHPwDMAzfa"], ["created_at", "2022-02-24 22:53:18.977239"], ["updated_at", "2022-02-24 22:53:18.977239"], ["email", "angela@ga.co"]]
+  ↳ db/seeds.rb:139
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:139
+  [1m[35m (0.9ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:140
+  [1m[36mUser Create (1.1ms)[0m  [1m[32mINSERT INTO "users" ("name", "password_digest", "created_at", "updated_at", "email") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "cassie"], ["password_digest", "$2a$12$UueqTmO4s4d2ua2B/S69duR0/bUcOcA0XEnYABIEbnEIcecbuRbAu"], ["created_at", "2022-02-24 22:53:20.374033"], ["updated_at", "2022-02-24 22:53:20.374033"], ["email", "cassie@ga.co"]]
+  ↳ db/seeds.rb:140
+  [1m[35m (5.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:140
+  [1m[35m (1.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:141
+  [1m[36mUser Create (1.3ms)[0m  [1m[32mINSERT INTO "users" ("name", "password_digest", "created_at", "updated_at", "email") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "ethan"], ["password_digest", "$2a$12$FMi6VtGxXnGBbNEmWO4YUOiLQjCpOS5xrcHDSitxi87881Y1JwMs6"], ["created_at", "2022-02-24 22:53:21.775689"], ["updated_at", "2022-02-24 22:53:21.775689"], ["email", "ethan@ga.co"]]
+  ↳ db/seeds.rb:141
+  [1m[35m (1.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:141
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT COUNT(*) FROM "users"[0m
+  ↳ db/seeds.rb:143
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:145
+  [1m[36mQuestionbank Update (1.1ms)[0m  [1m[33mUPDATE "questionbanks" SET "updated_at" = $1, "user_id" = $2 WHERE "questionbanks"."id" = $3[0m  [["updated_at", "2022-02-24 22:53:21.785744"], ["user_id", 81], ["id", 19]]
+  ↳ db/seeds.rb:145
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:145
+  [1m[35m (2.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:4
+  [1m[36mAnswer Load (3.1ms)[0m  [1m[34mSELECT "answers".* FROM "answers"[0m
+  ↳ db/seeds.rb:2
+  [1m[36mQuestion Load (0.8ms)[0m  [1m[34mSELECT "questions".* FROM "questions"[0m
+  ↳ db/seeds.rb:8
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:8
+  [1m[36mQuestion::HABTM_Games Destroy (1.9ms)[0m  [1m[31mDELETE FROM "games_questions" WHERE "games_questions"."question_id" = $1[0m  [["question_id", 170]]
+  ↳ db/seeds.rb:8
+  [1m[36mQuestion Destroy (0.5ms)[0m  [1m[31mDELETE FROM "questions" WHERE "questions"."id" = $1[0m  [["id", 170]]
+  ↳ db/seeds.rb:8
+  [1m[35m (5.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:8
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:8
+  [1m[36mQuestion::HABTM_Games Destroy (0.4ms)[0m  [1m[31mDELETE FROM "games_questions" WHERE "games_questions"."question_id" = $1[0m  [["question_id", 171]]
+  ↳ db/seeds.rb:8
+  [1m[36mQuestion Destroy (0.4ms)[0m  [1m[31mDELETE FROM "questions" WHERE "questions"."id" = $1[0m  [["id", 171]]
+  ↳ db/seeds.rb:8
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:8
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:8
+  [1m[36mQuestion::HABTM_Games Destroy (0.3ms)[0m  [1m[31mDELETE FROM "games_questions" WHERE "games_questions"."question_id" = $1[0m  [["question_id", 172]]
+  ↳ db/seeds.rb:8
+  [1m[36mQuestion Destroy (0.3ms)[0m  [1m[31mDELETE FROM "questions" WHERE "questions"."id" = $1[0m  [["id", 172]]
+  ↳ db/seeds.rb:8
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:8
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:8
+  [1m[36mQuestion::HABTM_Games Destroy (0.3ms)[0m  [1m[31mDELETE FROM "games_questions" WHERE "games_questions"."question_id" = $1[0m  [["question_id", 173]]
+  ↳ db/seeds.rb:8
+  [1m[36mQuestion Destroy (0.3ms)[0m  [1m[31mDELETE FROM "questions" WHERE "questions"."id" = $1[0m  [["id", 173]]
+  ↳ db/seeds.rb:8
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:8
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:8
+  [1m[36mQuestion::HABTM_Games Destroy (0.3ms)[0m  [1m[31mDELETE FROM "games_questions" WHERE "games_questions"."question_id" = $1[0m  [["question_id", 174]]
+  ↳ db/seeds.rb:8
+  [1m[36mQuestion Destroy (0.3ms)[0m  [1m[31mDELETE FROM "questions" WHERE "questions"."id" = $1[0m  [["id", 174]]
+  ↳ db/seeds.rb:8
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:8
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:8
+  [1m[36mQuestion::HABTM_Games Destroy (0.3ms)[0m  [1m[31mDELETE FROM "games_questions" WHERE "games_questions"."question_id" = $1[0m  [["question_id", 175]]
+  ↳ db/seeds.rb:8
+  [1m[36mQuestion Destroy (0.3ms)[0m  [1m[31mDELETE FROM "questions" WHERE "questions"."id" = $1[0m  [["id", 175]]
+  ↳ db/seeds.rb:8
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:8
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:8
+  [1m[36mQuestion::HABTM_Games Destroy (0.3ms)[0m  [1m[31mDELETE FROM "games_questions" WHERE "games_questions"."question_id" = $1[0m  [["question_id", 176]]
+  ↳ db/seeds.rb:8
+  [1m[36mQuestion Destroy (0.8ms)[0m  [1m[31mDELETE FROM "questions" WHERE "questions"."id" = $1[0m  [["id", 176]]
+  ↳ db/seeds.rb:8
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:8
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:8
+  [1m[36mQuestion::HABTM_Games Destroy (0.3ms)[0m  [1m[31mDELETE FROM "games_questions" WHERE "games_questions"."question_id" = $1[0m  [["question_id", 177]]
+  ↳ db/seeds.rb:8
+  [1m[36mQuestion Destroy (0.3ms)[0m  [1m[31mDELETE FROM "questions" WHERE "questions"."id" = $1[0m  [["id", 177]]
+  ↳ db/seeds.rb:8
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:8
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:8
+  [1m[36mQuestion::HABTM_Games Destroy (0.2ms)[0m  [1m[31mDELETE FROM "games_questions" WHERE "games_questions"."question_id" = $1[0m  [["question_id", 178]]
+  ↳ db/seeds.rb:8
+  [1m[36mQuestion Destroy (0.3ms)[0m  [1m[31mDELETE FROM "questions" WHERE "questions"."id" = $1[0m  [["id", 178]]
+  ↳ db/seeds.rb:8
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:8
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:8
+  [1m[36mQuestion::HABTM_Games Destroy (0.2ms)[0m  [1m[31mDELETE FROM "games_questions" WHERE "games_questions"."question_id" = $1[0m  [["question_id", 179]]
+  ↳ db/seeds.rb:8
+  [1m[36mQuestion Destroy (0.3ms)[0m  [1m[31mDELETE FROM "questions" WHERE "questions"."id" = $1[0m  [["id", 179]]
+  ↳ db/seeds.rb:8
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:8
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:8
+  [1m[36mQuestion::HABTM_Games Destroy (0.3ms)[0m  [1m[31mDELETE FROM "games_questions" WHERE "games_questions"."question_id" = $1[0m  [["question_id", 180]]
+  ↳ db/seeds.rb:8
+  [1m[36mQuestion Destroy (1.0ms)[0m  [1m[31mDELETE FROM "questions" WHERE "questions"."id" = $1[0m  [["id", 180]]
+  ↳ db/seeds.rb:8
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:8
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:8
+  [1m[36mQuestion::HABTM_Games Destroy (0.3ms)[0m  [1m[31mDELETE FROM "games_questions" WHERE "games_questions"."question_id" = $1[0m  [["question_id", 181]]
+  ↳ db/seeds.rb:8
+  [1m[36mQuestion Destroy (0.3ms)[0m  [1m[31mDELETE FROM "questions" WHERE "questions"."id" = $1[0m  [["id", 181]]
+  ↳ db/seeds.rb:8
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:8
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:8
+  [1m[36mQuestion::HABTM_Games Destroy (0.2ms)[0m  [1m[31mDELETE FROM "games_questions" WHERE "games_questions"."question_id" = $1[0m  [["question_id", 182]]
+  ↳ db/seeds.rb:8
+  [1m[36mQuestion Destroy (0.3ms)[0m  [1m[31mDELETE FROM "questions" WHERE "questions"."id" = $1[0m  [["id", 182]]
+  ↳ db/seeds.rb:8
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:8
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:8
+  [1m[36mQuestion::HABTM_Games Destroy (0.3ms)[0m  [1m[31mDELETE FROM "games_questions" WHERE "games_questions"."question_id" = $1[0m  [["question_id", 183]]
+  ↳ db/seeds.rb:8
+  [1m[36mQuestion Destroy (0.3ms)[0m  [1m[31mDELETE FROM "questions" WHERE "questions"."id" = $1[0m  [["id", 183]]
+  ↳ db/seeds.rb:8
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:8
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:8
+  [1m[36mQuestion::HABTM_Games Destroy (0.3ms)[0m  [1m[31mDELETE FROM "games_questions" WHERE "games_questions"."question_id" = $1[0m  [["question_id", 184]]
+  ↳ db/seeds.rb:8
+  [1m[36mQuestion Destroy (0.3ms)[0m  [1m[31mDELETE FROM "questions" WHERE "questions"."id" = $1[0m  [["id", 184]]
+  ↳ db/seeds.rb:8
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:8
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:8
+  [1m[36mQuestion::HABTM_Games Destroy (0.3ms)[0m  [1m[31mDELETE FROM "games_questions" WHERE "games_questions"."question_id" = $1[0m  [["question_id", 185]]
+  ↳ db/seeds.rb:8
+  [1m[36mQuestion Destroy (0.3ms)[0m  [1m[31mDELETE FROM "questions" WHERE "questions"."id" = $1[0m  [["id", 185]]
+  ↳ db/seeds.rb:8
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:8
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:8
+  [1m[36mQuestion::HABTM_Games Destroy (0.3ms)[0m  [1m[31mDELETE FROM "games_questions" WHERE "games_questions"."question_id" = $1[0m  [["question_id", 186]]
+  ↳ db/seeds.rb:8
+  [1m[36mQuestion Destroy (0.4ms)[0m  [1m[31mDELETE FROM "questions" WHERE "questions"."id" = $1[0m  [["id", 186]]
+  ↳ db/seeds.rb:8
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:8
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:8
+  [1m[36mQuestion::HABTM_Games Destroy (0.3ms)[0m  [1m[31mDELETE FROM "games_questions" WHERE "games_questions"."question_id" = $1[0m  [["question_id", 187]]
+  ↳ db/seeds.rb:8
+  [1m[36mQuestion Destroy (0.3ms)[0m  [1m[31mDELETE FROM "questions" WHERE "questions"."id" = $1[0m  [["id", 187]]
+  ↳ db/seeds.rb:8
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:8
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:8
+  [1m[36mQuestion::HABTM_Games Destroy (0.3ms)[0m  [1m[31mDELETE FROM "games_questions" WHERE "games_questions"."question_id" = $1[0m  [["question_id", 188]]
+  ↳ db/seeds.rb:8
+  [1m[36mQuestion Destroy (0.4ms)[0m  [1m[31mDELETE FROM "questions" WHERE "questions"."id" = $1[0m  [["id", 188]]
+  ↳ db/seeds.rb:8
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:8
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:8
+  [1m[36mQuestion::HABTM_Games Destroy (0.3ms)[0m  [1m[31mDELETE FROM "games_questions" WHERE "games_questions"."question_id" = $1[0m  [["question_id", 189]]
+  ↳ db/seeds.rb:8
+  [1m[36mQuestion Destroy (0.4ms)[0m  [1m[31mDELETE FROM "questions" WHERE "questions"."id" = $1[0m  [["id", 189]]
+  ↳ db/seeds.rb:8
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:8
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:11
+  [1m[36mQuestion Create (1.0ms)[0m  [1m[32mINSERT INTO "questions" ("created_at", "updated_at", "question", "image") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", "2022-02-24 22:53:42.063679"], ["updated_at", "2022-02-24 22:53:42.063679"], ["question", "Race Track"], ["image", "https://i.imgur.com/42gSJvX.png"]]
+  ↳ db/seeds.rb:11
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:11
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:16
+  [1m[36mQuestion Create (0.4ms)[0m  [1m[32mINSERT INTO "questions" ("created_at", "updated_at", "question", "image") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", "2022-02-24 22:53:42.066560"], ["updated_at", "2022-02-24 22:53:42.066560"], ["question", "Construction Site"], ["image", "https://i.imgur.com/Dwgntlv.png"]]
+  ↳ db/seeds.rb:16
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:16
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:21
+  [1m[36mQuestion Create (0.4ms)[0m  [1m[32mINSERT INTO "questions" ("created_at", "updated_at", "question", "image") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", "2022-02-24 22:53:42.068515"], ["updated_at", "2022-02-24 22:53:42.068515"], ["question", "Wedding"], ["image", "https://i.imgur.com/DxBgVuj.png"]]
+  ↳ db/seeds.rb:21
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:21
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:26
+  [1m[36mQuestion Create (0.4ms)[0m  [1m[32mINSERT INTO "questions" ("created_at", "updated_at", "question", "image") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", "2022-02-24 22:53:42.070460"], ["updated_at", "2022-02-24 22:53:42.070460"], ["question", "Cat Show"], ["image", "https://i.imgur.com/lIgU7fP.png"]]
+  ↳ db/seeds.rb:26
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:26
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:31
+  [1m[36mQuestion Create (0.4ms)[0m  [1m[32mINSERT INTO "questions" ("created_at", "updated_at", "question", "image") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", "2022-02-24 22:53:42.072338"], ["updated_at", "2022-02-24 22:53:42.072338"], ["question", "Cemetery"], ["image", "https://i.imgur.com/KsG04Yv.png"]]
+  ↳ db/seeds.rb:31
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:31
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:38
+  [1m[36mQuestion Create (0.6ms)[0m  [1m[32mINSERT INTO "questions" ("created_at", "updated_at", "question", "image") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", "2022-02-24 22:53:42.074220"], ["updated_at", "2022-02-24 22:53:42.074220"], ["question", "Vineyard"], ["image", "https://i.imgur.com/8i3odYQ.png"]]
+  ↳ db/seeds.rb:38
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:38
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:43
+  [1m[36mQuestion Create (0.4ms)[0m  [1m[32mINSERT INTO "questions" ("created_at", "updated_at", "question", "image") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", "2022-02-24 22:53:42.076398"], ["updated_at", "2022-02-24 22:53:42.076398"], ["question", "Candy Factory"], ["image", "https://i.imgur.com/zdGv0Oy.png"]]
+  ↳ db/seeds.rb:43
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:43
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:48
+  [1m[36mQuestion Create (0.4ms)[0m  [1m[32mINSERT INTO "questions" ("created_at", "updated_at", "question", "image") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", "2022-02-24 22:53:42.078389"], ["updated_at", "2022-02-24 22:53:42.078389"], ["question", "Harbour Docks"], ["image", "https://i.imgur.com/64VD60h.png"]]
+  ↳ db/seeds.rb:48
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:48
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:53
+  [1m[36mQuestion Create (0.4ms)[0m  [1m[32mINSERT INTO "questions" ("created_at", "updated_at", "question", "image") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", "2022-02-24 22:53:42.080306"], ["updated_at", "2022-02-24 22:53:42.080306"], ["question", "Jail"], ["image", "https://i.imgur.com/jISI2gw.png"]]
+  ↳ db/seeds.rb:53
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:53
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:58
+  [1m[36mQuestion Create (0.5ms)[0m  [1m[32mINSERT INTO "questions" ("created_at", "updated_at", "question", "image") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", "2022-02-24 22:53:42.082277"], ["updated_at", "2022-02-24 22:53:42.082277"], ["question", "Jazz Club"], ["image", "https://i.imgur.com/JBnHpmx.png"]]
+  ↳ db/seeds.rb:58
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:58
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:63
+  [1m[36mQuestion Create (0.4ms)[0m  [1m[32mINSERT INTO "questions" ("created_at", "updated_at", "question", "image") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", "2022-02-24 22:53:42.084283"], ["updated_at", "2022-02-24 22:53:42.084283"], ["question", "Library"], ["image", "https://i.imgur.com/PXOsiSk.png"]]
+  ↳ db/seeds.rb:63
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:63
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:69
+  [1m[36mQuestion Create (0.4ms)[0m  [1m[32mINSERT INTO "questions" ("created_at", "updated_at", "question", "image") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", "2022-02-24 22:53:42.086260"], ["updated_at", "2022-02-24 22:53:42.086260"], ["question", "Coal Mine"], ["image", "https://i.imgur.com/xxkqeTb.png"]]
+  ↳ db/seeds.rb:69
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:69
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:74
+  [1m[36mQuestion Create (0.4ms)[0m  [1m[32mINSERT INTO "questions" ("created_at", "updated_at", "question", "image") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", "2022-02-24 22:53:42.088146"], ["updated_at", "2022-02-24 22:53:42.088146"], ["question", "Art Museum"], ["image", "https://i.imgur.com/AY72Skh.png"]]
+  ↳ db/seeds.rb:74
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:74
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:79
+  [1m[36mQuestion Create (0.4ms)[0m  [1m[32mINSERT INTO "questions" ("created_at", "updated_at", "question", "image") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", "2022-02-24 22:53:42.090010"], ["updated_at", "2022-02-24 22:53:42.090010"], ["question", "The U.N"], ["image", "https://i.imgur.com/ZQ4GFx9.png"]]
+  ↳ db/seeds.rb:79
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:79
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:84
+  [1m[36mQuestion Create (0.5ms)[0m  [1m[32mINSERT INTO "questions" ("created_at", "updated_at", "question", "image") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", "2022-02-24 22:53:42.091877"], ["updated_at", "2022-02-24 22:53:42.091877"], ["question", "Gas Station"], ["image", "https://i.imgur.com/XyPjZNC.png"]]
+  ↳ db/seeds.rb:84
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:84
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:89
+  [1m[36mQuestion Create (0.4ms)[0m  [1m[32mINSERT INTO "questions" ("created_at", "updated_at", "question", "image") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", "2022-02-24 22:53:42.093869"], ["updated_at", "2022-02-24 22:53:42.093869"], ["question", "Retirement Home"], ["image", "https://i.imgur.com/3ndFecd.png"]]
+  ↳ db/seeds.rb:89
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:89
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:94
+  [1m[36mQuestion Create (0.5ms)[0m  [1m[32mINSERT INTO "questions" ("created_at", "updated_at", "question", "image") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", "2022-02-24 22:53:42.095864"], ["updated_at", "2022-02-24 22:53:42.095864"], ["question", "Rock Concert"], ["image", "https://i.imgur.com/9WnnrwB.png"]]
+  ↳ db/seeds.rb:94
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:94
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:99
+  [1m[36mQuestion Create (0.4ms)[0m  [1m[32mINSERT INTO "questions" ("created_at", "updated_at", "question", "image") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", "2022-02-24 22:53:42.097827"], ["updated_at", "2022-02-24 22:53:42.097827"], ["question", "Statdium"], ["image", "https://i.imgur.com/AfBlBWB.png"]]
+  ↳ db/seeds.rb:99
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:99
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:104
+  [1m[36mQuestion Create (0.4ms)[0m  [1m[32mINSERT INTO "questions" ("created_at", "updated_at", "question", "image") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", "2022-02-24 22:53:42.099700"], ["updated_at", "2022-02-24 22:53:42.099700"], ["question", "Subway"], ["image", "https://i.imgur.com/tfWovhW.png"]]
+  ↳ db/seeds.rb:104
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:104
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:110
+  [1m[36mQuestion Create (0.4ms)[0m  [1m[32mINSERT INTO "questions" ("created_at", "updated_at", "question", "image") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", "2022-02-24 22:53:42.101624"], ["updated_at", "2022-02-24 22:53:42.101624"], ["question", "SigthSeeing Bus"], ["image", "https://i.imgur.com/dDBf54k.png"]]
+  ↳ db/seeds.rb:110
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:110
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT COUNT(*) FROM "questions"[0m
+  ↳ db/seeds.rb:117
+  [1m[36mQuestion Load (0.4ms)[0m  [1m[34mSELECT  "questions".* FROM "questions" ORDER BY "questions"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ db/seeds.rb:118
+  [1m[36mQuestionbank Load (1.1ms)[0m  [1m[34mSELECT "questionbanks".* FROM "questionbanks"[0m
+  ↳ db/seeds.rb:122
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:122
+  [1m[36mQuestionbank Destroy (0.5ms)[0m  [1m[31mDELETE FROM "questionbanks" WHERE "questionbanks"."id" = $1[0m  [["id", 19]]
+  ↳ db/seeds.rb:122
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:122
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:123
+  [1m[36mQuestionbank Create (0.7ms)[0m  [1m[32mINSERT INTO "questionbanks" ("created_at", "updated_at", "name") VALUES ($1, $2, $3) RETURNING "id"[0m  [["created_at", "2022-02-24 22:53:42.129787"], ["updated_at", "2022-02-24 22:53:42.129787"], ["name", "Random questions"]]
+  ↳ db/seeds.rb:123
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:123
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "questionbanks"[0m
+  ↳ db/seeds.rb:128
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:129
+  [1m[36mQuestion Update (0.6ms)[0m  [1m[33mUPDATE "questions" SET "updated_at" = $1, "questionbank_id" = $2 WHERE "questions"."id" = $3[0m  [["updated_at", "2022-02-24 22:53:42.135664"], ["questionbank_id", 20], ["id", 190]]
+  ↳ db/seeds.rb:129
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:129
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:129
+  [1m[36mQuestion Update (0.5ms)[0m  [1m[33mUPDATE "questions" SET "updated_at" = $1, "questionbank_id" = $2 WHERE "questions"."id" = $3[0m  [["updated_at", "2022-02-24 22:53:42.137960"], ["questionbank_id", 20], ["id", 191]]
+  ↳ db/seeds.rb:129
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:129
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:129
+  [1m[36mQuestion Update (0.5ms)[0m  [1m[33mUPDATE "questions" SET "updated_at" = $1, "questionbank_id" = $2 WHERE "questions"."id" = $3[0m  [["updated_at", "2022-02-24 22:53:42.139885"], ["questionbank_id", 20], ["id", 192]]
+  ↳ db/seeds.rb:129
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:129
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:129
+  [1m[36mQuestion Update (0.6ms)[0m  [1m[33mUPDATE "questions" SET "updated_at" = $1, "questionbank_id" = $2 WHERE "questions"."id" = $3[0m  [["updated_at", "2022-02-24 22:53:42.141826"], ["questionbank_id", 20], ["id", 193]]
+  ↳ db/seeds.rb:129
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:129
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:129
+  [1m[36mQuestion Update (0.5ms)[0m  [1m[33mUPDATE "questions" SET "updated_at" = $1, "questionbank_id" = $2 WHERE "questions"."id" = $3[0m  [["updated_at", "2022-02-24 22:53:42.143913"], ["questionbank_id", 20], ["id", 194]]
+  ↳ db/seeds.rb:129
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:129
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:129
+  [1m[36mQuestion Update (1.8ms)[0m  [1m[33mUPDATE "questions" SET "updated_at" = $1, "questionbank_id" = $2 WHERE "questions"."id" = $3[0m  [["updated_at", "2022-02-24 22:53:42.146010"], ["questionbank_id", 20], ["id", 195]]
+  ↳ db/seeds.rb:129
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:129
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:129
+  [1m[36mQuestion Update (0.3ms)[0m  [1m[33mUPDATE "questions" SET "updated_at" = $1, "questionbank_id" = $2 WHERE "questions"."id" = $3[0m  [["updated_at", "2022-02-24 22:53:42.149280"], ["questionbank_id", 20], ["id", 196]]
+  ↳ db/seeds.rb:129
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:129
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:129
+  [1m[36mQuestion Update (0.3ms)[0m  [1m[33mUPDATE "questions" SET "updated_at" = $1, "questionbank_id" = $2 WHERE "questions"."id" = $3[0m  [["updated_at", "2022-02-24 22:53:42.150827"], ["questionbank_id", 20], ["id", 197]]
+  ↳ db/seeds.rb:129
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:129
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:129
+  [1m[36mQuestion Update (0.2ms)[0m  [1m[33mUPDATE "questions" SET "updated_at" = $1, "questionbank_id" = $2 WHERE "questions"."id" = $3[0m  [["updated_at", "2022-02-24 22:53:42.152455"], ["questionbank_id", 20], ["id", 198]]
+  ↳ db/seeds.rb:129
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:129
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:129
+  [1m[36mQuestion Update (0.5ms)[0m  [1m[33mUPDATE "questions" SET "updated_at" = $1, "questionbank_id" = $2 WHERE "questions"."id" = $3[0m  [["updated_at", "2022-02-24 22:53:42.154084"], ["questionbank_id", 20], ["id", 199]]
+  ↳ db/seeds.rb:129
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:129
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:129
+  [1m[36mQuestion Update (0.8ms)[0m  [1m[33mUPDATE "questions" SET "updated_at" = $1, "questionbank_id" = $2 WHERE "questions"."id" = $3[0m  [["updated_at", "2022-02-24 22:53:42.156167"], ["questionbank_id", 20], ["id", 200]]
+  ↳ db/seeds.rb:129
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:129
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:129
+  [1m[36mQuestion Update (0.5ms)[0m  [1m[33mUPDATE "questions" SET "updated_at" = $1, "questionbank_id" = $2 WHERE "questions"."id" = $3[0m  [["updated_at", "2022-02-24 22:53:42.158481"], ["questionbank_id", 20], ["id", 201]]
+  ↳ db/seeds.rb:129
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:129
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:129
+  [1m[36mQuestion Update (0.4ms)[0m  [1m[33mUPDATE "questions" SET "updated_at" = $1, "questionbank_id" = $2 WHERE "questions"."id" = $3[0m  [["updated_at", "2022-02-24 22:53:42.160446"], ["questionbank_id", 20], ["id", 202]]
+  ↳ db/seeds.rb:129
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:129
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:129
+  [1m[36mQuestion Update (0.5ms)[0m  [1m[33mUPDATE "questions" SET "updated_at" = $1, "questionbank_id" = $2 WHERE "questions"."id" = $3[0m  [["updated_at", "2022-02-24 22:53:42.162523"], ["questionbank_id", 20], ["id", 203]]
+  ↳ db/seeds.rb:129
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:129
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:129
+  [1m[36mQuestion Update (0.5ms)[0m  [1m[33mUPDATE "questions" SET "updated_at" = $1, "questionbank_id" = $2 WHERE "questions"."id" = $3[0m  [["updated_at", "2022-02-24 22:53:42.164458"], ["questionbank_id", 20], ["id", 204]]
+  ↳ db/seeds.rb:129
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:129
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:129
+  [1m[36mQuestion Update (0.4ms)[0m  [1m[33mUPDATE "questions" SET "updated_at" = $1, "questionbank_id" = $2 WHERE "questions"."id" = $3[0m  [["updated_at", "2022-02-24 22:53:42.166368"], ["questionbank_id", 20], ["id", 205]]
+  ↳ db/seeds.rb:129
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:129
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:129
+  [1m[36mQuestion Update (0.4ms)[0m  [1m[33mUPDATE "questions" SET "updated_at" = $1, "questionbank_id" = $2 WHERE "questions"."id" = $3[0m  [["updated_at", "2022-02-24 22:53:42.168190"], ["questionbank_id", 20], ["id", 206]]
+  ↳ db/seeds.rb:129
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:129
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:129
+  [1m[36mQuestion Update (0.4ms)[0m  [1m[33mUPDATE "questions" SET "updated_at" = $1, "questionbank_id" = $2 WHERE "questions"."id" = $3[0m  [["updated_at", "2022-02-24 22:53:42.170065"], ["questionbank_id", 20], ["id", 207]]
+  ↳ db/seeds.rb:129
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:129
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:129
+  [1m[36mQuestion Update (0.4ms)[0m  [1m[33mUPDATE "questions" SET "updated_at" = $1, "questionbank_id" = $2 WHERE "questions"."id" = $3[0m  [["updated_at", "2022-02-24 22:53:42.171897"], ["questionbank_id", 20], ["id", 208]]
+  ↳ db/seeds.rb:129
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:129
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:129
+  [1m[36mQuestion Update (0.4ms)[0m  [1m[33mUPDATE "questions" SET "updated_at" = $1, "questionbank_id" = $2 WHERE "questions"."id" = $3[0m  [["updated_at", "2022-02-24 22:53:42.173732"], ["questionbank_id", 20], ["id", 209]]
+  ↳ db/seeds.rb:129
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:129
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:135
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:135
+  [1m[36mUser::HABTM_Room Destroy (0.8ms)[0m  [1m[31mDELETE FROM "rooms_users" WHERE "rooms_users"."user_id" = $1[0m  [["user_id", 81]]
+  ↳ db/seeds.rb:135
+  [1m[36mUser::HABTM_Games Destroy (0.6ms)[0m  [1m[31mDELETE FROM "games_users" WHERE "games_users"."user_id" = $1[0m  [["user_id", 81]]
+  ↳ db/seeds.rb:135
+  [1m[36mUser Destroy (0.4ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 81]]
+  ↳ db/seeds.rb:135
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:135
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:135
+  [1m[36mUser::HABTM_Room Destroy (0.5ms)[0m  [1m[31mDELETE FROM "rooms_users" WHERE "rooms_users"."user_id" = $1[0m  [["user_id", 82]]
+  ↳ db/seeds.rb:135
+  [1m[36mUser::HABTM_Games Destroy (0.3ms)[0m  [1m[31mDELETE FROM "games_users" WHERE "games_users"."user_id" = $1[0m  [["user_id", 82]]
+  ↳ db/seeds.rb:135
+  [1m[36mUser Destroy (0.4ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 82]]
+  ↳ db/seeds.rb:135
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:135
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:135
+  [1m[36mUser::HABTM_Room Destroy (0.3ms)[0m  [1m[31mDELETE FROM "rooms_users" WHERE "rooms_users"."user_id" = $1[0m  [["user_id", 83]]
+  ↳ db/seeds.rb:135
+  [1m[36mUser::HABTM_Games Destroy (0.3ms)[0m  [1m[31mDELETE FROM "games_users" WHERE "games_users"."user_id" = $1[0m  [["user_id", 83]]
+  ↳ db/seeds.rb:135
+  [1m[36mUser Destroy (0.4ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 83]]
+  ↳ db/seeds.rb:135
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:135
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:135
+  [1m[36mUser::HABTM_Room Destroy (0.3ms)[0m  [1m[31mDELETE FROM "rooms_users" WHERE "rooms_users"."user_id" = $1[0m  [["user_id", 84]]
+  ↳ db/seeds.rb:135
+  [1m[36mUser::HABTM_Games Destroy (0.3ms)[0m  [1m[31mDELETE FROM "games_users" WHERE "games_users"."user_id" = $1[0m  [["user_id", 84]]
+  ↳ db/seeds.rb:135
+  [1m[36mUser Destroy (0.3ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 84]]
+  ↳ db/seeds.rb:135
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:135
+  [1m[35m (0.6ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:138
+  [1m[36mUser Create (1.4ms)[0m  [1m[32mINSERT INTO "users" ("name", "password_digest", "created_at", "updated_at", "email") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "alex"], ["password_digest", "$2a$12$aABnw3s7fmjU2mmZToPPnOnZunLUZoag7Of4itw0sf2VhlLVHidjK"], ["created_at", "2022-02-24 22:53:43.628596"], ["updated_at", "2022-02-24 22:53:43.628596"], ["email", "alex@ga.co"]]
+  ↳ db/seeds.rb:138
+  [1m[35m (0.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:138
+  [1m[35m (3.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:139
+  [1m[36mUser Create (0.9ms)[0m  [1m[32mINSERT INTO "users" ("name", "password_digest", "created_at", "updated_at", "email") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "angela"], ["password_digest", "$2a$12$mtJJdf9vkqKakjD9iuipZ.Jq3014aj1gcCAxSzITa3HdDF6GNZr4O"], ["created_at", "2022-02-24 22:53:45.027058"], ["updated_at", "2022-02-24 22:53:45.027058"], ["email", "angela@ga.co"]]
+  ↳ db/seeds.rb:139
+  [1m[35m (0.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:139
+  [1m[35m (2.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:140
+  [1m[36mUser Create (0.8ms)[0m  [1m[32mINSERT INTO "users" ("name", "password_digest", "created_at", "updated_at", "email") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "cassie"], ["password_digest", "$2a$12$7ErtAaPYDbiwmXDTznEe4uHGgQtHAosqh3SQDVNv4v0ZtxYzyW0OW"], ["created_at", "2022-02-24 22:53:46.424065"], ["updated_at", "2022-02-24 22:53:46.424065"], ["email", "cassie@ga.co"]]
+  ↳ db/seeds.rb:140
+  [1m[35m (1.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:140
+  [1m[35m (0.8ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:141
+  [1m[36mUser Create (0.8ms)[0m  [1m[32mINSERT INTO "users" ("name", "password_digest", "created_at", "updated_at", "email") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "ethan"], ["password_digest", "$2a$12$l3yJHyG5XjDE0wf6OE9vxeYvDmlHMSK9t2b0Wn.hCJbnPzqKltT/S"], ["created_at", "2022-02-24 22:53:47.820010"], ["updated_at", "2022-02-24 22:53:47.820010"], ["email", "ethan@ga.co"]]
+  ↳ db/seeds.rb:141
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:141
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "users"[0m
+  ↳ db/seeds.rb:143
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:145
+  [1m[36mQuestionbank Update (1.0ms)[0m  [1m[33mUPDATE "questionbanks" SET "updated_at" = $1, "user_id" = $2 WHERE "questionbanks"."id" = $3[0m  [["updated_at", "2022-02-24 22:53:47.837132"], ["user_id", 85], ["id", 20]]
+  ↳ db/seeds.rb:145
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:145
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" ORDER BY "users"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ db/seeds.rb:147
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT COUNT(*) FROM "questionbanks" WHERE "questionbanks"."user_id" = $1[0m  [["user_id", 85]]
+  ↳ db/seeds.rb:147
+  [1m[36mRoom Load (1.4ms)[0m  [1m[34mSELECT "rooms".* FROM "rooms"[0m
+  ↳ db/seeds.rb:150
+Started OPTIONS "/users/current" for ::1 at 2022-02-25 09:54:48 +1100
+  [1m[35m (2.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/anelectronicfan/.rvm/gems/ruby-2.7.0/gems/activerecord-5.2.6.2/lib/active_record/log_subscriber.rb:98
+Started GET "/users/current" for ::1 at 2022-02-25 09:54:49 +1100
+Processing by UsersController#current as HTML
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 76], ["LIMIT", 1]]
+  ↳ /Users/anelectronicfan/.rvm/gems/ruby-2.7.0/gems/activerecord-5.2.6.2/lib/active_record/log_subscriber.rb:98
+Filter chain halted as :authenticate_user rendered or redirected
+Completed 401 Unauthorized in 66ms (ActiveRecord: 27.5ms)
+
+
+Started OPTIONS "/user" for ::1 at 2022-02-25 09:56:59 +1100
+Started POST "/user" for ::1 at 2022-02-25 09:56:59 +1100
+  
+ActionController::RoutingError (uninitialized constant UserController):
+  
+activesupport (5.2.6.2) lib/active_support/inflector/methods.rb:283:in `const_get'
+activesupport (5.2.6.2) lib/active_support/inflector/methods.rb:283:in `block in constantize'
+activesupport (5.2.6.2) lib/active_support/inflector/methods.rb:281:in `each'
+activesupport (5.2.6.2) lib/active_support/inflector/methods.rb:281:in `inject'
+activesupport (5.2.6.2) lib/active_support/inflector/methods.rb:281:in `constantize'
+actionpack (5.2.6.2) lib/action_dispatch/http/request.rb:88:in `controller_class_for'
+actionpack (5.2.6.2) lib/action_dispatch/http/request.rb:81:in `controller_class'
+actionpack (5.2.6.2) lib/action_dispatch/routing/route_set.rb:46:in `controller'
+actionpack (5.2.6.2) lib/action_dispatch/routing/route_set.rb:32:in `serve'
+actionpack (5.2.6.2) lib/action_dispatch/journey/router.rb:52:in `block in serve'
+actionpack (5.2.6.2) lib/action_dispatch/journey/router.rb:35:in `each'
+actionpack (5.2.6.2) lib/action_dispatch/journey/router.rb:35:in `serve'
+actionpack (5.2.6.2) lib/action_dispatch/routing/route_set.rb:840:in `call'
+rack-cors (1.1.1) lib/rack/cors.rb:100:in `call'
+rack (2.2.3) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.3) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (5.2.6.2) lib/action_dispatch/middleware/cookies.rb:670:in `call'
+rack (2.2.3) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.2.3) lib/rack/etag.rb:27:in `call'
+rack (2.2.3) lib/rack/conditional_get.rb:40:in `call'
+rack (2.2.3) lib/rack/head.rb:12:in `call'
+actionpack (5.2.6.2) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.2.3) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.3) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (5.2.6.2) lib/action_dispatch/middleware/cookies.rb:670:in `call'
+activerecord (5.2.6.2) lib/active_record/migration.rb:559:in `call'
+actionpack (5.2.6.2) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.6.2) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.6.2) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.6.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.6.2) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.6.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.6.2) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.6.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.6.2) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.6.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.6.2) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.6.2) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.6.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.6.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.6.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.6.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.6.2) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+railties (5.2.6.2) lib/rails/engine.rb:524:in `call'
+puma (3.12.6) lib/puma/configuration.rb:227:in `call'
+puma (3.12.6) lib/puma/server.rb:706:in `handle_request'
+puma (3.12.6) lib/puma/server.rb:476:in `process_client'
+puma (3.12.6) lib/puma/server.rb:334:in `block in run'
+puma (3.12.6) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/rails/info/routes" for ::1 at 2022-02-25 09:58:38 +1100
+Processing by Rails::InfoController#routes as HTML
+  Rendering /Users/anelectronicfan/.rvm/gems/ruby-2.7.0/gems/railties-5.2.6.2/lib/rails/templates/rails/info/routes.html.erb within layouts/application
+  Rendered collection of /Users/anelectronicfan/.rvm/gems/ruby-2.7.0/gems/actionpack-5.2.6.2/lib/action_dispatch/middleware/templates/routes/_route.html.erb [29 times] (4.9ms)
+  Rendered /Users/anelectronicfan/.rvm/gems/ruby-2.7.0/gems/actionpack-5.2.6.2/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.0ms)
+  Rendered /Users/anelectronicfan/.rvm/gems/ruby-2.7.0/gems/railties-5.2.6.2/lib/rails/templates/rails/info/routes.html.erb within layouts/application (9.6ms)
+Completed 200 OK in 13ms (Views: 11.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/rails/info/routes" for ::1 at 2022-02-25 09:59:19 +1100
+Processing by Rails::InfoController#routes as HTML
+  Rendering /Users/anelectronicfan/.rvm/gems/ruby-2.7.0/gems/railties-5.2.6.2/lib/rails/templates/rails/info/routes.html.erb within layouts/application
+  Rendered collection of /Users/anelectronicfan/.rvm/gems/ruby-2.7.0/gems/actionpack-5.2.6.2/lib/action_dispatch/middleware/templates/routes/_route.html.erb [29 times] (6.1ms)
+  Rendered /Users/anelectronicfan/.rvm/gems/ruby-2.7.0/gems/actionpack-5.2.6.2/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.4ms)
+  Rendered /Users/anelectronicfan/.rvm/gems/ruby-2.7.0/gems/railties-5.2.6.2/lib/rails/templates/rails/info/routes.html.erb within layouts/application (11.9ms)
+Completed 200 OK in 15ms (Views: 13.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/current" for ::1 at 2022-02-25 10:00:00 +1100
+Processing by UsersController#current as HTML
+  [1m[36mUser Load (4.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 76], ["LIMIT", 1]]
+  ↳ /Users/anelectronicfan/.rvm/gems/ruby-2.7.0/gems/activerecord-5.2.6.2/lib/active_record/log_subscriber.rb:98
+Filter chain halted as :authenticate_user rendered or redirected
+Completed 401 Unauthorized in 81ms (ActiveRecord: 43.2ms)
+
+
+Started GET "/users/current" for ::1 at 2022-02-25 10:02:10 +1100
+Processing by UsersController#current as HTML
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 76], ["LIMIT", 1]]
+  ↳ /Users/anelectronicfan/.rvm/gems/ruby-2.7.0/gems/activerecord-5.2.6.2/lib/active_record/log_subscriber.rb:98
+Filter chain halted as :authenticate_user rendered or redirected
+Completed 401 Unauthorized in 14ms (ActiveRecord: 0.9ms)
+
+
+Started OPTIONS "/user/create" for ::1 at 2022-02-25 10:02:34 +1100
+Started POST "/user/create" for ::1 at 2022-02-25 10:02:34 +1100
+  
+ActionController::RoutingError (uninitialized constant UserController):
+  
+activesupport (5.2.6.2) lib/active_support/inflector/methods.rb:283:in `const_get'
+activesupport (5.2.6.2) lib/active_support/inflector/methods.rb:283:in `block in constantize'
+activesupport (5.2.6.2) lib/active_support/inflector/methods.rb:281:in `each'
+activesupport (5.2.6.2) lib/active_support/inflector/methods.rb:281:in `inject'
+activesupport (5.2.6.2) lib/active_support/inflector/methods.rb:281:in `constantize'
+actionpack (5.2.6.2) lib/action_dispatch/http/request.rb:88:in `controller_class_for'
+actionpack (5.2.6.2) lib/action_dispatch/http/request.rb:81:in `controller_class'
+actionpack (5.2.6.2) lib/action_dispatch/routing/route_set.rb:46:in `controller'
+actionpack (5.2.6.2) lib/action_dispatch/routing/route_set.rb:32:in `serve'
+actionpack (5.2.6.2) lib/action_dispatch/journey/router.rb:52:in `block in serve'
+actionpack (5.2.6.2) lib/action_dispatch/journey/router.rb:35:in `each'
+actionpack (5.2.6.2) lib/action_dispatch/journey/router.rb:35:in `serve'
+actionpack (5.2.6.2) lib/action_dispatch/routing/route_set.rb:840:in `call'
+rack-cors (1.1.1) lib/rack/cors.rb:100:in `call'
+rack (2.2.3) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.3) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (5.2.6.2) lib/action_dispatch/middleware/cookies.rb:670:in `call'
+rack (2.2.3) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.2.3) lib/rack/etag.rb:27:in `call'
+rack (2.2.3) lib/rack/conditional_get.rb:40:in `call'
+rack (2.2.3) lib/rack/head.rb:12:in `call'
+actionpack (5.2.6.2) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.2.3) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.3) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (5.2.6.2) lib/action_dispatch/middleware/cookies.rb:670:in `call'
+activerecord (5.2.6.2) lib/active_record/migration.rb:559:in `call'
+actionpack (5.2.6.2) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.6.2) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.6.2) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.6.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.6.2) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.6.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.6.2) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.6.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.6.2) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.6.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.6.2) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.6.2) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.6.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.6.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.6.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.6.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.6.2) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+railties (5.2.6.2) lib/rails/engine.rb:524:in `call'
+puma (3.12.6) lib/puma/configuration.rb:227:in `call'
+puma (3.12.6) lib/puma/server.rb:706:in `handle_request'
+puma (3.12.6) lib/puma/server.rb:476:in `process_client'
+puma (3.12.6) lib/puma/server.rb:334:in `block in run'
+puma (3.12.6) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started POST "/user/create" for ::1 at 2022-02-25 10:05:46 +1100
+  
+ActionController::RoutingError (uninitialized constant UserController):
+  
+activesupport (5.2.6.2) lib/active_support/inflector/methods.rb:283:in `const_get'
+activesupport (5.2.6.2) lib/active_support/inflector/methods.rb:283:in `block in constantize'
+activesupport (5.2.6.2) lib/active_support/inflector/methods.rb:281:in `each'
+activesupport (5.2.6.2) lib/active_support/inflector/methods.rb:281:in `inject'
+activesupport (5.2.6.2) lib/active_support/inflector/methods.rb:281:in `constantize'
+actionpack (5.2.6.2) lib/action_dispatch/http/request.rb:88:in `controller_class_for'
+actionpack (5.2.6.2) lib/action_dispatch/http/request.rb:81:in `controller_class'
+actionpack (5.2.6.2) lib/action_dispatch/routing/route_set.rb:46:in `controller'
+actionpack (5.2.6.2) lib/action_dispatch/routing/route_set.rb:32:in `serve'
+actionpack (5.2.6.2) lib/action_dispatch/journey/router.rb:52:in `block in serve'
+actionpack (5.2.6.2) lib/action_dispatch/journey/router.rb:35:in `each'
+actionpack (5.2.6.2) lib/action_dispatch/journey/router.rb:35:in `serve'
+actionpack (5.2.6.2) lib/action_dispatch/routing/route_set.rb:840:in `call'
+rack-cors (1.1.1) lib/rack/cors.rb:100:in `call'
+rack (2.2.3) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.3) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (5.2.6.2) lib/action_dispatch/middleware/cookies.rb:670:in `call'
+rack (2.2.3) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.2.3) lib/rack/etag.rb:27:in `call'
+rack (2.2.3) lib/rack/conditional_get.rb:40:in `call'
+rack (2.2.3) lib/rack/head.rb:12:in `call'
+actionpack (5.2.6.2) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.2.3) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.3) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (5.2.6.2) lib/action_dispatch/middleware/cookies.rb:670:in `call'
+activerecord (5.2.6.2) lib/active_record/migration.rb:559:in `call'
+actionpack (5.2.6.2) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.6.2) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.6.2) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.6.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.6.2) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.6.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.6.2) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.6.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.6.2) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.6.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.6.2) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.6.2) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.6.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.6.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.6.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.6.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.6.2) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+railties (5.2.6.2) lib/rails/engine.rb:524:in `call'
+puma (3.12.6) lib/puma/configuration.rb:227:in `call'
+puma (3.12.6) lib/puma/server.rb:706:in `handle_request'
+puma (3.12.6) lib/puma/server.rb:476:in `process_client'
+puma (3.12.6) lib/puma/server.rb:334:in `block in run'
+puma (3.12.6) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started POST "/user/create" for ::1 at 2022-02-25 10:06:40 +1100
+Processing by UsersController#create as HTML
+  Parameters: {"email"=>"test@ga.co", "password"=>"[FILTERED]", "name"=>"test", "user"=>{"name"=>"test", "email"=>"test@ga.co"}}
+Completed 400 Bad Request in 0ms (ActiveRecord: 7.9ms)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: _json):
+  
+app/controllers/users_controller.rb:30:in `user_params'
+app/controllers/users_controller.rb:14:in `create'
+Started GET "/users/current" for ::1 at 2022-02-25 10:06:50 +1100
+Processing by UsersController#current as HTML
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 76], ["LIMIT", 1]]
+  ↳ /Users/anelectronicfan/.rvm/gems/ruby-2.7.0/gems/activerecord-5.2.6.2/lib/active_record/log_subscriber.rb:98
+Filter chain halted as :authenticate_user rendered or redirected
+Completed 401 Unauthorized in 23ms (ActiveRecord: 10.5ms)
+
+
+Started POST "/user/create" for ::1 at 2022-02-25 10:07:03 +1100
+Processing by UsersController#create as HTML
+  Parameters: {"email"=>"test@ga.co", "password"=>"[FILTERED]", "name"=>"test", "user"=>{"name"=>"test", "email"=>"test@ga.co"}}
+Completed 400 Bad Request in 2ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: _json):
+  
+app/controllers/users_controller.rb:30:in `user_params'
+app/controllers/users_controller.rb:14:in `create'
+Started POST "/user/create" for ::1 at 2022-02-25 10:07:55 +1100
+Processing by UsersController#create as HTML
+  Parameters: {"email"=>"test@ga.co", "password"=>"[FILTERED]", "name"=>"test", "user"=>{"name"=>"test", "email"=>"test@ga.co"}}
+  [1m[35m (1.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:14
+  [1m[35m (5.7ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/users_controller.rb:14
+Completed 422 Unprocessable Entity in 35ms (ActiveRecord: 25.7ms)
+
+
+  
+ActiveRecord::RecordInvalid (Validation failed: Password can't be blank):
+  
+app/controllers/users_controller.rb:14:in `create'
+Started POST "/user/create" for ::1 at 2022-02-25 10:08:11 +1100
+Processing by UsersController#create as HTML
+  Parameters: {"email"=>"test@ga.co", "password"=>"[FILTERED]", "name"=>"test", "user"=>{"name"=>"test", "email"=>"test@ga.co"}}
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:14
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/users_controller.rb:14
+Completed 422 Unprocessable Entity in 12ms (ActiveRecord: 0.6ms)
+
+
+  
+ActiveRecord::RecordInvalid (Validation failed: Password can't be blank):
+  
+app/controllers/users_controller.rb:14:in `create'
+Started POST "/user/create" for ::1 at 2022-02-25 10:08:56 +1100
+Processing by UsersController#create as HTML
+  Parameters: {"email"=>"test@ga.co", "password"=>"[FILTERED]", "name"=>"test", "user"=>{"name"=>"test", "email"=>"test@ga.co"}}
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:13
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/users_controller.rb:13
+Completed 422 Unprocessable Entity in 18ms (ActiveRecord: 19.6ms)
+
+
+  
+ActiveRecord::RecordInvalid (Validation failed: Password can't be blank):
+  
+app/controllers/users_controller.rb:13:in `create'
+Started POST "/user/create" for ::1 at 2022-02-25 10:10:46 +1100
+Processing by UsersController#create as HTML
+  Parameters: {"email"=>"test@ga.co", "password"=>"[FILTERED]", "name"=>"test", "user"=>{"name"=>"test", "email"=>"test@ga.co"}}
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:13
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/users_controller.rb:13
+Completed 422 Unprocessable Entity in 15ms (ActiveRecord: 15.8ms)
+
+
+  
+ActiveRecord::RecordInvalid (Validation failed: Password can't be blank):
+  
+app/controllers/users_controller.rb:13:in `create'
+Started POST "/user/create" for ::1 at 2022-02-25 10:19:15 +1100
+Processing by UsersController#create as HTML
+  Parameters: {"email"=>"test@ga.co", "password"=>"[FILTERED]", "name"=>"test", "user"=>{"name"=>"test", "email"=>"test@ga.co"}}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:15
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/users_controller.rb:15
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.1ms)
+Completed 402 Payment Required in 26ms (Views: 6.7ms | ActiveRecord: 25.9ms)
+
+
+Started POST "/user/create" for ::1 at 2022-02-25 10:19:59 +1100
+Processing by UsersController#create as HTML
+  Parameters: {"email"=>"test@ga.co", "password"=>"[FILTERED]", "name"=>"test", "user"=>{"name"=>"test", "email"=>"test@ga.co"}}
+No template found for UsersController#create, rendering head :no_content
+Completed 204 No Content in 29ms (ActiveRecord: 19.0ms)
+
+
+  [1m[36mUser Load (1.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" ORDER BY "users"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+Started POST "/user/create" for ::1 at 2022-02-25 10:21:10 +1100
+Processing by UsersController#create as HTML
+  Parameters: {"email"=>"test@ga.co", "password"=>"[FILTERED]", "name"=>"test", "user"=>{"name"=>"test", "email"=>"test@ga.co"}}
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:15
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/users_controller.rb:15
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.09ms)
+Completed 402 Payment Required in 20ms (Views: 3.6ms | ActiveRecord: 18.3ms)
+
+
+Started POST "/user/create" for ::1 at 2022-02-25 10:22:55 +1100
+Processing by UsersController#create as HTML
+  Parameters: {"email"=>"test@ga.co", "password"=>"[FILTERED]", "name"=>"test", "user"=>{"name"=>"test", "email"=>"test@ga.co"}}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:15
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/users_controller.rb:15
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.08ms)
+Completed 500 Internal Server Error in 18ms (Views: 3.1ms | ActiveRecord: 12.0ms)
+
+
+  
+AbstractController::DoubleRenderError (Render and/or redirect were called multiple times in this action. Please note that you may only call render OR redirect, and at most once per action. Also note that neither redirect nor render terminate execution of the action, so if you want to exit an action after redirecting, you need to do something like "redirect_to(...) and return".):
+  
+app/controllers/users_controller.rb:20:in `create'
+Started POST "/user/create" for ::1 at 2022-02-25 10:24:18 +1100
+Processing by UsersController#create as HTML
+  Parameters: {"email"=>"test@ga.co", "password"=>"[FILTERED]", "name"=>"test", "user"=>{"name"=>"test", "email"=>"test@ga.co"}}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:15
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/users_controller.rb:15
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.08ms)
+Completed 402 Payment Required in 22ms (Views: 3.8ms | ActiveRecord: 17.0ms)
+
+
+Started POST "/user/create" for ::1 at 2022-02-25 10:32:02 +1100
+Processing by UsersController#create as HTML
+  Parameters: {"email"=>"test@ga.co", "password"=>"[FILTERED]", "name"=>"test", "user"=>{"name"=>"test", "email"=>"test@ga.co"}}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:15
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/users_controller.rb:15
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.12ms)
+Completed 402 Payment Required in 5ms (Views: 0.9ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/user/create" for ::1 at 2022-02-25 10:36:51 +1100
+Processing by UsersController#create as HTML
+  Parameters: {"email"=>"test@ga.co", "password"=>"[FILTERED]", "name"=>"test", "user"=>{"name"=>"test", "email"=>"test@ga.co"}}
+Completed 400 Bad Request in 1ms (ActiveRecord: 13.5ms)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: _json):
+  
+app/controllers/users_controller.rb:29:in `user_params'
+app/controllers/users_controller.rb:13:in `create'
+Started POST "/user/create" for ::1 at 2022-02-25 10:37:21 +1100
+Processing by UsersController#create as HTML
+  Parameters: {"email"=>"test@ga.co", "password"=>"[FILTERED]", "name"=>"test", "user"=>{"name"=>"test", "email"=>"test@ga.co"}}
+Completed 500 Internal Server Error in 16ms (ActiveRecord: 19.5ms)
+
+
+  
+ActiveModel::ForbiddenAttributesError (ActiveModel::ForbiddenAttributesError):
+  
+app/controllers/users_controller.rb:13:in `create'
+Started POST "/user/create" for ::1 at 2022-02-25 10:37:43 +1100
+Processing by UsersController#create as HTML
+  Parameters: {"email"=>"test@ga.co", "password"=>"[FILTERED]", "name"=>"test", "user"=>{"name"=>"test", "email"=>"test@ga.co"}}
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.0ms)
+
+
+  
+ActiveModel::ForbiddenAttributesError (ActiveModel::ForbiddenAttributesError):
+  
+app/controllers/users_controller.rb:13:in `create'
+Started POST "/user/create" for ::1 at 2022-02-25 10:37:49 +1100
+Processing by UsersController#create as HTML
+  Parameters: {"email"=>"test@ga.co", "password"=>"[FILTERED]", "name"=>"test", "user"=>{"name"=>"test", "email"=>"test@ga.co"}}
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:15
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/users_controller.rb:15
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.09ms)
+Completed 402 Payment Required in 22ms (Views: 3.8ms | ActiveRecord: 18.9ms)
+
+
+Started POST "/user/create" for ::1 at 2022-02-25 10:43:04 +1100
+  
+SyntaxError (/Users/anelectronicfan/sei/projects/quiplash/quiplash-backend/app/controllers/users_controller.rb:14: syntax error, unexpected tLABEL, expecting ')'
+      name: params[:name],
+      ^~~~~
+/Users/anelectronicfan/sei/projects/quiplash/quiplash-backend/app/controllers/users_controller.rb:15: syntax error, unexpected tLABEL, expecting '='
+      email: params[:email],
+      ^~~~~~
+/Users/anelectronicfan/sei/projects/quiplash/quiplash-backend/app/controllers/users_controller.rb:16: syntax error, unexpected tLABEL, expecting '='
+      password: params[:password]
+      ^~~~~~~~~
+/Users/anelectronicfan/sei/projects/quiplash/quiplash-backend/app/controllers/users_controller.rb:17: syntax error, unexpected ')', expecting `end'
+    )
+    ^
+):
+  
+app/controllers/users_controller.rb:14: syntax error, unexpected tLABEL, expecting ')'
+app/controllers/users_controller.rb:15: syntax error, unexpected tLABEL, expecting '='
+app/controllers/users_controller.rb:16: syntax error, unexpected tLABEL, expecting '='
+app/controllers/users_controller.rb:17: syntax error, unexpected ')', expecting `end'
+Started POST "/user/create" for ::1 at 2022-02-25 10:44:16 +1100
+  
+SyntaxError (/Users/anelectronicfan/sei/projects/quiplash/quiplash-backend/app/controllers/users_controller.rb:13: syntax error, unexpected local variable or method, expecting `end'
+...reate name: params[:name] email: params[:email] password: pa...
+...                          ^~~~~
+/Users/anelectronicfan/sei/projects/quiplash/quiplash-backend/app/controllers/users_controller.rb:13: syntax error, unexpected local variable or method, expecting `end'
+... email: params[:email] password: params[:password]
+...                       ^~~~~~~~
+):
+  
+app/controllers/users_controller.rb:13: syntax error, unexpected local variable or method, expecting `end'
+app/controllers/users_controller.rb:13: syntax error, unexpected local variable or method, expecting `end'
+Started POST "/user/create" for ::1 at 2022-02-25 10:45:00 +1100
+Processing by UsersController#create as HTML
+  Parameters: {"email"=>"test@ga.co", "password"=>"[FILTERED]", "name"=>"test", "user"=>{"name"=>"test", "email"=>"test@ga.co"}}
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:13
+  [1m[36mUser Create (9.6ms)[0m  [1m[32mINSERT INTO "users" ("name", "password_digest", "created_at", "updated_at", "email") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "test"], ["password_digest", "$2a$12$0t.hN7SZ6YiX0cLo8FvNmezI0axCefPqzID5ctIFvaVhMoF6.CvBa"], ["created_at", "2022-02-24 23:45:01.066464"], ["updated_at", "2022-02-24 23:45:01.066464"], ["email", "test@ga.co"]]
+  ↳ app/controllers/users_controller.rb:13
+  [1m[35m (1.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/users_controller.rb:13
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:16
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/users_controller.rb:16
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with User (0.35ms)
+Completed 200 OK in 716ms (Views: 7.9ms | ActiveRecord: 31.2ms)
+
+
+  [1m[36mUser Load (6.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" ORDER BY "users"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+Started POST "/user/create" for ::1 at 2022-02-25 10:46:46 +1100
+Processing by UsersController#create as HTML
+  Parameters: {"email"=>"test2@ga.co", "password"=>"[FILTERED]", "name"=>"test2", "user"=>{"name"=>"test2", "email"=>"test2@ga.co"}}
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:13
+  [1m[36mUser Create (2.7ms)[0m  [1m[32mINSERT INTO "users" ("name", "password_digest", "created_at", "updated_at", "email") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "test2"], ["password_digest", "$2a$12$fC2116iT5JyOh.hZ/3HZ3uIRsTg8szvrXc17Yi0LTw/GEVg.P/hLa"], ["created_at", "2022-02-24 23:46:47.653966"], ["updated_at", "2022-02-24 23:46:47.653966"], ["email", "test2@ga.co"]]
+  ↳ app/controllers/users_controller.rb:13
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/users_controller.rb:13
+  [1m[35m (0.7ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:16
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/users_controller.rb:16
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with User (0.27ms)
+Completed 200 OK in 725ms (Views: 0.9ms | ActiveRecord: 5.4ms)
+
+
+Started OPTIONS "/user_token" for ::1 at 2022-02-25 10:46:47 +1100
+Started POST "/user_token" for ::1 at 2022-02-25 10:46:47 +1100
+Processing by UserTokenController#create as HTML
+  Parameters: {"auth"=>{"email"=>"test2@ga.co", "password"=>"[FILTERED]"}, "user_token"=>{"auth"=>{"email"=>"test2@ga.co", "password"=>"[FILTERED]"}}}
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "test2@ga.co"], ["LIMIT", 1]]
+  ↳ /Users/anelectronicfan/.rvm/gems/ruby-2.7.0/gems/activerecord-5.2.6.2/lib/active_record/log_subscriber.rb:98
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Knock::AuthToken (0.07ms)
+Completed 201 Created in 727ms (Views: 2.2ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/users/current" for ::1 at 2022-02-25 10:46:48 +1100
+Processing by UsersController#current as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 90], ["LIMIT", 1]]
+  ↳ /Users/anelectronicfan/.rvm/gems/ruby-2.7.0/gems/activerecord-5.2.6.2/lib/active_record/log_subscriber.rb:98
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with User (0.27ms)
+Completed 200 OK in 3ms (Views: 0.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/users/current" for ::1 at 2022-02-25 10:47:04 +1100
+Processing by UsersController#current as HTML
+  [1m[36mUser Load (5.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 90], ["LIMIT", 1]]
+  ↳ /Users/anelectronicfan/.rvm/gems/ruby-2.7.0/gems/activerecord-5.2.6.2/lib/active_record/log_subscriber.rb:98
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with User (2.2ms)
+Completed 200 OK in 13ms (Views: 3.0ms | ActiveRecord: 5.3ms)
+
+
+Started GET "/users/current" for ::1 at 2022-02-25 10:47:04 +1100
+Processing by UsersController#current as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 90], ["LIMIT", 1]]
+  ↳ /Users/anelectronicfan/.rvm/gems/ruby-2.7.0/gems/activerecord-5.2.6.2/lib/active_record/log_subscriber.rb:98
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with User (0.31ms)
+Completed 200 OK in 3ms (Views: 1.3ms | ActiveRecord: 0.7ms)
+
+
+Started OPTIONS "/user/90/questionbanks" for ::1 at 2022-02-25 10:47:04 +1100
+Started GET "/user/90/questionbanks" for ::1 at 2022-02-25 10:47:04 +1100
+Processing by QuestionbanksController#user_question_banks as HTML
+  Parameters: {"id"=>"90"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 90], ["LIMIT", 1]]
+  ↳ app/controllers/questionbanks_controller.rb:17
+  [1m[36mQuestionbank Load (5.3ms)[0m  [1m[34mSELECT "questionbanks".* FROM "questionbanks" WHERE "questionbanks"."user_id" = $1[0m  [["user_id", 90]]
+  ↳ app/controllers/questionbanks_controller.rb:19
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.12ms)
+Completed 200 OK in 30ms (Views: 9.7ms | ActiveRecord: 11.1ms)
+
+
