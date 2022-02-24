@@ -30,3 +30,868 @@ Migrating to AddImageToQuestions (20220224145810)
   ↳ bin/rails:4
   [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
   ↳ bin/rails:4
+  [1m[35m (2.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:4
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT pg_try_advisory_lock(5882105369419256040)[0m
+  ↳ bin/rails:4
+  [1m[35m (2.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:4
+Migrating to AddImageToQuestions (20220224145810)
+  [1m[35m (4.6ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:4
+  [1m[35m (12.4ms)[0m  [1m[35mALTER TABLE "questions" ADD "image" character varying[0m
+  ↳ db/migrate/20220224145810_add_image_to_questions.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (1.8ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20220224145810"]]
+  ↳ bin/rails:4
+  [1m[35m (1.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:4
+  [1m[36mActiveRecord::InternalMetadata Load (1.2ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ bin/rails:4
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:4
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:4
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_advisory_unlock(5882105369419256040)[0m
+  ↳ bin/rails:4
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:4
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:4
+  [1m[35m (3.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:4
+  [1m[35m (1.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:4
+  [1m[36mAnswer Load (7.9ms)[0m  [1m[34mSELECT "answers".* FROM "answers"[0m
+  ↳ db/seeds.rb:2
+  [1m[35m (1.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:2
+  [1m[36mAnswer Destroy (5.9ms)[0m  [1m[31mDELETE FROM "answers" WHERE "answers"."id" = $1[0m  [["id", 72]]
+  ↳ db/seeds.rb:2
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:2
+  [1m[35m (0.6ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:2
+  [1m[36mAnswer Destroy (0.4ms)[0m  [1m[31mDELETE FROM "answers" WHERE "answers"."id" = $1[0m  [["id", 73]]
+  ↳ db/seeds.rb:2
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:2
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:2
+  [1m[36mAnswer Destroy (0.3ms)[0m  [1m[31mDELETE FROM "answers" WHERE "answers"."id" = $1[0m  [["id", 74]]
+  ↳ db/seeds.rb:2
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:2
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:2
+  [1m[36mAnswer Destroy (1.6ms)[0m  [1m[31mDELETE FROM "answers" WHERE "answers"."id" = $1[0m  [["id", 75]]
+  ↳ db/seeds.rb:2
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:2
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:2
+  [1m[36mAnswer Destroy (0.4ms)[0m  [1m[31mDELETE FROM "answers" WHERE "answers"."id" = $1[0m  [["id", 76]]
+  ↳ db/seeds.rb:2
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:2
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:2
+  [1m[36mAnswer Destroy (0.3ms)[0m  [1m[31mDELETE FROM "answers" WHERE "answers"."id" = $1[0m  [["id", 77]]
+  ↳ db/seeds.rb:2
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:2
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:2
+  [1m[36mAnswer Destroy (0.7ms)[0m  [1m[31mDELETE FROM "answers" WHERE "answers"."id" = $1[0m  [["id", 78]]
+  ↳ db/seeds.rb:2
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:2
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:2
+  [1m[36mAnswer Destroy (0.6ms)[0m  [1m[31mDELETE FROM "answers" WHERE "answers"."id" = $1[0m  [["id", 79]]
+  ↳ db/seeds.rb:2
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:2
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:2
+  [1m[36mAnswer Destroy (0.3ms)[0m  [1m[31mDELETE FROM "answers" WHERE "answers"."id" = $1[0m  [["id", 80]]
+  ↳ db/seeds.rb:2
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:2
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:2
+  [1m[36mAnswer Destroy (0.3ms)[0m  [1m[31mDELETE FROM "answers" WHERE "answers"."id" = $1[0m  [["id", 81]]
+  ↳ db/seeds.rb:2
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:2
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:2
+  [1m[36mAnswer Destroy (0.8ms)[0m  [1m[31mDELETE FROM "answers" WHERE "answers"."id" = $1[0m  [["id", 82]]
+  ↳ db/seeds.rb:2
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:2
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:2
+  [1m[36mAnswer Destroy (0.3ms)[0m  [1m[31mDELETE FROM "answers" WHERE "answers"."id" = $1[0m  [["id", 83]]
+  ↳ db/seeds.rb:2
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:2
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:2
+  [1m[36mAnswer Destroy (6.7ms)[0m  [1m[31mDELETE FROM "answers" WHERE "answers"."id" = $1[0m  [["id", 84]]
+  ↳ db/seeds.rb:2
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:2
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:2
+  [1m[36mAnswer Destroy (0.2ms)[0m  [1m[31mDELETE FROM "answers" WHERE "answers"."id" = $1[0m  [["id", 85]]
+  ↳ db/seeds.rb:2
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:2
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:2
+  [1m[36mAnswer Destroy (0.3ms)[0m  [1m[31mDELETE FROM "answers" WHERE "answers"."id" = $1[0m  [["id", 86]]
+  ↳ db/seeds.rb:2
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:2
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:2
+  [1m[36mAnswer Destroy (0.2ms)[0m  [1m[31mDELETE FROM "answers" WHERE "answers"."id" = $1[0m  [["id", 87]]
+  ↳ db/seeds.rb:2
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:2
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:2
+  [1m[36mAnswer Destroy (0.2ms)[0m  [1m[31mDELETE FROM "answers" WHERE "answers"."id" = $1[0m  [["id", 88]]
+  ↳ db/seeds.rb:2
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:2
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:2
+  [1m[36mAnswer Destroy (0.2ms)[0m  [1m[31mDELETE FROM "answers" WHERE "answers"."id" = $1[0m  [["id", 89]]
+  ↳ db/seeds.rb:2
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:2
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:2
+  [1m[36mAnswer Destroy (0.2ms)[0m  [1m[31mDELETE FROM "answers" WHERE "answers"."id" = $1[0m  [["id", 90]]
+  ↳ db/seeds.rb:2
+  [1m[35m (2.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:2
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:2
+  [1m[36mAnswer Destroy (0.3ms)[0m  [1m[31mDELETE FROM "answers" WHERE "answers"."id" = $1[0m  [["id", 91]]
+  ↳ db/seeds.rb:2
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:2
+  [1m[35m (6.9ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:2
+  [1m[36mAnswer Destroy (0.4ms)[0m  [1m[31mDELETE FROM "answers" WHERE "answers"."id" = $1[0m  [["id", 92]]
+  ↳ db/seeds.rb:2
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:2
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:2
+  [1m[36mAnswer Destroy (0.6ms)[0m  [1m[31mDELETE FROM "answers" WHERE "answers"."id" = $1[0m  [["id", 93]]
+  ↳ db/seeds.rb:2
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:2
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:2
+  [1m[36mAnswer Destroy (0.3ms)[0m  [1m[31mDELETE FROM "answers" WHERE "answers"."id" = $1[0m  [["id", 94]]
+  ↳ db/seeds.rb:2
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:2
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:2
+  [1m[36mAnswer Destroy (0.3ms)[0m  [1m[31mDELETE FROM "answers" WHERE "answers"."id" = $1[0m  [["id", 95]]
+  ↳ db/seeds.rb:2
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:2
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:2
+  [1m[36mAnswer Destroy (0.3ms)[0m  [1m[31mDELETE FROM "answers" WHERE "answers"."id" = $1[0m  [["id", 96]]
+  ↳ db/seeds.rb:2
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:2
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:2
+  [1m[36mAnswer Destroy (0.4ms)[0m  [1m[31mDELETE FROM "answers" WHERE "answers"."id" = $1[0m  [["id", 97]]
+  ↳ db/seeds.rb:2
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:2
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:2
+  [1m[36mAnswer Destroy (0.3ms)[0m  [1m[31mDELETE FROM "answers" WHERE "answers"."id" = $1[0m  [["id", 98]]
+  ↳ db/seeds.rb:2
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:2
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:2
+  [1m[36mAnswer Destroy (5.0ms)[0m  [1m[31mDELETE FROM "answers" WHERE "answers"."id" = $1[0m  [["id", 99]]
+  ↳ db/seeds.rb:2
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:2
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:2
+  [1m[36mAnswer Destroy (0.3ms)[0m  [1m[31mDELETE FROM "answers" WHERE "answers"."id" = $1[0m  [["id", 100]]
+  ↳ db/seeds.rb:2
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:2
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:2
+  [1m[36mAnswer Destroy (0.2ms)[0m  [1m[31mDELETE FROM "answers" WHERE "answers"."id" = $1[0m  [["id", 101]]
+  ↳ db/seeds.rb:2
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:2
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:2
+  [1m[36mAnswer Destroy (0.4ms)[0m  [1m[31mDELETE FROM "answers" WHERE "answers"."id" = $1[0m  [["id", 102]]
+  ↳ db/seeds.rb:2
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:2
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:2
+  [1m[36mAnswer Destroy (0.2ms)[0m  [1m[31mDELETE FROM "answers" WHERE "answers"."id" = $1[0m  [["id", 103]]
+  ↳ db/seeds.rb:2
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:2
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:2
+  [1m[36mAnswer Destroy (0.2ms)[0m  [1m[31mDELETE FROM "answers" WHERE "answers"."id" = $1[0m  [["id", 104]]
+  ↳ db/seeds.rb:2
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:2
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:2
+  [1m[36mAnswer Destroy (0.2ms)[0m  [1m[31mDELETE FROM "answers" WHERE "answers"."id" = $1[0m  [["id", 105]]
+  ↳ db/seeds.rb:2
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:2
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:2
+  [1m[36mAnswer Destroy (0.2ms)[0m  [1m[31mDELETE FROM "answers" WHERE "answers"."id" = $1[0m  [["id", 65]]
+  ↳ db/seeds.rb:2
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:2
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:2
+  [1m[36mAnswer Destroy (0.2ms)[0m  [1m[31mDELETE FROM "answers" WHERE "answers"."id" = $1[0m  [["id", 71]]
+  ↳ db/seeds.rb:2
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:2
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:2
+  [1m[36mAnswer Destroy (0.2ms)[0m  [1m[31mDELETE FROM "answers" WHERE "answers"."id" = $1[0m  [["id", 64]]
+  ↳ db/seeds.rb:2
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:2
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:2
+  [1m[36mAnswer Destroy (0.2ms)[0m  [1m[31mDELETE FROM "answers" WHERE "answers"."id" = $1[0m  [["id", 69]]
+  ↳ db/seeds.rb:2
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:2
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:2
+  [1m[36mAnswer Destroy (0.3ms)[0m  [1m[31mDELETE FROM "answers" WHERE "answers"."id" = $1[0m  [["id", 70]]
+  ↳ db/seeds.rb:2
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:2
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:2
+  [1m[36mAnswer Destroy (0.3ms)[0m  [1m[31mDELETE FROM "answers" WHERE "answers"."id" = $1[0m  [["id", 66]]
+  ↳ db/seeds.rb:2
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:2
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:2
+  [1m[36mAnswer Destroy (0.2ms)[0m  [1m[31mDELETE FROM "answers" WHERE "answers"."id" = $1[0m  [["id", 67]]
+  ↳ db/seeds.rb:2
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:2
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:2
+  [1m[36mAnswer Destroy (0.4ms)[0m  [1m[31mDELETE FROM "answers" WHERE "answers"."id" = $1[0m  [["id", 68]]
+  ↳ db/seeds.rb:2
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:2
+  [1m[36mQuestion Load (2.5ms)[0m  [1m[34mSELECT "questions".* FROM "questions"[0m
+  ↳ db/seeds.rb:8
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:8
+  [1m[36mQuestion::HABTM_Games Destroy (1.6ms)[0m  [1m[31mDELETE FROM "games_questions" WHERE "games_questions"."question_id" = $1[0m  [["question_id", 49]]
+  ↳ db/seeds.rb:8
+  [1m[36mQuestion Destroy (0.6ms)[0m  [1m[31mDELETE FROM "questions" WHERE "questions"."id" = $1[0m  [["id", 49]]
+  ↳ db/seeds.rb:8
+  [1m[35m (4.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:8
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:8
+  [1m[36mQuestion::HABTM_Games Destroy (1.2ms)[0m  [1m[31mDELETE FROM "games_questions" WHERE "games_questions"."question_id" = $1[0m  [["question_id", 51]]
+  ↳ db/seeds.rb:8
+  [1m[36mQuestion Destroy (0.6ms)[0m  [1m[31mDELETE FROM "questions" WHERE "questions"."id" = $1[0m  [["id", 51]]
+  ↳ db/seeds.rb:8
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:8
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:8
+  [1m[36mQuestion::HABTM_Games Destroy (0.8ms)[0m  [1m[31mDELETE FROM "games_questions" WHERE "games_questions"."question_id" = $1[0m  [["question_id", 52]]
+  ↳ db/seeds.rb:8
+  [1m[36mQuestion Destroy (3.0ms)[0m  [1m[31mDELETE FROM "questions" WHERE "questions"."id" = $1[0m  [["id", 52]]
+  ↳ db/seeds.rb:8
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:8
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:8
+  [1m[36mQuestion::HABTM_Games Destroy (0.3ms)[0m  [1m[31mDELETE FROM "games_questions" WHERE "games_questions"."question_id" = $1[0m  [["question_id", 53]]
+  ↳ db/seeds.rb:8
+  [1m[36mQuestion Destroy (0.9ms)[0m  [1m[31mDELETE FROM "questions" WHERE "questions"."id" = $1[0m  [["id", 53]]
+  ↳ db/seeds.rb:8
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:8
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:8
+  [1m[36mQuestion::HABTM_Games Destroy (0.3ms)[0m  [1m[31mDELETE FROM "games_questions" WHERE "games_questions"."question_id" = $1[0m  [["question_id", 54]]
+  ↳ db/seeds.rb:8
+  [1m[36mQuestion Destroy (0.6ms)[0m  [1m[31mDELETE FROM "questions" WHERE "questions"."id" = $1[0m  [["id", 54]]
+  ↳ db/seeds.rb:8
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:8
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:8
+  [1m[36mQuestion::HABTM_Games Destroy (0.3ms)[0m  [1m[31mDELETE FROM "games_questions" WHERE "games_questions"."question_id" = $1[0m  [["question_id", 46]]
+  ↳ db/seeds.rb:8
+  [1m[36mQuestion Destroy (0.4ms)[0m  [1m[31mDELETE FROM "questions" WHERE "questions"."id" = $1[0m  [["id", 46]]
+  ↳ db/seeds.rb:8
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:8
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:8
+  [1m[36mQuestion::HABTM_Games Destroy (0.3ms)[0m  [1m[31mDELETE FROM "games_questions" WHERE "games_questions"."question_id" = $1[0m  [["question_id", 47]]
+  ↳ db/seeds.rb:8
+  [1m[36mQuestion Destroy (0.4ms)[0m  [1m[31mDELETE FROM "questions" WHERE "questions"."id" = $1[0m  [["id", 47]]
+  ↳ db/seeds.rb:8
+  [1m[35m (3.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:8
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:8
+  [1m[36mQuestion::HABTM_Games Destroy (0.3ms)[0m  [1m[31mDELETE FROM "games_questions" WHERE "games_questions"."question_id" = $1[0m  [["question_id", 48]]
+  ↳ db/seeds.rb:8
+  [1m[36mQuestion Destroy (0.2ms)[0m  [1m[31mDELETE FROM "questions" WHERE "questions"."id" = $1[0m  [["id", 48]]
+  ↳ db/seeds.rb:8
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:8
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:8
+  [1m[36mQuestion::HABTM_Games Destroy (0.2ms)[0m  [1m[31mDELETE FROM "games_questions" WHERE "games_questions"."question_id" = $1[0m  [["question_id", 61]]
+  ↳ db/seeds.rb:8
+  [1m[36mQuestion Destroy (0.2ms)[0m  [1m[31mDELETE FROM "questions" WHERE "questions"."id" = $1[0m  [["id", 61]]
+  ↳ db/seeds.rb:8
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:8
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:8
+  [1m[36mQuestion::HABTM_Games Destroy (0.2ms)[0m  [1m[31mDELETE FROM "games_questions" WHERE "games_questions"."question_id" = $1[0m  [["question_id", 62]]
+  ↳ db/seeds.rb:8
+  [1m[36mQuestion Destroy (0.2ms)[0m  [1m[31mDELETE FROM "questions" WHERE "questions"."id" = $1[0m  [["id", 62]]
+  ↳ db/seeds.rb:8
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:8
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:8
+  [1m[36mQuestion::HABTM_Games Destroy (0.2ms)[0m  [1m[31mDELETE FROM "games_questions" WHERE "games_questions"."question_id" = $1[0m  [["question_id", 63]]
+  ↳ db/seeds.rb:8
+  [1m[36mQuestion Destroy (0.2ms)[0m  [1m[31mDELETE FROM "questions" WHERE "questions"."id" = $1[0m  [["id", 63]]
+  ↳ db/seeds.rb:8
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:8
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:8
+  [1m[36mQuestion::HABTM_Games Destroy (0.2ms)[0m  [1m[31mDELETE FROM "games_questions" WHERE "games_questions"."question_id" = $1[0m  [["question_id", 64]]
+  ↳ db/seeds.rb:8
+  [1m[36mQuestion Destroy (0.2ms)[0m  [1m[31mDELETE FROM "questions" WHERE "questions"."id" = $1[0m  [["id", 64]]
+  ↳ db/seeds.rb:8
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:8
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:8
+  [1m[36mQuestion::HABTM_Games Destroy (0.2ms)[0m  [1m[31mDELETE FROM "games_questions" WHERE "games_questions"."question_id" = $1[0m  [["question_id", 65]]
+  ↳ db/seeds.rb:8
+  [1m[36mQuestion Destroy (0.2ms)[0m  [1m[31mDELETE FROM "questions" WHERE "questions"."id" = $1[0m  [["id", 65]]
+  ↳ db/seeds.rb:8
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:8
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:8
+  [1m[36mQuestion::HABTM_Games Destroy (0.2ms)[0m  [1m[31mDELETE FROM "games_questions" WHERE "games_questions"."question_id" = $1[0m  [["question_id", 50]]
+  ↳ db/seeds.rb:8
+  [1m[36mQuestion Destroy (0.2ms)[0m  [1m[31mDELETE FROM "questions" WHERE "questions"."id" = $1[0m  [["id", 50]]
+  ↳ db/seeds.rb:8
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:8
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:8
+  [1m[36mQuestion::HABTM_Games Destroy (0.3ms)[0m  [1m[31mDELETE FROM "games_questions" WHERE "games_questions"."question_id" = $1[0m  [["question_id", 55]]
+  ↳ db/seeds.rb:8
+  [1m[36mQuestion Destroy (0.7ms)[0m  [1m[31mDELETE FROM "questions" WHERE "questions"."id" = $1[0m  [["id", 55]]
+  ↳ db/seeds.rb:8
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:8
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:8
+  [1m[36mQuestion::HABTM_Games Destroy (0.3ms)[0m  [1m[31mDELETE FROM "games_questions" WHERE "games_questions"."question_id" = $1[0m  [["question_id", 56]]
+  ↳ db/seeds.rb:8
+  [1m[36mQuestion Destroy (0.3ms)[0m  [1m[31mDELETE FROM "questions" WHERE "questions"."id" = $1[0m  [["id", 56]]
+  ↳ db/seeds.rb:8
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:8
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:8
+  [1m[36mQuestion::HABTM_Games Destroy (0.3ms)[0m  [1m[31mDELETE FROM "games_questions" WHERE "games_questions"."question_id" = $1[0m  [["question_id", 57]]
+  ↳ db/seeds.rb:8
+  [1m[36mQuestion Destroy (0.3ms)[0m  [1m[31mDELETE FROM "questions" WHERE "questions"."id" = $1[0m  [["id", 57]]
+  ↳ db/seeds.rb:8
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:8
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:8
+  [1m[36mQuestion::HABTM_Games Destroy (0.3ms)[0m  [1m[31mDELETE FROM "games_questions" WHERE "games_questions"."question_id" = $1[0m  [["question_id", 58]]
+  ↳ db/seeds.rb:8
+  [1m[36mQuestion Destroy (0.2ms)[0m  [1m[31mDELETE FROM "questions" WHERE "questions"."id" = $1[0m  [["id", 58]]
+  ↳ db/seeds.rb:8
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:8
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:8
+  [1m[36mQuestion::HABTM_Games Destroy (0.2ms)[0m  [1m[31mDELETE FROM "games_questions" WHERE "games_questions"."question_id" = $1[0m  [["question_id", 59]]
+  ↳ db/seeds.rb:8
+  [1m[36mQuestion Destroy (0.2ms)[0m  [1m[31mDELETE FROM "questions" WHERE "questions"."id" = $1[0m  [["id", 59]]
+  ↳ db/seeds.rb:8
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:8
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:8
+  [1m[36mQuestion::HABTM_Games Destroy (0.2ms)[0m  [1m[31mDELETE FROM "games_questions" WHERE "games_questions"."question_id" = $1[0m  [["question_id", 60]]
+  ↳ db/seeds.rb:8
+  [1m[36mQuestion Destroy (0.3ms)[0m  [1m[31mDELETE FROM "questions" WHERE "questions"."id" = $1[0m  [["id", 60]]
+  ↳ db/seeds.rb:8
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:8
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:8
+  [1m[36mQuestion::HABTM_Games Destroy (0.3ms)[0m  [1m[31mDELETE FROM "games_questions" WHERE "games_questions"."question_id" = $1[0m  [["question_id", 66]]
+  ↳ db/seeds.rb:8
+  [1m[36mQuestion Destroy (0.4ms)[0m  [1m[31mDELETE FROM "questions" WHERE "questions"."id" = $1[0m  [["id", 66]]
+  ↳ db/seeds.rb:8
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:8
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:11
+  [1m[36mQuestion Create (2.7ms)[0m  [1m[32mINSERT INTO "questions" ("created_at", "updated_at", "question", "image") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", "2022-02-24 22:40:57.605821"], ["updated_at", "2022-02-24 22:40:57.605821"], ["question", "Race Track"], ["image", "https://i.imgur.com/42gSJvX.png"]]
+  ↳ db/seeds.rb:11
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:11
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:16
+  [1m[36mQuestion Create (0.3ms)[0m  [1m[32mINSERT INTO "questions" ("created_at", "updated_at", "question", "image") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", "2022-02-24 22:40:57.610530"], ["updated_at", "2022-02-24 22:40:57.610530"], ["question", "Construction Site"], ["image", "https://i.imgur.com/Dwgntlv.png"]]
+  ↳ db/seeds.rb:16
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:16
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:21
+  [1m[36mQuestion Create (0.3ms)[0m  [1m[32mINSERT INTO "questions" ("created_at", "updated_at", "question", "image") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", "2022-02-24 22:40:57.612249"], ["updated_at", "2022-02-24 22:40:57.612249"], ["question", "Wedding"], ["image", "https://i.imgur.com/DxBgVuj.png"]]
+  ↳ db/seeds.rb:21
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:21
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:26
+  [1m[36mQuestion Create (0.4ms)[0m  [1m[32mINSERT INTO "questions" ("created_at", "updated_at", "question", "image") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", "2022-02-24 22:40:57.613885"], ["updated_at", "2022-02-24 22:40:57.613885"], ["question", "Cat Show"], ["image", "https://i.imgur.com/lIgU7fP.png"]]
+  ↳ db/seeds.rb:26
+  [1m[35m (1.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:26
+  [1m[35m (1.7ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:31
+  [1m[36mQuestion Create (0.5ms)[0m  [1m[32mINSERT INTO "questions" ("created_at", "updated_at", "question", "image") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", "2022-02-24 22:40:57.618441"], ["updated_at", "2022-02-24 22:40:57.618441"], ["question", "Cemetery"], ["image", "https://i.imgur.com/KsG04Yv.png"]]
+  ↳ db/seeds.rb:31
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:31
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:38
+  [1m[36mQuestion Create (0.4ms)[0m  [1m[32mINSERT INTO "questions" ("created_at", "updated_at", "question", "image") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", "2022-02-24 22:40:57.620505"], ["updated_at", "2022-02-24 22:40:57.620505"], ["question", "Vineyard"], ["image", "https://i.imgur.com/8i3odYQ.png"]]
+  ↳ db/seeds.rb:38
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:38
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:43
+  [1m[36mQuestion Create (0.3ms)[0m  [1m[32mINSERT INTO "questions" ("created_at", "updated_at", "question", "image") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", "2022-02-24 22:40:57.622208"], ["updated_at", "2022-02-24 22:40:57.622208"], ["question", "Candy Factory"], ["image", "https://i.imgur.com/zdGv0Oy.png"]]
+  ↳ db/seeds.rb:43
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:43
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:48
+  [1m[36mQuestion Create (0.9ms)[0m  [1m[32mINSERT INTO "questions" ("created_at", "updated_at", "question", "image") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", "2022-02-24 22:40:57.623769"], ["updated_at", "2022-02-24 22:40:57.623769"], ["question", "Harbour Docks"], ["image", "https://i.imgur.com/64VD60h.png"]]
+  ↳ db/seeds.rb:48
+  [1m[35m (1.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:48
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:53
+  [1m[36mQuestion Create (0.5ms)[0m  [1m[32mINSERT INTO "questions" ("created_at", "updated_at", "question", "image") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", "2022-02-24 22:40:57.626884"], ["updated_at", "2022-02-24 22:40:57.626884"], ["question", "Jail"], ["image", "https://i.imgur.com/jISI2gw.png"]]
+  ↳ db/seeds.rb:53
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:53
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:58
+  [1m[36mQuestion Create (1.8ms)[0m  [1m[32mINSERT INTO "questions" ("created_at", "updated_at", "question", "image") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", "2022-02-24 22:40:57.629000"], ["updated_at", "2022-02-24 22:40:57.629000"], ["question", "Jazz Club"], ["image", "https://i.imgur.com/JBnHpmx.png"]]
+  ↳ db/seeds.rb:58
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:58
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:63
+  [1m[36mQuestion Create (0.4ms)[0m  [1m[32mINSERT INTO "questions" ("created_at", "updated_at", "question", "image") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", "2022-02-24 22:40:57.632237"], ["updated_at", "2022-02-24 22:40:57.632237"], ["question", "Library"], ["image", "https://i.imgur.com/PXOsiSk.png"]]
+  ↳ db/seeds.rb:63
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:63
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:69
+  [1m[36mQuestion Create (0.9ms)[0m  [1m[32mINSERT INTO "questions" ("created_at", "updated_at", "question", "image") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", "2022-02-24 22:40:57.634088"], ["updated_at", "2022-02-24 22:40:57.634088"], ["question", "Coal Mine"], ["image", "https://i.imgur.com/xxkqeTb.png"]]
+  ↳ db/seeds.rb:69
+  [1m[35m (1.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:69
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:74
+  [1m[36mQuestion Create (0.5ms)[0m  [1m[32mINSERT INTO "questions" ("created_at", "updated_at", "question", "image") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", "2022-02-24 22:40:57.637493"], ["updated_at", "2022-02-24 22:40:57.637493"], ["question", "Art Museum"], ["image", "https://i.imgur.com/AY72Skh.png"]]
+  ↳ db/seeds.rb:74
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:74
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:79
+  [1m[36mQuestion Create (0.4ms)[0m  [1m[32mINSERT INTO "questions" ("created_at", "updated_at", "question", "image") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", "2022-02-24 22:40:57.639360"], ["updated_at", "2022-02-24 22:40:57.639360"], ["question", "The U.N"], ["image", "https://i.imgur.com/ZQ4GFx9.png"]]
+  ↳ db/seeds.rb:79
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:79
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:84
+  [1m[36mQuestion Create (7.1ms)[0m  [1m[32mINSERT INTO "questions" ("created_at", "updated_at", "question", "image") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", "2022-02-24 22:40:57.641261"], ["updated_at", "2022-02-24 22:40:57.641261"], ["question", "Gas Station"], ["image", "https://i.imgur.com/XyPjZNC.png"]]
+  ↳ db/seeds.rb:84
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:84
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:89
+  [1m[36mQuestion Create (0.3ms)[0m  [1m[32mINSERT INTO "questions" ("created_at", "updated_at", "question", "image") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", "2022-02-24 22:40:57.649854"], ["updated_at", "2022-02-24 22:40:57.649854"], ["question", "Retirement Home"], ["image", "https://i.imgur.com/3ndFecd.png"]]
+  ↳ db/seeds.rb:89
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:89
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:94
+  [1m[36mQuestion Create (0.3ms)[0m  [1m[32mINSERT INTO "questions" ("created_at", "updated_at", "question", "image") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", "2022-02-24 22:40:57.651745"], ["updated_at", "2022-02-24 22:40:57.651745"], ["question", "Rock Concert"], ["image", "https://i.imgur.com/9WnnrwB.png"]]
+  ↳ db/seeds.rb:94
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:94
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:99
+  [1m[36mQuestion Create (0.4ms)[0m  [1m[32mINSERT INTO "questions" ("created_at", "updated_at", "question", "image") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", "2022-02-24 22:40:57.653549"], ["updated_at", "2022-02-24 22:40:57.653549"], ["question", "Statdium"], ["image", "https://i.imgur.com/AfBlBWB.png"]]
+  ↳ db/seeds.rb:99
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:99
+  [1m[35m (0.6ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:104
+  [1m[36mQuestion Create (0.8ms)[0m  [1m[32mINSERT INTO "questions" ("created_at", "updated_at", "question", "image") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", "2022-02-24 22:40:57.655989"], ["updated_at", "2022-02-24 22:40:57.655989"], ["question", "Subway"], ["image", "https://i.imgur.com/tfWovhW.png"]]
+  ↳ db/seeds.rb:104
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:104
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:110
+  [1m[36mQuestion Create (1.1ms)[0m  [1m[32mINSERT INTO "questions" ("created_at", "updated_at", "question", "image") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", "2022-02-24 22:40:57.658379"], ["updated_at", "2022-02-24 22:40:57.658379"], ["question", "SigthSeeing Bus"], ["image", "https://i.imgur.com/dDBf54k.png"]]
+  ↳ db/seeds.rb:110
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:110
+  [1m[35m (2.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:4
+  [1m[36mAnswer Load (2.1ms)[0m  [1m[34mSELECT "answers".* FROM "answers"[0m
+  ↳ db/seeds.rb:2
+  [1m[36mQuestion Load (1.0ms)[0m  [1m[34mSELECT "questions".* FROM "questions"[0m
+  ↳ db/seeds.rb:8
+  [1m[35m (2.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:8
+  [1m[36mQuestion::HABTM_Games Destroy (7.7ms)[0m  [1m[31mDELETE FROM "games_questions" WHERE "games_questions"."question_id" = $1[0m  [["question_id", 67]]
+  ↳ db/seeds.rb:8
+  [1m[36mQuestion Destroy (0.4ms)[0m  [1m[31mDELETE FROM "questions" WHERE "questions"."id" = $1[0m  [["id", 67]]
+  ↳ db/seeds.rb:8
+  [1m[35m (6.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:8
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:8
+  [1m[36mQuestion::HABTM_Games Destroy (0.6ms)[0m  [1m[31mDELETE FROM "games_questions" WHERE "games_questions"."question_id" = $1[0m  [["question_id", 68]]
+  ↳ db/seeds.rb:8
+  [1m[36mQuestion Destroy (0.3ms)[0m  [1m[31mDELETE FROM "questions" WHERE "questions"."id" = $1[0m  [["id", 68]]
+  ↳ db/seeds.rb:8
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:8
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:8
+  [1m[36mQuestion::HABTM_Games Destroy (0.3ms)[0m  [1m[31mDELETE FROM "games_questions" WHERE "games_questions"."question_id" = $1[0m  [["question_id", 69]]
+  ↳ db/seeds.rb:8
+  [1m[36mQuestion Destroy (1.3ms)[0m  [1m[31mDELETE FROM "questions" WHERE "questions"."id" = $1[0m  [["id", 69]]
+  ↳ db/seeds.rb:8
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:8
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:8
+  [1m[36mQuestion::HABTM_Games Destroy (0.3ms)[0m  [1m[31mDELETE FROM "games_questions" WHERE "games_questions"."question_id" = $1[0m  [["question_id", 70]]
+  ↳ db/seeds.rb:8
+  [1m[36mQuestion Destroy (0.3ms)[0m  [1m[31mDELETE FROM "questions" WHERE "questions"."id" = $1[0m  [["id", 70]]
+  ↳ db/seeds.rb:8
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:8
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:8
+  [1m[36mQuestion::HABTM_Games Destroy (0.7ms)[0m  [1m[31mDELETE FROM "games_questions" WHERE "games_questions"."question_id" = $1[0m  [["question_id", 71]]
+  ↳ db/seeds.rb:8
+  [1m[36mQuestion Destroy (1.9ms)[0m  [1m[31mDELETE FROM "questions" WHERE "questions"."id" = $1[0m  [["id", 71]]
+  ↳ db/seeds.rb:8
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:8
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:8
+  [1m[36mQuestion::HABTM_Games Destroy (0.3ms)[0m  [1m[31mDELETE FROM "games_questions" WHERE "games_questions"."question_id" = $1[0m  [["question_id", 72]]
+  ↳ db/seeds.rb:8
+  [1m[36mQuestion Destroy (0.3ms)[0m  [1m[31mDELETE FROM "questions" WHERE "questions"."id" = $1[0m  [["id", 72]]
+  ↳ db/seeds.rb:8
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:8
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:8
+  [1m[36mQuestion::HABTM_Games Destroy (0.3ms)[0m  [1m[31mDELETE FROM "games_questions" WHERE "games_questions"."question_id" = $1[0m  [["question_id", 73]]
+  ↳ db/seeds.rb:8
+  [1m[36mQuestion Destroy (0.3ms)[0m  [1m[31mDELETE FROM "questions" WHERE "questions"."id" = $1[0m  [["id", 73]]
+  ↳ db/seeds.rb:8
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:8
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:8
+  [1m[36mQuestion::HABTM_Games Destroy (0.4ms)[0m  [1m[31mDELETE FROM "games_questions" WHERE "games_questions"."question_id" = $1[0m  [["question_id", 74]]
+  ↳ db/seeds.rb:8
+  [1m[36mQuestion Destroy (0.3ms)[0m  [1m[31mDELETE FROM "questions" WHERE "questions"."id" = $1[0m  [["id", 74]]
+  ↳ db/seeds.rb:8
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:8
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:8
+  [1m[36mQuestion::HABTM_Games Destroy (3.4ms)[0m  [1m[31mDELETE FROM "games_questions" WHERE "games_questions"."question_id" = $1[0m  [["question_id", 75]]
+  ↳ db/seeds.rb:8
+  [1m[36mQuestion Destroy (0.3ms)[0m  [1m[31mDELETE FROM "questions" WHERE "questions"."id" = $1[0m  [["id", 75]]
+  ↳ db/seeds.rb:8
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:8
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:8
+  [1m[36mQuestion::HABTM_Games Destroy (0.2ms)[0m  [1m[31mDELETE FROM "games_questions" WHERE "games_questions"."question_id" = $1[0m  [["question_id", 76]]
+  ↳ db/seeds.rb:8
+  [1m[36mQuestion Destroy (0.2ms)[0m  [1m[31mDELETE FROM "questions" WHERE "questions"."id" = $1[0m  [["id", 76]]
+  ↳ db/seeds.rb:8
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:8
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:8
+  [1m[36mQuestion::HABTM_Games Destroy (0.2ms)[0m  [1m[31mDELETE FROM "games_questions" WHERE "games_questions"."question_id" = $1[0m  [["question_id", 77]]
+  ↳ db/seeds.rb:8
+  [1m[36mQuestion Destroy (0.2ms)[0m  [1m[31mDELETE FROM "questions" WHERE "questions"."id" = $1[0m  [["id", 77]]
+  ↳ db/seeds.rb:8
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:8
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:8
+  [1m[36mQuestion::HABTM_Games Destroy (0.3ms)[0m  [1m[31mDELETE FROM "games_questions" WHERE "games_questions"."question_id" = $1[0m  [["question_id", 78]]
+  ↳ db/seeds.rb:8
+  [1m[36mQuestion Destroy (0.3ms)[0m  [1m[31mDELETE FROM "questions" WHERE "questions"."id" = $1[0m  [["id", 78]]
+  ↳ db/seeds.rb:8
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:8
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:8
+  [1m[36mQuestion::HABTM_Games Destroy (0.3ms)[0m  [1m[31mDELETE FROM "games_questions" WHERE "games_questions"."question_id" = $1[0m  [["question_id", 79]]
+  ↳ db/seeds.rb:8
+  [1m[36mQuestion Destroy (0.5ms)[0m  [1m[31mDELETE FROM "questions" WHERE "questions"."id" = $1[0m  [["id", 79]]
+  ↳ db/seeds.rb:8
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:8
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:8
+  [1m[36mQuestion::HABTM_Games Destroy (0.2ms)[0m  [1m[31mDELETE FROM "games_questions" WHERE "games_questions"."question_id" = $1[0m  [["question_id", 80]]
+  ↳ db/seeds.rb:8
+  [1m[36mQuestion Destroy (0.3ms)[0m  [1m[31mDELETE FROM "questions" WHERE "questions"."id" = $1[0m  [["id", 80]]
+  ↳ db/seeds.rb:8
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:8
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:8
+  [1m[36mQuestion::HABTM_Games Destroy (0.2ms)[0m  [1m[31mDELETE FROM "games_questions" WHERE "games_questions"."question_id" = $1[0m  [["question_id", 81]]
+  ↳ db/seeds.rb:8
+  [1m[36mQuestion Destroy (0.5ms)[0m  [1m[31mDELETE FROM "questions" WHERE "questions"."id" = $1[0m  [["id", 81]]
+  ↳ db/seeds.rb:8
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:8
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:8
+  [1m[36mQuestion::HABTM_Games Destroy (0.2ms)[0m  [1m[31mDELETE FROM "games_questions" WHERE "games_questions"."question_id" = $1[0m  [["question_id", 82]]
+  ↳ db/seeds.rb:8
+  [1m[36mQuestion Destroy (0.3ms)[0m  [1m[31mDELETE FROM "questions" WHERE "questions"."id" = $1[0m  [["id", 82]]
+  ↳ db/seeds.rb:8
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:8
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:8
+  [1m[36mQuestion::HABTM_Games Destroy (0.5ms)[0m  [1m[31mDELETE FROM "games_questions" WHERE "games_questions"."question_id" = $1[0m  [["question_id", 83]]
+  ↳ db/seeds.rb:8
+  [1m[36mQuestion Destroy (3.4ms)[0m  [1m[31mDELETE FROM "questions" WHERE "questions"."id" = $1[0m  [["id", 83]]
+  ↳ db/seeds.rb:8
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:8
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:8
+  [1m[36mQuestion::HABTM_Games Destroy (0.3ms)[0m  [1m[31mDELETE FROM "games_questions" WHERE "games_questions"."question_id" = $1[0m  [["question_id", 84]]
+  ↳ db/seeds.rb:8
+  [1m[36mQuestion Destroy (0.3ms)[0m  [1m[31mDELETE FROM "questions" WHERE "questions"."id" = $1[0m  [["id", 84]]
+  ↳ db/seeds.rb:8
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:8
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:8
+  [1m[36mQuestion::HABTM_Games Destroy (0.4ms)[0m  [1m[31mDELETE FROM "games_questions" WHERE "games_questions"."question_id" = $1[0m  [["question_id", 85]]
+  ↳ db/seeds.rb:8
+  [1m[36mQuestion Destroy (1.2ms)[0m  [1m[31mDELETE FROM "questions" WHERE "questions"."id" = $1[0m  [["id", 85]]
+  ↳ db/seeds.rb:8
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:8
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:8
+  [1m[36mQuestion::HABTM_Games Destroy (0.5ms)[0m  [1m[31mDELETE FROM "games_questions" WHERE "games_questions"."question_id" = $1[0m  [["question_id", 86]]
+  ↳ db/seeds.rb:8
+  [1m[36mQuestion Destroy (0.2ms)[0m  [1m[31mDELETE FROM "questions" WHERE "questions"."id" = $1[0m  [["id", 86]]
+  ↳ db/seeds.rb:8
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:8
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:11
+  [1m[36mQuestion Create (0.7ms)[0m  [1m[32mINSERT INTO "questions" ("created_at", "updated_at", "question", "image") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", "2022-02-24 22:41:54.953684"], ["updated_at", "2022-02-24 22:41:54.953684"], ["question", "Race Track"], ["image", "https://i.imgur.com/42gSJvX.png"]]
+  ↳ db/seeds.rb:11
+  [1m[35m (1.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:11
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:16
+  [1m[36mQuestion Create (0.3ms)[0m  [1m[32mINSERT INTO "questions" ("created_at", "updated_at", "question", "image") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", "2022-02-24 22:41:54.956574"], ["updated_at", "2022-02-24 22:41:54.956574"], ["question", "Construction Site"], ["image", "https://i.imgur.com/Dwgntlv.png"]]
+  ↳ db/seeds.rb:16
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:16
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:21
+  [1m[36mQuestion Create (0.5ms)[0m  [1m[32mINSERT INTO "questions" ("created_at", "updated_at", "question", "image") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", "2022-02-24 22:41:54.958163"], ["updated_at", "2022-02-24 22:41:54.958163"], ["question", "Wedding"], ["image", "https://i.imgur.com/DxBgVuj.png"]]
+  ↳ db/seeds.rb:21
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:21
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:26
+  [1m[36mQuestion Create (1.3ms)[0m  [1m[32mINSERT INTO "questions" ("created_at", "updated_at", "question", "image") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", "2022-02-24 22:41:54.959957"], ["updated_at", "2022-02-24 22:41:54.959957"], ["question", "Cat Show"], ["image", "https://i.imgur.com/lIgU7fP.png"]]
+  ↳ db/seeds.rb:26
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:26
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:31
+  [1m[36mQuestion Create (0.5ms)[0m  [1m[32mINSERT INTO "questions" ("created_at", "updated_at", "question", "image") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", "2022-02-24 22:41:54.962546"], ["updated_at", "2022-02-24 22:41:54.962546"], ["question", "Cemetery"], ["image", "https://i.imgur.com/KsG04Yv.png"]]
+  ↳ db/seeds.rb:31
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:31
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:38
+  [1m[36mQuestion Create (0.3ms)[0m  [1m[32mINSERT INTO "questions" ("created_at", "updated_at", "question", "image") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", "2022-02-24 22:41:54.964306"], ["updated_at", "2022-02-24 22:41:54.964306"], ["question", "Vineyard"], ["image", "https://i.imgur.com/8i3odYQ.png"]]
+  ↳ db/seeds.rb:38
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:38
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:43
+  [1m[36mQuestion Create (0.5ms)[0m  [1m[32mINSERT INTO "questions" ("created_at", "updated_at", "question", "image") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", "2022-02-24 22:41:54.965881"], ["updated_at", "2022-02-24 22:41:54.965881"], ["question", "Candy Factory"], ["image", "https://i.imgur.com/zdGv0Oy.png"]]
+  ↳ db/seeds.rb:43
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:43
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:48
+  [1m[36mQuestion Create (0.3ms)[0m  [1m[32mINSERT INTO "questions" ("created_at", "updated_at", "question", "image") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", "2022-02-24 22:41:54.967582"], ["updated_at", "2022-02-24 22:41:54.967582"], ["question", "Harbour Docks"], ["image", "https://i.imgur.com/64VD60h.png"]]
+  ↳ db/seeds.rb:48
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:48
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:53
+  [1m[36mQuestion Create (0.3ms)[0m  [1m[32mINSERT INTO "questions" ("created_at", "updated_at", "question", "image") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", "2022-02-24 22:41:54.969062"], ["updated_at", "2022-02-24 22:41:54.969062"], ["question", "Jail"], ["image", "https://i.imgur.com/jISI2gw.png"]]
+  ↳ db/seeds.rb:53
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:53
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:58
+  [1m[36mQuestion Create (0.3ms)[0m  [1m[32mINSERT INTO "questions" ("created_at", "updated_at", "question", "image") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", "2022-02-24 22:41:54.970612"], ["updated_at", "2022-02-24 22:41:54.970612"], ["question", "Jazz Club"], ["image", "https://i.imgur.com/JBnHpmx.png"]]
+  ↳ db/seeds.rb:58
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:58
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:63
+  [1m[36mQuestion Create (0.3ms)[0m  [1m[32mINSERT INTO "questions" ("created_at", "updated_at", "question", "image") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", "2022-02-24 22:41:54.972181"], ["updated_at", "2022-02-24 22:41:54.972181"], ["question", "Library"], ["image", "https://i.imgur.com/PXOsiSk.png"]]
+  ↳ db/seeds.rb:63
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:63
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:69
+  [1m[36mQuestion Create (0.3ms)[0m  [1m[32mINSERT INTO "questions" ("created_at", "updated_at", "question", "image") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", "2022-02-24 22:41:54.973743"], ["updated_at", "2022-02-24 22:41:54.973743"], ["question", "Coal Mine"], ["image", "https://i.imgur.com/xxkqeTb.png"]]
+  ↳ db/seeds.rb:69
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:69
+  [1m[35m (3.6ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:74
+  [1m[36mQuestion Create (0.5ms)[0m  [1m[32mINSERT INTO "questions" ("created_at", "updated_at", "question", "image") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", "2022-02-24 22:41:54.978836"], ["updated_at", "2022-02-24 22:41:54.978836"], ["question", "Art Museum"], ["image", "https://i.imgur.com/AY72Skh.png"]]
+  ↳ db/seeds.rb:74
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:74
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:79
+  [1m[36mQuestion Create (0.2ms)[0m  [1m[32mINSERT INTO "questions" ("created_at", "updated_at", "question", "image") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", "2022-02-24 22:41:54.980656"], ["updated_at", "2022-02-24 22:41:54.980656"], ["question", "The U.N"], ["image", "https://i.imgur.com/ZQ4GFx9.png"]]
+  ↳ db/seeds.rb:79
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:79
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:84
+  [1m[36mQuestion Create (0.2ms)[0m  [1m[32mINSERT INTO "questions" ("created_at", "updated_at", "question", "image") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", "2022-02-24 22:41:54.982059"], ["updated_at", "2022-02-24 22:41:54.982059"], ["question", "Gas Station"], ["image", "https://i.imgur.com/XyPjZNC.png"]]
+  ↳ db/seeds.rb:84
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:84
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:89
+  [1m[36mQuestion Create (0.3ms)[0m  [1m[32mINSERT INTO "questions" ("created_at", "updated_at", "question", "image") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", "2022-02-24 22:41:54.983520"], ["updated_at", "2022-02-24 22:41:54.983520"], ["question", "Retirement Home"], ["image", "https://i.imgur.com/3ndFecd.png"]]
+  ↳ db/seeds.rb:89
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:89
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:94
+  [1m[36mQuestion Create (0.2ms)[0m  [1m[32mINSERT INTO "questions" ("created_at", "updated_at", "question", "image") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", "2022-02-24 22:41:54.985036"], ["updated_at", "2022-02-24 22:41:54.985036"], ["question", "Rock Concert"], ["image", "https://i.imgur.com/9WnnrwB.png"]]
+  ↳ db/seeds.rb:94
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:94
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:99
+  [1m[36mQuestion Create (0.2ms)[0m  [1m[32mINSERT INTO "questions" ("created_at", "updated_at", "question", "image") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", "2022-02-24 22:41:54.986436"], ["updated_at", "2022-02-24 22:41:54.986436"], ["question", "Statdium"], ["image", "https://i.imgur.com/AfBlBWB.png"]]
+  ↳ db/seeds.rb:99
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:99
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:104
+  [1m[36mQuestion Create (0.2ms)[0m  [1m[32mINSERT INTO "questions" ("created_at", "updated_at", "question", "image") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", "2022-02-24 22:41:54.987845"], ["updated_at", "2022-02-24 22:41:54.987845"], ["question", "Subway"], ["image", "https://i.imgur.com/tfWovhW.png"]]
+  ↳ db/seeds.rb:104
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:104
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:110
+  [1m[36mQuestion Create (0.3ms)[0m  [1m[32mINSERT INTO "questions" ("created_at", "updated_at", "question", "image") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", "2022-02-24 22:41:54.989348"], ["updated_at", "2022-02-24 22:41:54.989348"], ["question", "SigthSeeing Bus"], ["image", "https://i.imgur.com/dDBf54k.png"]]
+  ↳ db/seeds.rb:110
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:110
+  [1m[35m (1.8ms)[0m  [1m[34mSELECT COUNT(*) FROM "questions"[0m
+  ↳ db/seeds.rb:123
+  [1m[36mQuestion Load (0.3ms)[0m  [1m[34mSELECT  "questions".* FROM "questions" ORDER BY "questions"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ db/seeds.rb:124
