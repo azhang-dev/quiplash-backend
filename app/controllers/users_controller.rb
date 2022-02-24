@@ -5,6 +5,8 @@ class UsersController < ApplicationController
     render json: current_user
   end
 
+  
+
   def create
     headers['Access-Control-Allow-Origin'] = '*'
 
