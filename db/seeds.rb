@@ -29,96 +29,90 @@ q4 = Question.create!(
 )
 
 q5 = Question.create!(
-    question: "Cemetery"  
+    question: "Cemetery",  
     image: "https://i.imgur.com/KsG04Yv.png"
 )
 
 
 
 q6 = Question.create!(
-    question: "Vineyard"
+    question: "Vineyard",
     image: "https://i.imgur.com/8i3odYQ.png"
 )
 
 q7 = Question.create!(
-    question: "Candy Factory" 
+    question: "Candy Factory", 
     image: "https://i.imgur.com/zdGv0Oy.png"
 )
 
 q8 = Question.create!(
-    question: "Harbour Docks"
+    question: "Harbour Docks",
     image: "https://i.imgur.com/64VD60h.png"
 )
 
 q9 = Question.create!(
-    question: "Jail"
+    question: "Jail",
     image: "https://i.imgur.com/jISI2gw.png"
 )
 
 q10 = Question.create!(
-    question: "Jazz Club"
+    question: "Jazz Club",
     image: "https://i.imgur.com/JBnHpmx.png"
 )
 
 q11 = Question.create!(
-    question: "Library"
+    question: "Library",
     image: "https://i.imgur.com/PXOsiSk.png"
 
 )
 
 q12 = Question.create!(
-    question: "Coal Mine"
+    question: "Coal Mine",
     image: "https://i.imgur.com/xxkqeTb.png"
 )
 
 q13 = Question.create!(
-    question: "Art Museum"
+    question: "Art Museum",
     image: "https://i.imgur.com/AY72Skh.png"
 )
 
 q14 = Question.create!(
-    question: "The U.N"
+    question: "The U.N",
     image: "https://i.imgur.com/ZQ4GFx9.png"
 )
 
 q15 = Question.create!(
-    question: "Gas Station"
+    question: "Gas Station",
     image: "https://i.imgur.com/XyPjZNC.png"
 )
 
 q16 = Question.create!(
-    question: "Retirement Home"
+    question: "Retirement Home",
     image: "https://i.imgur.com/3ndFecd.png"
 )
 
 q17 = Question.create!(
-    question: "Rock Concert"
+    question: "Rock Concert",
     image: "https://i.imgur.com/9WnnrwB.png"
 )
 
 q18 = Question.create!(
-    question: "Statdium"
+    question: "Statdium",
     image: "https://i.imgur.com/AfBlBWB.png"
 )
 
 q19 = Question.create!(
-    question: "Subway"
+    question: "Subway",
     image: "https://i.imgur.com/tfWovhW.png"
 )
 
 
 q20 = Question.create!(
-    question: "SigthSeeing Bus"
+    question: "SigthSeeing Bus",
     image: "https://i.imgur.com/dDBf54k.png"
 )
 
 
-
-
-q1.answers << a2 << a8
-q2.answers << a1 << a6
-q3.answers << a7 << a3
-q4.answers << a4 << a5
 
 puts "created #{Question.count} questions."
 puts "the answer of #{Question.first.question} is ..."
@@ -130,13 +124,10 @@ b1 = Questionbank.create!(
     name: "Random questions",
 )
 
-b2 = Questionbank.create!(
-    name: "GA related questions",
-)
 
 puts "created #{Questionbank.count} questionbanks."
-b1.questions << q1<< q2 << q3 << q4 << q6 << q7 << q8 << q9 << q16 << q17 << q18 << q19 << q20
-b2.questions << q5 << q10 << q11 << q12 << q13 << q14 << q15 << q21
+b1.questions << q1<< q2 << q3 << q4 << q5 << q6 << q7 << q8 << q9 << q10 << q11 << q12 << q13 << q14 << q15 << q16 << q17 << q18 << q19 << q20
+
 
 
 
