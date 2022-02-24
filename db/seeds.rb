@@ -54,26 +54,26 @@ Question.destroy_all
 
 
 q1 = Question.create!(
-    question: "A double rainbow doesn't have gold at the end of it. Instead, it has ____________",
+    question: "Race Track",
 )
 
 q2 = Question.create!(
-    question: "As Shakesphear once said, '___________'",
+    question: "Construction Site",
 
 )
 
 q3 = Question.create!(
-    question: "What Adam thought when he first met Eve",
+    question: "Wedding",
 
 )
 
 q4 = Question.create!(
-    question: "A terrible name for a morning talk show",
+    question: "Cat Show",
 
 )
 
 q5 = Question.create!(
-    question: "What does N.F.T stand for?"  
+    question: "Cemetery"  
 )
 a9 = Answer.create!(
     answer: "Don't know, don't care",
@@ -86,7 +86,7 @@ a10 = Answer.create!(
 
 
 q6 = Question.create!(
-    question: "What really happened to Jeffrey Epstein?"
+    question: "Vineyard"
 )
 a11 = Answer.create!(
   answer: "He killed himself obviously",
@@ -98,7 +98,7 @@ a12 = Answer.create!(
 )
 
 q7 = Question.create!(
-    question: "How do we fix the NBN?" 
+    question: "Candy Factory" 
 )
 a13 = Answer.create!(
   answer: "We all know it's too late to fix it",
@@ -110,7 +110,7 @@ a14 = Answer.create!(
 )
 
 q8 = Question.create!(
-    question: "The purest spring water comes from '__________'."
+    question: "Harbour Docks"
 )
 a15 = Answer.create!(
   answer: "Me",
@@ -122,7 +122,7 @@ a16 = Answer.create!(
 )
 
 q9 = Question.create!(
-    question: "What happens when you turn 30 years old?"
+    question: "Jail"
 )
 a17 = Answer.create!(
   answer: "You become a wizard...Harry",
@@ -135,7 +135,7 @@ a18 = Answer.create!(
 )
 
 q10 = Question.create!(
-    question: "When is 'cunt' an appropriate word to call your friend?"
+    question: "Jazz Club"
 )
 a19 = Answer.create!(
   answer: "When your teacher thinks your talking about them",
@@ -147,7 +147,7 @@ a20 = Answer.create!(
 )
 
 q11 = Question.create!(
-    question: "Explain why VSCode is better than Atom."
+    question: "Library"
 )
 
 a21 = Answer.create!(
@@ -160,7 +160,7 @@ a22 = Answer.create!(
 )
 
 q12 = Question.create!(
-    question: "Why doesn't Stanley wear shirts?"
+    question: "Coal Mine"
 )
 a23 = Answer.create!(
   answer: "He can't code with a shirt on",
@@ -172,7 +172,7 @@ a24 = Answer.create!(
 )
 
 q13 = Question.create!(
-    question: "What the fuck are react hooks?"
+    question: "Art Museum"
 )
 a25 = Answer.create!(
   answer: "https://reactjs.org/docs/hooks-intro.html",
@@ -184,7 +184,7 @@ a26 = Answer.create!(
 )
 
 q14 = Question.create!(
-    question: "Did any of you get any sleep last night?"
+    question: "The U.N"
 )
 a27 = Answer.create!(
   answer: "No",
@@ -196,7 +196,7 @@ a28 = Answer.create!(
 )
 
 q15 = Question.create!(
-    question: "What's the best way to secure a coffee date?"
+    question: "Gas Station"
 )
 a29 = Answer.create!(
   answer: "Just swipe right",
@@ -208,7 +208,7 @@ a30 = Answer.create!(
 )
 
 q16 = Question.create!(
-    question: "Should I take a COVID vaccination?"
+    question: "Retirement Home"
 )
 a31 = Answer.create!(
   answer: "If you want unlimited 5G access, yes",
@@ -220,7 +220,7 @@ a32 = Answer.create!(
 )
 
 q17 = Question.create!(
-    question: "What superhero/villain would make the best therapist?"
+    question: "Rock Concert"
 )
 a33 = Answer.create!(
   answer: "Iron Man",
@@ -232,7 +232,7 @@ a34 = Answer.create!(
 )
 
 q18 = Question.create!(
-    question: "If you had a third hand, what would you use it for?"
+    question: "Statdium"
 )
 
 a35 = Answer.create!(
@@ -244,7 +244,7 @@ a36 = Answer.create!(
   question_id: q18.id
 )
 q19 = Question.create!(
-    question: "What is the secret to happiness?"
+    question: "Subway"
 )
 
 a37 = Answer.create!(
@@ -258,7 +258,7 @@ a38 = Answer.create!(
 )
 
 q20 = Question.create!(
-    question: "Just type something funny idk lol im outta ideas"
+    question: "SigthSeeing Bus"
 )
 a39 = Answer.create!(
   answer: "something funny idk lol im outta ideas",
@@ -269,17 +269,7 @@ a40 = Answer.create!(
   question_id: q20.id
 )
 
-q21 = Question.create!(
-  question: "How is Daniel cheating in the quizzes?"
-)
-a41 = Answer.create!(
-answer: "He's asking Jia for answers",
-question_id: q21.id
-)
-a42 = Answer.create!(      
-answer: "He has the answers saved in his crypto wallet",
-question_id: q21.id
-)
+
 
 
 q1.answers << a2 << a8
