@@ -7,11 +7,10 @@ class QuestionbanksController < ApplicationController
 
   def index
     questionbanks = Questionbank.all
+    
     p questionbanks.to_json
     render json: questionbanks.to_json
   end
-
-  
 
   def create
 
