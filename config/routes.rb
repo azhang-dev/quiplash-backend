@@ -4,6 +4,7 @@ Rails.application.routes.draw do
   get '/users/current' => 'users#current'
   post '/user' => 'user#create'
   get '/user/:id/questionbanks' => 'questionbanks#user_question_banks'
+  
   put '/room/edit/:id' => 'rooms#update'
   put '/room/start/:id' => 'rooms#start'
   resources :rooms, only: [:create, :index, :destroy, :show, :update]
