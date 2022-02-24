@@ -1,6 +1,6 @@
 class QuestionbanksController < ApplicationController
 
-  before_action :authenticate_user, except: [:index, :show]
+  before_action :authenticate_user, except: [:index, :show, :user_question_banks]
 
   skip_before_action :verify_authenticity_token, raise: false
 
@@ -11,6 +11,12 @@ class QuestionbanksController < ApplicationController
     
     p questionbanks.to_json
     render json: questionbanks.to_json
+  end
+
+  def user_question_banks
+    user = User.find params[:id]
+    questionbanks = user.questionbanks
+    render json: questionbanks
   end
 
   def create
