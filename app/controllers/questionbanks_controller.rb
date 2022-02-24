@@ -52,7 +52,6 @@ class QuestionbanksController < ApplicationController
     # questionlist = questionbank.questions
 
     render json: questionbank , include: :questions 
-  
   end
 
 
