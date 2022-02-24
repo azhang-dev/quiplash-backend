@@ -118,11 +118,11 @@ puts "created #{Question.count} questions."
 puts "the answer of #{Question.first.question} is ..."
 
 
-# print "creating QuestionBank..."
-# Questionbank.destroy_all
-# b1 = Questionbank.create!(
-#     name: "Random questions",
-# )
+print "creating QuestionBank..."
+Questionbank.destroy_all
+b1 = Questionbank.create!(
+    name: "Standard Locations",
+)
 
 
 puts "created #{Questionbank.count} questionbanks."
