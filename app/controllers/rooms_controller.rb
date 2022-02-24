@@ -12,7 +12,7 @@ class RoomsController < ApplicationController
         room = Room.find params[:id]
         users = room.users
         room = room.attributes
-        room[:current_users] = users
+        room[:users] = users
         
         
         render json: room
