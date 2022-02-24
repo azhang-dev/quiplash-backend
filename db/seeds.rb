@@ -69,7 +69,67 @@ q4 = Question.create!(
 )
 
 q5 = Question.create!(
-    question: "Why do I suck at code so much?"  
+    question: "What does N.F.T stand for?"  
+)
+
+q6 = Question.create!(
+    question: "What really happened to Jeffrey Epstein?"
+)
+
+q7 = Question.create!(
+    question: "How do we fix the NBN?" 
+)
+
+q8 = Question.create!(
+    question: "The purest spring water comes from '__________'."
+)
+
+q9 = Question.create!(
+    question: "What happens when you turn 30 years old?"
+)
+
+q10 = Question.create!(
+    question: "When is 'cunt' an appropriate word to call your friend?"
+)
+
+q11 = Question.create!(
+    question: "Explain why VSCode is better than Atom."
+)
+
+q12 = Question.create!(
+    question: "Why doesn't Stanley wear shirts?"
+)
+
+q13 = Question.create!(
+    question: "What the fuck are react hooks?"
+)
+
+q14 = Question.create!(
+    question: "Did any of you get any sleep last night?"
+)
+
+q15 = Question.create!(
+    question: "What's the best way to secure a coffee date?"
+)
+
+q16 = Question.create!(
+    question: "Is COVID real?"
+)
+
+q17 = Question.create!(
+    question: "What superhero/villain would make the best therapist?"
+)
+
+q18 = Question.create!(
+    question: "If you had a third hand, what would you use it for?"
+)
+
+q19 = Question.create!(
+    question: "What is the secret to happiness?"
+)
+
+q20 = Question.create!(
+    question: ""
 )
 
 q1.answers << a2
