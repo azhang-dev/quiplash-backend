@@ -121,7 +121,7 @@ puts "the answer of #{Question.first.question} is ..."
 print "creating QuestionBank..."
 Questionbank.destroy_all
 b1 = Questionbank.create!(
-    name: "Random questions",
+    name: "Collection 1",
 )
 
 
