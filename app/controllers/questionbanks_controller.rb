@@ -36,11 +36,18 @@ class QuestionbanksController < ApplicationController
 
   def create_question
     headers['Access-Control-Allow-Origin'] = '*'
-    
-    questionbank = Questionbank.find (params[:id])
-    question = Question.new question_params
-    questionbank.questions << question
+    question = Question.new
+    question.save
+    p "*****************************", question
+  end
 
+  def questions_list
+    headers['Access-Control-Allow-Origin'] = '*'
+    questionbank = Questionbank.find params[:id]
+    p questionbank
+    # questionlist = questionbank.questions
+
+    render json: questionbank , include: :questions 
   end
 
 
@@ -53,7 +60,7 @@ class QuestionbanksController < ApplicationController
   end
 
   def question_params
-    params.require(:question).permit(:question)
+    params.require(:question).permit(:question, :questionbank_id)
   end
 
 
