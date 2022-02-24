@@ -31,15 +31,15 @@ class QuestionbanksController < ApplicationController
     headers['Access-Control-Allow-Origin'] = '*'
     questionbank = Questionbank.find params[:id]
     # show the list of questions of a certain questionbank_id
-    render json: questionbank.to_json
+    render json: questionbank
   end
 
   def create_question
     headers['Access-Control-Allow-Origin'] = '*'
     
-    questionbank = Questionbank.find (params[:id])
+    questionbank = Questionbank.find params[:id]
     question = Question.new question_params
-  
+    p "********************", question
     questionbank.questions << question
     questionbank.save 
   end
