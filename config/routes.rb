@@ -4,6 +4,7 @@ Rails.application.routes.draw do
   get '/users/current' => 'users#current'
   post '/user' => 'user#create'
   get '/user/:id/questionbanks' => 'questionbanks#user_question_banks'
+  
   put '/room/edit/:id' => 'rooms#update'
   put '/room/start/:id' => 'rooms#start'
   resources :rooms, only: [:create, :index, :destroy, :show, :update]
@@ -11,8 +12,9 @@ Rails.application.routes.draw do
   resources :answers, only: [:create, :show]
   resources :votes, only: [:create, :index]
   resources :games, only: [:create, :show, :index]
-  # post '/questionbanks' => "questionbanks#create"
-  post '/questionbanks/createquestions' => "questionbanks#create_question"
+  
+  post '/questionbanks/:id/createquestions' => "questionbanks#create_question"
+  get '/questionbanks/:id/questions' => "questionbanks#questions_list"
   resources :questionbanks, only: [:create, :index, :show]
   
 

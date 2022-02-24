@@ -40,8 +40,23 @@ class QuestionbanksController < ApplicationController
     
     questionbank = Questionbank.find (params[:id])
     question = Question.new question_params
-    questiobank.questions << question
+  
+    questionbank.questions << question
+    if questionbank.save
+      serialized_data = ActiveModelSerializers::Adapter::Json.new( RoomSerializer.new(room)).serializable_hash
+      ActionCable.server.broadcast 'rooms_channel', serialized_data
+      head :ok 
 
+  end
+
+  def questions_list
+    headers['Access-Control-Allow-Origin'] = '*'
+    questionbank = Questionbank.find params[:id]
+    p questionbank
+    # questionlist = questionbank.questions
+
+    render json: questionbank , include: :questions 
+  
   end
 
 
