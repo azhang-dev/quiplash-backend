@@ -9,7 +9,7 @@ class QuestionbanksController < ApplicationController
     headers['Access-Control-Allow-Origin'] = '*'
     questionbanks = Questionbank.all
     p questionbanks.to_json
-    render json: questionbanks.to_json
+    render json: questionbanks 
   end
 
   def user_question_banks
