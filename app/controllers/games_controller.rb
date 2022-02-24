@@ -1,5 +1,13 @@
 class GamesController < ApplicationController
 
+
+  def index
+    games = Game.all
+    render json: games
+  end
+
+
+
     def create 
         game = Game.new(game_params)
         room = Room.find(game_params[:room_id])
@@ -13,17 +21,23 @@ class GamesController < ApplicationController
 
     end
 
-    def show
-        game = Game.find params[:id]
-        
-    end
+
+  def show
+    game = Game.find params[:id]
+    GamesChannel.broadcast_to 
+  end
 
 
-    private
-      
-      def game_params
-        params.require(:game).permit(:title, :room_id)
-      end
+  def edit
+    room = Room.find()
+  end
+
+
+  private
+    
+  def game_params
+    params.require(:game).permit(:title, :room_id)
+  end
 
 
 

@@ -3,12 +3,12 @@ Rails.application.routes.draw do
 
   get '/users/current' => 'users#current'
   post '/user' => 'user#create'
-
-  resources :rooms, only: [:create, :index, :destroy]
-  resources :questions, only: [:show]
+  put '/room/edit/:id' => 'rooms#update'
+  resources :rooms, only: [:create, :index, :destroy, :show, :update]
+  resources :questions, only: [:show, :create, :index]
   resources :answers, only: [:create, :show]
   resources :votes, only: [:create, :index]
-  resources :games, only: [:create, :show]
+  resources :games, only: [:create, :show, :index]
 
 
   
