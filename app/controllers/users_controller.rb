@@ -10,14 +10,14 @@ class UsersController < ApplicationController
   def create
     headers['Access-Control-Allow-Origin'] = '*'
 
-    user = User.create! user_params
+    user = User.create(name: params[:name], email: params[:email], password: params[:password])
 
-    if user.persisted?
+
+    if user.save
       render json: user
    else
      render json: {error: 'Could not create User'}, status: 402
    end
-
   end
 
   def edit
@@ -29,6 +29,7 @@ class UsersController < ApplicationController
   def user_params
     params.require(:_json).permit(:name, :email, :password)
   end
-      
+  
+  
 
 end

@@ -142,7 +142,7 @@ b1.questions << q1<< q2 << q3 << q4 << q5 << q6 << q7 << q8 << q9 << q10 << q11 
 
 # puts "Created #{User.count} users."
 
-# u1.questionbanks << b1 << b2
+u1.questionbanks << b1
 
 # puts "User #{User.first.name} has #{u1.questionbanks.count} questionbanks"
 
