@@ -121,7 +121,7 @@ puts "the answer of #{Question.first.question} is ..."
 print "creating QuestionBank..."
 Questionbank.destroy_all
 b1 = Questionbank.create!(
-    name: "Collection 1",
+    name: "Standard Locations",
 )
 
 
@@ -131,23 +131,23 @@ b1.questions << q1<< q2 << q3 << q4 << q5 << q6 << q7 << q8 << q9 << q10 << q11 
 
 
 
-print "Creating Users..."
-User.destroy_all
+# print "Creating Users..."
+# User.destroy_all
 
 
-u1 = User.create! name: 'alex', password: 'chicken', email: 'alex@ga.co'
-u2 = User.create! name: 'angela', password: 'chicken', email: 'angela@ga.co'
-u3 = User.create! name: 'cassie', password: 'chicken', email: 'cassie@ga.co'
-u4 = User.create! name: 'ethan', password: 'chicken', email: 'ethan@ga.co'
+# u1 = User.create! name: 'alex', password: 'chicken', email: 'alex@ga.co'
+# u2 = User.create! name: 'angela', password: 'chicken', email: 'angela@ga.co'
+# u3 = User.create! name: 'cassie', password: 'chicken', email: 'cassie@ga.co'
+# u4 = User.create! name: 'ethan', password: 'chicken', email: 'ethan@ga.co'
 
-puts "Created #{User.count} users."
+# puts "Created #{User.count} users."
 
-u1.questionbanks << b1 << b2
+u1.questionbanks << b1
 
-puts "User #{User.first.name} has #{u1.questionbanks.count} questionbanks"
+# puts "User #{User.first.name} has #{u1.questionbanks.count} questionbanks"
 
-print "fuck off rooms..."
-Room.destroy_all
+# print "fuck off rooms..."
+# Room.destroy_all
 
 # print "Creating Answers..."
 # Answer.destroy_all
